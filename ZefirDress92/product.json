@@ -1,0 +1,63 @@
+[
+    {
+        "reference": "002-567",
+        "name": "Платье Amabel",
+        "size": [42],
+        "category": ["night", "sweet", "dance"],
+        "price_photo": 2500,
+        "price_rent": 4000,
+        "description": "Розовое платье, роскошный декор на топе, объемные рукава.",
+        "image": ["Amabel", "Jennifer", "Kayla"]
+    },
+    {
+        "reference": "001-567",
+        "name": "Платье Lillian",
+        "size": [42, 44],
+        "category": ["night", "sweet", "dance"],
+        "price_photo": 2000,
+        "price_rent": 3500,
+        "description": "Телесно-бежевое платье, открытое декольте, роскошный декор в виде цветов",
+        "image": ["Jennifer", "Amabel", "Kayla"]
+    },
+    {
+        "reference": "003-567",
+        "name": "Платье Jennifer",
+        "size": [42, 44, 46, 48],
+        "category": ["night", "sweet", "dance"],
+        "price_photo": 3000,
+        "price_rent": 3500,
+        "description": "Белое платье, состоящее из юбки с 3х метровым шлейфом и двумя вариантами топов ('американка' и вариант с рукавами).",
+        "image": ["Kayla", "Amabel", "Jennifer"]
+    },
+    {
+        "reference": "002-567",
+        "name": "Платье Amabel",
+        "size": [42],
+        "category": ["night", "sweet", "dance"],
+        "price_photo": 2500,
+        "price_rent": 4000,
+        "description": "Розовое платье, роскошный декор на топе, объемные рукава.",
+        "image": ["Amabel", "Jennifer", "Kayla"]
+    },
+    {
+        "reference": "001-567",
+        "name": "Платье Lillian",
+        "size": [42, 44],
+        "category": ["night", "sweet", "dance"],
+        "price_photo": 2000,
+        "price_rent": 3500,
+        "description": "Телесно-бежевое платье, открытое декольте, роскошный декор в виде цветов",
+        "image": ["Jennifer", "Amabel", "Kayla"]
+    },
+    {
+        "reference": "003-567",
+        "name": "Платье Jennifer",
+        "size": [42, 44, 46, 48],
+        "category": ["night", "sweet", "dance"],
+        "price_photo": 3000,
+        "price_rent": 3500,
+        "description": "Белое платье, состоящее из юбки с 3х метровым шлейфом и двумя вариантами топов ('американка' и вариант с рукавами).",
+        "image": ["Kayla", "Amabel", "Jennifer"]
+    }
+]
+

@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ZefirDress92App: App {
+    
+    var shop = Shop()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(shop)
         }
     }
 }
