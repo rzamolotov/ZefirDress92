@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var shop: Shop
     var body: some View {
-        ProductGridView()
+        HomeScreen(numberOfProducts: shop.products.count)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Shop())
     }
 }

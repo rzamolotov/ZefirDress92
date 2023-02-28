@@ -14,7 +14,7 @@ struct ProductView: View {
         ZStack{
             Rectangle()
                 .cornerRadius(10)
-                .foregroundColor(colorBackground)
+                .foregroundColor(.white)
             VStack {
                 Image(product.image[0])
                     .resizable()

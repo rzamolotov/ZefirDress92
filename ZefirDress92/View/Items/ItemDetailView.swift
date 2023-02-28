@@ -13,39 +13,24 @@ struct ItemDetailView: View {
     @State private var isShareSheetShowing = false
     @State var showOrderView = false
     @EnvironmentObject var shop: Shop
+    var numberOfProducts: Int
     
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: 20) {
-                ScrollView(.horizontal) {
-                    HStack{
-                        ForEach(product.image, id: \.self) { images in
-                            Image(images)
-                                .resizable()
-                                .scaledToFill()
-                                .cornerRadius(10)
-                                .shadow(radius: 7)
-                                .frame(width: screen.width / 1.2, height: screen.height / 1.8)
-                        }
+                TabView{
+                    ForEach(product.image, id: \.self) { images in
+                        Image(images)
+                            .resizable()
+                            .scaledToFill()
                     }
                 }
+                .tabViewStyle(.page(indexDisplayMode: .always))
+                .shadow(radius: 5)
+                .frame(width: screen.width, height: screen.height / 1.8)
+                
+                
                 ItemDescriptionView(product: self.product)
-//                HStack {
-//                    Text("\(product.price_photo) руб.")
-//                        .fontWeight(.semibold)
-//                        .padding()
-//                }
-//                .frame(width: screen.width, height: 30, alignment: .center)
-//
-//                Text(product.description)
-//                    .font(.body)
-//                    .foregroundColor(.secondary)
-//                    .padding()
-//
-//
-//                AddToCartButton(product: self.product)
-//
-//                Spacer()
             }
             .navigationBarTitle(
                 Text(product.name),
@@ -54,7 +39,19 @@ struct ItemDetailView: View {
                 trailing: Button(action: {
                     showOrderView.toggle()
                 }, label: {
-                    Image(systemName: "cart.fill")
+                    ZStack{
+                        Image(systemName: "cart")
+                            .foregroundColor(.black)
+                        if numberOfProducts > 0 {
+                            Text("\(numberOfProducts)")
+                                .font(.caption2).bold()
+                                .foregroundColor(.white)
+                                .frame(width: 15, height: 15)
+                                .background(colorOrange)
+                                .cornerRadius(60)
+                                .offset(x: 13, y: -10)
+                        }
+                    }
                 })
             )
             .sheet(isPresented: $showOrderView) {
@@ -72,7 +69,7 @@ struct ItemDetailView_Previews: PreviewProvider {
     static let shop = Shop()
     static var previews: some View {
         NavigationView {
-            ItemDetailView(product: Product.example)
+            ItemDetailView(product: Product.example, numberOfProducts: 1)
                 .environmentObject(shop)
         }
     }

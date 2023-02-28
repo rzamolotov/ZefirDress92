@@ -25,7 +25,7 @@ struct CheckoutView: View {
                 Button(action: {
                     showAlert.toggle()
                     presentationMode.wrappedValue.dismiss()
-                    // TODO 1
+                    // TODO: отправить полученные данные на реалм
                     shop.products.removeAll()
                 }, label: {
                     Text("Подтвердить заказ на доставку")

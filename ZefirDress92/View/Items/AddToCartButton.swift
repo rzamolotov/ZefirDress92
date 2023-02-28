@@ -15,12 +15,19 @@ struct AddToCartButton: View {
     var body: some View {
         Button(action: {
             self.shop.addToCart(product: self.product)
+            
+            
         }, label: {
         ZStack{
             Rectangle()
-                .foregroundColor(colorOrange)
-            Text("Добавить в корзину \(product.name.lowercased())")
-                .foregroundColor(.white)
+                .foregroundColor(.pink)
+                .opacity(0.8)
+            HStack{
+                Image(systemName: "cart")
+                    .font(.title)
+                Text("Добавить в корзину \(product.name)")
+            }
+            .foregroundColor(.white)
         }
         .frame(width: screen.width / 1.1, height: screen.height / 12)
         .cornerRadius(screen.height / 30)

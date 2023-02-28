@@ -10,7 +10,6 @@ import SwiftUI
 // DATA
 
 let products: [Product] = Bundle.main.decode("product.json")
-//let sampleProduct: Product = products[0]
 
 // COLOR
 
