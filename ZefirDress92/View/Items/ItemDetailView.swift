@@ -18,7 +18,7 @@ struct ItemDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: 20) {
-                TabView{
+                TabView {
                     ForEach(product.image, id: \.self) { images in
                         Image(images)
                             .resizable()
@@ -28,7 +28,6 @@ struct ItemDetailView: View {
                 .tabViewStyle(.page(indexDisplayMode: .always))
                 .shadow(radius: 5)
                 .frame(width: screen.width, height: screen.height / 1.8)
-                
                 
                 ItemDescriptionView(product: self.product)
             }

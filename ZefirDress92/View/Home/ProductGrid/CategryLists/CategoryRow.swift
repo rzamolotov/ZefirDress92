@@ -20,7 +20,6 @@ struct CategoryRow: View {
                 .font(.headline)
                 .padding(.leading, 15)
                 .padding(.top, 10)
-            
             ScrollView(.horizontal){
                 HStack {
                     ForEach(items) { product in

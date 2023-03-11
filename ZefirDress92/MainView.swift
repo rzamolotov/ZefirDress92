@@ -10,13 +10,14 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var shop: Shop
     @EnvironmentObject var viewRouter: ViewRouter
+    
     var body: some View {
         
         switch viewRouter.currentPage {
         case .login:
             LoginView()
         case .landing:
-            HomeScreen(numberOfProducts: shop.products.count)
+            TabViewRouter(product: Product.example)
                 .transition(.move(edge: .trailing))
         }
     }

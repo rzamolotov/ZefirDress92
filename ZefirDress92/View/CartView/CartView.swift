@@ -35,7 +35,6 @@ struct CartView: View {
                 )
                 .disableAutocorrection(true)
             }
-
             
             Section {
                 ForEach(shop.products) { item in
@@ -56,9 +55,11 @@ struct CartView: View {
             
             Section {
                 NavigationLink(
-                    destination: CheckoutView().environmentObject(shop)) {
-                        Text("Оформить заказ")
-                    }
+                    destination:
+                        CheckoutView()
+                        .environmentObject(shop)) {
+                            Text("Оформить заказ")
+                        }
             }
             .disabled(shop.products.isEmpty)
         }
