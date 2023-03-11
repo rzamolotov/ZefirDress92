@@ -20,8 +20,6 @@ struct AddToCartButton: View {
         }, label: {
         ZStack{
             Rectangle()
-                .foregroundColor(.pink)
-                .opacity(0.8)
             HStack{
                 Image(systemName: "cart")
                     .font(.title)
@@ -29,8 +27,10 @@ struct AddToCartButton: View {
             }
             .foregroundColor(.white)
         }
-        .frame(width: screen.width / 1.1, height: screen.height / 12)
-        .cornerRadius(screen.height / 30)
+        .frame(width: screen.width / 1.1, height: 60)
+        .foregroundColor(.pink)
+        .opacity(0.7)
+        .cornerRadius(15.0)
         })
     }
 }

@@ -9,18 +9,25 @@ import SwiftUI
 
 struct ItemDescriptionView: View {
     
+    @State var isAddToFavorite = false
     var product: Product
     
     var body: some View {
         VStack {
-            ItemSizeCheckView(product: product)
-                .padding()
-                .foregroundColor(.gray)
+            HStack {
+                FavoriteButtonView(isAddToFavorite: $isAddToFavorite)
+                    .padding([.leading, .trailing])
+                
+                
+                ItemSizeCheckView(product: product)
+                    .padding([.leading, .trailing])
+                    .foregroundColor(.gray)
+            }
             
             Text(product.description)
                 .font(.body)
                 .foregroundColor(.secondary)
-                .padding()
+                .padding([.leading, .trailing, .top])
             
             VStack{
                 Text("Выберете тип аренды и мероприятие")
@@ -28,10 +35,10 @@ struct ItemDescriptionView: View {
                 ItemPriceView(product: product)
             }
                 .foregroundColor(.secondary)
-                .padding()
+                .padding([.leading, .trailing, .top])
             
             AddToCartButton(product: self.product)
-                .padding()
+                .padding([.leading, .trailing, .top])
         }
         .frame(width: screen.width, height: screen.height / 2)
         

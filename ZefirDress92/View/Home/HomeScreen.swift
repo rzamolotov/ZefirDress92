@@ -11,7 +11,6 @@ struct HomeScreen: View {
     
     @EnvironmentObject var shop: Shop
     @State var showOrderView = false
-    @State var showSearchView = false
     var numberOfProducts: Int
     
     var body: some View {
@@ -20,14 +19,9 @@ struct HomeScreen: View {
             ProductGridView()
             
             //MARK: - Header
-                .navigationBarTitle("ZefirDress")
+                .navigationBarTitle("Все платья")
                 .navigationBarItems(
-                    leading: Button(action: {
-                        showSearchView.toggle()
-                    }, label: {
-                        Image(systemName: "magnifyingglass")
-                            .foregroundColor(.black)
-                    }), trailing: Button(action: {
+                    trailing: Button(action: {
                         showOrderView.toggle()
                     }, label: {
                         ZStack{
@@ -51,13 +45,7 @@ struct HomeScreen: View {
                         CartView()
                             .environmentObject(shop)
                     }
-                }
-                .sheet(isPresented: $showSearchView, content: {
-                    NavigationView {
-                        FilterView()
-                        
-                    }
-                }) //MARK: - Header
+                }//MARK: - Header
         }
     }
 }

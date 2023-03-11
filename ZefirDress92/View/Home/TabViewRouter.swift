@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TabViewRouter: View {
-    @State private var selectedTab = 0 //for programmatic switching
+    @State private var selectedTab = 1 //for programmatic switching
     @EnvironmentObject var modelData: ModelData
     @EnvironmentObject var shop: Shop
     var product: Product
@@ -18,28 +18,30 @@ struct TabViewRouter: View {
             HomeScreen(numberOfProducts: shop.products.count)
                 .tabItem {
                     Image(systemName: "house")
-                    Text("Home")
+                    Text("Все платья")
                 }
                 .tag(0)
             CategoryList(product: product)
                 .tabItem {
                     Image(systemName: "plus")
-                    Text("Menu")
+                    Text("Категории")
                 }
                 .tag(1)
             CartView()
                 .tabItem {
-                    Image(systemName: "creditcard")
-                    if shop.products.count > 0 {
-                        Text("\(shop.products.count)")
-                            .font(.caption2).bold()
-                            .foregroundColor(.white)
-                            .frame(width: 15, height: 15)
-                            .background(colorOrange)
-                            .cornerRadius(60)
-                            .offset(x: 13, y: -10)
+                    ZStack{
+                    Image(systemName: "cart")
+                        if shop.products.count > 0 {
+                            Text("\(shop.products.count)")
+                                .font(.caption2).bold()
+                                .foregroundColor(.white)
+                                .frame(width: 15, height: 15)
+                                .background(colorOrange)
+                                .cornerRadius(60)
+                                .offset(x: 13, y: -10)
+                        }
                     }
-                    Text("My Order")
+                    Text("Корзина")
                 }
                 .tag(2)
         }

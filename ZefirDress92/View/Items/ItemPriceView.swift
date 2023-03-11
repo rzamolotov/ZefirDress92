@@ -21,6 +21,7 @@ struct ItemPriceView: View {
             Text("Фотосессия \(product.price_photo) руб.").tag(Event.photo)
             Text("Мероприятие \(product.price_rent) руб.").tag(Event.event)
         }
+        .pickerStyle(.segmented)
         .foregroundColor(.pink)
         .frame(width: screen.width / 1.1, height: screen.height / 29, alignment: .center)
         .background(Color.white.cornerRadius(5))

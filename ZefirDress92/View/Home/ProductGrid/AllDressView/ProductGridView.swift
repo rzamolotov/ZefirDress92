@@ -24,6 +24,8 @@ struct ProductGridView: View {
                 }
             })
         }
+        .padding([.trailing, .leading])
+
     }
 }
 
