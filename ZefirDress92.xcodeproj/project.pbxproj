@@ -9,14 +9,22 @@
 /* Begin PBXBuildFile section */
 		76366FAF29ADC245003FD939 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76366FAE29ADC245003FD939 /* FilterView.swift */; };
 		76366FB229ADC2BA003FD939 /* TextFieldsFilerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76366FB129ADC2BA003FD939 /* TextFieldsFilerView.swift */; };
-		76366FBA29AE437B003FD939 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 76366FB929AE437B003FD939 /* Realm */; };
-		76366FBC29AE437B003FD939 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 76366FBB29AE437B003FD939 /* RealmSwift */; };
-		76366FBE29AE43DC003FD939 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76366FBD29AE43DC003FD939 /* RealmManager.swift */; };
-		76366FC029AE453E003FD939 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76366FBF29AE453E003FD939 /* RealmModel.swift */; };
+		765F214329BCA19D0052A95B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214229BCA19D0052A95B /* LoginView.swift */; };
+		765F214629BCA2250052A95B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214529BCA2250052A95B /* ViewRouter.swift */; };
+		765F214829BCA2500052A95B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214729BCA2500052A95B /* Helpers.swift */; };
+		765F214A29BCA2CD0052A95B /* BrandLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214929BCA2CD0052A95B /* BrandLogo.swift */; };
+		765F214C29BCA3570052A95B /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214B29BCA3570052A95B /* UserName.swift */; };
+		765F214E29BCA4DB0052A95B /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214D29BCA4DB0052A95B /* Password.swift */; };
+		765F215029BCA5420052A95B /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214F29BCA5420052A95B /* LoginButton.swift */; };
+		765F215229BCA8860052A95B /* SkipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215129BCA8860052A95B /* SkipButton.swift */; };
+		765F215429BCAB520052A95B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215329BCAB520052A95B /* ModelData.swift */; };
+		765F215629BCB6910052A95B /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215529BCB6910052A95B /* CategoryRow.swift */; };
+		765F215829BCBAE30052A95B /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215729BCBAE30052A95B /* CategoryList.swift */; };
+		76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */; };
 		76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */; };
 		76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42829B8B821001BEEBE /* ItemPriceView.swift */; };
 		76EAFF8129AB3ACC001799EB /* ZefirDress92App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF8029AB3ACC001799EB /* ZefirDress92App.swift */; };
-		76EAFF8329AB3ACC001799EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF8229AB3ACC001799EB /* ContentView.swift */; };
+		76EAFF8329AB3ACC001799EB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF8229AB3ACC001799EB /* MainView.swift */; };
 		76EAFF8529AB3ACE001799EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EAFF8429AB3ACE001799EB /* Assets.xcassets */; };
 		76EAFF8829AB3ACE001799EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EAFF8729AB3ACE001799EB /* Preview Assets.xcassets */; };
 		76EAFF9029AB7829001799EB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF8F29AB7829001799EB /* Product.swift */; };
@@ -38,13 +46,23 @@
 /* Begin PBXFileReference section */
 		76366FAE29ADC245003FD939 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		76366FB129ADC2BA003FD939 /* TextFieldsFilerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsFilerView.swift; sourceTree = "<group>"; };
-		76366FBD29AE43DC003FD939 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
-		76366FBF29AE453E003FD939 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		765F214229BCA19D0052A95B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		765F214529BCA2250052A95B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		765F214729BCA2500052A95B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		765F214929BCA2CD0052A95B /* BrandLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandLogo.swift; sourceTree = "<group>"; };
+		765F214B29BCA3570052A95B /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
+		765F214D29BCA4DB0052A95B /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		765F214F29BCA5420052A95B /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		765F215129BCA8860052A95B /* SkipButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipButton.swift; sourceTree = "<group>"; };
+		765F215329BCAB520052A95B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		765F215529BCB6910052A95B /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		765F215729BCBAE30052A95B /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewRouter.swift; sourceTree = "<group>"; };
 		76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSizeCheckView.swift; sourceTree = "<group>"; };
 		76EAF42829B8B821001BEEBE /* ItemPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
 		76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZefirDress92.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EAFF8029AB3ACC001799EB /* ZefirDress92App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZefirDress92App.swift; sourceTree = "<group>"; };
-		76EAFF8229AB3ACC001799EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		76EAFF8229AB3ACC001799EB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		76EAFF8429AB3ACE001799EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76EAFF8729AB3ACE001799EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76EAFF8F29AB7829001799EB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -68,8 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76366FBC29AE437B003FD939 /* RealmSwift in Frameworks */,
-				76366FBA29AE437B003FD939 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,11 +101,26 @@
 			path = FilterView;
 			sourceTree = "<group>";
 		};
+		765F214129BCA17E0052A95B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				765F214229BCA19D0052A95B /* LoginView.swift */,
+				765F214929BCA2CD0052A95B /* BrandLogo.swift */,
+				765F214B29BCA3570052A95B /* UserName.swift */,
+				765F214D29BCA4DB0052A95B /* Password.swift */,
+				765F214F29BCA5420052A95B /* LoginButton.swift */,
+				765F215129BCA8860052A95B /* SkipButton.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		76EAF42A29B8C11D001BEEBE /* ProductGrid */ = {
 			isa = PBXGroup;
 			children = (
 				76EAFFA529ABD722001799EB /* ProductView.swift */,
 				76EAFFA729ABDBAB001799EB /* ProductGridView.swift */,
+				765F215529BCB6910052A95B /* CategoryRow.swift */,
+				765F215729BCBAE30052A95B /* CategoryList.swift */,
 			);
 			path = ProductGrid;
 			sourceTree = "<group>";
@@ -132,12 +163,10 @@
 				76EAFF9129AB7A30001799EB /* Network */,
 				76EAFF8E29AB3AF7001799EB /* Model */,
 				76EAFF8029AB3ACC001799EB /* ZefirDress92App.swift */,
-				76EAFF8229AB3ACC001799EB /* ContentView.swift */,
+				76EAFF8229AB3ACC001799EB /* MainView.swift */,
 				76EAFF8429AB3ACE001799EB /* Assets.xcassets */,
 				76EAFF8629AB3ACE001799EB /* Preview Content */,
 				76EAFFAB29AC9765001799EB /* product.json */,
-				76366FBD29AE43DC003FD939 /* RealmManager.swift */,
-				76366FBF29AE453E003FD939 /* RealmModel.swift */,
 			);
 			path = ZefirDress92;
 			sourceTree = "<group>";
@@ -154,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				76EAFF8F29AB7829001799EB /* Product.swift */,
+				765F214729BCA2500052A95B /* Helpers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,8 +199,10 @@
 		76EAFF9429AB7AAD001799EB /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				76EAFF9529AB7AC2001799EB /* Constant.swift */,
+				765F214529BCA2250052A95B /* ViewRouter.swift */,
+				765F215329BCAB520052A95B /* ModelData.swift */,
 				76EAFF9729AB7B47001799EB /* Shop.swift */,
+				76EAFF9529AB7AC2001799EB /* Constant.swift */,
 				76EAFF9929AB7C32001799EB /* EditButton.swift */,
 			);
 			path = Utility;
@@ -179,6 +211,7 @@
 		76EAFF9B29AB7DE8001799EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				765F214129BCA17E0052A95B /* Login */,
 				76EAFFA429ABD70A001799EB /* Home */,
 				76EAFFA129AB85EF001799EB /* Items */,
 				76EAFF9C29AB7DF0001799EB /* CartView */,
@@ -215,6 +248,7 @@
 				76EAF42A29B8C11D001BEEBE /* ProductGrid */,
 				76366FB029ADC296003FD939 /* FilterView */,
 				76ECFE2529AFA515008EF1B6 /* HomeScreen.swift */,
+				76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -236,8 +270,6 @@
 			);
 			name = ZefirDress92;
 			packageProductDependencies = (
-				76366FB929AE437B003FD939 /* Realm */,
-				76366FBB29AE437B003FD939 /* RealmSwift */,
 			);
 			productName = ZefirDress92;
 			productReference = 76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */;
@@ -268,7 +300,6 @@
 			);
 			mainGroup = 76EAFF7429AB3ACC001799EB;
 			packageReferences = (
-				76366FB829AE437B003FD939 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 76EAFF7E29AB3ACC001799EB /* Products */;
 			projectDirPath = "";
@@ -299,25 +330,35 @@
 			files = (
 				76EAFFB429AD4DEB001799EB /* ItemDescriptionView.swift in Sources */,
 				76EAFFA329AB860C001799EB /* ItemDetailView.swift in Sources */,
-				76EAFF8329AB3ACC001799EB /* ContentView.swift in Sources */,
+				76EAFF8329AB3ACC001799EB /* MainView.swift in Sources */,
+				765F214E29BCA4DB0052A95B /* Password.swift in Sources */,
 				76EAFFB229AD48C1001799EB /* AddToCartButton.swift in Sources */,
 				76EAFFB029ACA369001799EB /* CartView.swift in Sources */,
 				76EAFF9329AB7A7A001799EB /* CodableBundleExtention.swift in Sources */,
-				76366FBE29AE43DC003FD939 /* RealmManager.swift in Sources */,
+				765F215229BCA8860052A95B /* SkipButton.swift in Sources */,
 				76EAFF9A29AB7C32001799EB /* EditButton.swift in Sources */,
 				76EAFF9629AB7AC2001799EB /* Constant.swift in Sources */,
 				76EAFF9829AB7B47001799EB /* Shop.swift in Sources */,
+				76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */,
 				76366FB229ADC2BA003FD939 /* TextFieldsFilerView.swift in Sources */,
+				765F214A29BCA2CD0052A95B /* BrandLogo.swift in Sources */,
+				765F215429BCAB520052A95B /* ModelData.swift in Sources */,
 				76EAFF8129AB3ACC001799EB /* ZefirDress92App.swift in Sources */,
 				76EAFFA629ABD722001799EB /* ProductView.swift in Sources */,
+				765F215629BCB6910052A95B /* CategoryRow.swift in Sources */,
+				765F215829BCBAE30052A95B /* CategoryList.swift in Sources */,
 				76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */,
-				76366FC029AE453E003FD939 /* RealmModel.swift in Sources */,
 				76EAFF9029AB7829001799EB /* Product.swift in Sources */,
 				76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */,
+				765F214829BCA2500052A95B /* Helpers.swift in Sources */,
+				765F214C29BCA3570052A95B /* UserName.swift in Sources */,
+				765F214629BCA2250052A95B /* ViewRouter.swift in Sources */,
 				76ECFE2629AFA515008EF1B6 /* HomeScreen.swift in Sources */,
 				76EAFFA829ABDBAB001799EB /* ProductGridView.swift in Sources */,
 				76366FAF29ADC245003FD939 /* FilterView.swift in Sources */,
+				765F214329BCA19D0052A95B /* LoginView.swift in Sources */,
 				76EAFFA029AB822D001799EB /* CheckoutView.swift in Sources */,
+				765F215029BCA5420052A95B /* LoginButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,30 +567,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		76366FB829AE437B003FD939 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.10.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		76366FB929AE437B003FD939 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 76366FB829AE437B003FD939 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		76366FBB29AE437B003FD939 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 76366FB829AE437B003FD939 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76EAFF7529AB3ACC001799EB /* Project object */;
 }

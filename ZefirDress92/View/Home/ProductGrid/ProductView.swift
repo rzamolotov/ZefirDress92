@@ -14,25 +14,36 @@ struct ProductView: View {
         ZStack{
             Rectangle()
                 .cornerRadius(10)
-                .foregroundColor(.white)
+                .foregroundColor(.clear)
             VStack {
                 Image(product.image[0])
                     .resizable()
                     .scaledToFill()
-                    .frame(width: screen.width / 2.25, height: screen.height / 4)
+                    .frame(width: screen.width / 2, height: screen.height / 4)
                     .padding(.bottom)
                     .cornerRadius(10)
-                    .shadow(radius: 10)
-                VStack(alignment: .leading) {
+                    .shadow(radius: 2)
+                VStack(spacing: 2) {
                     Text(product.name)
                         .font(.headline)
-                        .foregroundColor(colorBlue)
-                    Text("\(product.price_photo) руб.")
-                        .foregroundColor(colorBlue)
+                        .fontWeight(.bold)
+                    Text("аренда от \(product.price_photo) руб.")
+                        .font(.subheadline)
+                    HStack {
+                        Text("Размеры")
+                            .font(.footnote)
+                        ForEach(product.size, id: \.self) { sizes in
+                            Text("\(sizes)")
+                                .font(.caption)
+                                .fontWeight(.bold)
+                                .foregroundColor(.pink)
+                                .opacity(0.7)
+                        }
+                    }
                 }
             }
         }
-        .frame(width: screen.width / 2, height: screen.height / 3)
+        .frame(width: screen.width / 2, height: screen.height / 2.9)
     }
 }
 

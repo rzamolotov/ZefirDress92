@@ -9,13 +9,16 @@ import SwiftUI
 
 @main
 struct ZefirDress92App: App {
-    
+    @StateObject var modelData = ModelData()
+    @StateObject var viewRouter = ViewRouter() //changes views e.g. login to home
     var shop = Shop()
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
                 .environmentObject(shop)
+                .environmentObject(viewRouter)
+                .environmentObject(modelData)
         }
     }
 }
