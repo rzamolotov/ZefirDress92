@@ -39,7 +39,7 @@ struct CartView: View {
         .navigationBarTitle("Корзина")
         .navigationBarItems(trailing: EditButton(editMode: $editMode))
         .environment(\.editMode, $editMode)
-        .animation(.spring(response: 0))
+
     }
 }
 

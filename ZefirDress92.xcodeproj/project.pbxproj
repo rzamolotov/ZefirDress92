@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		763B1FA329BCFFE00027C3E3 /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA229BCFFE00027C3E3 /* WelcomeMessageView.swift */; };
 		763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */; };
+		7644A7FA29C04BBC00B1E788 /* FavoritesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */; };
 		765F214329BCA19D0052A95B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214229BCA19D0052A95B /* LoginView.swift */; };
 		765F214629BCA2250052A95B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214529BCA2250052A95B /* ViewRouter.swift */; };
 		765F214829BCA2500052A95B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214729BCA2500052A95B /* Helpers.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		763B1FA229BCFFE00027C3E3 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
 		763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
+		7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesGridView.swift; sourceTree = "<group>"; };
 		765F214229BCA19D0052A95B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		765F214529BCA2250052A95B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		765F214729BCA2500052A95B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -104,11 +106,12 @@
 			path = AllDressView;
 			sourceTree = "<group>";
 		};
-		7644A7F829C0319700B1E788 /* New Group */ = {
+		7644A7F829C0319700B1E788 /* FavoritesView */ = {
 			isa = PBXGroup;
 			children = (
+				7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */,
 			);
-			path = "New Group";
+			path = FavoritesView;
 			sourceTree = "<group>";
 		};
 		765F214129BCA17E0052A95B /* Login */ = {
@@ -196,7 +199,7 @@
 		76EAFF9B29AB7DE8001799EB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7644A7F829C0319700B1E788 /* New Group */,
+				7644A7F829C0319700B1E788 /* FavoritesView */,
 				765F214129BCA17E0052A95B /* Login */,
 				76EAFFA429ABD70A001799EB /* Home */,
 				76EAFFA129AB85EF001799EB /* Items */,
@@ -327,6 +330,7 @@
 				765F215429BCAB520052A95B /* ModelData.swift in Sources */,
 				76EAFF8129AB3ACC001799EB /* ZefirDress92App.swift in Sources */,
 				76EAFFA629ABD722001799EB /* ProductView.swift in Sources */,
+				7644A7FA29C04BBC00B1E788 /* FavoritesGridView.swift in Sources */,
 				765F215629BCB6910052A95B /* CategoryRow.swift in Sources */,
 				765F215829BCBAE30052A95B /* CategoryList.swift in Sources */,
 				76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */,

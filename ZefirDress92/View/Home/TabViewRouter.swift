@@ -25,6 +25,11 @@ struct TabViewRouter: View {
                     Text("Категории")
                 }
                 .tag(1)
+            FavoritesGridView(products: modelData.products)
+                .tabItem {
+                    Image(systemName: "heart")
+                    Text("Избранное")
+                }
             CartView()
                 
                 .tabItem {
