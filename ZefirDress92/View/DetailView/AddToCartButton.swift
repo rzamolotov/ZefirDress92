@@ -10,11 +10,12 @@ import SwiftUI
 struct AddToCartButton: View {
     
     var product: Product
+    @EnvironmentObject var shop: Shop
     
     var body: some View {
         Button(action: {
-//TODO: ADD TO CART
-        
+            self.shop.addToCart(product: self.product)
+            
             
         }, label: {
         ZStack{
@@ -35,9 +36,11 @@ struct AddToCartButton: View {
 }
 
 struct AddToCartButton_Previews: PreviewProvider {
+    static let shop = Shop()
     static var previews: some View {
         NavigationView {
             AddToCartButton(product: Product.example)
+                .environmentObject(shop)
         }
     }
 }

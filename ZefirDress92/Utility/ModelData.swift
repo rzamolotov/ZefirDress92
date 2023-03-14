@@ -9,15 +9,11 @@ import Foundation
 
 final class ModelData: ObservableObject {
     
-    @Published var product: [Product] = load("product.json")
-    
-//    var featured: [Product] {
-//        product.filter { $0.isFeatured }
-//    }
+    @Published var products: [Product] = load("product.json")
     
     var categories: [String: [Product]] {
         Dictionary(
-            grouping: product,
+            grouping: products,
             by: { $0.category.rawValue }
         )
     }

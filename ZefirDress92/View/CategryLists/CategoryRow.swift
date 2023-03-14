@@ -9,8 +9,10 @@ import SwiftUI
 
 struct CategoryRow: View {
     
+    @EnvironmentObject var shop: Shop
     var categoryName: String
-    var products: [Product]
+    var product: Product
+    var items: [Product]
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -20,7 +22,7 @@ struct CategoryRow: View {
                 .padding(.top, 10)
             ScrollView(.horizontal){
                 HStack {
-                    ForEach(products) { product in
+                    ForEach(items) { product in
                         NavigationLink {
                             ItemDetailView(product: product)
                         } label: {
@@ -38,6 +40,6 @@ struct CategoryRow_Previews: PreviewProvider {
     static var products = ModelData().products
     
     static var previews: some View {
-        CategoryRow(categoryName: products[0].category.rawValue, products: Array(products.prefix(3)))
+        CategoryRow(categoryName: products[0].category.rawValue, product: Product.example, items: Array(products.prefix(3)))
     }
 }

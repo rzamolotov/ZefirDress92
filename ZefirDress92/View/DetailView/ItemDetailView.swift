@@ -10,6 +10,8 @@ import SwiftUI
 struct ItemDetailView: View {
     
     var product: Product
+    @State private var isShareSheetShowing = false
+    @State var showOrderView = false
     
     var body: some View {
         ScrollView {
@@ -25,7 +27,7 @@ struct ItemDetailView: View {
                 .shadow(radius: 5)
                 .frame(width: screen.width, height: screen.height / 1.8)
                 
-                ItemDescriptionView(product: self.product)
+                ItemDescriptionView(product: product)
             }
             .navigationBarTitle(
                 Text(product.name),
@@ -35,9 +37,10 @@ struct ItemDetailView: View {
 }
 
 struct ItemDetailView_Previews: PreviewProvider {
+    static let shop = Shop()
     static var previews: some View {
         NavigationView {
             ItemDetailView(product: Product.example)
         }
-    }
+    }  
 }

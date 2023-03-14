@@ -15,10 +15,11 @@ struct ItemDescriptionView: View {
         modelData.products.firstIndex(where: { $0.id == product.id })!
     }
     
+    
     var body: some View {
         VStack {
             HStack {
-                FavoriteButtonView(isSet: $modelData.products[productIndex].isAddToFavorite)
+                FavoriteButtonView(isAddToFavorite: $modelData.products[productIndex].isAddToFavorite)
                     .padding([.leading, .trailing])
                 
                 
@@ -51,6 +52,5 @@ struct ItemDescriptionView: View {
 struct ItemDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         ItemDescriptionView(product: Product.example)
-            .environmentObject(ModelData())
     }
 }

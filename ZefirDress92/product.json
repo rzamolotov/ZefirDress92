@@ -7,7 +7,7 @@
         "price_photo": 2500,
         "price_rent": 4000,
         "description": "Розовое платье, роскошный декор на топе, объемные рукава.",
-      
+        "isAddToFavorite": false,
         "image": ["Amabel", "Jennifer", "Kayla"]
     },
     {
@@ -18,7 +18,7 @@
         "price_photo": 2000,
         "price_rent": 3500,
         "description": "Телесно-бежевое платье, открытое декольте, роскошный декор в виде цветов",
-       
+        "isAddToFavorite": false,
         "image": ["Jennifer", "Amabel", "Kayla"]
     },
     {
@@ -40,7 +40,7 @@
         "price_photo": 2500,
         "price_rent": 4000,
         "description": "Розовое платье, роскошный декор на топе, объемные рукава.",
-    
+        "isAddToFavorite": false,
         "image": ["Amabel", "Jennifer", "Kayla"]
     },
     {
@@ -51,7 +51,7 @@
         "price_photo": 2000,
         "price_rent": 3500,
         "description": "Телесно-бежевое платье, открытое декольте, роскошный декор в виде цветов",
-    
+        "isAddToFavorite": false,
         "image": ["Jennifer", "Amabel", "Kayla"]
     },
     {
@@ -62,7 +62,7 @@
         "price_photo": 3000,
         "price_rent": 3500,
         "description": "Белое платье, состоящее из юбки с 3х метровым шлейфом и двумя вариантами топов ('американка' и вариант с рукавами).",
-
+        "isAddToFavorite": false,
         "image": ["Kayla", "Amabel", "Jennifer"]
     }
 ]

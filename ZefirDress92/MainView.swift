@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MainView: View {
-    @EnvironmentObject var shop: Shop
     @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
@@ -17,7 +16,7 @@ struct MainView: View {
         case .login:
             LoginView()
         case .landing:
-            TabViewRouter(product: Product.example)
+            TabViewRouter()
                 .transition(.move(edge: .trailing))
         }
     }
@@ -26,7 +25,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-            .environmentObject(Shop())
             .environmentObject(ViewRouter())
     }
 }

@@ -9,24 +9,19 @@ import SwiftUI
 
 struct CheckoutView: View {
     
-    @EnvironmentObject var shop: Shop
     @Environment(\.presentationMode) var presentationMode
     
-    var totalPrice: Int {
-        let total = shop.total
-        return total
-    }
     
     @State private var showAlert = false
     
     var body: some View {
         Form {
-            Section(header: Text("Итого: \(totalPrice) руб.").font(.largeTitle)) {
+            Section(header: Text("Итого: 2000 руб.").font(.largeTitle)) {
                 Button(action: {
                     showAlert.toggle()
                     presentationMode.wrappedValue.dismiss()
                     // TODO: отправить полученные данные на реалм
-                    shop.products.removeAll()
+
                 }, label: {
                     Text("Подтвердить заказ на доставку")
                 })
@@ -44,9 +39,7 @@ struct CheckoutView: View {
 
 
 struct CheckoutView_Previews: PreviewProvider {
-    static let shop = Shop()
     static var previews: some View {
         CheckoutView()
-            .environmentObject(shop)
     }
 }

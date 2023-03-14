@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct FavoriteButtonView: View {
-    @Binding var isSet: Bool
+    @Binding var isAddToFavorite: Bool
     
     var body: some View {
         Button {
-            isSet.toggle()
+            isAddToFavorite.toggle()
         } label: {
-            Image(systemName: isSet ? "heart.fill" : "heart")
+            Image(systemName: isAddToFavorite ? "heart.fill" : "heart")
                 .foregroundColor(.pink)
                 .opacity(0.7)
                 .frame(width: 28, height: 28, alignment: .center)
@@ -26,6 +26,6 @@ struct FavoriteButtonView: View {
 
 struct FavoriteButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteButtonView(isSet: .constant(false))
+        FavoriteButtonView(isAddToFavorite: .constant(true))
     }
 }

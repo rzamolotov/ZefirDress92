@@ -9,8 +9,6 @@ import SwiftUI
 
 // DATA
 
-let products: [Product] = Bundle.main.decode("product.json")
-
 // COLOR
 
 let colorBackground: Color = Color("gray")

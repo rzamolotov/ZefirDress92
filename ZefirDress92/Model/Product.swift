@@ -15,18 +15,8 @@ struct Product: Codable, Identifiable, Hashable {
     let price_rent: Int
     let image: [String]
     let description: String
+    var isAddToFavorite: Bool
     var category: Category
-    
-    init(id: UUID = UUID(), size: [Int], name: String, price_photo: Int, price_rent: Int, image: [String], description: String, category: Category) {
-        self.id = id
-        self.size = size
-        self.name = name
-        self.price_photo = price_photo
-        self.price_rent = price_rent
-        self.image = image
-        self.description = description
-        self.category = category
-    }
     
     enum Category: String, CaseIterable, Codable {
         case dance = "Платья для бала"
@@ -35,7 +25,7 @@ struct Product: Codable, Identifiable, Hashable {
     }
     
     enum CodingKeys: String, CodingKey {
-        case name, size, category, price_photo, price_rent, image, description
+        case name, size, category, price_photo, price_rent, image, description, isAddToFavorite
     }
    
     
@@ -45,9 +35,9 @@ struct Product: Codable, Identifiable, Hashable {
         name: "Платье Amabel",
         price_photo: 1500,
         price_rent: 2500,
-//        isAddToFavorite: false,
         image: ["Amabel", "Jennifer", "Kayla"],
         description: "Белое платье, состоящее из юбки с 3х метровым шлейфом и двумя вариантами топов ('американка' и вариант с рукавами).",
+        isAddToFavorite: true,
         category: Product.Category.night
     )
 #endif

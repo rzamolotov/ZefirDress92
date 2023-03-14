@@ -8,29 +8,35 @@
 import SwiftUI
 
 struct ProductGridView: View {
-    
-    @EnvironmentObject var shop: Shop
+    @EnvironmentObject var viewRouter: ViewRouter
+    var products: [Product]
     
     var body: some View {
-        
-        //MARK: - Header
-        ScrollView {
-            LazyVGrid(columns: gridLayout, alignment: .center, spacing: columnSpacing, pinnedViews: [], content: {
-                ForEach(products) { product in
-                    NavigationLink(
-                        destination: ItemDetailView(product: product, numberOfProducts: shop.products.count)) {
+  
+        NavigationView{
+            ScrollView {
+                LazyVGrid(columns: gridLayout, spacing: columnSpacing) {
+                    ForEach(products) { product in
+                        NavigationLink {
+                            ItemDetailView(product: product)
+                        } label: {
                             ProductView(product: product)
                         }
+                        
+                    }
                 }
-            })
+            }
+            .navigationBarTitle("Все платья")
+            .padding([.trailing, .leading])
         }
-        .padding([.trailing, .leading])
-
     }
 }
 
 struct ProductGridView_Previews: PreviewProvider {
+    static var products = ModelData().products
+    
     static var previews: some View {
-        ProductGridView()
+        ProductGridView(products: products)
+            .environmentObject(ViewRouter())
     }
 }
