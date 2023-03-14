@@ -22,6 +22,10 @@
 		765F215629BCB6910052A95B /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215529BCB6910052A95B /* CategoryRow.swift */; };
 		765F215829BCBAE30052A95B /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215729BCBAE30052A95B /* CategoryList.swift */; };
 		76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */; };
+		76CEBAD229C062AD000BB74D /* Products.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76CEBAD029C062AD000BB74D /* Products.xcdatamodeld */; };
+		76CEBAD429C063B3000BB74D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEBAD329C063B3000BB74D /* Persistence.swift */; };
+		76CEBAD629C08A39000BB74D /* Favorite+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEBAD529C08A39000BB74D /* Favorite+CoreDataClass.swift */; };
+		76CEBAD829C08A9D000BB74D /* Favorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEBAD729C08A9D000BB74D /* Favorite+CoreDataProperties.swift */; };
 		76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */; };
 		76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42829B8B821001BEEBE /* ItemPriceView.swift */; };
 		76EAFF8129AB3ACC001799EB /* ZefirDress92App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF8029AB3ACC001799EB /* ZefirDress92App.swift */; };
@@ -57,6 +61,10 @@
 		765F215529BCB6910052A95B /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		765F215729BCBAE30052A95B /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewRouter.swift; sourceTree = "<group>"; };
+		76CEBAD129C062AD000BB74D /* Products.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Products.xcdatamodel; sourceTree = "<group>"; };
+		76CEBAD329C063B3000BB74D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		76CEBAD529C08A39000BB74D /* Favorite+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataClass.swift"; sourceTree = "<group>"; };
+		76CEBAD729C08A9D000BB74D /* Favorite+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSizeCheckView.swift; sourceTree = "<group>"; };
 		76EAF42829B8B821001BEEBE /* ItemPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
 		76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZefirDress92.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +135,17 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		76CEBACF29C06284000BB74D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				76CEBAD029C062AD000BB74D /* Products.xcdatamodeld */,
+				76CEBAD329C063B3000BB74D /* Persistence.swift */,
+				76CEBAD529C08A39000BB74D /* Favorite+CoreDataClass.swift */,
+				76CEBAD729C08A9D000BB74D /* Favorite+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		76EAF42A29B8C11D001BEEBE /* ProductGrid */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +175,7 @@
 		76EAFF7F29AB3ACC001799EB /* ZefirDress92 */ = {
 			isa = PBXGroup;
 			children = (
+				76CEBACF29C06284000BB74D /* CoreData */,
 				76EAFF9B29AB7DE8001799EB /* View */,
 				76EAFF9429AB7AAD001799EB /* Utility */,
 				76EAFF8E29AB3AF7001799EB /* Model */,
@@ -314,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76CEBAD629C08A39000BB74D /* Favorite+CoreDataClass.swift in Sources */,
 				76EAFFB429AD4DEB001799EB /* ItemDescriptionView.swift in Sources */,
 				76EAFFA329AB860C001799EB /* ItemDetailView.swift in Sources */,
 				76EAFF8329AB3ACC001799EB /* MainView.swift in Sources */,
@@ -336,13 +357,16 @@
 				76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */,
 				76EAFF9029AB7829001799EB /* Product.swift in Sources */,
 				76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */,
+				76CEBAD829C08A9D000BB74D /* Favorite+CoreDataProperties.swift in Sources */,
 				765F214829BCA2500052A95B /* Helpers.swift in Sources */,
+				76CEBAD229C062AD000BB74D /* Products.xcdatamodeld in Sources */,
 				765F214C29BCA3570052A95B /* UserName.swift in Sources */,
 				765F214629BCA2250052A95B /* ViewRouter.swift in Sources */,
 				76EAFFA829ABDBAB001799EB /* ProductGridView.swift in Sources */,
 				765F214329BCA19D0052A95B /* LoginView.swift in Sources */,
 				76EAFFA029AB822D001799EB /* CheckoutView.swift in Sources */,
 				765F215029BCA5420052A95B /* LoginButton.swift in Sources */,
+				76CEBAD429C063B3000BB74D /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +575,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		76CEBAD029C062AD000BB74D /* Products.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				76CEBAD129C062AD000BB74D /* Products.xcdatamodel */,
+			);
+			currentVersion = 76CEBAD129C062AD000BB74D /* Products.xcdatamodel */;
+			path = Products.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 76EAFF7529AB3ACC001799EB /* Project object */;
 }
