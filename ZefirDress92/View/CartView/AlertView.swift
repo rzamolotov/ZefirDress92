@@ -34,13 +34,14 @@ struct AlertView: View {
                     .foregroundColor(.white)
                     .padding()
                     .frame(width: 150, height: 45)
-                    .background(Color.red)
+                    .background(.pink)
+                    .opacity(0.9)
                     .cornerRadius(15.0)
             }
         }
         .frame(maxWidth: 250)
         .padding()
-        .background(colorScheme == .light ? Color("LightGrayBackground") : Color("BackgroundColor"))
+        .background(.white)
         .cornerRadius(CGFloat(21.0))
         .shadow(radius: 10, x: 5, y: 5)
         .transition(.opacity)

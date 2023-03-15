@@ -25,7 +25,7 @@ struct ItemDetailView: View {
                 .shadow(radius: 5)
                 .frame(width: screen.width, height: screen.height / 1.8)
                 
-                ItemDescriptionView(product: self.product)
+                ItemDescriptionView(product: product)
             }
             .navigationBarTitle(
                 Text(product.name),

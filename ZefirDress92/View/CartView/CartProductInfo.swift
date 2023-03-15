@@ -14,7 +14,7 @@ struct CartProductInfo: View {
         Group {
             Image(order.imageName ?? "Olivia")
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: screen.width / 6, height: screen.height / 10)
             VStack(alignment: .leading) {
                 Text(order.productName ?? "Красивое платье")
                     .font(.headline)

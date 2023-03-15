@@ -13,6 +13,9 @@ struct FavoriteButtonView: View {
     var body: some View {
         Button {
             isSet.toggle()
+            
+            
+            
         } label: {
             Image(systemName: isSet ? "heart.fill" : "heart")
                 .foregroundColor(.pink)

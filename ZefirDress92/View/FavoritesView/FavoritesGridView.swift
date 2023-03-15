@@ -13,9 +13,6 @@ struct FavoritesGridView: View {
     
     var products: [Product]
     
-    
-    
-    
     var filteredProducts: [Product] {
         products.filter { product in
             product.isAddToFavorite

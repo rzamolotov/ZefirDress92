@@ -9,6 +9,11 @@ import SwiftUI
 
 struct CartView: View {
     
+    @AppStorage("user_name") var user_name = ""
+    @AppStorage("user_phone_number") var user_phone_number = ""
+    @AppStorage("user_email") var user_email = ""
+    @AppStorage("user_address") var user_address = ""
+    
     @Environment(\.presentationMode) var presentationMode
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: DressOrder.entity(), sortDescriptors: [])
@@ -47,17 +52,17 @@ struct CartView: View {
                             }
                         }
                     }
-                    .listStyle(PlainListStyle())
-                    .navigationTitle("Мой заказ")
-//                    .navigationBarItems(trailing: Button(action: {
-//                        showAccountInfoSheet = true
-//                    }, label: {
-//                        Image(systemName: "person.circle")
-//                            .imageScale(.large)
-//                    }))
-//                    .sheet(isPresented: $showAccountInfoSheet){
-//                        AccountSheet(user_name: $user_name, user_phone_number: $user_phone_number, user_email: $user_email, user_address: $user_address, showAccountInfoSheet: $showAccountInfoSheet)
-//                    }
+                    .listStyle(.grouped)
+                    .navigationTitle("Корзина")
+                    .navigationBarItems(trailing: Button(action: {
+                        showAccountInfoSheet = true
+                    }, label: {
+                        Image(systemName: "person.circle")
+                            .imageScale(.large)
+                    }))
+                    .sheet(isPresented: $showAccountInfoSheet){
+                        AccountSheet(user_name: $user_name, user_phone_number: $user_phone_number, user_email: $user_email, user_address: $user_address, showAccountInfoSheet: $showAccountInfoSheet)
+                    }
                     
                     if(orders.count > 0) {
                         Total(orders: orders)
@@ -67,7 +72,7 @@ struct CartView: View {
                     
                 }
                 if(orders.count == 0) {
-                   EmptyCartView()
+                    EmptyCartView()
                 }
                 
                 if(showOrderConfirmAlert){

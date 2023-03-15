@@ -42,8 +42,8 @@ struct AccountSheet: View {
 struct AccountSheet_Previews: PreviewProvider {
     static var previews: some View {
         AccountSheet(
-            user_name: Binding.constant("John Doe"),
-            user_phone_number: Binding.constant("123-456-7890"),
+            user_name: Binding.constant("Юлия Замолотова"),
+            user_phone_number: Binding.constant("8 978 827 80 94"),
             user_email: Binding.constant("example@example.com"),
             user_address: Binding.constant("123 Apple Way, NY 12345"),
             showAccountInfoSheet: Binding.constant(true)).environmentObject(ViewRouter())
@@ -86,15 +86,15 @@ struct LogOutButton: View {
 struct InfoList: View {
     var body: some View {
         List{
-            Text("Order History")
+            Text("История заказов")
                 .font(.body)
                 .frame(height: 35)
             
-            Text("Payment Methods")
+            Text("Способы оплаты")
                 .font(.body)
                 .frame(height: 35)
             
-            Text("Saved Addresses")
+            Text("Адрес доставки")
                 .font(.body)
                 .frame(height: 35)
         }
@@ -104,9 +104,9 @@ struct InfoList: View {
 
 struct Footer: View {
     var body: some View {
-        HStack {
-            Text("App Version")
-            Text("1.0.1")
+        VStack {
+            Text("Zefir Dress")
+            Text("Разработчик Роман Замолотов(с).\nВсе права защищены.")
         }
         .font(.subheadline)
         .foregroundColor(.secondary)

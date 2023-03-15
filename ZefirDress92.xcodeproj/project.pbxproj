@@ -43,7 +43,6 @@
 		76EAFF8829AB3ACE001799EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EAFF8729AB3ACE001799EB /* Preview Assets.xcassets */; };
 		76EAFF9029AB7829001799EB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF8F29AB7829001799EB /* Product.swift */; };
 		76EAFF9629AB7AC2001799EB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF9529AB7AC2001799EB /* Constant.swift */; };
-		76EAFF9A29AB7C32001799EB /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF9929AB7C32001799EB /* EditButton.swift */; };
 		76EAFFA329AB860C001799EB /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFFA229AB860C001799EB /* ItemDetailView.swift */; };
 		76EAFFA629ABD722001799EB /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFFA529ABD722001799EB /* ProductView.swift */; };
 		76EAFFA829ABDBAB001799EB /* ProductGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFFA729ABDBAB001799EB /* ProductGridView.swift */; };
@@ -81,7 +80,7 @@
 		7682EBCC29C112840073142B /* AccountSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSheet.swift; sourceTree = "<group>"; };
 		7682EBCE29C112CF0073142B /* ProfileVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVIew.swift; sourceTree = "<group>"; };
 		7682EBD029C113B00073142B /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
-		76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewRouter.swift; sourceTree = "<group>"; };
+		76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabViewRouter.swift; path = Home/TabViewRouter.swift; sourceTree = "<group>"; };
 		76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSizeCheckView.swift; sourceTree = "<group>"; };
 		76EAF42829B8B821001BEEBE /* ItemPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
 		76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZefirDress92.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +90,6 @@
 		76EAFF8729AB3ACE001799EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76EAFF8F29AB7829001799EB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		76EAFF9529AB7AC2001799EB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		76EAFF9929AB7C32001799EB /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		76EAFFA229AB860C001799EB /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		76EAFFA529ABD722001799EB /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		76EAFFA729ABDBAB001799EB /* ProductGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridView.swift; sourceTree = "<group>"; };
@@ -150,6 +148,15 @@
 				765F215129BCA8860052A95B /* SkipButton.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		7678587829C1943600A0A709 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7682EBCC29C112840073142B /* AccountSheet.swift */,
+				7682EBCE29C112CF0073142B /* ProfileVIew.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		7682EBBE29C0D0160073142B /* CoreDataOrder */ = {
@@ -226,7 +233,6 @@
 				765F214529BCA2250052A95B /* ViewRouter.swift */,
 				765F215329BCAB520052A95B /* ModelData.swift */,
 				76EAFF9529AB7AC2001799EB /* Constant.swift */,
-				76EAFF9929AB7C32001799EB /* EditButton.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -234,13 +240,13 @@
 		76EAFF9B29AB7DE8001799EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */,
+				7678587829C1943600A0A709 /* Profile */,
 				7644A7F829C0319700B1E788 /* FavoritesView */,
 				765F214129BCA17E0052A95B /* Login */,
 				76EAFFA429ABD70A001799EB /* Home */,
 				76EAFFA129AB85EF001799EB /* Items */,
 				76EAFF9C29AB7DF0001799EB /* CartView */,
-				7682EBCC29C112840073142B /* AccountSheet.swift */,
-				7682EBCE29C112CF0073142B /* ProfileVIew.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,7 +284,6 @@
 			isa = PBXGroup;
 			children = (
 				76EAF42A29B8C11D001BEEBE /* ProductGrid */,
-				76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -371,7 +376,6 @@
 				763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */,
 				765F215229BCA8860052A95B /* SkipButton.swift in Sources */,
 				7678587729C1923300A0A709 /* EmptyFavoritesView.swift in Sources */,
-				76EAFF9A29AB7C32001799EB /* EditButton.swift in Sources */,
 				76EAFF9629AB7AC2001799EB /* Constant.swift in Sources */,
 				76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */,
 				765F214A29BCA2CD0052A95B /* BrandLogo.swift in Sources */,
