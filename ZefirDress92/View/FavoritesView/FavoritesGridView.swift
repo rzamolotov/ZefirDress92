@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct FavoritesGridView: View {
     
+    
     var products: [Product]
+    
+    
+    
+    
     var filteredProducts: [Product] {
         products.filter { product in
             product.isAddToFavorite
@@ -31,28 +37,7 @@ struct FavoritesGridView: View {
                 }
                 .navigationTitle("Избранное")
                 if(filteredProducts.count == 0) {
-                    VStack{
-                        Spacer()
-                        
-                        Image("Olivia")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 200, height: 200)
-                            .clipped()
-                            .cornerRadius(150)
-                            .padding(.bottom, 75)
-                            .padding(.top, 25)
-                        Text("-Zefir Dess-")
-                            .foregroundColor(.pink)
-                            .opacity(0.7)
-                            .padding(.bottom)
-                            .font(.largeTitle)
-                        Text("Тут пока ничего нет, но скоро будут платья, которые ты решишь отложить на потом")
-                            .foregroundColor(.pink)
-                            .opacity(0.9)
-                            .font(.subheadline)
-                            .padding([.leading, .trailing])
-                    }
+                   EmptyFavoritesView()
                 }
             }
         }

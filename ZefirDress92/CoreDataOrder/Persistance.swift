@@ -1,11 +1,10 @@
 //
-//  Persistence.swift
+//  Persistance.swift
 //  ZefirDress92
 //
 //  Created by Роман Замолотов on 14.03.2023.
 //
 
-import Foundation
 import CoreData
 
 struct PersistenceController {
@@ -14,13 +13,13 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<3 {
-            let newItem = Favorites(context: viewContext)
+        for _ in 0..<10 {
+            let newItem = DressOrder(context: viewContext)
             newItem.id = UUID()
-        
-            
-            //TODO: ADD Entities to favorites
-            
+            newItem.imageName = "Olivia"
+            newItem.productName = "платье amabel"
+            newItem.price = 1000
+            newItem.size = 42
         }
         do {
             try viewContext.save()
@@ -34,7 +33,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "Favorites")
+        container = NSPersistentContainer(name: "ProductData")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
@@ -54,3 +53,4 @@ struct PersistenceController {
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }
+

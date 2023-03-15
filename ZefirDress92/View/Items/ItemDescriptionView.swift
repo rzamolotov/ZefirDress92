@@ -14,6 +14,7 @@ struct ItemDescriptionView: View {
     var productIndex: Int {
         modelData.products.firstIndex(where: { $0.id == product.id })!
     }
+    @State private var presentAlert = false
     
     var body: some View {
         VStack {
@@ -40,7 +41,7 @@ struct ItemDescriptionView: View {
                 .foregroundColor(.secondary)
                 .padding([.leading, .trailing, .top])
             
-            AddToCartButton(product: self.product)
+            AddToCartButton(product: self.product, presentAlert: $presentAlert)
                 .padding([.leading, .trailing, .top])
         }
         .frame(width: screen.width, height: screen.height / 2)
