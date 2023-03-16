@@ -19,7 +19,6 @@ struct PersistenceController {
             newItem.imageName = "Olivia"
             newItem.productName = "платье amabel"
             newItem.price = 1000
-            newItem.size = 42
         }
         do {
             try viewContext.save()

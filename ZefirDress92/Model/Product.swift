@@ -9,7 +9,7 @@ import Foundation
 
 struct Product: Codable, Identifiable, Hashable {
     var id = UUID()
-    let size: [Int]
+    let size: [Size]
     let name: String
     let price_photo: Int
     let price_rent: Int
@@ -24,6 +24,16 @@ struct Product: Codable, Identifiable, Hashable {
         case fotosession = "Платья для фотосессии"
     }
     
+    enum Size: Int, CaseIterable, Codable {
+        case size38 = 38
+        case size40 = 40
+        case size42 = 42
+        case size44 = 44
+        case size46 = 46
+        case size48 = 48
+        case size50 = 50
+    }
+    
     enum CodingKeys: String, CodingKey {
         case name, size, category, price_photo, price_rent, image, description, isAddToFavorite
     }
@@ -31,7 +41,7 @@ struct Product: Codable, Identifiable, Hashable {
     
 #if DEBUG
     static let example = Product(
-        size: [42, 44, 48],
+        size: [Product.Size.size40, Product.Size.size42, Product.Size.size44],
         name: "Платье Amabel",
         price_photo: 1500,
         price_rent: 2500,

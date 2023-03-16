@@ -19,7 +19,7 @@ struct ItemSizeCheckView: View {
                 Button {
                     //TODO: Сделать переходы на размеры по нажатию размера
                 } label: {
-                    Text("\(sizes)")
+                    Text("\(sizes.rawValue)")
                         .font(.footnote)
                         .fontWeight(.heavy)
                         .foregroundColor(.pink)

@@ -35,7 +35,7 @@ struct ProductView: View {
                         .foregroundColor(.black)
                         .opacity(0.9)
                     ForEach(product.size, id: \.self) { sizes in
-                        Text("\(sizes)")
+                        Text("\(sizes.rawValue)")
                             .font(.caption)
                             .fontWeight(.bold)
                             .foregroundColor(.pink)

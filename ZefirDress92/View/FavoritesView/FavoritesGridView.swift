@@ -10,7 +10,6 @@ import CoreData
 
 struct FavoritesGridView: View {
     
-    
     var products: [Product]
     
     var filteredProducts: [Product] {

@@ -9,12 +9,11 @@ import SwiftUI
 
 struct FavoriteButtonView: View {
     @Binding var isSet: Bool
+    @Environment(\.managedObjectContext) private var viewContext
     
     var body: some View {
         Button {
             isSet.toggle()
-            
-            
             
         } label: {
             Image(systemName: isSet ? "heart.fill" : "heart")
