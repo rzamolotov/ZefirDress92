@@ -1,20 +1,25 @@
 //
-//  ProductGridView.swift
+//  SizeGridView.swift
 //  ZefirDress92
 //
-//  Created by Роман Замолотов on 26.02.2023.
+//  Created by Роман Замолотов on 29.03.2023.
 //
 
 import SwiftUI
 
-struct ProductGridView: View {
-    @EnvironmentObject var viewRouter: ViewRouter
+struct SizeGridView: View {
+    var sizeName: String
     var products: [Product]
-   
+    
     var body: some View {
-        
-        NavigationView{
-            ScrollView {
+        ScrollView{
+            VStack(alignment: .leading) {
+                HStack{
+                    Text(sizeName)
+                        .font(.headline)
+                        .padding(.leading, 15)
+                        .padding(.top, 10)
+                }
                 LazyVGrid(columns: gridLayout, spacing: columnSpacing) {
                     ForEach(products) { product in
                         NavigationLink {
@@ -22,23 +27,18 @@ struct ProductGridView: View {
                         } label: {
                             ProductView(product: product)
                         }
-                        
                     }
+                    
                 }
             }
-            .navigationBarTitle("Все платья")
-            .padding([.trailing, .leading])
         }
     }
 }
 
-
-
-struct ProductGridView_Previews: PreviewProvider {
+struct SizeGridView_Previews: PreviewProvider {
     static var products = ModelData().products
     
     static var previews: some View {
-        ProductGridView(products: products)
-            .environmentObject(ViewRouter())
+        SizeGridView(sizeName: "42 размер", products: Array(products.prefix(20)))
     }
 }

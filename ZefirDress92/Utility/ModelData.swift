@@ -11,10 +11,16 @@ final class ModelData: ObservableObject {
     
     @Published var products: [Product] = load("product.json")
     
-    var categories: [String: [Product]] {
+//    var categories: [String: [Product]] {
+//        Dictionary(
+//            grouping: products,
+//            by: { $0.category.rawValue }
+//        )
+//    }
+    var sizes: [String: [Product]] {
         Dictionary(
             grouping: products,
-            by: { $0.category.rawValue }
+            by: { $0.size.first!.rawValue }
         )
     }
 }
@@ -36,8 +42,10 @@ func load<T: Decodable>(_ filename: String) -> T {
 
     do {
         let decoder = JSONDecoder()
-        return try decoder.decode(T.self, from: data)
+        let decodedData = try decoder.decode(T.self, from: data) // явное приведение типа
+        return decodedData
     } catch {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
+

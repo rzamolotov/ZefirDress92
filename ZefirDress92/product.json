@@ -3,7 +3,7 @@
     {
         "id": "21551666",
         "title": "Платье Alexa",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -14,12 +14,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21556590",
         "title": "Платье Adele",
-        "size": [40, 42, 44, 46, 48, 50],
+        "size": ["40", "42", "44", "46", "48", "50"],
         "price_photo": 1200,
         "deposit": 1000,
         "description": "Будуарное платье для фотосессии беременности и не только. Воздушное, летящее, состоит из прозрачных шлейфов и лифа на резинке.",
@@ -29,12 +29,12 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21580507",
         "title": "Платье Alexandra",
-        "size": [44, 46],
+        "size": ["44", "46"],
         "price_photo": 1500,
         "price_rent": 2500,
         "deposit": 1000,
@@ -45,12 +45,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21580674",
         "title": "Платье Amanda",
-        "size": [42],
+        "size": ["42"],
         "price_photo": 1500,
         "price_rent": 2500,
         "deposit": 1000,
@@ -61,12 +61,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21581933",
         "title": "Платье Amily",
-        "size": [42, 44],
+        "size": ["42", "44"],
         "price_photo": 1300,
         "price_rent": 2500,
         "deposit": 1000,
@@ -77,12 +77,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21581947",
         "title": "Платье Annet",
-        "size": [44, 46, 48, 50],
+        "size": ["44", "46", "48", "50"],
         "price_photo": 1700,
         "deposit": 1000,
         "description": "Будуарное платье малинового цвета, верх декорирован белым кружевом. Юбка с длинным шлейфом из многослойного фатина.",
@@ -92,12 +92,12 @@
         "price": "1700 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21581954",
         "title": "Платье Anna",
-        "size": [46, 46],
+        "size": ["46"],
         "price_photo": 1000,
         "price_rent": 1300,
         "deposit": 1000,
@@ -108,12 +108,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21581983",
         "title": "Платье Angel",
-        "size": [46, 48],
+        "size": ["46", "48"],
         "price_photo": 1400,
         "price_rent": 2500,
         "deposit": 1000,
@@ -124,12 +124,12 @@
         "price": "1400 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21582143",
         "title": "Платье Anny",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1000,
         "price_rent": 2000,
         "deposit": 1000,
@@ -140,12 +140,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21582162",
         "title": "Платье Ariel",
-        "size": [42, 44, 46],
+        "size": ["42", "44", "46"],
         "price_photo": 1000,
         "deposit": 1000,
         "description": "Роскошное зеленое платье с длинным шлейфом, сзади шнуровка, есть рукава.",
@@ -155,12 +155,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21582229",
         "title": "Платье Aurora",
-        "size": [44, 46],
+        "size": ["44", "46"],
         "price_photo": 1300,
         "price_rent": 2500,
         "deposit": 1000,
@@ -171,12 +171,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21582261",
         "title": "Платье Baby",
-        "size": [44, 46, 48, 50],
+        "size": ["44", "46", "48", "50"],
         "price_photo": 1000,
         "deposit": 1000,
         "description": "Кружевное платье в пол универсального размера с небольшими рукавами.",
@@ -186,12 +186,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21582881",
         "title": "Детское платье BabyGirl_1",
-        "size": [12],
+        "size": ["12"],
         "price_photo": 500,
         "price_rent": 800,
         "deposit": 500,
@@ -202,12 +202,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21584362",
         "title": "Детское платье BabyGirl_2",
-        "size": [12],
+        "size": ["12"],
         "price_photo": 500,
         "price_rent": 800,
         "deposit": 500,
@@ -218,12 +218,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21584363",
         "title": "Детское платье BabyGirl_3",
-        "size": [8],
+        "size": ["8"],
         "price_photo": 500,
         "price_rent": 800,
         "deposit": 500,
@@ -234,12 +234,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21584364",
         "title": "Детское платье BabyGirl_4",
-        "size": [8],
+        "size": ["8"],
         "price_photo": 500,
         "price_rent": 800,
         "deposit": 500,
@@ -250,12 +250,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21584465",
         "title": "Детское платье BabyGirl_5",
-        "size": [8],
+        "size": ["8"],
         "price_photo": 200,
         "deposit": 500,
         "description": "Размер на 3 месяца Джинсовое платье для вашей малышки, розовый тонкий пояс и розовый подъюбник.",
@@ -265,12 +265,12 @@
         "price": "200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21584479",
         "title": "Детское платье BabyGirl_6",
-        "size": [8],
+        "size": ["8"],
         "price_photo": 300,
         "price_rent": 500,
         "deposit": 500,
@@ -281,12 +281,12 @@
         "price": "300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21584507",
         "title": "Детское платье BabyGirl_7",
-        "size": [8],
+        "size": ["8"],
         "price_photo": 300,
         "deposit": 500,
         "description": "Размер 6-9 месяцев Детское платье для малышек от 6 до 9 месяцев, белый кружевной верх и пышная юбка из нескольких слоев фатина.",
@@ -296,12 +296,12 @@
         "price": "300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21584512",
         "title": "Детское платье BabyGirl_8",
-        "size": [86, 88, 90, 92],
+        "size": ["86", "88", "90", "92"],
         "price_photo": 500,
         "deposit": 300,
         "description": "Изумительное пышное платье для девочки выполнено из гипюра, атласа и мягкой сеточки. Лиф и юбка полностью на хлопковой подкладке! Пояс дополнен съемным декоративным цветочком-брошкой. Юбка-солнце платья очень пышная, выполнена с многочисленными ярусами сборками и рюшами. Юбка мягкая, не колет и не мнется!",
@@ -311,12 +311,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21584519",
         "title": "Детское боди с юбкой Santa Baby",
-        "size": [74, 76, 78, 80],
+        "size": ["74", "76", "78", "80"],
         "price_photo": 300,
         "deposit": 500,
         "description": "Размер 74-80 ⠀ Стоимость аренды Фотосессия 300 ₽ (1 сутки) ⠀ Залог 500 ₽ (возвратный) Описание Хлопковое детское боди с юбкой в новогодней тематике.",
@@ -326,12 +326,12 @@
         "price": "300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Детские"
+        "category": ["Детские"]
     },
     {
         "id": "21584572",
         "title": "Платье Bella",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -342,12 +342,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21584954",
         "title": "Платье Betty",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -358,12 +358,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21587590",
         "title": "Платье Beverly",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -374,12 +374,12 @@
         "price": "1400 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21588470",
         "title": "Платье Camilla",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -390,12 +390,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21588472",
         "title": "Платье Candy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -406,12 +406,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21588577",
         "title": "Платье Cherry",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -422,12 +422,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21588611",
         "title": "Платье Cindy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -438,12 +438,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21591512",
         "title": "Платье Cristall",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -454,12 +454,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21595253",
         "title": "Платье Daisy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -470,12 +470,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21595286",
         "title": "Платье Denise",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -486,12 +486,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21595344",
         "title": "Платье Elizabeth",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -502,12 +502,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21595350",
         "title": "Платье Elle",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -518,12 +518,12 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21595359",
         "title": "Платье Elza",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -534,12 +534,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21596022",
         "title": "Платье Emily",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -550,12 +550,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21596044",
         "title": "Платье Eva",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -566,12 +566,12 @@
         "price": "1700 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21596078",
         "title": "Платье Fenix",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -582,12 +582,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21596150",
         "title": "Платье Freya",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -598,12 +598,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21596190",
         "title": "Платье Gold",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -614,12 +614,12 @@
         "price": "1100 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21596298",
         "title": "Платье Grace",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -630,12 +630,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21596909",
         "title": "Будуарное платье Grey",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -646,12 +646,12 @@
         "price": "1600 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21598991",
         "title": "Будуарное платье Hollywood",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -662,12 +662,12 @@
         "price": "2500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21599105",
         "title": "Платье Janet",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -678,12 +678,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21599126",
         "title": "Будуарное платье Jenny",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -694,12 +694,12 @@
         "price": "1600 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21603005",
         "title": "Платье Jill",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -710,12 +710,12 @@
         "price": "1400 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21603096",
         "title": "Платье Joana",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -726,12 +726,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21603622",
         "title": "Платье Judy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -742,12 +742,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21603623",
         "title": "Платье June",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -758,12 +758,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21603650",
         "title": "Платье Karolina",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -774,12 +774,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21603692",
         "title": "Платье Kelly",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -790,12 +790,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21604296",
         "title": "Платье Kleo",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -806,12 +806,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21604329",
         "title": "Платье LadyDi",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -822,12 +822,12 @@
         "price": "1100 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21604916",
         "title": "Платье Lassy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -838,12 +838,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21606842",
         "title": "Платье Lauren",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -854,12 +854,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21606863",
         "title": "Платье Leya",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -870,12 +870,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21606915",
         "title": "Платье Jennifer",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -886,12 +886,12 @@
         "price": "3000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21606945",
         "title": "Платье Liza",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -902,12 +902,12 @@
         "price": "1400 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21607453",
         "title": "Платье Luna",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -918,12 +918,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21608010",
         "title": "Платье Madina",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -934,13 +934,13 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
         
     },
     {
         "id": "21608101",
         "title": "Платье Marta",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -951,12 +951,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21608380",
         "title": "Платье Melania",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -967,12 +967,12 @@
         "price": "2500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21608993",
         "title": "Платье Miya",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -983,12 +983,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21609004",
         "title": "Платье Monica",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -999,12 +999,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21609010",
         "title": "Платье Nancy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1015,12 +1015,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21609539",
         "title": "Платье Naomi",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1031,12 +1031,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21609599",
         "title": "Платье Nika",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1047,12 +1047,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21614829",
         "title": "Платье Paola",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1063,12 +1063,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21614835",
         "title": "Платье Rachel",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1079,12 +1079,12 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21614846",
         "title": "Платье Red queen",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1095,12 +1095,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21615375",
         "title": "Платье Red",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1111,12 +1111,12 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21615378",
         "title": "Платье Romantic",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1127,12 +1127,12 @@
         "price": "1600 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21615379",
         "title": "Платье Sabrina",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1143,12 +1143,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21616166",
         "title": "Платье Samantha",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1159,13 +1159,13 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
         
     },
     {
         "id": "21616405",
         "title": "Платье Scarlett",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1176,12 +1176,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21617167",
         "title": "Платье Selin",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1192,12 +1192,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21617590",
         "title": "Платье Shine",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1208,12 +1208,12 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21619249",
         "title": "Платье Stefany",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1224,12 +1224,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21620562",
         "title": "Платье Stella",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1240,12 +1240,12 @@
         "price": "1100 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21620629",
         "title": "Платье Sun",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1256,12 +1256,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21622499",
         "title": "Платье Superstar",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1272,12 +1272,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21622533",
         "title": "Платье Taffy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1288,12 +1288,12 @@
         "price": "1700 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21622579",
         "title": "Платье Tara",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1304,12 +1304,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21622636",
         "title": "Платье Valerie",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1320,12 +1320,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21623329",
         "title": "Платье Veronica",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1336,12 +1336,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21623334",
         "title": "Платье Vestido",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1352,12 +1352,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21623908",
         "title": "Платье Vivian",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1368,12 +1368,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21623929",
         "title": "Платье Wendy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1384,12 +1384,12 @@
         "price": "1500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21623959",
         "title": "Платье White Angel",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1400,12 +1400,12 @@
         "price": "1100 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21624055",
         "title": "Платье Yellowlove",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1416,12 +1416,12 @@
         "price": "1600 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21624181",
         "title": "Платье Амели",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1432,12 +1432,12 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21624191",
         "title": "Платье Tiffany",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1448,12 +1448,12 @@
         "price": "1600 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21624250",
         "title": "Платье Амелия",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1464,12 +1464,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21624262",
         "title": "Платье будуарное",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1480,12 +1480,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21624722",
         "title": "Платье Виктория",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1496,12 +1496,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625063",
         "title": "Платье Джессика",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1512,12 +1512,12 @@
         "price": "800 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625088",
         "title": "Платье Элен",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1528,12 +1528,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625098",
         "title": "Платье Холли",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1544,12 +1544,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625101",
         "title": "Платье Maria",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1560,12 +1560,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625111",
         "title": "Платье Estel",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1576,12 +1576,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625118",
         "title": "Платье Sofico",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1592,12 +1592,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625127",
         "title": "Платье Olivia",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1608,12 +1608,12 @@
         "price": "3500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625139",
         "title": "Платье Sintia",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1624,12 +1624,12 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625168",
         "title": "Юбка Black queen",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1640,12 +1640,12 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625655",
         "title": "Боди Alissa",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1656,12 +1656,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625693",
         "title": "Юбка Emma",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1672,12 +1672,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625839",
         "title": "Платье Nikki",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1688,12 +1688,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21625971",
         "title": "Платье Molly",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1704,12 +1704,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21626042",
         "title": "Платье Brianna",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1720,12 +1720,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21626056",
         "title": "Платье Kayla",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1736,12 +1736,12 @@
         "price": "1000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21626506",
         "title": "Платье Megan",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1752,11 +1752,11 @@
         "price": "1200 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"    },
+        "category": ["Платья для бала"]    },
     {
         "id": "21628005",
         "title": "Платье Lucy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1767,12 +1767,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21628690",
         "title": "Платье Madeline",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1783,12 +1783,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21637385",
         "title": "Платье Red Angel",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1799,12 +1799,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21637398",
         "title": "Платье Chloe",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1815,12 +1815,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21637846",
         "title": "Платье Tracey",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1831,12 +1831,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21637906",
         "title": "Платье Sienna",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1847,12 +1847,12 @@
         "price": "1600 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21696303",
         "title": "Платье Lillian",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1863,12 +1863,12 @@
         "price": "2000 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21697191",
         "title": "Платье Rosie",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1879,12 +1879,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21697270",
         "title": "Платье Lily",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1895,12 +1895,12 @@
         "price": "1300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21703853",
         "title": "Топ Crazy",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1911,12 +1911,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21705001",
         "title": "Юбка MiniBlack",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1927,12 +1927,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21705669",
         "title": "Боди One",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1943,12 +1943,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21706714",
         "title": "Шляпа серая",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1959,12 +1959,12 @@
         "price": "100 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21719336",
         "title": "Платье Amabel",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1975,12 +1975,12 @@
         "price": "2500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21727362",
         "title": "Шляпа с широкими полями",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -1991,12 +1991,12 @@
         "price": "300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21731952",
         "title": "Топ Gina",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -2007,12 +2007,12 @@
         "price": "500 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21731960",
         "title": "Шляпа розовая",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -2023,12 +2023,12 @@
         "price": "100 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21745944",
         "title": "Детское платье Eva mini",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -2039,12 +2039,12 @@
         "price": "700 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21747848",
         "title": "Сумка для фотосессии",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -2055,12 +2055,12 @@
         "price": "300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21747874",
         "title": "Детские туфельки",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -2071,12 +2071,12 @@
         "price": "300 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     },
     {
         "id": "21750271",
         "title": "Аксессуары",
-        "size": [40, 42],
+        "size": ["40", "42"],
         "price_photo": 1500,
         "price_rent": 3000,
         "deposit": 1000,
@@ -2087,7 +2087,7 @@
         "price": "100 RUB",
         "condition": "new",
         "isAddToFavorite": false,
-        "category": "Платья для бала"
+        "category": ["Платья для бала"]
     }
 ]
  

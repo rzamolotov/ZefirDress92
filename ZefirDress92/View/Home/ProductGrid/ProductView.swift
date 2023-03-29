@@ -15,10 +15,11 @@ struct ProductView: View {
             AsyncImage(url: URL(string: product.image_link)) { image in
                 image
                     .resizable()
-                    .scaledToFill()
-                    .frame(width: screen.width / 2.3, height: screen.height / 4)
-                    .padding(.bottom)
                     .cornerRadius(10)
+                    .frame(width: screen.width / 2.5, height: screen.height / 4)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.bottom)
+                    
                     .shadow(radius: 2)
             } placeholder: {
                 ProgressView()

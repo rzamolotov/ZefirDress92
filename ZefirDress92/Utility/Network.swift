@@ -11,16 +11,25 @@ import Combine
 
 class Network: ObservableObject {
     
-    @Published var dataProduct: Product?
-    @Published var isLoading = true
-    @Published var searchQuery = ""
+    @Published var dataProduct: [Product] = []
     
-    init() {
-        self.fetchProductData()
+    var categories: [String: [Product.Category]] {
+        Dictionary(
+            grouping: dataProduct.flatMap(\.category),
+            by: { $0.rawValue }
+        )
+    }
+    var sizes: [String: [Product]] {
+        Dictionary(
+            grouping: dataProduct,
+            by: { $0.size.first!.rawValue }
+        )
     }
     
+    init() {}
+    
     func fetchProductData(){
-        guard let url = URL(string: "https://run.mocky.io/v3/f7f99d04-4971-45d5-92e0-70333383c239") else {
+        guard let url = URL(string: "https://run.mocky.io/v3/ca646140-cd48-4c54-a349-d894374da6cd") else {
             fatalError("INVALID URL")
         }
         
@@ -29,7 +38,7 @@ class Network: ObservableObject {
                 return
             }
             
-            let result = try? JSONDecoder().decode(Product.self, from: data)
+            let result = try? JSONDecoder().decode([Product].self, from: data)
             
             if let result = result {
                 DispatchQueue.main.async {
@@ -39,4 +48,7 @@ class Network: ObservableObject {
             }
         }.resume()
     }
+    func loadData() {
+          fetchProductData()
+      }
 }

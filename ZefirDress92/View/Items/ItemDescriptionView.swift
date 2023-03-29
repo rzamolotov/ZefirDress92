@@ -10,9 +10,10 @@ import SwiftUI
 struct ItemDescriptionView: View {
     
     @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var network: Network
     var product: Product
     var productIndex: Int {
-        modelData.products.firstIndex(where: { $0.id == product.id })!
+        network.dataProduct.firstIndex(where: { $0.id == product.id })!
     }
     @State private var presentAlert = false
     
@@ -53,5 +54,6 @@ struct ItemDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         ItemDescriptionView(product: Product.example)
             .environmentObject(ModelData())
+            .environmentObject(Network())
     }
 }
