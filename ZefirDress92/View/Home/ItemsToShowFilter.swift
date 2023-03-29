@@ -1,56 +1,56 @@
+////
+////  ItemsToShowFilter.swift
+////  ZefirDress92
+////
+////  Created by Роман Замолотов on 16.03.2023.
+////
 //
-//  ItemsToShowFilter.swift
-//  ZefirDress92
+//import SwiftUI
 //
-//  Created by Роман Замолотов on 16.03.2023.
+//struct ItemsToShowFilter: View {
+//    
+//    let sections: [Product.Size] = Product.Size.allCases
+//    @State var selected: Product.Size = .size42
+//    
+//    var body: some View {
+//        VStack() {
+//            FilterView(selectedSize: $selected, sizes: sections)
+//            switch selected {
+//            case .size38:
+//                ForEach(sections, id: \.self) { product in
+//                    Text("\(product.rawValue)")
+//                }
+//            case .size40:
+//                ForEach(sections, id: \.self) { product in
+//                    Text("\(product.rawValue)")
+//                }
+//            case .size42:
+//                ForEach(sections, id: \.self) { product in
+//                    Text("\(product.rawValue)")
+//                }
+//            case .size44:
+//                ForEach(sections, id: \.self) { product in
+//                    Text("\(product.rawValue)")
+//                }
+//            case .size46:
+//                ForEach(sections, id: \.self) { product in
+//                    Text("\(product.rawValue)")
+//                }
+//            case .size48:
+//                ForEach(sections, id: \.self) { product in
+//                    Text("\(product.rawValue)")
+//                }
+//            case .size50:
+//                ForEach(sections, id: \.self) { product in
+//                    Text("\(product.rawValue)")
+//                }
+//            }
+//        }
+//    }
+//}
 //
-
-import SwiftUI
-
-struct ItemsToShowFilter: View {
-    
-    let sections: [Product.Size] = Product.Size.allCases
-    @State var selected: Product.Size = .size42
-    
-    var body: some View {
-        VStack() {
-            FilterView(items: sections, selectedItem: $selected)
-            switch selected {
-            case .size38:
-                ForEach(38, id: \.self) { item in
-                    Text(item)
-                }
-            case .size40:
-                ForEach(40, id: \.self) { item in
-                    Text(item)
-                }
-            case .size42:
-                ForEach(42, id: \.self) { item in
-                    Text(item)
-                }
-            case .size44:
-                ForEach(44, id: \.self) { item in
-                    Text(item)
-                }
-            case .size46:
-                ForEach(46, id: \.self) { item in
-                    Text(item)
-                }
-            case .size48:
-                ForEach(48, id: \.self) { item in
-                    Text(item)
-                }
-            case .size50:
-                ForEach(50, id: \.self) { item in
-                    Text(item)
-                }
-            }
-        }
-    }
-}
-
-struct ItemsToShowFilter_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemsToShowFilter()
-    }
-}
+//struct ItemsToShowFilter_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ItemsToShowFilter()
+//    }
+//}

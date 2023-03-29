@@ -10,9 +10,9 @@ import SwiftUI
 struct ProductGridView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     var products: [Product]
-    
+   
     var body: some View {
-  
+        
         NavigationView{
             ScrollView {
                 LazyVGrid(columns: gridLayout, spacing: columnSpacing) {
@@ -26,11 +26,14 @@ struct ProductGridView: View {
                     }
                 }
             }
+//            .searchable(text: $searchQuery)
             .navigationBarTitle("Все платья")
             .padding([.trailing, .leading])
         }
     }
 }
+
+
 
 struct ProductGridView_Previews: PreviewProvider {
     static var products = ModelData().products

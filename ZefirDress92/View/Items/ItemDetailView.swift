@@ -14,23 +14,21 @@ struct ItemDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: 20) {
-                TabView {
-                    ForEach(product.image, id: \.self) { images in
-                        Image(images)
-                            .resizable()
-                            .scaledToFill()
-                    }
-                }
-                .tabViewStyle(.page(indexDisplayMode: .always))
-                .shadow(radius: 5)
-                .frame(width: screen.width, height: screen.height / 1.8)
                 
+                AsyncImage(url: URL(string: product.image_link)) { image in
+                    image
+                        .resizable()
+                        .shadow(radius: 5)
+                        .frame(width: screen.width, height: screen.height / 1.8)
+                } placeholder: {
+                    ProgressView()
+                }
                 ItemDescriptionView(product: product)
             }
-            .navigationBarTitle(
-                Text(product.name),
-                displayMode: .automatic)
         }
+        .navigationBarTitle(
+            Text(product.title),
+            displayMode: .automatic)
     }
 }
 

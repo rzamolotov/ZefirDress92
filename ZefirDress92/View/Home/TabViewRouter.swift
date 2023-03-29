@@ -10,7 +10,6 @@ import SwiftUI
 struct TabViewRouter: View {
     @State private var selectedTab = 1 //for programmatic switching
     @EnvironmentObject var modelData: ModelData
-    
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: DressOrder.entity(), sortDescriptors: [])
     var orders: FetchedResults<DressOrder>

@@ -16,10 +16,10 @@ struct AddToCartButton: View {
         Button(action: {
             //TODO: ADD TO CART
             let newOrder = DressOrder(context: viewContext)
-            newOrder.imageName = product.image[0]
-            newOrder.productName = product.name
+            newOrder.imageName = product.image_link
+            newOrder.productName = product.title
             newOrder.id = product.id
-            newOrder.price = Int16(product.price_rent)
+            newOrder.price = Int16(product.price_photo)
             do {
                 try viewContext.save()
                 print("order saved")
@@ -35,7 +35,7 @@ struct AddToCartButton: View {
                 HStack{
                     Image(systemName: "cart")
                         .font(.title)
-                    Text("Добавить в корзину \(product.name)")
+                    Text("Добавить в корзину \(product.title)")
                 }
                 .foregroundColor(.white)
             }

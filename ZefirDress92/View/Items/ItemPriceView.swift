@@ -19,7 +19,7 @@ struct ItemPriceView: View {
     var body: some View {
         Picker("Выебрете тип аренды и стоимость", selection: $selectedEvent) {
             Text("Фотосессия \(product.price_photo) руб.").tag(Event.photo)
-            Text("Мероприятие \(product.price_rent) руб.").tag(Event.event)
+            Text("Мероприятие \(product.price_rent ?? 0) руб." ).tag(Event.event)
         }
         .pickerStyle(.segmented)
         .foregroundColor(.pink)

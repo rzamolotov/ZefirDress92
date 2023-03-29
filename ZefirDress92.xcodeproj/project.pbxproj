@@ -21,6 +21,7 @@
 		765F215429BCAB520052A95B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215329BCAB520052A95B /* ModelData.swift */; };
 		765F215629BCB6910052A95B /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215529BCB6910052A95B /* CategoryRow.swift */; };
 		765F215829BCBAE30052A95B /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215729BCBAE30052A95B /* CategoryList.swift */; };
+		765F581429D466B500042727 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F581329D466B500042727 /* Network.swift */; };
 		7678586D29C18DC200A0A709 /* PlaceOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678586C29C18DC200A0A709 /* PlaceOrder.swift */; };
 		7678586F29C18E7A00A0A709 /* OrderInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678586E29C18E7A00A0A709 /* OrderInformation.swift */; };
 		7678587129C1905000A0A709 /* PaymentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678587029C1905000A0A709 /* PaymentInformation.swift */; };
@@ -38,6 +39,7 @@
 		769E98F729C3A4E200A6DA4C /* HorizontalFilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E98F629C3A4E200A6DA4C /* HorizontalFilterItem.swift */; };
 		769E98F929C3AB7100A6DA4C /* ItemsToShowFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E98F829C3AB7100A6DA4C /* ItemsToShowFilter.swift */; };
 		76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */; };
+		76A805BC29C4306A00485903 /* ProductGrid+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A805BB29C4306A00485903 /* ProductGrid+Search.swift */; };
 		76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */; };
 		76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42829B8B821001BEEBE /* ItemPriceView.swift */; };
 		76EAFF8129AB3ACC001799EB /* ZefirDress92App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF8029AB3ACC001799EB /* ZefirDress92App.swift */; };
@@ -70,6 +72,8 @@
 		765F215329BCAB520052A95B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		765F215529BCB6910052A95B /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		765F215729BCBAE30052A95B /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		765F581329D466B500042727 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		765F581529D4687400042727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7678586C29C18DC200A0A709 /* PlaceOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrder.swift; sourceTree = "<group>"; };
 		7678586E29C18E7A00A0A709 /* OrderInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInformation.swift; sourceTree = "<group>"; };
 		7678587029C1905000A0A709 /* PaymentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInformation.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		769E98F629C3A4E200A6DA4C /* HorizontalFilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFilterItem.swift; sourceTree = "<group>"; };
 		769E98F829C3AB7100A6DA4C /* ItemsToShowFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsToShowFilter.swift; sourceTree = "<group>"; };
 		76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabViewRouter.swift; path = Home/TabViewRouter.swift; sourceTree = "<group>"; };
+		76A805BB29C4306A00485903 /* ProductGrid+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductGrid+Search.swift"; sourceTree = "<group>"; };
 		76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSizeCheckView.swift; sourceTree = "<group>"; };
 		76EAF42829B8B821001BEEBE /* ItemPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
 		76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZefirDress92.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				76EAFFA729ABDBAB001799EB /* ProductGridView.swift */,
+				76A805BB29C4306A00485903 /* ProductGrid+Search.swift */,
 			);
 			path = AllDressView;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 		76EAFF7F29AB3ACC001799EB /* ZefirDress92 */ = {
 			isa = PBXGroup;
 			children = (
+				765F581529D4687400042727 /* Info.plist */,
 				76EAFF9B29AB7DE8001799EB /* View */,
 				76EAFF9429AB7AAD001799EB /* Utility */,
 				76EAFF8E29AB3AF7001799EB /* Model */,
@@ -239,6 +246,7 @@
 				765F214529BCA2250052A95B /* ViewRouter.swift */,
 				765F215329BCAB520052A95B /* ModelData.swift */,
 				76EAFF9529AB7AC2001799EB /* Constant.swift */,
+				765F581329D466B500042727 /* Network.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -377,6 +385,7 @@
 				7678587529C191D800A0A709 /* EmptyCartView.swift in Sources */,
 				76EAFFB429AD4DEB001799EB /* ItemDescriptionView.swift in Sources */,
 				76EAFFA329AB860C001799EB /* ItemDetailView.swift in Sources */,
+				765F581429D466B500042727 /* Network.swift in Sources */,
 				7678586F29C18E7A00A0A709 /* OrderInformation.swift in Sources */,
 				76EAFF8329AB3ACC001799EB /* MainView.swift in Sources */,
 				769E98F929C3AB7100A6DA4C /* ItemsToShowFilter.swift in Sources */,
@@ -403,6 +412,7 @@
 				76EAFF9029AB7829001799EB /* Product.swift in Sources */,
 				76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */,
 				765F214829BCA2500052A95B /* Helpers.swift in Sources */,
+				76A805BC29C4306A00485903 /* ProductGrid+Search.swift in Sources */,
 				7678587129C1905000A0A709 /* PaymentInformation.swift in Sources */,
 				7682EBC029C0D03A0073142B /* Persistance.swift in Sources */,
 				765F214C29BCA3570052A95B /* UserName.swift in Sources */,
@@ -546,6 +556,7 @@
 				DEVELOPMENT_TEAM = 9S5AJR5C22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZefirDress92/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -579,6 +590,7 @@
 				DEVELOPMENT_TEAM = 9S5AJR5C22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZefirDress92/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

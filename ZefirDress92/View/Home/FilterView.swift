@@ -1,29 +1,32 @@
+////
+////  FilterView.swift
+////  ZefirDress92
+////
+////  Created by Роман Замолотов on 16.03.2023.
+////
 //
-//  FilterView.swift
-//  ZefirDress92
+//import SwiftUI
 //
-//  Created by Роман Замолотов on 16.03.2023.
+//struct FilterView: View {
+//    @Binding var selectedSize: Product.Size
+//    var sizes: [Product.Size]
+//    
+//    var body: some View {
+//        ScrollView(.horizontal, showsIndicators: false) {
+//            HStack {
+//                ForEach(sizes, id: \.self) { size in
+//                    HorizontalFilterItem(filteredSize: selectedSize, selectedSize: $selectedSize)
+//                        .onTapGesture {
+//                            selectedSize = size
+//                        }
+//                }
+//            }
+//        }
+//    }
+//}
 //
-
-import SwiftUI
-
-struct FilterView: View {
-    @Binding var slectedSize: Product.Size
-    var sizes: [Product.Size]
-    
-    var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack {
-                ForEach(sizes, id: \.self) { size in
-                    Text("\(size.rawValue)")
-                }
-            }
-        }
-    }
-}
-
-struct FilterView_Previews: PreviewProvider {
-    static var previews: some View {
-        FilterView(slectedSize: .constant(.size42), sizes: Product.Size.allCases)
-    }
-}
+//struct FilterView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FilterView(selectedSize: .constant(.size42), sizes: Product.Size.allCases)
+//    }
+//}

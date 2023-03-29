@@ -12,15 +12,20 @@ struct ProductView: View {
     
     var body: some View {
         VStack {
-            Image(product.image[0])
-                .resizable()
-                .scaledToFill()
-                .frame(width: screen.width / 2.3, height: screen.height / 4)
-                .padding(.bottom)
-                .cornerRadius(10)
-                .shadow(radius: 2)
+            AsyncImage(url: URL(string: product.image_link)) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: screen.width / 2.3, height: screen.height / 4)
+                    .padding(.bottom)
+                    .cornerRadius(10)
+                    .shadow(radius: 2)
+            } placeholder: {
+                ProgressView()
+            }
+            
             VStack(spacing: 2) {
-                Text(product.name)
+                Text(product.title)
                     .font(.headline)
                     .fontWeight(.bold)
                     .foregroundColor(.black)
