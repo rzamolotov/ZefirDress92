@@ -35,7 +35,7 @@ struct ProductGridView: View {
 
 
 struct ProductGridView_Previews: PreviewProvider {
-    static var products = ModelData().products
+    static var products = Network().dataProduct
     
     static var previews: some View {
         ProductGridView(products: products)

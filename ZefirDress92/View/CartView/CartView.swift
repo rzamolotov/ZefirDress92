@@ -15,7 +15,7 @@ struct CartView: View {
     @AppStorage("user_address") var user_address = ""
     
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var network: Network
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: DressOrder.entity(), sortDescriptors: [])
     var orders: FetchedResults<DressOrder>
@@ -91,7 +91,7 @@ struct CartView_Previews: PreviewProvider {
         NavigationView {
             CartView()
                 .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-                .environmentObject(ModelData())
+                .environmentObject(Network())
         }
     }
 }

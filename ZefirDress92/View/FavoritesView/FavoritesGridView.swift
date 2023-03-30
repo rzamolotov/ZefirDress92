@@ -11,12 +11,6 @@ import CoreData
 struct FavoritesGridView: View {
     
     var products: [Product]
-    @State var showAccountInfoSheet: Bool = false
-    @State var showOrderConfirmAlert: Bool = false
-    @AppStorage("user_name") var user_name = ""
-    @AppStorage("user_phone_number") var user_phone_number = ""
-    @AppStorage("user_email") var user_email = ""
-    @AppStorage("user_address") var user_address = ""
     
     var filteredProducts: [Product] {
         products.filter { product in
@@ -41,14 +35,13 @@ struct FavoritesGridView: View {
                 if(filteredProducts.count == 0) {
                     EmptyFavoritesView()
                 }
-                    
             }
         }
     }
 }
 
 struct FavoritesGridView_Previews: PreviewProvider {
-    static var products = ModelData().products
+    static var products = Network().dataProduct
     static var previews: some View {
         FavoritesGridView(products: products)
     }

@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct ItemDescriptionView: View {
-    
-    @EnvironmentObject var modelData: ModelData
+
     @EnvironmentObject var network: Network
     var product: Product
     var productIndex: Int {
-        network.dataProduct.firstIndex(where: { $0.id == product.id })!
+        network.dataProduct.firstIndex(where: { $0.id == product.id }) ?? 0
     }
     @State private var presentAlert = false
     
     var body: some View {
         VStack {
             HStack {
-                FavoriteButtonView(isSet: $modelData.products[productIndex].isAddToFavorite)
+                FavoriteButtonView(isSet: $network.dataProduct[productIndex].isAddToFavorite)
                     .padding([.leading, .trailing])
                 
                 
@@ -42,7 +41,7 @@ struct ItemDescriptionView: View {
                 .foregroundColor(.secondary)
                 .padding([.leading, .trailing, .top])
             
-            AddToCartButton(product: self.product, presentAlert: $presentAlert)
+            AddToCartButton(product: product, presentAlert: $presentAlert)
                 .padding([.leading, .trailing, .top])
         }
         .frame(width: screen.width, height: screen.height / 2)
@@ -53,7 +52,6 @@ struct ItemDescriptionView: View {
 struct ItemDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         ItemDescriptionView(product: Product.example)
-            .environmentObject(ModelData())
             .environmentObject(Network())
     }
 }

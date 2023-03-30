@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct ZefirDress92App: App {
-    @StateObject var modelData = ModelData()
     @StateObject var network = Network()
     @StateObject var viewRouter = ViewRouter() //changes views e.g. login to home
     let persistenceController = PersistenceController.shared //for CoreData
@@ -18,8 +17,7 @@ struct ZefirDress92App: App {
         WindowGroup {
             MainView()
                 .environmentObject(viewRouter)
-                .environment(\.managedObjectContext, persistenceController.container.viewContext) //pass viewContext as managedObjectContext for CoreData
-                .environmentObject(modelData)
+                .environment(\.managedObjectContext, persistenceController.container.viewContext) //pass viewContext as managedObjectContext for CoreDatax
                 .environmentObject(network)
         }
     }

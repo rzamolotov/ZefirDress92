@@ -18,13 +18,14 @@ struct Product: Identifiable, Equatable, Decodable {
     var link: String
     var image_link: String
     var isAddToFavorite: Bool
+    var condition: String
     var category: [Category]
     
     enum CodingKeys: String, CodingKey {
-        case title, size, price_photo, price_rent, deposit, description, link, image_link, isAddToFavorite, category
+        case title, size, price_photo, price_rent, deposit, description, link, image_link, isAddToFavorite, condition, category
     }
-    
-    init(id: UUID = UUID(), title: String, size: [Size], price_photo: Int, price_rent: Int? = nil, deposit: Int, description: String, link: String, image_link: String, isAddToFavorite: Bool, category: [Category]) {
+
+    init(id: UUID = UUID(), title: String, size: [Size], price_photo: Int, price_rent: Int? = nil, deposit: Int, description: String, link: String, image_link: String, isAddToFavorite: Bool, condition: String, category: [Category]) {
         self.id = id
         self.title = title
         self.size = size
@@ -35,18 +36,19 @@ struct Product: Identifiable, Equatable, Decodable {
         self.link = link
         self.image_link = image_link
         self.isAddToFavorite = isAddToFavorite
+        self.condition = condition
         self.category = category
     }
+
     
-    
-    enum Category: String, CaseIterable, Codable {
+    enum Category: String, CaseIterable, Decodable {
         case dance = "Платья для бала"
         case night = "Вечерние платья"
         case fotosession = "Платья для фотосессии"
         case kids = "Детские"
     }
     
-    enum Size: String, CaseIterable, Codable {
+    enum Size: String, CaseIterable, Decodable {
         case size38 = "38"
         case size40 = "40"
         case size42 = "42"
@@ -80,7 +82,8 @@ struct Product: Identifiable, Equatable, Decodable {
         description: "Белое платье, состоящее из юбки с 3х метровым шлейфом и двумя вариантами топов ('американка' и вариант с рукавами).",
         link: "https://zefirdress.ru/vseplatya/accessuars",
         image_link: "http://shop-cdn1.vigbo.tech/shops/195624/products/21750271/images/preview-54001b28d11190b216a1f972ba2e5c91.JPG",
-        isAddToFavorite: false,
+        isAddToFavorite: true,
+        condition: "new",
         category: [Category.dance]
     )
 #endif
