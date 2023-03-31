@@ -9,21 +9,18 @@ import SwiftUI
 
 struct SizeList: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @EnvironmentObject var network: Network
+    @EnvironmentObject var productProvider: ProductProvider
     var products: [Product]
-
+    
     var body: some View {
         NavigationView {
             VStack {
-                ForEach(network.sizes.keys.sorted(), id: \.self) { key in
-                    SizesRow(sizeName: key, products: network.sizes[key]!)
+                ForEach(productProvider.sizes.keys.sorted(), id: \.self) { key in
+                    SizesRow(sizeName: key, products: productProvider.sizes[key]!)
                         .padding(.bottom, 15)
                         .padding(.top, 5)
                 }
                 .listRowInsets(EdgeInsets())
-            }
-            .onAppear{
-                network.loadData()
             }
             .padding()
         }
@@ -32,11 +29,11 @@ struct SizeList: View {
 
 struct SizeList_Previews: PreviewProvider {
     
-    static var products = Network().dataProduct
+    static var products = ProductProvider().products
     
     static var previews: some View {
         SizeList(products: Array(products.prefix(10)))
             .environmentObject(ViewRouter())
-            .environmentObject(Network())
+            .environmentObject(ProductProvider())
     }
 }

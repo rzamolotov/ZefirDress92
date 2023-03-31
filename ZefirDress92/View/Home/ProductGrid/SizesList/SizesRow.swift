@@ -10,7 +10,6 @@ import SwiftUI
 struct SizesRow: View {
     var sizeName: String
     var products: [Product]
-    @EnvironmentObject var network: Network
     
     var body: some View {
         VStack(alignment: .leading) {

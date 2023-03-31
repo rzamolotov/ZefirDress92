@@ -1,20 +1,19 @@
 //
-//  AddToCartButton.swift
+//  FavoriteAddToCartItem.swift
 //  ZefirDress92
 //
-//  Created by Роман Замолотов on 27.02.2023.
+//  Created by Роман Замолотов on 30.03.2023.
 //
 
 import SwiftUI
 
-struct AddToCartButton: View {
+struct FavoriteAddToCartItem: View {
     @Environment(\.managedObjectContext) private var viewContext
     var product: Product
     @Binding var presentAlert: Bool
     
     var body: some View {
         Button(action: {
-            //TODO: ADD TO CART
             let newOrder = DressOrder(context: viewContext)
             newOrder.imageName = product.image_link
             newOrder.productName = product.title
@@ -32,25 +31,25 @@ struct AddToCartButton: View {
         }, label: {
             ZStack{
                 Rectangle()
-                HStack{
-                    Image(systemName: "cart")
-                        .font(.title)
-                    Text("Добавить в корзину \(product.title)")
-                }
+                Image(systemName: "cart")
                 .foregroundColor(.white)
             }
-            .frame(width: screen.width / 1.1, height: 60)
+            .frame(width: screen.width / 11, height: screen.width / 11, alignment: .center)
             .foregroundColor(.pink)
             .opacity(0.7)
-            .cornerRadius(15.0)
+            .cornerRadius(10.0)
+            .alert("Платье \(product.title) добавлено в корзину", isPresented: $presentAlert) {
+                Button("Отлично!") {}
+            }
         })
+        
     }
 }
-
-//struct AddToCartButton_Previews: PreviewProvider {
+//
+//struct FavoriteAddToCartItem_Previews: PreviewProvider {
 //    static var previews: some View {
 //        NavigationView {
-//            AddToCartButton(product: Product.example, presentAlert: .constant(false))
+//            FavoriteAddToCartItem(product: Product.example, presentAlert: .constant(false))
 //        }
 //    }
 //}

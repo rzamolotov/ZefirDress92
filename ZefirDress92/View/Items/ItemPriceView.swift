@@ -31,8 +31,8 @@ struct ItemPriceView: View {
 }
 
 
-struct ItemPriceView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemPriceView(product: Product.example)
-    }
-}
+//struct ItemPriceView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ItemPriceView(product: Product.example)
+//    }
+//}

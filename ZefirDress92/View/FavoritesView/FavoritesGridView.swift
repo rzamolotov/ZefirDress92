@@ -10,8 +10,8 @@ import CoreData
 
 struct FavoritesGridView: View {
     
+    @State var presentAlert: Bool
     var products: [Product]
-    
     var filteredProducts: [Product] {
         products.filter { product in
             product.isAddToFavorite
@@ -21,28 +21,25 @@ struct FavoritesGridView: View {
     var body: some View {
         NavigationView{
             ScrollView {
-                LazyVGrid(columns: gridLayout, spacing: columnSpacing) {
-                    ForEach(filteredProducts) { product in
-                        NavigationLink {
-                            ItemDetailView(product: product)
-                        } label: {
-                            ProductView(product: product)
-                        }
+                ForEach(filteredProducts) { product in
+                    NavigationLink {
+                        ItemDetailView(product: product)
+                    } label: {
+                        FavoritesGrid(presentAlert: $presentAlert, product: product)
                     }
-                    
                 }
-                .navigationTitle("Избранное")
                 if(filteredProducts.count == 0) {
                     EmptyFavoritesView()
                 }
             }
+            .navigationTitle("Избранное")
         }
     }
 }
 
 struct FavoritesGridView_Previews: PreviewProvider {
-    static var products = Network().dataProduct
+    static var products = ProductProvider().products
     static var previews: some View {
-        FavoritesGridView(products: products)
+        FavoritesGridView(presentAlert: false, products: products)
     }
 }

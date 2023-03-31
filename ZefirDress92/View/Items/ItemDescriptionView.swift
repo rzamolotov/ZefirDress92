@@ -8,20 +8,30 @@
 import SwiftUI
 
 struct ItemDescriptionView: View {
-
-    @EnvironmentObject var network: Network
+    
+    @EnvironmentObject var productProvider: ProductProvider
     var product: Product
-    var productIndex: Int {
-        network.dataProduct.firstIndex(where: { $0.id == product.id }) ?? 0
-    }
+    private let productIndexKey = "productIndex"
+        private var savedProductIndex: Int {
+            get { UserDefaults.standard.integer(forKey: productIndexKey) }
+            set { UserDefaults.standard.set(newValue, forKey: productIndexKey) }
+        }
+        
+        var productIndex: Int {
+            productProvider.products.firstIndex(where: { $0.id == product.id }) ?? savedProductIndex
+        }
+    
     @State private var presentAlert = false
     
     var body: some View {
         VStack {
             HStack {
-                FavoriteButtonView(isSet: $network.dataProduct[productIndex].isAddToFavorite)
+                FavoriteButtonView(isSet: $productProvider.products[productIndex].isAddToFavorite)
                     .padding([.leading, .trailing])
-                
+                    .onAppear {
+                        // Retrieve the saved value of isAddToFavorite and update the state
+                        productProvider.products[productIndex].isAddToFavorite = UserDefaults.standard.bool(forKey: "isAddToFavorite-\(product.id)")
+                    }
                 
                 ItemSizeCheckView(product: product)
                     .padding([.leading, .trailing])
@@ -38,8 +48,8 @@ struct ItemDescriptionView: View {
                     .font(.subheadline)
                 ItemPriceView(product: product)
             }
-                .foregroundColor(.secondary)
-                .padding([.leading, .trailing, .top])
+            .foregroundColor(.secondary)
+            .padding([.leading, .trailing, .top])
             
             AddToCartButton(product: product, presentAlert: $presentAlert)
                 .padding([.leading, .trailing, .top])
@@ -49,9 +59,9 @@ struct ItemDescriptionView: View {
     }
 }
 
-struct ItemDescriptionView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemDescriptionView(product: Product.example)
-            .environmentObject(Network())
-    }
-}
+//struct ItemDescriptionView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ItemDescriptionView(product: Product.example)
+//            .environmentObject(ProductProvider())
+//    }
+//}

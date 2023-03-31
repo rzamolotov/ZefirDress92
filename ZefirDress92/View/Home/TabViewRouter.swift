@@ -9,14 +9,16 @@ import SwiftUI
 
 struct TabViewRouter: View {
     @State private var selectedTab = 1 //for programmatic switching
-    @EnvironmentObject var network: Network
+    @EnvironmentObject var productProvider: ProductProvider
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: DressOrder.entity(), sortDescriptors: [])
     var orders: FetchedResults<DressOrder>
+    @State var isSet: Bool = false
+    @State var presentAlert: Bool = false
     
     var body: some View {
         TabView (selection: $selectedTab) {
-            ProductGridView(products: network.dataProduct)
+            ProductGridView(products: productProvider.products)
                 .tabItem {
                     Image(systemName: "house")
                     Text("Все платья")
@@ -28,13 +30,13 @@ struct TabViewRouter: View {
 //                    Text("Категории")
 //                }
 //                .tag(1)
-            SizeList(products: network.dataProduct)
+            SizeList(products: productProvider.products)
                 .tabItem {
                     Image(systemName: "heart")
                     Text("Размеры")
                 }
                 .tag(3)
-            FavoritesGridView(products: network.dataProduct)
+            FavoritesGridView(presentAlert: presentAlert, products: productProvider.products)
                 .tabItem {
                     Image(systemName: "heart")
                     Text("Избранное")
@@ -55,6 +57,6 @@ struct TabViewRouter: View {
 struct TabViewRouter_Previews: PreviewProvider {
     static var previews: some View {
         TabViewRouter()
-            .environmentObject(Network())
+            .environmentObject(ProductProvider())
     }
 }

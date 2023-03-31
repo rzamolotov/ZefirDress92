@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var productProvider: ProductProvider
     
     var body: some View {
         
@@ -26,5 +27,6 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .environmentObject(ViewRouter())
+            .environmentObject(ProductProvider())
     }
 }

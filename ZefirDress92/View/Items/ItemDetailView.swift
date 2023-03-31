@@ -32,10 +32,10 @@ struct ItemDetailView: View {
     }
 }
 
-struct ItemDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            ItemDetailView(product: Product.example)
-        }
-    }
-}
+//struct ItemDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NavigationView {
+//            ItemDetailView(product: Product.example)
+//        }
+//    }
+//}

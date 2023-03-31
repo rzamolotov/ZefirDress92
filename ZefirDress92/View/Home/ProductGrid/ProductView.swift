@@ -8,7 +8,16 @@
 import SwiftUI
 
 struct ProductView: View {
+    
+    @EnvironmentObject var productProvider: ProductProvider
+
+    @AppStorage("lastUpdated")var lastUpdated = Date.distantFuture.timeIntervalSince1970
     let product: Product
+    @State var editMode: EditMode = .inactive
+    @State var isLoading = false
+    @State var selection: Set<String> = []
+    @State private var error: ProductError?
+    @State private var hasError = false
     
     var body: some View {
         VStack {
@@ -51,11 +60,14 @@ struct ProductView: View {
             }
         }
         .frame(width: screen.width / 2.3, height: screen.height / 2.9)
+        
     }
 }
 
-struct ProductView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProductView(product: Product.example)
-    }
-}
+
+//
+//struct ProductView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProductView(product: Product.example)
+//    }
+//}

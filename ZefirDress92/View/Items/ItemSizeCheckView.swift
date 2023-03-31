@@ -32,10 +32,10 @@ struct ItemSizeCheckView: View {
         }
     }
 }
-
-struct ItemSizeCheckView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemSizeCheckView(product: Product.example)
-    }
-}
+//
+//struct ItemSizeCheckView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ItemSizeCheckView(product: Product.example)
+//    }
+//}
 
