@@ -19,25 +19,26 @@ struct ProductGridView: View {
     
     var body: some View {
         NavigationView{
-            List(selection: $selection){
-                ForEach(productProvider.products) { product in
-                    NavigationLink {
-                        ItemDetailView(product: product)
-                    } label: {
-                        ProductView(product: product)
+            ScrollView{
+                LazyVGrid(columns: gridLayout, spacing: columnSpacing) {
+                    ForEach(productProvider.products) { product in
+                        NavigationLink {
+                            ItemDetailView(product: product)
+                        } label: {
+                            ProductView(product: product)
+                        }
+                        
                     }
-                    
                 }
+                .navigationBarTitle("Все платья")
+                .padding([.trailing, .leading])
+                .refreshable {
+                    await fetchProducts()
+                    print(isLoading)
+                }
+                
             }
-            .navigationBarTitle("Все платья")
-            .padding([.trailing, .leading])
-            .refreshable {
-                await fetchProducts()
-                print(isLoading)
-            }
-            
         }
-        
         .task {
             await fetchProducts()
         }

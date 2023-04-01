@@ -26,5 +26,13 @@ class ZefirDressTests: XCTestCase {
         
         XCTAssertEqual(decoded.products.count, 1)
         XCTAssertEqual(decoded.products[0].size, ["40", "42"])
-    }
+    }//тестируем кастомный json
+    
+    func testNetworkDoesFetchProductData() async throws {
+        let downloader = TestDownloader()
+        let network = Network(downloader: downloader)
+        let products = try await network.products
+        
+        XCTAssertEqual(products.count, 1)
+    }// тестируем получение и загрузку данных из сети
 }

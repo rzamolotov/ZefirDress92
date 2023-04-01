@@ -9,6 +9,8 @@ import Foundation
 
 @MainActor
 class ProductProvider: ObservableObject {
+    
+   
 
     @Published var products: [Product] = []
 
