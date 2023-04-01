@@ -8,27 +8,27 @@
 import Foundation
 
 struct ProductJSON: Decodable {
-
-    private enum RootCodingKeys: String, CodingKey {
-        case features
+    
+    private enum ProductsCodingKeys: String, CodingKey {
+        case products
     }
-
-    private enum FeatureCodingKeys: String, CodingKey {
-        case properties
+    private enum ItemCodingKeys: String, CodingKey {
+        case item
     }
-
+    
     private(set) var products: [Product] = []
-
+    
     init(from decoder: Decoder) throws {
-        let rootContainer = try decoder.container(keyedBy: RootCodingKeys.self)
-        var featuresContainer = try rootContainer.nestedUnkeyedContainer(forKey: .features)
-
-        while !featuresContainer.isAtEnd {
-            let propertiesContainer = try featuresContainer.nestedContainer(keyedBy: FeatureCodingKeys.self)
-
-            if let properties = try? propertiesContainer.decode(Product.self, forKey: .properties) {
-                products.append(properties)
+        let productContainer = try decoder.container(keyedBy: ProductsCodingKeys.self)
+        var itemsContainer = try productContainer.nestedUnkeyedContainer(forKey: .products)
+        
+        while !itemsContainer.isAtEnd {
+            let propertiesContainer = try itemsContainer.nestedContainer(keyedBy: ItemCodingKeys.self)
+            
+            if let item = try? propertiesContainer.decode(Product.self, forKey: .item) {
+                products.append(item)
             }
         }
     }
+    
 }

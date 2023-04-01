@@ -10,7 +10,7 @@ import Foundation
 struct Product: Identifiable {
     var id: String
     var title: String
-    var size: [Size]
+    var size: [String]
     var price_photo: Int
     var price_rent: Int?
     var deposit: Int
@@ -21,37 +21,7 @@ struct Product: Identifiable {
     var price: String
     var condition: String
     var isAddToFavorite: Bool
-    var category: [Category]
-    
-    
-    enum Category: String, CaseIterable, Decodable {
-        case dance = "Платья для бала"
-        case night = "Вечерние платья"
-        case fotosession = "Платья для фотосессии"
-        case kids = "Детские"
-    }
-    
-    enum Size: String, CaseIterable, Decodable {
-        case size38 = "38"
-        case size40 = "40"
-        case size42 = "42"
-        case size44 = "44"
-        case size46 = "46"
-        case size48 = "48"
-        case size50 = "50"
-        case size8 = "8"
-        case size12 = "12"
-        case size74 = "74"
-        case size76 = "76"
-        case size78 = "78"
-        case size80 = "80"
-        case size82 = "82"
-        case size84 = "84"
-        case size86 = "86"
-        case size88 = "88"
-        case size90 = "90"
-        case size92 = "92"
-    }
+    var category: [String]
 }
 
 extension Product: Decodable {
@@ -62,7 +32,7 @@ extension Product: Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let rawid = try? container.decode(String.self, forKey: .id)
         let rawtitle = try? container.decode(String.self, forKey: .title)
-        let rawsize = try? container.decode([Product.Size].self, forKey: .size)
+        let rawsize = try? container.decode([String].self, forKey: .size)
         let rawprice_photo = try? container.decode(Int.self, forKey: .price_photo)
         let rawprice_rent = try? container.decodeIfPresent(Int.self, forKey: .price_rent)
         let rawdeposit = try? container.decode(Int.self, forKey: .deposit)
@@ -73,7 +43,7 @@ extension Product: Decodable {
         let rawprice = try? container.decode(String.self, forKey: .price)
         let rawcondition = try? container.decode(String.self, forKey: .condition)
         let rawisAddToFavorite = try? container.decode(Bool.self, forKey: .isAddToFavorite)
-        let rawcategory = try? container.decode([Product.Category].self, forKey: .category)
+        let rawcategory = try? container.decode([String].self, forKey: .category)
         
         guard let id = rawid,
               let title = rawtitle,
@@ -92,6 +62,7 @@ extension Product: Decodable {
         else {
             throw ProductError.missingData
         }
+        
         self.id = id
         self.title = title
         self.size = size

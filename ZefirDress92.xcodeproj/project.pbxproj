@@ -49,6 +49,9 @@
 		7682EBCD29C112840073142B /* AccountSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682EBCC29C112840073142B /* AccountSheet.swift */; };
 		7682EBCF29C112CF0073142B /* ProfileVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682EBCE29C112CF0073142B /* ProfileVIew.swift */; };
 		7682EBD129C113B00073142B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682EBD029C113B00073142B /* AlertView.swift */; };
+		76A57ADA29D75D3000F428AB /* ZefirDress92Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AD929D75D3000F428AB /* ZefirDress92Tests.swift */; };
+		76A57AE129D75D6B00F428AB /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE029D75D6B00F428AB /* TestData.swift */; };
+		76A57AE329D75E5600F428AB /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE229D75E5600F428AB /* ProductTests.swift */; };
 		76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */; };
 		76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */; };
 		76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42829B8B821001BEEBE /* ItemPriceView.swift */; };
@@ -66,6 +69,16 @@
 		76EAFFB229AD48C1001799EB /* AddToCartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFFB129AD48C1001799EB /* AddToCartButton.swift */; };
 		76EAFFB429AD4DEB001799EB /* ItemDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFFB329AD4DEB001799EB /* ItemDescriptionView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76A57ADB29D75D3000F428AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76EAFF7529AB3ACC001799EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76EAFF7C29AB3ACC001799EB;
+			remoteInfo = ZefirDress92;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		763B1FA229BCFFE00027C3E3 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
@@ -111,6 +124,10 @@
 		7682EBCC29C112840073142B /* AccountSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSheet.swift; sourceTree = "<group>"; };
 		7682EBCE29C112CF0073142B /* ProfileVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVIew.swift; sourceTree = "<group>"; };
 		7682EBD029C113B00073142B /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		76A57AD729D75D3000F428AB /* ZefirDress92Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZefirDress92Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A57AD929D75D3000F428AB /* ZefirDress92Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZefirDress92Tests.swift; sourceTree = "<group>"; };
+		76A57AE029D75D6B00F428AB /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		76A57AE229D75E5600F428AB /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabViewRouter.swift; path = Home/TabViewRouter.swift; sourceTree = "<group>"; };
 		76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSizeCheckView.swift; sourceTree = "<group>"; };
 		76EAF42829B8B821001BEEBE /* ItemPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
@@ -131,6 +148,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		76A57AD429D75D3000F428AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76EAFF7A29AB3ACC001799EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +264,16 @@
 			path = CoreDataOrder;
 			sourceTree = "<group>";
 		};
+		76A57AD829D75D3000F428AB /* ZefirDress92Tests */ = {
+			isa = PBXGroup;
+			children = (
+				76A57AD929D75D3000F428AB /* ZefirDress92Tests.swift */,
+				76A57AE029D75D6B00F428AB /* TestData.swift */,
+				76A57AE229D75E5600F428AB /* ProductTests.swift */,
+			);
+			path = ZefirDress92Tests;
+			sourceTree = "<group>";
+		};
 		76EAF42A29B8C11D001BEEBE /* ProductGrid */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				76EAFF7F29AB3ACC001799EB /* ZefirDress92 */,
+				76A57AD829D75D3000F428AB /* ZefirDress92Tests */,
 				76EAFF7E29AB3ACC001799EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -263,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */,
+				76A57AD729D75D3000F428AB /* ZefirDress92Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -370,6 +406,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		76A57AD629D75D3000F428AB /* ZefirDress92Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A57ADF29D75D3000F428AB /* Build configuration list for PBXNativeTarget "ZefirDress92Tests" */;
+			buildPhases = (
+				76A57AD329D75D3000F428AB /* Sources */,
+				76A57AD429D75D3000F428AB /* Frameworks */,
+				76A57AD529D75D3000F428AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76A57ADC29D75D3000F428AB /* PBXTargetDependency */,
+			);
+			name = ZefirDress92Tests;
+			productName = ZefirDress92Tests;
+			productReference = 76A57AD729D75D3000F428AB /* ZefirDress92Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		76EAFF7C29AB3ACC001799EB /* ZefirDress92 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76EAFF8B29AB3ACE001799EB /* Build configuration list for PBXNativeTarget "ZefirDress92" */;
@@ -399,6 +453,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					76A57AD629D75D3000F428AB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 76EAFF7C29AB3ACC001799EB;
+					};
 					76EAFF7C29AB3ACC001799EB = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -420,11 +478,19 @@
 			projectRoot = "";
 			targets = (
 				76EAFF7C29AB3ACC001799EB /* ZefirDress92 */,
+				76A57AD629D75D3000F428AB /* ZefirDress92Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		76A57AD529D75D3000F428AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76EAFF7B29AB3ACC001799EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,6 +504,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		76A57AD329D75D3000F428AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A57ADA29D75D3000F428AB /* ZefirDress92Tests.swift in Sources */,
+				76A57AE129D75D6B00F428AB /* TestData.swift in Sources */,
+				76A57AE329D75E5600F428AB /* ProductTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76EAFF7929AB3ACC001799EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,7 +578,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		76A57ADC29D75D3000F428AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76EAFF7C29AB3ACC001799EB /* ZefirDress92 */;
+			targetProxy = 76A57ADB29D75D3000F428AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		76A57ADD29D75D3000F428AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S5AJR5C22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rzamolotov.ZefirDress92Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZefirDress92.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZefirDress92";
+			};
+			name = Debug;
+		};
+		76A57ADE29D75D3000F428AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S5AJR5C22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rzamolotov.ZefirDress92Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZefirDress92.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZefirDress92";
+			};
+			name = Release;
+		};
 		76EAFF8929AB3ACE001799EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -688,6 +810,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		76A57ADF29D75D3000F428AB /* Build configuration list for PBXNativeTarget "ZefirDress92Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A57ADD29D75D3000F428AB /* Debug */,
+				76A57ADE29D75D3000F428AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		76EAFF7829AB3ACC001799EB /* Build configuration list for PBXProject "ZefirDress92" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

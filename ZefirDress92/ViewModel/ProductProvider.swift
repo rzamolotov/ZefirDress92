@@ -26,13 +26,13 @@ class ProductProvider: ObservableObject {
     var categories: [String: [Product]] {
         Dictionary(
             grouping: products,
-            by: { $0.category.first!.rawValue }
+            by: { $0.category.first! }
         )
     }// словарь для категорий
     var sizes: [String: [Product]] {
         Dictionary(
             grouping: products,
-            by: { $0.size.first!.rawValue }
+            by: { $0.size.first! }
         )
     }// словарь для размеров
     

@@ -12,9 +12,6 @@ struct ProductGridView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var productProvider: ProductProvider
     var products: [Product]
-    
-    @AppStorage("lastUpdated")var lastUpdated = Date.distantFuture.timeIntervalSince1970
-    @State var editMode: EditMode = .inactive
     @State var isLoading = false
     @State var selection: Set<String> = []
     @State private var error: ProductError?
@@ -22,33 +19,31 @@ struct ProductGridView: View {
     
     var body: some View {
         NavigationView{
-//            ScrollView {
-//                LazyVGrid(columns: gridLayout, spacing: columnSpacing) {
-                    List(selection: $selection){
-                    ForEach(productProvider.products) { product in
-                        NavigationLink {
-                            ItemDetailView(product: product)
-                        } label: {
-                            ProductView(product: product)
-                        }
-                        
+            List(selection: $selection){
+                ForEach(productProvider.products) { product in
+                    NavigationLink {
+                        ItemDetailView(product: product)
+                    } label: {
+                        ProductView(product: product)
                     }
+                    
                 }
-                
-//            }
+            }
             .navigationBarTitle("Все платья")
             .padding([.trailing, .leading])
             .refreshable {
                 await fetchProducts()
+                print(isLoading)
             }
-    
+            
         }
+        
         .task {
             await fetchProducts()
         }
-       
+        
     }
-      
+    
 }
 
 extension ProductGridView {

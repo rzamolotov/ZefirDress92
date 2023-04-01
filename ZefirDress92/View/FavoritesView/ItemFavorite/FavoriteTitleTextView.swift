@@ -24,7 +24,7 @@ struct FavoriteTitleTextView: View {
                 .padding(.bottom, 30)
                 .padding(.top, 10)
                 .padding(.leading, 10)
-                Text(product.category[0].rawValue)
+                Text(product.category[0])
                     .font(.callout)
                     .foregroundColor(buttonGray)
                     .fontWeight(.medium)
@@ -49,7 +49,7 @@ struct FavoriteTitleTextView: View {
                                         )
                                         .cornerRadius(10)
                                     
-                                    Text(size.rawValue)
+                                    Text(size)
                                         .font(.footnote)
                                         .foregroundColor(.pink)
                                         .opacity(0.7)
