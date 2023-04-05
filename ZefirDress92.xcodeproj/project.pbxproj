@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76154FB529DDBD9D002E0BAE /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76154FB429DDBD9D002E0BAE /* RealmManager.swift */; };
+		76154FB729DDBE8F002E0BAE /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76154FB629DDBE8F002E0BAE /* RealmModel.swift */; };
 		763B1FA329BCFFE00027C3E3 /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA229BCFFE00027C3E3 /* WelcomeMessageView.swift */; };
 		763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */; };
 		7642E02229D5DACC00A37D01 /* FavoriteAddToCartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */; };
@@ -21,7 +23,6 @@
 		7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7644AE0429DD3B02009B4730 /* Kingfisher */; };
 		7644AE0829DD3D65009B4730 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7644AE0729DD3D65009B4730 /* Realm */; };
 		7644AE0A29DD3D65009B4730 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7644AE0929DD3D65009B4730 /* RealmSwift */; };
-		7644AE0D29DD3DAB009B4730 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644AE0C29DD3DAB009B4730 /* RealmManager.swift */; };
 		764B9C3229D5C87B0077B1A4 /* FavoritesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3129D5C87B0077B1A4 /* FavoritesGrid.swift */; };
 		764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */; };
 		764B9C3729D5D7270077B1A4 /* FavoriteTitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */; };
@@ -86,6 +87,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76154FB429DDBD9D002E0BAE /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		76154FB629DDBE8F002E0BAE /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		763B1FA229BCFFE00027C3E3 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
 		763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddToCartItem.swift; sourceTree = "<group>"; };
@@ -97,7 +100,6 @@
 		7642E02E29D6D24400A37D01 /* ProductJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductJSON.swift; sourceTree = "<group>"; };
 		7642E03029D6D3E400A37D01 /* ProductProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductProvider.swift; sourceTree = "<group>"; };
 		7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesGridView.swift; sourceTree = "<group>"; };
-		7644AE0C29DD3DAB009B4730 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmManager.swift; path = ../../../../../romanzamolotov/Documents/RealmManager.swift; sourceTree = "<group>"; };
 		764B9C3129D5C87B0077B1A4 /* FavoritesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesGrid.swift; sourceTree = "<group>"; };
 		764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImageView.swift; sourceTree = "<group>"; };
 		764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTitleTextView.swift; sourceTree = "<group>"; };
@@ -175,6 +177,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76154FB329DDBD85002E0BAE /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				76154FB429DDBD9D002E0BAE /* RealmManager.swift */,
+				76154FB629DDBE8F002E0BAE /* RealmModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		763B1FA029BCFE820027C3E3 /* CategryLists */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,14 +230,6 @@
 				764B9C3129D5C87B0077B1A4 /* FavoritesGrid.swift */,
 			);
 			path = FavoritesView;
-			sourceTree = "<group>";
-		};
-		7644AE0B29DD3D87009B4730 /* RealmDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				7644AE0C29DD3DAB009B4730 /* RealmManager.swift */,
-			);
-			path = RealmDatabase;
 			sourceTree = "<group>";
 		};
 		764B9C3329D5D6190077B1A4 /* ItemFavorite */ = {
@@ -323,13 +326,13 @@
 		76EAFF7F29AB3ACC001799EB /* ZefirDress92 */ = {
 			isa = PBXGroup;
 			children = (
+				76154FB329DDBD85002E0BAE /* Realm */,
 				76EAFF9B29AB7DE8001799EB /* View */,
 				76EAFF9429AB7AAD001799EB /* ViewModel */,
 				7642E02529D6AB9200A37D01 /* Cache */,
 				76EAFF8E29AB3AF7001799EB /* Model */,
 				7642E03229D6DFFE00A37D01 /* Constant */,
 				7682EBBE29C0D0160073142B /* CoreDataOrder */,
-				7644AE0B29DD3D87009B4730 /* RealmDatabase */,
 				76EAFF8029AB3ACC001799EB /* ZefirDress92App.swift */,
 				76EAFF8229AB3ACC001799EB /* MainView.swift */,
 				76EAFF8429AB3ACE001799EB /* Assets.xcassets */,
@@ -543,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				765F581A29D47BD100042727 /* SizeList.swift in Sources */,
+				76154FB729DDBE8F002E0BAE /* RealmModel.swift in Sources */,
 				7682EBD129C113B00073142B /* AlertView.swift in Sources */,
 				7682EBCF29C112CF0073142B /* ProfileVIew.swift in Sources */,
 				7678587529C191D800A0A709 /* EmptyCartView.swift in Sources */,
@@ -564,6 +568,7 @@
 				76A57AE429D8527200F428AB /* TestData.swift in Sources */,
 				76EAFF9629AB7AC2001799EB /* Constant.swift in Sources */,
 				764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */,
+				76154FB529DDBD9D002E0BAE /* RealmManager.swift in Sources */,
 				76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */,
 				765F214A29BCA2CD0052A95B /* BrandLogo.swift in Sources */,
 				763B1FA329BCFFE00027C3E3 /* WelcomeMessageView.swift in Sources */,
@@ -585,7 +590,6 @@
 				765F214829BCA2500052A95B /* Helpers.swift in Sources */,
 				7678587129C1905000A0A709 /* PaymentInformation.swift in Sources */,
 				7682EBC029C0D03A0073142B /* Persistance.swift in Sources */,
-				7644AE0D29DD3DAB009B4730 /* RealmManager.swift in Sources */,
 				765F214C29BCA3570052A95B /* UserName.swift in Sources */,
 				7678587329C190C300A0A709 /* Total.swift in Sources */,
 				7678586D29C18DC200A0A709 /* PlaceOrder.swift in Sources */,

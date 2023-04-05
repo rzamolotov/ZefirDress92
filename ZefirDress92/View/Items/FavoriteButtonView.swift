@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct FavoriteButtonView: View {
+    
     @Binding var isSet: Bool
-    @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var prealmManager: RealmManager
     
     var body: some View {
         Button {
@@ -29,5 +30,6 @@ struct FavoriteButtonView: View {
 struct FavoriteButtonView_Previews: PreviewProvider {
     static var previews: some View {
         FavoriteButtonView(isSet: .constant(false))
+            .environmentObject(RealmManager())
     }
 }

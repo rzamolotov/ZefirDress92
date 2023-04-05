@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct ItemDetailView: View {
-    
+    @StateObject var realmManager = RealmManager()
     var product: Product
     
     var body: some View {
