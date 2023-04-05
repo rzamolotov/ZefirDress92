@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ItemDetailView: View {
     
@@ -15,14 +16,11 @@ struct ItemDetailView: View {
         ScrollView {
             VStack(alignment: .center, spacing: 20) {
                 
-                AsyncImage(url: URL(string: product.image_link)) { image in
-                    image
-                        .resizable()
-                        .shadow(radius: 5)
-                        .frame(width: screen.width, height: screen.height / 1.8)
-                } placeholder: {
-                    ProgressView()
-                }
+                KFImage(URL(string: product.image_link))
+                    .resizable()
+                    .shadow(radius: 5)
+                    .frame(width: screen.width, height: screen.height / 1.8)
+                    
                 ItemDescriptionView(product: product)
             }
         }

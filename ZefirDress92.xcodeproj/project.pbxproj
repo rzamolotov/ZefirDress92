@@ -18,6 +18,7 @@
 		7642E02F29D6D24400A37D01 /* ProductJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02E29D6D24400A37D01 /* ProductJSON.swift */; };
 		7642E03129D6D3E400A37D01 /* ProductProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E03029D6D3E400A37D01 /* ProductProvider.swift */; };
 		7644A7FA29C04BBC00B1E788 /* FavoritesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */; };
+		7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7644AE0429DD3B02009B4730 /* Kingfisher */; };
 		764B9C3229D5C87B0077B1A4 /* FavoritesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3129D5C87B0077B1A4 /* FavoritesGrid.swift */; };
 		764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */; };
 		764B9C3729D5D7270077B1A4 /* FavoriteTitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */; };
@@ -161,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +443,7 @@
 			);
 			name = ZefirDress92;
 			packageProductDependencies = (
+				7644AE0429DD3B02009B4730 /* Kingfisher */,
 			);
 			productName = ZefirDress92;
 			productReference = 76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */;
@@ -475,6 +478,7 @@
 			);
 			mainGroup = 76EAFF7429AB3ACC001799EB;
 			packageReferences = (
+				7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 76EAFF7E29AB3ACC001799EB /* Products */;
 			projectDirPath = "";
@@ -842,6 +846,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7644AE0429DD3B02009B4730 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7682EBC129C0D0710073142B /* ProductData.xcdatamodeld */ = {
