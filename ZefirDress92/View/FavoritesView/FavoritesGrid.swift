@@ -15,7 +15,7 @@ struct FavoritesGrid: View {
     var productIndex: Int {
         productProvider.products.firstIndex(where: { $0.id == product.id }) ?? 0
     }
-    @StateObject var realmManager = RealmManager()
+   
     
     var body: some View {
         
