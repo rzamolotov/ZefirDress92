@@ -10,8 +10,7 @@ import SwiftUI
 struct FavoriteButtonView: View {
     
     @Binding var isSet: Bool
-    @EnvironmentObject var prealmManager: RealmManager
-    
+
     var body: some View {
         Button {
             isSet.toggle()
@@ -30,6 +29,6 @@ struct FavoriteButtonView: View {
 struct FavoriteButtonView_Previews: PreviewProvider {
     static var previews: some View {
         FavoriteButtonView(isSet: .constant(false))
-            .environmentObject(RealmManager())
+          
     }
 }
