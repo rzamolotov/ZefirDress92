@@ -15,10 +15,15 @@ struct PersistenceController {
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
             let newItem = DressOrder(context: viewContext)
-            newItem.id = UUID()
+            newItem.id = "123123"
             newItem.imageName = "Olivia"
             newItem.productName = "платье amabel"
             newItem.price = 1000
+            
+            let newFavorite = AddToFavorites(context: viewContext)
+            newFavorite.id = "123123"
+            newFavorite.isAddToFavorites = false
+            newFavorite.name = "Olivia"
         }
         do {
             try viewContext.save()

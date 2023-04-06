@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76154FB529DDBD9D002E0BAE /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76154FB429DDBD9D002E0BAE /* RealmManager.swift */; };
-		76154FB729DDBE8F002E0BAE /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76154FB629DDBE8F002E0BAE /* RealmModel.swift */; };
 		763B1FA329BCFFE00027C3E3 /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA229BCFFE00027C3E3 /* WelcomeMessageView.swift */; };
 		763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */; };
 		7642E02229D5DACC00A37D01 /* FavoriteAddToCartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */; };
@@ -87,8 +85,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		76154FB429DDBD9D002E0BAE /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
-		76154FB629DDBE8F002E0BAE /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		763B1FA229BCFFE00027C3E3 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
 		763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddToCartItem.swift; sourceTree = "<group>"; };
@@ -177,15 +173,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		76154FB329DDBD85002E0BAE /* Realm */ = {
-			isa = PBXGroup;
-			children = (
-				76154FB429DDBD9D002E0BAE /* RealmManager.swift */,
-				76154FB629DDBE8F002E0BAE /* RealmModel.swift */,
-			);
-			path = Realm;
-			sourceTree = "<group>";
-		};
 		763B1FA029BCFE820027C3E3 /* CategryLists */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,7 +313,6 @@
 		76EAFF7F29AB3ACC001799EB /* ZefirDress92 */ = {
 			isa = PBXGroup;
 			children = (
-				76154FB329DDBD85002E0BAE /* Realm */,
 				76EAFF9B29AB7DE8001799EB /* View */,
 				76EAFF9429AB7AAD001799EB /* ViewModel */,
 				7642E02529D6AB9200A37D01 /* Cache */,
@@ -546,7 +532,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				765F581A29D47BD100042727 /* SizeList.swift in Sources */,
-				76154FB729DDBE8F002E0BAE /* RealmModel.swift in Sources */,
 				7682EBD129C113B00073142B /* AlertView.swift in Sources */,
 				7682EBCF29C112CF0073142B /* ProfileVIew.swift in Sources */,
 				7678587529C191D800A0A709 /* EmptyCartView.swift in Sources */,
@@ -568,7 +553,6 @@
 				76A57AE429D8527200F428AB /* TestData.swift in Sources */,
 				76EAFF9629AB7AC2001799EB /* Constant.swift in Sources */,
 				764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */,
-				76154FB529DDBD9D002E0BAE /* RealmManager.swift in Sources */,
 				76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */,
 				765F214A29BCA2CD0052A95B /* BrandLogo.swift in Sources */,
 				763B1FA329BCFFE00027C3E3 /* WelcomeMessageView.swift in Sources */,
