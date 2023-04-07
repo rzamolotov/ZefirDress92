@@ -9,9 +9,9 @@ import SwiftUI
 
 struct FavoritesGrid: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(entity: AddToFavorites.entity(), sortDescriptors: [])
-    var favorites: FetchedResults<AddToFavorites>
-    var product: Product
+    @State var isSet: Bool
+    @State var presentAlert: Bool
+    var favorite: AddToFavorites
     
     
     var body: some View {
@@ -22,8 +22,8 @@ struct FavoritesGrid: View {
                 .opacity(0.1)
                 .shadow(radius: 5)
             HStack{
-                FavoriteImageView(image_link: product.image_link)
-                FavoriteTitleTextView(title: product.title, category: product.category, size: product.size, isSet: false, presentAlert: false)
+                FavoriteImageView(favorite: favorite)
+                FavoriteTitleTextView(isSet: $isSet, presentAlert: $presentAlert, favorite: favorite)
                 
             }
         }
@@ -34,7 +34,7 @@ struct FavoritesGrid: View {
 
 //struct FavoritesGrid_Previews: PreviewProvider {
 //    static var previews: some View {
-//        FavoritesGrid(presentAlert: .constant(false), product: Product.example)
+//        FavoritesGrid(product: example)
 //            .environmentObject(ProductProvider())
 //    }
 //}

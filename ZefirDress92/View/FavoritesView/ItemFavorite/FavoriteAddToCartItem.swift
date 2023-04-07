@@ -9,26 +9,26 @@ import SwiftUI
 
 struct FavoriteAddToCartItem: View {
     @Environment(\.managedObjectContext) private var viewContext
-    var product: Product
+    var favorite: AddToFavorites
     @Binding var presentAlert: Bool
     
     var body: some View {
         Button(action: {
             let newOrder = DressOrder(context: viewContext)
-            newOrder.id = product.id
-            newOrder.availability = product.availability
-            newOrder.category = product.category as NSArray
-            newOrder.condition = product.condition
-            newOrder.deposit = Int64(product.deposit)
-            newOrder.image_link = product.image_link
-            newOrder.isAddToFavorite = product.isAddToFavorite
-            newOrder.itemDescription = product.description
-            newOrder.itemLink = product.link
-            newOrder.price = product.price
-            newOrder.price_photo = Int64(product.price_photo)
-            newOrder.price_rent = Int64(product.price_rent ?? 0)
-            newOrder.size = product.size as NSArray
-            newOrder.title = product.title
+            newOrder.id = favorite.id
+            newOrder.availability = favorite.availability
+            newOrder.category = favorite.category as? NSArray
+            newOrder.condition = favorite.condition
+            newOrder.deposit = Int64(favorite.deposit)
+            newOrder.image_link = favorite.image_link
+            newOrder.isAddToFavorite = favorite.isAddToFavorite
+            newOrder.itemDescription = favorite.description
+//            newOrder.itemLink = favorite.link
+            newOrder.price = favorite.price
+            newOrder.price_photo = Int64(favorite.price_photo)
+            newOrder.price_rent = Int64(favorite.price_rent)
+            newOrder.size = favorite.size as? NSArray
+            newOrder.title = favorite.title
             do {
                 try viewContext.save()
                 print("order saved")
@@ -48,9 +48,9 @@ struct FavoriteAddToCartItem: View {
             .foregroundColor(.pink)
             .opacity(0.7)
             .cornerRadius(10.0)
-            .alert("Платье \(product.title) добавлено в корзину", isPresented: $presentAlert) {
-                Button("Отлично!") {}
-            }
+//            .alert("Платье \(favorite.title) добавлено в корзину", isPresented: $presentAlert) {
+//                Button("Отлично!") {}
+//            }
         })
         
     }
@@ -59,7 +59,7 @@ struct FavoriteAddToCartItem: View {
 //struct FavoriteAddToCartItem_Previews: PreviewProvider {
 //    static var previews: some View {
 //        NavigationView {
-//            FavoriteAddToCartItem(product: Product.example, presentAlert: .constant(false))
+//            FavoriteAddToCartItem(favorite: example, presentAlert: .constant(false))
 //        }
 //    }
 //}

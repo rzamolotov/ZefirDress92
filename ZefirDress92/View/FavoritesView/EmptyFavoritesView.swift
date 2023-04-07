@@ -18,7 +18,6 @@ struct EmptyFavoritesView: View {
                 .cornerRadius(150)
                 .padding(.bottom, 75)
                 .padding(.top, 25)
-            
             Text("-Zefir Dess-")
                 .foregroundColor(.pink)
                 .opacity(0.7)

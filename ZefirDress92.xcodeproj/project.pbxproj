@@ -241,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				7682EBCC29C112840073142B /* AccountSheet.swift */,
+				7678587029C1905000A0A709 /* PaymentInformation.swift */,
+				7678586E29C18E7A00A0A709 /* OrderInformation.swift */,
 				7682EBCE29C112CF0073142B /* ProfileVIew.swift */,
 			);
 			path = Profile;
@@ -364,8 +366,6 @@
 				7682EBC829C10D2B0073142B /* CartProductInfo.swift */,
 				7682EBCA29C10F6E0073142B /* PriceCartView.swift */,
 				7682EBD029C113B00073142B /* AlertView.swift */,
-				7678586E29C18E7A00A0A709 /* OrderInformation.swift */,
-				7678587029C1905000A0A709 /* PaymentInformation.swift */,
 				7678587229C190C300A0A709 /* Total.swift */,
 				7678586C29C18DC200A0A709 /* PlaceOrder.swift */,
 				7678587429C191D800A0A709 /* EmptyCartView.swift */,

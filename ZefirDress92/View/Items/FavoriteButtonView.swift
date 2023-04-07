@@ -48,9 +48,9 @@ struct FavoriteButtonView: View {
     }
 }
 
-//struct FavoriteButtonView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FavoriteButtonView(isSet: .constant(false))
-//
-//    }
-//}
+struct FavoriteButtonView_Previews: PreviewProvider {
+    static var previews: some View {
+        FavoriteButtonView(isSet: .constant(false), product: example)
+
+    }
+}

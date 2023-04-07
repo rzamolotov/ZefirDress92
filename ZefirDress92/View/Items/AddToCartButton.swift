@@ -56,10 +56,10 @@ struct AddToCartButton: View {
     }
 }
 
-//struct AddToCartButton_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavigationView {
-//            AddToCartButton(product: Product.example, presentAlert: .constant(false))
-//        }
-//    }
-//}
+struct AddToCartButton_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            AddToCartButton(product: example, presentAlert: .constant(false))
+        }
+    }
+}

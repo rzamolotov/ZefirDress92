@@ -46,9 +46,9 @@ struct ItemDescriptionView: View {
     }
 }
 
-//struct ItemDescriptionView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ItemDescriptionView(product: Product.example)
-//            .environmentObject(ProductProvider())
-//    }
-//}
+struct ItemDescriptionView_Previews: PreviewProvider {
+    static var previews: some View {
+        ItemDescriptionView(product: example)
+            .environmentObject(ProductProvider())
+    }
+}

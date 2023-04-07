@@ -48,8 +48,8 @@ struct FavoriteAddToFavoriteItem: View {
     }
 }
 
-//struct FavoriteAddToFavoriteItem_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FavoriteAddToFavoriteItem(isSet: .constant(false))
-//    }
-//}
+struct FavoriteAddToFavoriteItem_Previews: PreviewProvider {
+    static var previews: some View {
+        FavoriteAddToFavoriteItem(isSet: .constant(false), product: example)
+    }
+}

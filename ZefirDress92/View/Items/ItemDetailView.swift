@@ -42,7 +42,6 @@ struct ItemDetailView: View {
         self.isAddToFavorite = isAddToFavorite
         self.category = category
         
-        
         self.product = Product(id: id, title: title, size: size, price_photo: price_photo, price_rent: price_rent, deposit: deposit, description: description, link: link, image_link: image_link, availability: availability, price: price, condition: condition, isAddToFavorite: isAddToFavorite, category: category)
     }
     
@@ -64,10 +63,10 @@ struct ItemDetailView: View {
     }
 }
 
-//struct ItemDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavigationView {
-//            ItemDetailView(product: Product.example)
-//        }
-//    }
-//}
+struct ItemDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            ItemDetailView(id: example.id, title: example.title, size: example.size, price_photo: example.price_photo, price_rent: example.price_rent ?? 0, deposit: example.deposit, description: example.description, link: example.link, image_link: example.image_link, availability: example.availability, price: example.price, condition: example.condition, isAddToFavorite: example.isAddToFavorite, category: example.category)
+        }
+    }
+}
