@@ -23,7 +23,7 @@ struct FavoritesGridView: View {
             ScrollView {
                 ForEach(filteredProducts) { product in
                     NavigationLink {
-                        ItemDetailView(product: product)
+                        ItemDetailView(itemID: product.id)
                     } label: {
                         FavoritesGrid(presentAlert: $presentAlert, product: product)
                     }

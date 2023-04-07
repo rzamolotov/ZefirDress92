@@ -21,12 +21,15 @@ struct CartView: View {
                 VStack{
                     List {
                         ForEach(orders) { order in
-                            
-                            HStack {
-                                CartProductInfo(order: order)
-                                Spacer()
-                                PriceCartView(order: order)
-                                
+                            NavigationLink {
+                                ItemDetailView(itemID: order.id ?? "")
+                            } label: {
+                                HStack {
+                                    CartProductInfo(order: order)
+                                    Spacer()
+                                    PriceCartView(order: order)
+                                    
+                                }
                             }
                             .frame(height: 100)
                         }
