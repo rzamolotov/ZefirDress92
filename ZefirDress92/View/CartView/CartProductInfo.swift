@@ -23,7 +23,7 @@ struct CartProductInfo: View {
                 Text(order.productName ?? "Красивое платье")
                     .font(.headline)
                 HStack {
-                    Text("price: \(order.price)")
+                    Text("price: \(order.price_photo)")
                 }
                 .font(.caption)
                 .foregroundColor(.secondary)

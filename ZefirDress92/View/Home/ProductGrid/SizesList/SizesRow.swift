@@ -33,7 +33,7 @@ struct SizesRow: View {
                 HStack {
                     ForEach(products) { product in
                         NavigationLink {
-                            ItemDetailView(itemID: product.id)
+                            ItemDetailView(id: product.id, title: product.title, size: product.size, price_photo: product.price_photo, price_rent: product.price_rent ?? 0, deposit: product.deposit, description: product.description, link: product.link, image_link: product.image_link, availability: product.availability, price: product.price, condition: product.condition, isAddToFavorite: product.isAddToFavorite, category: product.category)
                         } label: {
                             ProductView(product: product)
                         }

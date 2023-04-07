@@ -11,26 +11,39 @@ import Kingfisher
 struct ItemDetailView: View {
     
     var product: Product
-    let itemID: String
+    var id: String
+    var title: String
+    var size: [String]
+    var price_photo: Int
+    var price_rent: Int?
+    var deposit: Int
+    var description: String
+    var link: String
+    var image_link: String
+    var availability: String
+    var price: String
+    var condition: String
+    var isAddToFavorite: Bool
+    var category: [String]
     
-    init(itemID: String) {
-        self.itemID = itemID
-        self.product = Product(
-            id: itemID,
-            title: "Платье Amabel",
-            size: ["44", "46"],
-            price_photo: 1500,
-            price_rent: 2500,
-            deposit: 1000,
-            description: "Белое платье, состоящее из юбки с 3х метровым шлейфом и двумя вариантами топов ('американка' и вариант с рукавами).",
-            link: "https://zefirdress.ru/vseplatya/accessuars",
-            image_link: "http://shop-cdn1.vigbo.tech/shops/195624/products/21750271/images/preview-54001b28d11190b216a1f972ba2e5c91.JPG",
-            availability: "in_stock",
-            price: "1500 RUB",
-            condition: "new",
-            isAddToFavorite: true,
-            category: ["Детское"]
-        )
+    init(id: String, title: String, size: [String], price_photo: Int, price_rent: Int, deposit: Int, description: String, link: String, image_link: String, availability: String, price: String, condition: String, isAddToFavorite: Bool, category: [String]) {
+        self.id = id
+        self.title = title
+        self.size = size
+        self.price_photo = price_photo
+        self.price_rent = price_rent
+        self.deposit = deposit
+        self.description = description
+        self.link = link
+        self.image_link = image_link
+        self.availability = availability
+        self.price = price
+        self.condition = condition
+        self.isAddToFavorite = isAddToFavorite
+        self.category = category
+        
+        
+        self.product = Product(id: id, title: title, size: size, price_photo: price_photo, price_rent: price_rent, deposit: deposit, description: description, link: link, image_link: image_link, availability: availability, price: price, condition: condition, isAddToFavorite: isAddToFavorite, category: category)
     }
     
     var body: some View {

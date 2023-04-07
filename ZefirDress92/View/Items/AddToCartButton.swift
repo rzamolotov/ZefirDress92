@@ -16,10 +16,20 @@ struct AddToCartButton: View {
         Button(action: {
             //TODO: ADD TO CART
             let newOrder = DressOrder(context: viewContext)
-            newOrder.imageName = product.image_link
-            newOrder.productName = product.title
-//            newOrder.id = product.id
-            newOrder.price = Int16(product.price_photo)
+            newOrder.id = product.id
+            newOrder.availability = product.availability
+            newOrder.category = product.category as NSObject
+            newOrder.condition = product.condition
+            newOrder.deposit = Int64(product.deposit)
+            newOrder.image_link = product.image_link
+            newOrder.isAddToFavorite = product.isAddToFavorite
+            newOrder.itemDescription = product.description
+            newOrder.itemLink = product.link
+            newOrder.price = product.price
+            newOrder.price_photo = Int64(product.price_photo)
+            newOrder.price_rent = Int64(product.price_rent ?? 0)
+            newOrder.size = product.size as NSObject
+            newOrder.title = product.title
             do {
                 try viewContext.save()
                 print("order saved")

@@ -11,7 +11,7 @@ struct PriceCartView: View {
     var order: DressOrder
     
     var body: some View {
-        Text("\(order.price)")
+        Text("\(order.price_photo)")
     }
 }
 

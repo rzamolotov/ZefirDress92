@@ -13,12 +13,23 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
+        for _ in 0..<20 {
             let newItem = DressOrder(context: viewContext)
-            newItem.id = "123123"
+            newItem.id = "123214"
+            newItem.availability = "in stock"
+            newItem.condition = "new"
+            newItem.deposit = 1000
             newItem.imageName = "Olivia"
-            newItem.productName = "платье amabel"
-            newItem.price = 1000
+            newItem.image_link = ""
+            newItem.isAddToFavorite = true
+            newItem.itemDescription = ""
+            newItem.itemLink = ""
+            newItem.price = ""
+            newItem.price_photo = 1000
+            newItem.price_rent = 1500
+            newItem.productName = ""
+            newItem.size = [""] as NSObject
+            newItem.title = ""
             
             let newFavorite = AddToFavorites(context: viewContext)
             newFavorite.id = "123123"
@@ -43,14 +54,6 @@ struct PersistenceController {
         }
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })

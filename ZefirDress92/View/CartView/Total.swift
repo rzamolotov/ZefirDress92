@@ -28,8 +28,8 @@ struct Total: View {
         var totalPrice = 0.00
         
         orders.forEach { order in
-            let productPrice = order.price
-            totalPrice += Double(productPrice)
+            let productPrice = order.price_photo
+            totalPrice += Double(productPrice )
         }
         let roundedTotalPrice = round(totalPrice * 100)/100.0
         
