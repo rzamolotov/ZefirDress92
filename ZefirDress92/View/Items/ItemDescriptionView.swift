@@ -26,13 +26,13 @@ struct ItemDescriptionView: View {
     var body: some View {
         VStack {
             HStack {
-                FavoriteButtonView(isSet: $productProvider.products[productIndex].isAddToFavorite)
-                    .padding([.leading, .trailing])
-                    .onAppear {
-                        // Retrieve the saved value of isAddToFavorite and update the state
-                        productProvider.products[productIndex].isAddToFavorite = UserDefaults.standard.bool(forKey: "isAddToFavorite-\(product.id)")
-                    }
-                
+//                FavoriteButtonView(isSet: $productProvider.products[productIndex].isAddToFavorite)
+//                    .padding([.leading, .trailing])
+//                    .onAppear {
+//                        // Retrieve the saved value of isAddToFavorite and update the state
+//                        productProvider.products[productIndex].isAddToFavorite = UserDefaults.standard.bool(forKey: "isAddToFavorite-\(product.id)")
+//                    }
+//                
                 ItemSizeCheckView(product: product)
                     .padding([.leading, .trailing])
                     .foregroundColor(.gray)

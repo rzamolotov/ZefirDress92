@@ -13,6 +13,9 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
+        let size = ["S", "M", "L"]
+        let category = [""]
+        
         for _ in 0..<20 {
             let newItem = DressOrder(context: viewContext)
             newItem.id = "123214"
@@ -28,8 +31,9 @@ struct PersistenceController {
             newItem.price_photo = 1000
             newItem.price_rent = 1500
             newItem.productName = ""
-            newItem.size = [""] as NSObject
             newItem.title = ""
+            newItem.size = size as NSArray
+            newItem.category = category as NSArray
             
             let newFavorite = AddToFavorites(context: viewContext)
             newFavorite.id = "123123"

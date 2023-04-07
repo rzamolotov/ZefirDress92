@@ -12,7 +12,7 @@ struct CartProductInfo: View {
     
     var body: some View {
         Group {
-            AsyncImage(url: URL(string: order.imageName ?? "")) { image in
+            AsyncImage(url: URL(string: order.image_link ?? "")) { image in
                 image
                     .resizable()
                     .frame(width: screen.width / 6, height: screen.height / 10)
@@ -20,10 +20,10 @@ struct CartProductInfo: View {
                 ProgressView()
             }
             VStack(alignment: .leading) {
-                Text(order.productName ?? "Красивое платье")
+                Text(order.title ?? "Красивое платье")
                     .font(.headline)
                 HStack {
-                    Text("price: \(order.price_photo)")
+                    Text("cтоимость аренды от: \(order.price_photo)руб.")
                 }
                 .font(.caption)
                 .foregroundColor(.secondary)
