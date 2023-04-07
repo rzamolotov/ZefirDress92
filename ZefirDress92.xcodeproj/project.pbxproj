@@ -195,9 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				764B9C3329D5D6190077B1A4 /* ItemFavorite */,
-				7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */,
 				7678587629C1923300A0A709 /* EmptyFavoritesView.swift */,
 				764B9C3129D5C87B0077B1A4 /* FavoritesGrid.swift */,
+				7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */,
 			);
 			path = FavoritesView;
 			sourceTree = "<group>";

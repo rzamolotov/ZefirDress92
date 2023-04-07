@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct FavoritesGrid: View {
-    @EnvironmentObject var productProvider: ProductProvider
     @Environment(\.managedObjectContext) private var viewContext
-    @Binding var presentAlert: Bool
+    @FetchRequest(entity: AddToFavorites.entity(), sortDescriptors: [])
+    var favorites: FetchedResults<AddToFavorites>
     var product: Product
-    var productIndex: Int {
-        productProvider.products.firstIndex(where: { $0.id == product.id }) ?? 0
-    }
-   
+    
     
     var body: some View {
         
@@ -25,8 +22,9 @@ struct FavoritesGrid: View {
                 .opacity(0.1)
                 .shadow(radius: 5)
             HStack{
-                FavoriteImageView(product: product)
-                FavoriteTitleTextView(isSet: $productProvider.products[productIndex].isAddToFavorite, presentAlert: $presentAlert, product: product)
+                FavoriteImageView(image_link: product.image_link)
+                FavoriteTitleTextView(title: product.title, category: product.category, size: product.size, isSet: false, presentAlert: false)
+                
             }
         }
         .frame(width: screen.width / 1.1, height: screen.height / 5)

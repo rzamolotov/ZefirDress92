@@ -16,7 +16,7 @@ struct PersistenceController {
         let size = ["S", "M", "L"]
         let category = [""]
         
-        for _ in 0..<20 {
+        for _ in 0..<100 {
             let newItem = DressOrder(context: viewContext)
             newItem.id = "123214"
             newItem.availability = "in stock"
@@ -36,9 +36,22 @@ struct PersistenceController {
             newItem.category = category as NSArray
             
             let newFavorite = AddToFavorites(context: viewContext)
-            newFavorite.id = "123123"
-            newFavorite.isAddToFavorites = false
-            newFavorite.name = "Olivia"
+            newFavorite.id = "123214"
+            newFavorite.availability = "in stock"
+            newFavorite.condition = "new"
+            newFavorite.deposit = 1000
+            newFavorite.imageName = "Olivia"
+            newFavorite.image_link = ""
+            newFavorite.isAddToFavorite = true
+            newFavorite.itemDescription = ""
+            newFavorite.itemLink = ""
+            newFavorite.price = ""
+            newFavorite.price_photo = 1000
+            newFavorite.price_rent = 1500
+            newFavorite.productName = ""
+            newFavorite.title = ""
+            newFavorite.size = size as NSArray
+            newFavorite.category = category as NSArray
         }
         do {
             try viewContext.save()

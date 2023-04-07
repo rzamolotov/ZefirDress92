@@ -11,8 +11,20 @@ struct FavoriteTitleTextView: View {
     @Binding var isSet: Bool
     @Environment(\.managedObjectContext) private var viewContext
     @Binding var presentAlert: Bool
-    
+    var title: String
+    var category: [String]
+    var size: [String]
     var product: Product
+    
+    init(title: String, category: [String], size: [String], isSet: Bool, presentAlert: Bool) {
+        self._isSet = Binding.constant(isSet)
+        self._presentAlert = Binding.constant(presentAlert)
+        self.title = title
+        self.category = category
+        self.size = size
+        self.product = Product(id: "", title: title, size: size, price_photo: 0, deposit: 0, description: "", link: "", image_link: "", availability: "", price: "", condition: "", isAddToFavorite: false, category: category)
+    }
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -63,7 +75,7 @@ struct FavoriteTitleTextView: View {
             } //:Vstack name/sizes
             Spacer()
             VStack(alignment: .trailing) {
-                FavoriteAddToFavoriteItem(isSet: $isSet)
+                FavoriteAddToFavoriteItem(isSet: $isSet, product: product)
                     .padding(.top, 10)
                     .padding(.bottom, 30)
                     .padding(.trailing, 20)
@@ -77,7 +89,7 @@ struct FavoriteTitleTextView: View {
     }
 }
 
-//
+
 //struct FavoriteTitleTextView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        FavoritesGrid(presentAlert: .constant(false), product: Product.example)

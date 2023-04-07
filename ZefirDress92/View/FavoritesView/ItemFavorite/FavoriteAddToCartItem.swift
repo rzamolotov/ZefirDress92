@@ -17,7 +17,7 @@ struct FavoriteAddToCartItem: View {
             let newOrder = DressOrder(context: viewContext)
             newOrder.id = product.id
             newOrder.availability = product.availability
-
+            newOrder.category = product.category as NSArray
             newOrder.condition = product.condition
             newOrder.deposit = Int64(product.deposit)
             newOrder.image_link = product.image_link
@@ -27,7 +27,7 @@ struct FavoriteAddToCartItem: View {
             newOrder.price = product.price
             newOrder.price_photo = Int64(product.price_photo)
             newOrder.price_rent = Int64(product.price_rent ?? 0)
-  //вот тут нужно вписать массив size
+            newOrder.size = product.size as NSArray
             newOrder.title = product.title
             do {
                 try viewContext.save()

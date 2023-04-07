@@ -11,28 +11,15 @@ struct ItemDescriptionView: View {
     
     @EnvironmentObject var productProvider: ProductProvider
     var product: Product
-    private let productIndexKey = "productIndex"
-        private var savedProductIndex: Int {
-            get { UserDefaults.standard.integer(forKey: productIndexKey) }
-            set { UserDefaults.standard.set(newValue, forKey: productIndexKey) }
-        }
-        
-        var productIndex: Int {
-            productProvider.products.firstIndex(where: { $0.id == product.id }) ?? savedProductIndex
-        }
     
     @State private var presentAlert = false
     
     var body: some View {
         VStack {
             HStack {
-//                FavoriteButtonView(isSet: $productProvider.products[productIndex].isAddToFavorite)
-//                    .padding([.leading, .trailing])
-//                    .onAppear {
-//                        // Retrieve the saved value of isAddToFavorite and update the state
-//                        productProvider.products[productIndex].isAddToFavorite = UserDefaults.standard.bool(forKey: "isAddToFavorite-\(product.id)")
-//                    }
-//                
+                FavoriteButtonView(isSet: .constant(false), product: product)
+                    .padding([.leading, .trailing])
+                
                 ItemSizeCheckView(product: product)
                     .padding([.leading, .trailing])
                     .foregroundColor(.gray)

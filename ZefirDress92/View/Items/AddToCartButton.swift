@@ -14,7 +14,6 @@ struct AddToCartButton: View {
     
     var body: some View {
         Button(action: {
-            //TODO: ADD TO CART
             let newOrder = DressOrder(context: viewContext)
             newOrder.id = product.id
             newOrder.availability = product.availability
