@@ -10,5 +10,6 @@
         <attribute name="imageName" optional="YES" attributeType="String"/>
         <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="productName" optional="YES" attributeType="String"/>
+        <relationship name="title" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DressOrder" inverseName="title" inverseEntity="DressOrder"/>
     </entity>
 </model>
