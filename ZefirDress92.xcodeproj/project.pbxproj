@@ -16,7 +16,6 @@
 		7642E03129D6D3E400A37D01 /* ProductProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E03029D6D3E400A37D01 /* ProductProvider.swift */; };
 		7644A7FA29C04BBC00B1E788 /* FavoritesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */; };
 		7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7644AE0429DD3B02009B4730 /* Kingfisher */; };
-		764B9C3229D5C87B0077B1A4 /* FavoritesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3129D5C87B0077B1A4 /* FavoritesGrid.swift */; };
 		764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */; };
 		764B9C3729D5D7270077B1A4 /* FavoriteTitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */; };
 		765F214329BCA19D0052A95B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214229BCA19D0052A95B /* LoginView.swift */; };
@@ -84,7 +83,6 @@
 		7642E02E29D6D24400A37D01 /* ProductJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductJSON.swift; sourceTree = "<group>"; };
 		7642E03029D6D3E400A37D01 /* ProductProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductProvider.swift; sourceTree = "<group>"; };
 		7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesGridView.swift; sourceTree = "<group>"; };
-		764B9C3129D5C87B0077B1A4 /* FavoritesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesGrid.swift; sourceTree = "<group>"; };
 		764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImageView.swift; sourceTree = "<group>"; };
 		764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTitleTextView.swift; sourceTree = "<group>"; };
 		765F214229BCA19D0052A95B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				764B9C3329D5D6190077B1A4 /* ItemFavorite */,
-				764B9C3129D5C87B0077B1A4 /* FavoritesGrid.swift */,
 				7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */,
 				7678587629C1923300A0A709 /* EmptyFavoritesView.swift */,
 			);
@@ -510,7 +507,6 @@
 				76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */,
 				765F214A29BCA2CD0052A95B /* BrandLogo.swift in Sources */,
 				7642E02B29D6D11400A37D01 /* HTTPDataDownloader.swift in Sources */,
-				764B9C3229D5C87B0077B1A4 /* FavoritesGrid.swift in Sources */,
 				7642E02429D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift in Sources */,
 				76EAFF8129AB3ACC001799EB /* ZefirDress92App.swift in Sources */,
 				76EAFFA629ABD722001799EB /* ProductView.swift in Sources */,

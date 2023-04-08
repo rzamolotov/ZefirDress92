@@ -11,6 +11,7 @@ import CoreData
 struct FavoritesGridView: View {
     
     @State var presentAlert: Bool
+    @State var isSet: Bool
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var productProvider: ProductProvider
     @Environment(\.managedObjectContext) private var viewContext
@@ -24,7 +25,19 @@ struct FavoritesGridView: View {
                     NavigationLink {
                         ItemDetailView(id: favorite.id ?? "0", title: favorite.title ?? "Olivia", size: favorite.size as! [String], price_photo: Int(favorite.price_photo), price_rent: Int(favorite.price_rent), deposit: Int(favorite.deposit), description: favorite.itemDescription ?? "", link: favorite.itemLink ?? "", image_link: favorite.image_link ?? "", availability: favorite.availability!, price: favorite.price!, condition: favorite.condition ?? "", isAddToFavorite: favorite.isAddToFavorite, category: favorite.category as! [String])
                     } label: {
-                        FavoritesGrid(isSet: false, presentAlert: presentAlert, favorite: favorite)
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.gray)
+                                .opacity(0.1)
+                                .shadow(radius: 5)
+                            HStack{
+                                FavoriteImageView(favorite: favorite)
+                                FavoriteTitleTextView(isSet: $isSet, presentAlert: $presentAlert, favorite: favorite)
+                                
+                            }
+                        }
+                        .frame(width: screen.width / 1.1, height: screen.height / 5)
+                        .cornerRadius(10)
                     }
                 }
                 .onDelete { indexSet in
@@ -48,7 +61,7 @@ struct FavoritesGridView: View {
 
 struct FavoritesGridView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesGridView(presentAlert: false)
+        FavoritesGridView(presentAlert: false, isSet: false)
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
             .environmentObject(ProductProvider())
     }

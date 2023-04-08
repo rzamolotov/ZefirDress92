@@ -32,33 +32,34 @@ struct FavoriteTitleTextView: View {
                     .padding(.leading, 10)
                 Spacer()
                 HStack{
-//                    VStack(alignment: .leading){
-//                        Text("Доступные размеры:")
-//                            .font(.caption)
-//                            .foregroundColor(buttonGray)
-//                            .fontWeight(.light)
-//                        HStack(spacing: 5) {
-//                            ForEach(favorite.size, id: \.self) { size in
-//                                ZStack{
-//                                    Rectangle()
-//                                        .frame(width: screen.width / 17, height: screen.width / 17, alignment: .center)
-//                                        .foregroundColor(.white)
-//                                        .overlay(
-//                                            RoundedRectangle(cornerRadius: 10)
-//                                                .stroke(.pink.opacity(0.7), lineWidth: 3)
-//                                        )
-//                                        .cornerRadius(10)
-                                    
-//                                    Text(size)
-//                                        .font(.footnote)
-//                                        .foregroundColor(.pink)
-//                                        .opacity(0.7)
-//                                }
-//                            }
-//                        }
-//                    }//: Size
-//                    .padding(.bottom, 10)
-//                    .padding(.leading, 10)
+                    VStack(alignment: .leading){
+                        Text("Доступные размеры:")
+                            .font(.caption)
+                            .foregroundColor(buttonGray)
+                            .fontWeight(.light)
+                        HStack(spacing: 5) {
+                            if favorite.size != nil {
+                                ForEach(Array(favorite.size as? [String] ?? ["без размера"]), id: \.self) { size in
+                                    ZStack{
+                                        Rectangle()
+                                            .frame(width: screen.width / 17, height: screen.width / 17, alignment: .center)
+                                            .foregroundColor(.white)
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 10)
+                                                    .stroke(.pink.opacity(0.7), lineWidth: 3)
+                                            )
+                                            .cornerRadius(10)
+                                        Text(size)
+                                            .font(.footnote)
+                                            .foregroundColor(.pink)
+                                            .opacity(0.7)
+                                    }
+                                }
+                            }
+                        }
+                    }//: Size
+                    .padding(.bottom, 10)
+                    .padding(.leading, 10)
                 }
             } //:Vstack name/sizes
             Spacer()
@@ -68,7 +69,7 @@ struct FavoriteTitleTextView: View {
                     .padding(.bottom, 30)
                     .padding(.trailing, 20)
                 Spacer()
-                FavoriteAddToCartItem(favorite: favorite, presentAlert: $presentAlert)
+                FavoriteAddToFavoriteItem(isSet: $isSet, favorite: favorite)
                     .padding(.bottom, 10)
                     .padding(.trailing, 20)
             } //: VStach favorite button/cart button
@@ -81,7 +82,6 @@ struct FavoriteTitleTextView: View {
 struct FavoriteTitleTextView_Previews: PreviewProvider {
     static var favorite = AddToFavorites()
     static var previews: some View {
-        FavoritesGrid(isSet: true, presentAlert: false, favorite: favorite)
- 
+        FavoriteTitleTextView(isSet: .constant(false), presentAlert: .constant(false), favorite: favorite)
     }
 }
