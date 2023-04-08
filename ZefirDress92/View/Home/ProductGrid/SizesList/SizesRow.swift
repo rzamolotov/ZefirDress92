@@ -44,10 +44,8 @@ struct SizesRow: View {
     }
 }
 
-//struct SizesRow_Previews: PreviewProvider {
-//    static var products = [Network().dataProduct]
-//
-//    static var previews: some View {
-//        SizesRow(sizeName: "42 размер", products: products)
-//    }
-//}
+struct SizesRow_Previews: PreviewProvider {
+        static var previews: some View {
+        SizesRow(sizeName: example.size[0], products: [example])
+    }
+}

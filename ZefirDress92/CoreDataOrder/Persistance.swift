@@ -13,19 +13,19 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        let size = ["S", "M", "L"]
-        let category = [""]
-        let sizeFavorite = ["S", "M", "L"]
-        let categoryFavorite = [""]
+        let size = ["Small", "Medium", "Large"]
+        let category = ["Dresses", "Tops", "Bottoms"]
+        let sizeFavorite = ["Small", "Medium", "Large"]
+        let categoryFavorite = ["Dresses", "Tops", "Bottoms"]
         
-        for _ in 0..<30 {
+        for i in 0..<5 {
             let newItem = DressOrder(context: viewContext)
-            newItem.id = "123214"
+            newItem.id = "\(i)"
             newItem.availability = "in stock"
             newItem.condition = "new"
             newItem.deposit = 1000
-            newItem.image_link = ""
-            newItem.isAddToFavorite = true
+            newItem.image_link = "https://spbnevesta.ru/upload/dress/475/25032023155011-oliviya.webp"
+            newItem.isAddToFavorite = i % 2 == 0
             newItem.itemDescription = ""
             newItem.itemLink = ""
             newItem.price = ""
@@ -37,19 +37,19 @@ struct PersistenceController {
             newItem.category = category as NSArray
             
             let newFavorite = AddToFavorites(context: viewContext)
-            newFavorite.id = "123214"
+            newFavorite.id = "\(i)"
             newFavorite.availability = "in stock"
             newFavorite.condition = "new"
             newFavorite.deposit = 1000
-            newFavorite.image_link = ""
-            newFavorite.isAddToFavorite = true
-            newFavorite.itemDescription = ""
-            newFavorite.itemLink = ""
-            newFavorite.price = ""
+            newFavorite.image_link = "https://spbnevesta.ru/upload/dress/475/25032023155011-oliviya.webp"
+            newFavorite.isAddToFavorite = i % 2 == 0
+            newFavorite.itemDescription = "замечательное платье"
+            newFavorite.itemLink = "https://spbnevesta.ru/upload/dress/475/25032023155011-oliviya.webp"
+            newFavorite.price = "1444"
             newFavorite.price_photo = 1000
             newFavorite.price_rent = 1500
-            newFavorite.productName = ""
-            newFavorite.title = ""
+            newFavorite.productName = "Платье Оливия"
+            newFavorite.title = "Платье"
             newFavorite.size = sizeFavorite as NSArray
             newFavorite.category = categoryFavorite as NSArray
         }
@@ -57,7 +57,7 @@ struct PersistenceController {
             try viewContext.save()
         } catch {
             let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            print("Error saving context: \(nsError), \(nsError.userInfo)")
         }
         return result
     }()
@@ -71,10 +71,9 @@ struct PersistenceController {
         }
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                print("Error loading persistent store: \(error), \(error.userInfo)")
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }
-

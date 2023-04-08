@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FavoriteAddToCartItem: View {
+    
     @Environment(\.managedObjectContext) private var viewContext
     var favorite: AddToFavorites
     @Binding var presentAlert: Bool
@@ -23,7 +24,7 @@ struct FavoriteAddToCartItem: View {
             newOrder.image_link = favorite.image_link
             newOrder.isAddToFavorite = favorite.isAddToFavorite
             newOrder.itemDescription = favorite.description
-//            newOrder.itemLink = favorite.link
+            newOrder.itemLink = favorite.itemLink
             newOrder.price = favorite.price
             newOrder.price_photo = Int64(favorite.price_photo)
             newOrder.price_rent = Int64(favorite.price_rent)
@@ -48,9 +49,9 @@ struct FavoriteAddToCartItem: View {
             .foregroundColor(.pink)
             .opacity(0.7)
             .cornerRadius(10.0)
-//            .alert("Платье \(favorite.title) добавлено в корзину", isPresented: $presentAlert) {
-//                Button("Отлично!") {}
-//            }
+            .alert("Платье добавлено в корзину", isPresented: $presentAlert) {
+                Button("Отлично!") {}
+            }
         })
         
     }

@@ -14,7 +14,7 @@ struct SizeList: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            ScrollView {
                 ForEach(productProvider.sizes.keys.sorted(), id: \.self) { key in
                     SizesRow(sizeName: key, products: productProvider.sizes[key]!)
                         .padding(.bottom, 15)
@@ -30,7 +30,6 @@ struct SizeList: View {
 struct SizeList_Previews: PreviewProvider {
     
     static var products = ProductProvider().products
-    
     static var previews: some View {
         SizeList(products: Array(products.prefix(10)))
             .environmentObject(ViewRouter())

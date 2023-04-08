@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct FavoritesGrid: View {
-    @Environment(\.managedObjectContext) private var viewContext
+
     @State var isSet: Bool
     @State var presentAlert: Bool
     var favorite: AddToFavorites
     
-    
     var body: some View {
-        
         ZStack {
             Rectangle()
                 .foregroundColor(.gray)

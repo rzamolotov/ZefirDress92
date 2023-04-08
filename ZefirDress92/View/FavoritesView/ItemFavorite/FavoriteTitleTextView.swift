@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct FavoriteTitleTextView: View {
+    
     @Binding var isSet: Bool
-    @Environment(\.managedObjectContext) private var viewContext
     @Binding var presentAlert: Bool
     var favorite: AddToFavorites
     
@@ -17,7 +17,7 @@ struct FavoriteTitleTextView: View {
         HStack {
             VStack(alignment: .leading) {
                 HStack{
-                    Text(favorite.title ?? "")
+                    Text(favorite.title ?? "Платье Оливия")
                         .foregroundColor(buttonGray)
                         .font(.headline)
                 }

@@ -6,33 +6,25 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProductView: View {
     
     @EnvironmentObject var productProvider: ProductProvider
-
-    @AppStorage("lastUpdated")var lastUpdated = Date.distantFuture.timeIntervalSince1970
-    let product: Product
-    @State var editMode: EditMode = .inactive
-    @State var isLoading = false
-    @State var selection: Set<String> = []
-    @State private var error: ProductError?
-    @State private var hasError = false
+    var product: Product
     
     var body: some View {
         VStack {
-            AsyncImage(url: URL(string: product.image_link)) { image in
-                image
-                    .resizable()
-                    .cornerRadius(10)
-                    .frame(width: screen.width / 2.5, height: screen.height / 4)
-                    .aspectRatio(contentMode: .fit)
-                    .padding(.bottom)
-                    
-                    .shadow(radius: 2)
-            } placeholder: {
-                ProgressView()
-            }
+            KFImage(URL(string: product.image_link))
+                .placeholder { progress in
+                    ProgressView()
+                }
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: screen.width / 2.5, height: screen.height / 4)
+                .cornerRadius(10)
+                .padding(.bottom)
+                .shadow(radius: 2)
             
             VStack(spacing: 2) {
                 Text(product.title)
@@ -60,14 +52,13 @@ struct ProductView: View {
             }
         }
         .frame(width: screen.width / 2.3, height: screen.height / 2.9)
-        
     }
 }
 
 
-//
-//struct ProductView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ProductView(product: Product.example)
-//    }
-//}
+
+struct ProductView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProductView(product: example)
+    }
+}

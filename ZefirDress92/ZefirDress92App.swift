@@ -18,7 +18,7 @@ struct ZefirDress92App: App {
             MainView()
                 .environmentObject(productProvider)
                 .environmentObject(viewRouter)
-                .environment(\.managedObjectContext, persistenceController.container.viewContext) //pass viewContext as managedObjectContext for CoreDatax
+                .environment(\.managedObjectContext, persistenceController.container.viewContext) //pass viewContext as managedObjectContext for CoreData
                 
         }
     }
