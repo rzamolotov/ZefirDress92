@@ -55,11 +55,12 @@ struct FavoriteAddToCartItem: View {
         
     }
 }
-//
-//struct FavoriteAddToCartItem_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavigationView {
-//            FavoriteAddToCartItem(favorite: example, presentAlert: .constant(false))
-//        }
-//    }
-//}
+
+struct FavoriteAddToCartItem_Previews: PreviewProvider {
+    static var favorite = AddToFavorites()
+    static var previews: some View {
+        NavigationView {
+            FavoriteAddToCartItem(favorite: favorite, presentAlert: .constant(false))
+        }
+    }
+}

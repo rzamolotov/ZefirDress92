@@ -11,26 +11,26 @@ struct FavoriteAddToFavoriteItem: View {
     
     @Binding var isSet: Bool
     @Environment(\.managedObjectContext) private var viewContext
-    var product: Product
+    var favorite: AddToFavorites
     
     var body: some View {
         Button {
             isSet.toggle()
             let newFavorite = AddToFavorites(context: viewContext)
-            newFavorite.id = product.id
-            newFavorite.availability = product.availability
-            newFavorite.category = product.category as NSArray
-            newFavorite.condition = product.condition
-            newFavorite.deposit = Int64(product.deposit)
-            newFavorite.image_link = product.image_link
-            newFavorite.isAddToFavorite = product.isAddToFavorite
-            newFavorite.itemDescription = product.description
-            newFavorite.itemLink = product.link
-            newFavorite.price = product.price
-            newFavorite.price_photo = Int64(product.price_photo)
-            newFavorite.price_rent = Int64(product.price_rent ?? 0)
-            newFavorite.size = product.size as NSArray
-            newFavorite.title = product.title
+            newFavorite.id = favorite.id
+            newFavorite.availability = favorite.availability
+            newFavorite.category = favorite.category as? NSArray
+            newFavorite.condition = favorite.condition
+            newFavorite.deposit = Int64(favorite.deposit)
+            newFavorite.image_link = favorite.image_link
+            newFavorite.isAddToFavorite = favorite.isAddToFavorite
+            newFavorite.itemDescription = favorite.description
+            newFavorite.itemLink = favorite.itemLink
+            newFavorite.price = favorite.price
+            newFavorite.price_photo = Int64(favorite.price_photo)
+            newFavorite.price_rent = Int64(favorite.price_rent)
+            newFavorite.size = favorite.size as? NSArray
+            newFavorite.title = favorite.title
             do {
                 try viewContext.save()
                 print("favorite saved")
@@ -49,7 +49,8 @@ struct FavoriteAddToFavoriteItem: View {
 }
 
 struct FavoriteAddToFavoriteItem_Previews: PreviewProvider {
+    static var favorite = AddToFavorites()
     static var previews: some View {
-        FavoriteAddToFavoriteItem(isSet: .constant(false), product: example)
+        FavoriteAddToFavoriteItem(isSet: .constant(false), favorite: favorite)
     }
 }

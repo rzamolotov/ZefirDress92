@@ -10,7 +10,6 @@ import CoreData
 
 struct FavoritesGridView: View {
     
-    var products: [Product]
     @State var presentAlert: Bool
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: AddToFavorites.entity(), sortDescriptors: [])
@@ -23,7 +22,7 @@ struct FavoritesGridView: View {
                     NavigationLink {
                         ItemDetailView(id: favorite.id ?? "0", title: favorite.title ?? "Olivia", size: favorite.size as! [String], price_photo: Int(favorite.price_photo), price_rent: Int(favorite.price_rent), deposit: Int(favorite.deposit), description: favorite.itemDescription ?? "", link: favorite.itemLink ?? "", image_link: favorite.image_link ?? "", availability: favorite.availability!, price: favorite.price!, condition: favorite.condition ?? "", isAddToFavorite: favorite.isAddToFavorite, category: favorite.category as! [String])
                     } label: {
-                        FavoritesGridView(products: products, presentAlert: false)
+                        FavoritesGridView(presentAlert: presentAlert, favorites: _favorites)
                     }
                 }
                 if(favorites.count == 0) {
@@ -36,8 +35,8 @@ struct FavoritesGridView: View {
 }
 
 struct FavoritesGridView_Previews: PreviewProvider {
-    static var products = ProductProvider().products
+
     static var previews: some View {
-        FavoritesGridView(products: products, presentAlert: false)
+        FavoritesGridView(presentAlert: false)
     }
 }

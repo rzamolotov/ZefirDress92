@@ -32,9 +32,9 @@ struct FavoritesGrid: View {
     }
 }
 
-//struct FavoritesGrid_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FavoritesGrid(product: example)
-//            .environmentObject(ProductProvider())
-//    }
-//}
+struct FavoritesGrid_Previews: PreviewProvider {
+    static var favorite = AddToFavorites()
+    static var previews: some View {
+        FavoritesGrid(isSet: false, presentAlert: false, favorite: favorite)
+    }
+}

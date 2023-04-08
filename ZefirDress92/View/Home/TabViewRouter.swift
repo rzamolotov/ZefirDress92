@@ -36,7 +36,7 @@ struct TabViewRouter: View {
                     Text("Размеры")
                 }
                 .tag(3)
-            FavoritesGridView(products: productProvider.products, presentAlert: presentAlert)
+            FavoritesGridView(presentAlert: presentAlert)
                 .tabItem {
                     Image(systemName: "heart")
                     Text("Избранное")
