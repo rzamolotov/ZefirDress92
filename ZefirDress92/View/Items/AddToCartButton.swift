@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct AddToCartButton: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -14,26 +15,35 @@ struct AddToCartButton: View {
     
     var body: some View {
         Button(action: {
-            let newOrder = DressOrder(context: viewContext)
-            newOrder.id = product.id
-            newOrder.availability = product.availability
-            newOrder.category = product.category as NSArray
-            newOrder.condition = product.condition
-            newOrder.deposit = Int64(product.deposit)
-            newOrder.image_link = product.image_link
-            newOrder.isAddToFavorite = product.isAddToFavorite
-            newOrder.itemDescription = product.description
-            newOrder.itemLink = product.link
-            newOrder.price = product.price
-            newOrder.price_photo = Int64(product.price_photo)
-            newOrder.price_rent = Int64(product.price_rent ?? 0)
-            newOrder.size = product.size as NSArray
-            newOrder.title = product.title
+            let fetchRequest: NSFetchRequest<DressOrder> = DressOrder.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == %@", product.id)
             do {
-                try viewContext.save()
-                print("order saved")
-                withAnimation(.linear(duration: 0.5)) {
-                    presentAlert = true
+                let results = try viewContext.fetch(fetchRequest)
+                if results.isEmpty {
+                    // объекта с таким идентификатором еще нет в базе данных, сохраняем новый объект
+                    let newOrder = DressOrder(context: viewContext)
+                    newOrder.id = product.id
+                    newOrder.availability = product.availability
+                    newOrder.category = product.category as NSArray
+                    newOrder.condition = product.condition
+                    newOrder.deposit = Int64(product.deposit)
+                    newOrder.image_link = product.image_link
+                    newOrder.isAddToFavorite = product.isAddToFavorite
+                    newOrder.itemDescription = product.description
+                    newOrder.itemLink = product.link
+                    newOrder.price = product.price
+                    newOrder.price_photo = Int64(product.price_photo)
+                    newOrder.price_rent = Int64(product.price_rent ?? 0)
+                    newOrder.size = product.size as NSArray
+                    newOrder.title = product.title
+                    try viewContext.save()
+                    print("order saved")
+                    withAnimation(.linear(duration: 0.5)) {
+                        presentAlert = true
+                    }
+                } else {
+                    // объект с таким идентификатором уже есть в базе данных, не сохраняем новый объект
+                    print("order already exists")
                 }
             } catch {
                 print(error.localizedDescription)

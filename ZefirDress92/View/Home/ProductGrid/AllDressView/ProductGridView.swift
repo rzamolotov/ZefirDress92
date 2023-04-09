@@ -27,7 +27,6 @@ struct ProductGridView: View {
                         } label: {
                             ProductView(product: product)
                         }
-                        
                     }
                 }
                 .navigationBarTitle("Все платья")
@@ -36,15 +35,12 @@ struct ProductGridView: View {
                     await fetchProducts()
                     print(isLoading)
                 }
-                
             }
         }
         .task {
             await fetchProducts()
         }
-        
     }
-    
 }
 
 extension ProductGridView {
