@@ -19,8 +19,6 @@ struct FavoriteImageView: View {
             .resizable()
             .frame(width: screen.width / 1.1 / 3, height: screen.height / 5)
             .aspectRatio(contentMode: .fit)
-            
-        
     }
 }
 

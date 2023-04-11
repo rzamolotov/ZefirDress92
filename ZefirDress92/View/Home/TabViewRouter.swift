@@ -17,40 +17,89 @@ struct TabViewRouter: View {
     @State var presentAlert: Bool = false
     
     var body: some View {
-        TabView (selection: $selectedTab) {
-            ProductGridView(products: productProvider.products)
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Все платья")
+        
+        ZStack{
+            Rectangle()
+                .frame(width: screen.width / 1.01, height: screen.height / 12)
+                .foregroundColor(.pink)
+                .opacity(0.1)
+                .cornerRadius(30)
+            HStack{
+                NavigationLink {
+                    ProductGridView(products: productProvider.products)
+                    
+                } label: {
+                    VStack{
+                        Image(systemName: "house")
+                        Text("Все платья")
+                    }
                 }
-                .tag(0)
-//            CategoryList(products: modelData.products)
-//                .tabItem {
-//                    Image(systemName: "plus")
-//                    Text("Категории")
-//                }
-//                .tag(1)
-            SizeList(products: productProvider.products)
-                .tabItem {
-                    Image(systemName: "heart")
-                    Text("Размеры")
+                NavigationLink {
+                    SizeList(products: productProvider.products)
+                    
+                } label: {
+                    VStack{
+                        Image(systemName: "house")
+                        Text("Размеры")
+                    }
                 }
-                .tag(3)
-            FavoritesGridView(presentAlert: presentAlert, isSet: isSet)
-                .tabItem {
-                    Image(systemName: "heart")
-                    Text("Избранное")
+                NavigationLink {
+                    SizeList(products: productProvider.products)
+                    
+                } label: {
+                    VStack{
+                        Image(systemName: "heart")
+                        Text("Избранное")
+                    }
                 }
+                NavigationLink {
+                    CartView()
+                    
+                } label: {
+                    VStack{
+                        Image(systemName: "cart")
+                        
+                        Text("Корзина")
+                    }
+                }
+            }
             
-            CartView()
-                .badge(orders.count)
-                .tabItem {
-                    Image(systemName: "cart")
-                    Text("Корзина")
-                }
-                .tag(2)
         }
-        .font(.headline)
+        
+//        TabView (selection: $selectedTab) {
+//            ProductGridView(products: productProvider.products)
+//                .tabItem {
+//                    Image(systemName: "house")
+//                    Text("Все платья")
+//                }
+//                .tag(0)
+//            //            CategoryList(products: modelData.products)
+//            //                .tabItem {
+//            //                    Image(systemName: "plus")
+//            //                    Text("Категории")
+//            //                }
+//            //                .tag(1)
+//            SizeList(products: productProvider.products)
+//                .tabItem {
+//                    Image(systemName: "heart")
+//                    Text("Размеры")
+//                }
+//                .tag(3)
+//            FavoritesGridView(presentAlert: presentAlert, isSet: isSet)
+//                .tabItem {
+//                    Image(systemName: "heart")
+//                    Text("Избранное")
+//                }
+//
+//            CartView()
+//                .badge(orders.count)
+//                .tabItem {
+//                    Image(systemName: "cart")
+//                    Text("Корзина")
+//                }
+//                .tag(2)
+//        }
+//        .font(.headline)
     }
 }
 

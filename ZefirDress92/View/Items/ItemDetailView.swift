@@ -51,10 +51,11 @@ struct ItemDetailView: View {
                 
                 KFImage(URL(string: product.image_link))
                     .resizable()
-                    .shadow(radius: 5)
                     .frame(width: screen.width, height: screen.height / 1.8)
-                
-                ItemDescriptionView(product: product)
+                    .cornerRadius(5)
+                    .aspectRatio(contentMode: .fill)
+                    .shadow(radius: 5)
+                ItemDescriptionView(product: product, isSet: isAddToFavorite)
             }
         }
         .navigationBarTitle(

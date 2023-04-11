@@ -13,7 +13,6 @@ struct SizeList: View {
     var products: [Product]
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 ForEach(productProvider.sizes.keys.sorted(), id: \.self) { key in
                     SizesRow(sizeName: key, products: productProvider.sizes[key]!)
@@ -23,7 +22,6 @@ struct SizeList: View {
                 .listRowInsets(EdgeInsets())
             }
             .padding()
-        }
     }
 }
 

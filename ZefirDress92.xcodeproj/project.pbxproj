@@ -18,6 +18,9 @@
 		7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7644AE0429DD3B02009B4730 /* Kingfisher */; };
 		764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */; };
 		764B9C3729D5D7270077B1A4 /* FavoriteTitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */; };
+		7654713829E3487400C7BEC0 /* SendGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 7654713729E3487400C7BEC0 /* SendGrid */; };
+		7654713D29E4516C00C7BEC0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654713C29E4516C00C7BEC0 /* Message.swift */; };
+		7654713F29E4546F00C7BEC0 /* Send.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654713E29E4546F00C7BEC0 /* Send.swift */; };
 		765F214329BCA19D0052A95B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214229BCA19D0052A95B /* LoginView.swift */; };
 		765F214629BCA2250052A95B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214529BCA2250052A95B /* ViewRouter.swift */; };
 		765F214829BCA2500052A95B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214729BCA2500052A95B /* Helpers.swift */; };
@@ -29,6 +32,8 @@
 		765F581429D466B500042727 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F581329D466B500042727 /* Network.swift */; };
 		765F581829D4790000042727 /* SizesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F581729D4790000042727 /* SizesRow.swift */; };
 		765F581A29D47BD100042727 /* SizeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F581929D47BD100042727 /* SizeList.swift */; };
+		766F0EDA29E5AB74006D74DF /* HeaderViewHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0ED929E5AB74006D74DF /* HeaderViewHomeScreen.swift */; };
+		766F0EDD29E5B2AD006D74DF /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EDC29E5B2AD006D74DF /* CategoryList.swift */; };
 		7678586D29C18DC200A0A709 /* PlaceOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678586C29C18DC200A0A709 /* PlaceOrder.swift */; };
 		7678586F29C18E7A00A0A709 /* OrderInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678586E29C18E7A00A0A709 /* OrderInformation.swift */; };
 		7678587129C1905000A0A709 /* PaymentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678587029C1905000A0A709 /* PaymentInformation.swift */; };
@@ -85,6 +90,8 @@
 		7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesGridView.swift; sourceTree = "<group>"; };
 		764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImageView.swift; sourceTree = "<group>"; };
 		764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTitleTextView.swift; sourceTree = "<group>"; };
+		7654713C29E4516C00C7BEC0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7654713E29E4546F00C7BEC0 /* Send.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Send.swift; sourceTree = "<group>"; };
 		765F214229BCA19D0052A95B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		765F214529BCA2250052A95B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		765F214729BCA2500052A95B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -97,6 +104,8 @@
 		765F581529D4687400042727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		765F581729D4790000042727 /* SizesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizesRow.swift; sourceTree = "<group>"; };
 		765F581929D47BD100042727 /* SizeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeList.swift; sourceTree = "<group>"; };
+		766F0ED929E5AB74006D74DF /* HeaderViewHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewHomeScreen.swift; sourceTree = "<group>"; };
+		766F0EDC29E5B2AD006D74DF /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		7678586C29C18DC200A0A709 /* PlaceOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrder.swift; sourceTree = "<group>"; };
 		7678586E29C18E7A00A0A709 /* OrderInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInformation.swift; sourceTree = "<group>"; };
 		7678587029C1905000A0A709 /* PaymentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInformation.swift; sourceTree = "<group>"; };
@@ -146,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7654713829E3487400C7BEC0 /* SendGrid in Frameworks */,
 				7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +200,15 @@
 			path = ItemFavorite;
 			sourceTree = "<group>";
 		};
+		7654713929E348D200C7BEC0 /* MessageSend */ = {
+			isa = PBXGroup;
+			children = (
+				7654713C29E4516C00C7BEC0 /* Message.swift */,
+				7654713E29E4546F00C7BEC0 /* Send.swift */,
+			);
+			path = MessageSend;
+			sourceTree = "<group>";
+		};
 		765F214129BCA17E0052A95B /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +229,31 @@
 				765F581929D47BD100042727 /* SizeList.swift */,
 			);
 			path = SizesList;
+			sourceTree = "<group>";
+		};
+		766F0ED729E5AB47006D74DF /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				766F0EDB29E5AF1D006D74DF /* SizeList */,
+				766F0ED829E5AB57006D74DF /* Header */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		766F0ED829E5AB57006D74DF /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				766F0ED929E5AB74006D74DF /* HeaderViewHomeScreen.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		766F0EDB29E5AF1D006D74DF /* SizeList */ = {
+			isa = PBXGroup;
+			children = (
+				766F0EDC29E5B2AD006D74DF /* CategoryList.swift */,
+			);
+			path = SizeList;
 			sourceTree = "<group>";
 		};
 		7678587829C1943600A0A709 /* Profile */ = {
@@ -272,6 +316,7 @@
 		76EAFF7F29AB3ACC001799EB /* ZefirDress92 */ = {
 			isa = PBXGroup;
 			children = (
+				7654713929E348D200C7BEC0 /* MessageSend */,
 				76EAFF9B29AB7DE8001799EB /* View */,
 				76EAFF9429AB7AAD001799EB /* ViewModel */,
 				76EAFF8E29AB3AF7001799EB /* Model */,
@@ -322,6 +367,7 @@
 		76EAFF9B29AB7DE8001799EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				766F0ED729E5AB47006D74DF /* HomeScreen */,
 				76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */,
 				7678587829C1943600A0A709 /* Profile */,
 				7644A7F829C0319700B1E788 /* FavoritesView */,
@@ -404,6 +450,7 @@
 			name = ZefirDress92;
 			packageProductDependencies = (
 				7644AE0429DD3B02009B4730 /* Kingfisher */,
+				7654713729E3487400C7BEC0 /* SendGrid */,
 			);
 			productName = ZefirDress92;
 			productReference = 76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */;
@@ -439,6 +486,7 @@
 			mainGroup = 76EAFF7429AB3ACC001799EB;
 			packageReferences = (
 				7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7654713629E3487400C7BEC0 /* XCRemoteSwiftPackageReference "sendgrid-swift" */,
 			);
 			productRefGroup = 76EAFF7E29AB3ACC001799EB /* Products */;
 			projectDirPath = "";
@@ -487,6 +535,7 @@
 				765F581A29D47BD100042727 /* SizeList.swift in Sources */,
 				7682EBD129C113B00073142B /* AlertView.swift in Sources */,
 				7682EBCF29C112CF0073142B /* ProfileVIew.swift in Sources */,
+				7654713D29E4516C00C7BEC0 /* Message.swift in Sources */,
 				7678587529C191D800A0A709 /* EmptyCartView.swift in Sources */,
 				765F581829D4790000042727 /* SizesRow.swift in Sources */,
 				76EAFFB429AD4DEB001799EB /* ItemDescriptionView.swift in Sources */,
@@ -494,6 +543,7 @@
 				765F581429D466B500042727 /* Network.swift in Sources */,
 				764B9C3729D5D7270077B1A4 /* FavoriteTitleTextView.swift in Sources */,
 				7678586F29C18E7A00A0A709 /* OrderInformation.swift in Sources */,
+				7654713F29E4546F00C7BEC0 /* Send.swift in Sources */,
 				76EAFF8329AB3ACC001799EB /* MainView.swift in Sources */,
 				765F214E29BCA4DB0052A95B /* Password.swift in Sources */,
 				76EAFFB229AD48C1001799EB /* AddToCartButton.swift in Sources */,
@@ -517,6 +567,7 @@
 				76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */,
 				76EAFF9029AB7829001799EB /* Product.swift in Sources */,
 				76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */,
+				766F0EDD29E5B2AD006D74DF /* CategoryList.swift in Sources */,
 				765F214829BCA2500052A95B /* Helpers.swift in Sources */,
 				7678587129C1905000A0A709 /* PaymentInformation.swift in Sources */,
 				7682EBC029C0D03A0073142B /* Persistance.swift in Sources */,
@@ -524,6 +575,7 @@
 				7678587329C190C300A0A709 /* Total.swift in Sources */,
 				7678586D29C18DC200A0A709 /* PlaceOrder.swift in Sources */,
 				7642E03129D6D3E400A37D01 /* ProductProvider.swift in Sources */,
+				766F0EDA29E5AB74006D74DF /* HeaderViewHomeScreen.swift in Sources */,
 				7642E02D29D6D14600A37D01 /* ProductError.swift in Sources */,
 				7642E02F29D6D24400A37D01 /* ProductJSON.swift in Sources */,
 				765F214629BCA2250052A95B /* ViewRouter.swift in Sources */,
@@ -808,6 +860,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		7654713629E3487400C7BEC0 /* XCRemoteSwiftPackageReference "sendgrid-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scottkawai/sendgrid-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -815,6 +875,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		7654713729E3487400C7BEC0 /* SendGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7654713629E3487400C7BEC0 /* XCRemoteSwiftPackageReference "sendgrid-swift" */;
+			productName = SendGrid;
 		};
 /* End XCSwiftPackageProductDependency section */
 

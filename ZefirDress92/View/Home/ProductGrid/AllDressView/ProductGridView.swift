@@ -19,22 +19,27 @@ struct ProductGridView: View {
     
     var body: some View {
         NavigationView{
-            ScrollView{
-                LazyVGrid(columns: gridLayout, spacing: columnSpacing) {
-                    ForEach(productProvider.products) { product in
-                        NavigationLink {
-                            ItemDetailView(id: product.id, title: product.title, size: product.size, price_photo: product.price_photo, price_rent: product.price_rent ?? 0, deposit: product.deposit, description: product.description, link: product.link, image_link: product.image_link, availability: product.availability, price: product.price, condition: product.condition, isAddToFavorite: product.isAddToFavorite, category: product.category)
-                        } label: {
-                            ProductView(product: product)
+            VStack{
+                ScrollView{
+                    LazyVGrid(columns: gridLayout, spacing: columnSpacing) {
+                        ForEach(productProvider.products) { product in
+                            NavigationLink {
+                                ItemDetailView(id: product.id, title: product.title, size: product.size, price_photo: product.price_photo, price_rent: product.price_rent ?? 0, deposit: product.deposit, description: product.description, link: product.link, image_link: product.image_link, availability: product.availability, price: product.price, condition: product.condition, isAddToFavorite: product.isAddToFavorite, category: product.category)
+                            } label: {
+                                ProductView(product: product)
+                            }
+                            
                         }
                     }
+                    .navigationBarTitle("Все платья")
+                    .padding([.trailing, .leading])
+                    .refreshable {
+                        await fetchProducts()
+                        print(isLoading)
+                    }
+                    
                 }
-                .navigationBarTitle("Все платья")
-                .padding([.trailing, .leading])
-                .refreshable {
-                    await fetchProducts()
-                    print(isLoading)
-                }
+                TabViewRouter()
             }
         }
         .task {
@@ -55,8 +60,6 @@ extension ProductGridView {
         isLoading = false
     }
 }
-
-
 
 struct ProductGridView_Previews: PreviewProvider {
     static var products = ProductProvider().products

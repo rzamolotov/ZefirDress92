@@ -17,7 +17,7 @@ struct MainView: View {
         case .login:
             LoginView()
         case .landing:
-            TabViewRouter()
+            ProductGridView(products: productProvider.products)
                 .transition(.move(edge: .trailing))
         }
     }

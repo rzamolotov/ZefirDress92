@@ -20,8 +20,7 @@ struct SizesRow: View {
                     .padding(.top, 10)
                 Spacer()
                 NavigationLink {
-
-                    
+          
                 } label: {
                     Text("смотреть все")
                         .font(.headline)
@@ -45,7 +44,7 @@ struct SizesRow: View {
 }
 
 struct SizesRow_Previews: PreviewProvider {
-        static var previews: some View {
+    static var previews: some View {
         SizesRow(sizeName: example.size[0], products: [example])
     }
 }

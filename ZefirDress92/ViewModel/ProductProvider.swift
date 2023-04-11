@@ -10,8 +10,6 @@ import Foundation
 @MainActor
 class ProductProvider: ObservableObject {
     
-   
-
     @Published var products: [Product] = []
 
     let network: Network
@@ -31,13 +29,13 @@ class ProductProvider: ObservableObject {
             by: { $0.category.first! }
         )
     }// словарь для категорий
+    
     var sizes: [String: [Product]] {
         Dictionary(
             grouping: products,
             by: { $0.size.first! }
         )
     }// словарь для размеров
-    
 }
 
 

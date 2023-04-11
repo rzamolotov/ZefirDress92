@@ -11,13 +11,14 @@ struct ItemDescriptionView: View {
     
     @EnvironmentObject var productProvider: ProductProvider
     var product: Product
+    @State var isSet: Bool
     
     @State private var presentAlert = false
     
     var body: some View {
         VStack {
             HStack {
-                FavoriteButtonView(isSet: .constant(false), product: product)
+                FavoriteButtonView(isSet: $isSet, product: product)
                     .padding([.leading, .trailing])
                 
                 ItemSizeCheckView(product: product)
@@ -48,7 +49,7 @@ struct ItemDescriptionView: View {
 
 struct ItemDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemDescriptionView(product: example)
+        ItemDescriptionView(product: example, isSet: false)
             .environmentObject(ProductProvider())
     }
 }
