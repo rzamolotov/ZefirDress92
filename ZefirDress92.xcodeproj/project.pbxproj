@@ -34,6 +34,11 @@
 		765F581A29D47BD100042727 /* SizeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F581929D47BD100042727 /* SizeList.swift */; };
 		766F0EDA29E5AB74006D74DF /* HeaderViewHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0ED929E5AB74006D74DF /* HeaderViewHomeScreen.swift */; };
 		766F0EDD29E5B2AD006D74DF /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EDC29E5B2AD006D74DF /* CategoryList.swift */; };
+		766F0EDF29E5E17E006D74DF /* TabItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EDE29E5E17E006D74DF /* TabItemData.swift */; };
+		766F0EE129E5E1EB006D74DF /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EE029E5E1EB006D74DF /* TabItemView.swift */; };
+		766F0EE329E5E501006D74DF /* TabBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EE229E5E501006D74DF /* TabBottomView.swift */; };
+		766F0EE529E5E86D006D74DF /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EE429E5E86D006D74DF /* CustomTabView.swift */; };
+		766F0EE729E5EB64006D74DF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EE629E5EB64006D74DF /* MainTabView.swift */; };
 		7678586D29C18DC200A0A709 /* PlaceOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678586C29C18DC200A0A709 /* PlaceOrder.swift */; };
 		7678586F29C18E7A00A0A709 /* OrderInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678586E29C18E7A00A0A709 /* OrderInformation.swift */; };
 		7678587129C1905000A0A709 /* PaymentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678587029C1905000A0A709 /* PaymentInformation.swift */; };
@@ -51,7 +56,6 @@
 		76A57AE329D75E5600F428AB /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE229D75E5600F428AB /* ProductTests.swift */; };
 		76A57AE429D8527200F428AB /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE029D75D6B00F428AB /* TestData.swift */; };
 		76A57AE829D852DC00F428AB /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE729D852DC00F428AB /* TestDownloader.swift */; };
-		76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */; };
 		76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */; };
 		76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42829B8B821001BEEBE /* ItemPriceView.swift */; };
 		76EAFF8129AB3ACC001799EB /* ZefirDress92App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF8029AB3ACC001799EB /* ZefirDress92App.swift */; };
@@ -106,6 +110,11 @@
 		765F581929D47BD100042727 /* SizeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeList.swift; sourceTree = "<group>"; };
 		766F0ED929E5AB74006D74DF /* HeaderViewHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewHomeScreen.swift; sourceTree = "<group>"; };
 		766F0EDC29E5B2AD006D74DF /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		766F0EDE29E5E17E006D74DF /* TabItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemData.swift; sourceTree = "<group>"; };
+		766F0EE029E5E1EB006D74DF /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
+		766F0EE229E5E501006D74DF /* TabBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBottomView.swift; sourceTree = "<group>"; };
+		766F0EE429E5E86D006D74DF /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		766F0EE629E5EB64006D74DF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		7678586C29C18DC200A0A709 /* PlaceOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrder.swift; sourceTree = "<group>"; };
 		7678586E29C18E7A00A0A709 /* OrderInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInformation.swift; sourceTree = "<group>"; };
 		7678587029C1905000A0A709 /* PaymentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInformation.swift; sourceTree = "<group>"; };
@@ -124,7 +133,6 @@
 		76A57AE029D75D6B00F428AB /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		76A57AE229D75E5600F428AB /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		76A57AE729D852DC00F428AB /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = "<group>"; };
-		76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabViewRouter.swift; path = Home/TabViewRouter.swift; sourceTree = "<group>"; };
 		76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSizeCheckView.swift; sourceTree = "<group>"; };
 		76EAF42829B8B821001BEEBE /* ItemPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
 		76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZefirDress92.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +264,17 @@
 			path = SizeList;
 			sourceTree = "<group>";
 		};
+		766F0EE829E5EE3A006D74DF /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				766F0EE029E5E1EB006D74DF /* TabItemView.swift */,
+				766F0EE229E5E501006D74DF /* TabBottomView.swift */,
+				766F0EE429E5E86D006D74DF /* CustomTabView.swift */,
+				766F0EE629E5EB64006D74DF /* MainTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		7678587829C1943600A0A709 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +366,7 @@
 			children = (
 				76EAFF8F29AB7829001799EB /* Product.swift */,
 				765F214729BCA2500052A95B /* Helpers.swift */,
+				766F0EDE29E5E17E006D74DF /* TabItemData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,8 +387,8 @@
 		76EAFF9B29AB7DE8001799EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				766F0EE829E5EE3A006D74DF /* TabView */,
 				766F0ED729E5AB47006D74DF /* HomeScreen */,
-				76A7A24929BCF5B6001BDB8F /* TabViewRouter.swift */,
 				7678587829C1943600A0A709 /* Profile */,
 				7644A7F829C0319700B1E788 /* FavoritesView */,
 				765F214129BCA17E0052A95B /* Login */,
@@ -545,6 +565,7 @@
 				7678586F29C18E7A00A0A709 /* OrderInformation.swift in Sources */,
 				7654713F29E4546F00C7BEC0 /* Send.swift in Sources */,
 				76EAFF8329AB3ACC001799EB /* MainView.swift in Sources */,
+				766F0EE329E5E501006D74DF /* TabBottomView.swift in Sources */,
 				765F214E29BCA4DB0052A95B /* Password.swift in Sources */,
 				76EAFFB229AD48C1001799EB /* AddToCartButton.swift in Sources */,
 				76EAFFB029ACA369001799EB /* CartView.swift in Sources */,
@@ -554,16 +575,18 @@
 				76A57AE429D8527200F428AB /* TestData.swift in Sources */,
 				76EAFF9629AB7AC2001799EB /* Constant.swift in Sources */,
 				764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */,
-				76A7A24A29BCF5B6001BDB8F /* TabViewRouter.swift in Sources */,
 				765F214A29BCA2CD0052A95B /* BrandLogo.swift in Sources */,
 				7642E02B29D6D11400A37D01 /* HTTPDataDownloader.swift in Sources */,
 				7642E02429D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift in Sources */,
+				766F0EDF29E5E17E006D74DF /* TabItemData.swift in Sources */,
 				76EAFF8129AB3ACC001799EB /* ZefirDress92App.swift in Sources */,
 				76EAFFA629ABD722001799EB /* ProductView.swift in Sources */,
 				7644A7FA29C04BBC00B1E788 /* FavoritesGridView.swift in Sources */,
 				7642E02229D5DACC00A37D01 /* FavoriteAddToCartItem.swift in Sources */,
 				7682EBC329C0D0710073142B /* ProductData.xcdatamodeld in Sources */,
 				76A57AE829D852DC00F428AB /* TestDownloader.swift in Sources */,
+				766F0EE129E5E1EB006D74DF /* TabItemView.swift in Sources */,
+				766F0EE729E5EB64006D74DF /* MainTabView.swift in Sources */,
 				76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */,
 				76EAFF9029AB7829001799EB /* Product.swift in Sources */,
 				76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */,
@@ -571,6 +594,7 @@
 				765F214829BCA2500052A95B /* Helpers.swift in Sources */,
 				7678587129C1905000A0A709 /* PaymentInformation.swift in Sources */,
 				7682EBC029C0D03A0073142B /* Persistance.swift in Sources */,
+				766F0EE529E5E86D006D74DF /* CustomTabView.swift in Sources */,
 				765F214C29BCA3570052A95B /* UserName.swift in Sources */,
 				7678587329C190C300A0A709 /* Total.swift in Sources */,
 				7678586D29C18DC200A0A709 /* PlaceOrder.swift in Sources */,

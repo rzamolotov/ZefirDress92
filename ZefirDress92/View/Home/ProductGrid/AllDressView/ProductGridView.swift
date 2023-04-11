@@ -39,7 +39,6 @@ struct ProductGridView: View {
                     }
                     
                 }
-                TabViewRouter()
             }
         }
         .task {
