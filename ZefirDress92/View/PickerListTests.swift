@@ -44,7 +44,7 @@ struct PickerListTests: View {
             case .night:
                 return "Вечернее платье"
             case .kids:
-                return "Детское платье"
+                return "Детские"
             case .photosession:
                 return "Фотосессия"
             }
@@ -55,7 +55,7 @@ struct PickerListTests: View {
     @State private var selectedCategory: Categories = .night
     
     var filteredProducts: [Product] {
-        let result = products.filter { $0.size.contains(selectedSize.title) }
+        let result = products.filter { $0.size.contains(selectedSize.title) && $0.category.contains(selectedCategory.title)}
         print("filteredProducts: \(result)")
         return result
     }
@@ -70,11 +70,11 @@ struct PickerListTests: View {
                     }
                 }
                 .pickerStyle(.menu)
-//                Picker("Выберете категорию", selection: $selectedCategory) {
-//                    ForEach(Categories.allCases) { category in
-//                        Text(category.title).tag(category)
-//                    }
-//                }
+                Picker("Выберете категорию", selection: $selectedCategory) {
+                    ForEach(Categories.allCases) { category in
+                        Text(category.title).tag(category)
+                    }
+                }
                 
                 ScrollView {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
