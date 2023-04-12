@@ -81,5 +81,8 @@ extension Product: Decodable {
         
     }
 }
+extension Product: Hashable {
+    
+}
 
 

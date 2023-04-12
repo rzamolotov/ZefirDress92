@@ -12,16 +12,19 @@ struct MainTabView: View {
     @EnvironmentObject var productProvider: ProductProvider
     enum TabType: Int, CaseIterable {
         case home = 0
-        case myFile
-        case profile
+        case favorite
+        case cart
+        case search
         
         var tabItem: TabItemData {
             switch self {
             case .home:
                 return TabItemData(image: "house", selectedImage: "house.fill", title: "Главная")
-            case .myFile:
+            case .search:
+                return TabItemData(image: "magnifyingglass", selectedImage: "magnifyingglass.circle.fill", title: "Поиск")
+            case .favorite:
                 return TabItemData(image: "heart", selectedImage: "heart.fill", title: "Избранное")
-            case .profile:
+            case .cart:
                 return TabItemData(image: "cart", selectedImage: "cart.fill", title: "Корзина")
             }
         }
@@ -38,10 +41,12 @@ struct MainTabView: View {
             switch type {
             case .home:
                 ProductGridView(products: productProvider.products)
-            case .myFile:
+            case .favorite:
                 FavoritesGridView(presentAlert: false, isSet: true)
-            case .profile:
+            case .cart:
                 CartView()
+            case .search:
+                PickerListTests(products: productProvider.products)
             }
         }
     }
