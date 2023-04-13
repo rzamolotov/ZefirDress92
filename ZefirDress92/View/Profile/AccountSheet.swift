@@ -13,13 +13,11 @@ struct AccountSheet: View {
     @Binding var user_phone_number: String
     @Binding var user_email: String
     @Binding var user_address: String
-    @Binding var showAccountInfoSheet: Bool
+
     
     var body: some View {
         NavigationView{
             VStack {
-                CloseButton(showAccountInfoSheet: $showAccountInfoSheet)
-                
                 Header(user_name: $user_name, user_phone_number: $user_phone_number, user_email: $user_email, user_address: $user_address)
                 
                 Spacer()
@@ -45,8 +43,7 @@ struct AccountSheet_Previews: PreviewProvider {
             user_name: Binding.constant("Юлия Замолотова"),
             user_phone_number: Binding.constant("8 978 827 80 94"),
             user_email: Binding.constant("example@example.com"),
-            user_address: Binding.constant("123 Apple Way, NY 12345"),
-            showAccountInfoSheet: Binding.constant(true)).environmentObject(ViewRouter())
+            user_address: Binding.constant("123 Apple Way, NY 12345"))
     }
 }
 
@@ -60,18 +57,19 @@ struct LogOutButton: View {
         Button(action: {
             showAlert = true
         }) {
-            Text("Logout")
+            Text("Выйти")
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding()
-                .frame(width: 150, height: 45)
-                .background(Color.red)
+                .frame(width: screen.width / 3, height: screen.height / 19)
+                .background(Color.pink)
+                .opacity(0.7)
                 .cornerRadius(15.0)
         }
         .alert(isPresented: $showAlert){
             Alert(
-                title: Text("Are you sure you want to logout?"),
-                primaryButton: .destructive((Text("Confirm"))) {
+                title: Text("Вы уверены, что хотите выйти?"),
+                primaryButton: .destructive((Text("Да"))) {
                     withAnimation(){
                         viewRouter.currentPage = .login
                     }
@@ -86,17 +84,13 @@ struct LogOutButton: View {
 struct InfoList: View {
     var body: some View {
         List{
-            Text("История заказов")
+            Text("О нас")
                 .font(.body)
                 .frame(height: 35)
-            
-            Text("Способы оплаты")
+            Text("Контакты")
                 .font(.body)
                 .frame(height: 35)
-            
-            Text("Адрес доставки")
-                .font(.body)
-                .frame(height: 35)
+
         }
         .listStyle(.grouped)
     }
@@ -143,19 +137,3 @@ struct Header: View {
     }
 }
 
-struct CloseButton: View {
-    @Binding var showAccountInfoSheet: Bool
-    
-    var body: some View {
-        HStack{
-            Spacer()
-            Button(action: {
-                showAccountInfoSheet = false
-            }){
-                Image(systemName: "xmark.circle")
-                    .imageScale(.large)
-            }
-        }
-        .padding(10)
-    }
-}

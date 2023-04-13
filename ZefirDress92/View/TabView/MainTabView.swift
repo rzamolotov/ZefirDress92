@@ -15,17 +15,20 @@ struct MainTabView: View {
         case favorite
         case cart
         case search
+        case peron
         
         var tabItem: TabItemData {
             switch self {
             case .home:
                 return TabItemData(image: "house", selectedImage: "house.fill", title: "Главная")
             case .search:
-                return TabItemData(image: "magnifyingglass", selectedImage: "magnifyingglass.circle.fill", title: "Поиск")
+                return TabItemData(image: "magnifyingglass.circle", selectedImage: "magnifyingglass.circle.fill", title: "Поиск")
             case .favorite:
-                return TabItemData(image: "heart", selectedImage: "heart.fill", title: "Избранное")
+                return TabItemData(image: "heart", selectedImage: "heart.fill", title: "Отложить")
             case .cart:
                 return TabItemData(image: "cart", selectedImage: "cart.fill", title: "Корзина")
+            case .peron:
+                return TabItemData(image: "person", selectedImage: "person.fill", title: "О нас")
             }
         }
     }
@@ -41,12 +44,14 @@ struct MainTabView: View {
             switch type {
             case .home:
                 ProductGridView(products: productProvider.products)
+            case .search:
+                SearchView(products: productProvider.products)
             case .favorite:
                 FavoritesGridView(presentAlert: false, isSet: true)
             case .cart:
                 CartView()
-            case .search:
-                PickerListTests(products: productProvider.products)
+            case .peron:
+                AccountSheet(user_name: .constant("Имя"), user_phone_number: .constant(""), user_email: .constant(""), user_address: .constant(""))
             }
         }
     }

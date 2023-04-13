@@ -1,13 +1,13 @@
 //
-//  PickerListTests.swift
+//  SearchView.swift
 //  ZefirDress92
 //
-//  Created by Роман Замолотов on 11.04.2023.
+//  Created by Роман Замолотов on 13.04.2023.
 //
 
 import SwiftUI
 
-struct PickerListTests: View {
+struct SearchView: View {
     enum Sizes: String, CaseIterable, Identifiable {
         case size38, size40, size42, size44, size46, size48, size50
         var id: Self {
@@ -69,12 +69,13 @@ struct PickerListTests: View {
                         Text(size.title).tag(size)
                     }
                 }
-                .pickerStyle(.menu)
+                .pickerStyle(.automatic)
                 Picker("Выберете категорию", selection: $selectedCategory) {
                     ForEach(Categories.allCases) { category in
                         Text(category.title).tag(category)
                     }
                 }
+                .pickerStyle(.segmented)
                 
                 ScrollView {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
@@ -84,18 +85,16 @@ struct PickerListTests: View {
                             } label: {
                                 ProductView(product: product)
                             }
-                            
-                            
                         }
                     }
-                }
+                } // Лента с выбором отобранным ассортиментом
             }
         }
     }
 }
 
-struct PickerListTests_Previews: PreviewProvider {
+struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        PickerListTests(products: [example])
+        SearchView(products: [example])
     }
 }
