@@ -52,6 +52,13 @@ struct PersistenceController {
             newFavorite.title = "Платье"
             newFavorite.size = sizeFavorite as NSArray
             newFavorite.category = categoryFavorite as NSArray
+            
+            let newPerson = PersonalData(context: viewContext)
+            newPerson.name = "Roman"
+            newPerson.surname = "Zamolotov"
+            newPerson.email = "rzamolotov@gmail.com"
+            newPerson.phoneNumber = "+79788278094"
+            newPerson.adress = "Sevastopol"
         }
         do {
             try viewContext.save()

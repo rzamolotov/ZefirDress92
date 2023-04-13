@@ -43,12 +43,13 @@ struct SaveButton: View {
         Button(action: {
             presentationMode.wrappedValue.dismiss()//go back
         }) {
-            Text("Save")
+            Text("Сохранить")
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding()
-                .frame(width: 150, height: 45)
-                .background(Color.red)
+                .frame(width: screen.width / 3, height: screen.height / 18)
+                .background(Color.pink)
+                .opacity(0.7)
                 .cornerRadius(15.0)
         }
     }
@@ -62,12 +63,16 @@ struct UserInfoForm: View {
     
     var body: some View {
         Form {
-            Section(header: Text("Personal Information")) {
-                TextField("Name", text: $name)
+            Section(header: Text("Личные данные")) {
+                TextField("Имя", text: $name)
                     .textInputAutocapitalization(.words)
                     .disableAutocorrection(true)
                     .keyboardType(.default)
-                TextField("Mobile", text: $phoneNumber)
+                TextField("Фамилия", text: $name)
+                    .textInputAutocapitalization(.words)
+                    .disableAutocorrection(true)
+                    .keyboardType(.default)
+                TextField("Номер телефона", text: $phoneNumber)
                     .keyboardType(.phonePad)
                 TextField("Email", text: $email)
                     .textInputAutocapitalization(.never)
@@ -75,13 +80,13 @@ struct UserInfoForm: View {
                     .keyboardType(.emailAddress)
             }
             
-            Section(header: Text("Address")){
-                TextField("Full address", text: $address)
+            Section(header: Text("Введите адрес доставки")){
+                TextField("Адрес", text: $address)
                     .textInputAutocapitalization(.words)
                     .disableAutocorrection(true)
                     .keyboardType(.default)
             }
         }
-        .navigationTitle("My Profile")
+        .navigationTitle("Мои данные")
     }
 }

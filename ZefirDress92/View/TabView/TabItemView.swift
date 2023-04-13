@@ -16,15 +16,16 @@ struct TabItemView: View {
             Image(systemName: isSelected ? data.selectedImage : data.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 25, height: 25)
                 .animation(.default, value: 2)
             
             Spacer().frame(height: 4)
             
             Text(data.title)
                 .foregroundColor(isSelected ? .black : .gray)
-                .font(.footnote)
+                .font(.custom("", size: 10))
+                
         }
+        .frame(width: 50, height: 40)
     }
 }
 

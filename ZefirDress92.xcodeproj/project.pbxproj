@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761E10DD29E7E82700219F6B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E10DC29E7E82700219F6B /* SearchView.swift */; };
 		763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */; };
 		7642E02229D5DACC00A37D01 /* FavoriteAddToCartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */; };
 		7642E02429D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02329D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift */; };
@@ -18,7 +19,6 @@
 		7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7644AE0429DD3B02009B4730 /* Kingfisher */; };
 		764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */; };
 		764B9C3729D5D7270077B1A4 /* FavoriteTitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */; };
-		7654713829E3487400C7BEC0 /* SendGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 7654713729E3487400C7BEC0 /* SendGrid */; };
 		7654713D29E4516C00C7BEC0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654713C29E4516C00C7BEC0 /* Message.swift */; };
 		7654713F29E4546F00C7BEC0 /* Send.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654713E29E4546F00C7BEC0 /* Send.swift */; };
 		765F214329BCA19D0052A95B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214229BCA19D0052A95B /* LoginView.swift */; };
@@ -39,10 +39,8 @@
 		766F0EE329E5E501006D74DF /* TabBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EE229E5E501006D74DF /* TabBottomView.swift */; };
 		766F0EE529E5E86D006D74DF /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EE429E5E86D006D74DF /* CustomTabView.swift */; };
 		766F0EE729E5EB64006D74DF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EE629E5EB64006D74DF /* MainTabView.swift */; };
-		766F0EEA29E5F099006D74DF /* PickerListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EE929E5F099006D74DF /* PickerListTests.swift */; };
 		7678586D29C18DC200A0A709 /* PlaceOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678586C29C18DC200A0A709 /* PlaceOrder.swift */; };
 		7678586F29C18E7A00A0A709 /* OrderInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678586E29C18E7A00A0A709 /* OrderInformation.swift */; };
-		7678587129C1905000A0A709 /* PaymentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678587029C1905000A0A709 /* PaymentInformation.swift */; };
 		7678587329C190C300A0A709 /* Total.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678587229C190C300A0A709 /* Total.swift */; };
 		7678587529C191D800A0A709 /* EmptyCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678587429C191D800A0A709 /* EmptyCartView.swift */; };
 		7678587729C1923300A0A709 /* EmptyFavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678587629C1923300A0A709 /* EmptyFavoritesView.swift */; };
@@ -85,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		761E10DC29E7E82700219F6B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddToCartItem.swift; sourceTree = "<group>"; };
 		7642E02329D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddToFavoriteItem.swift; sourceTree = "<group>"; };
@@ -116,10 +115,8 @@
 		766F0EE229E5E501006D74DF /* TabBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBottomView.swift; sourceTree = "<group>"; };
 		766F0EE429E5E86D006D74DF /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		766F0EE629E5EB64006D74DF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		766F0EE929E5F099006D74DF /* PickerListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerListTests.swift; sourceTree = "<group>"; };
 		7678586C29C18DC200A0A709 /* PlaceOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrder.swift; sourceTree = "<group>"; };
 		7678586E29C18E7A00A0A709 /* OrderInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInformation.swift; sourceTree = "<group>"; };
-		7678587029C1905000A0A709 /* PaymentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInformation.swift; sourceTree = "<group>"; };
 		7678587229C190C300A0A709 /* Total.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Total.swift; sourceTree = "<group>"; };
 		7678587429C191D800A0A709 /* EmptyCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCartView.swift; sourceTree = "<group>"; };
 		7678587629C1923300A0A709 /* EmptyFavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFavoritesView.swift; sourceTree = "<group>"; };
@@ -165,7 +162,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7654713829E3487400C7BEC0 /* SendGrid in Frameworks */,
 				7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +169,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		761E10D929E7E78E00219F6B /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				761E10DC29E7E82700219F6B /* SearchView.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
 		763B1FA129BCFE960027C3E3 /* AllDressView */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,7 +285,6 @@
 			isa = PBXGroup;
 			children = (
 				7682EBCC29C112840073142B /* AccountSheet.swift */,
-				7678587029C1905000A0A709 /* PaymentInformation.swift */,
 				7678586E29C18E7A00A0A709 /* OrderInformation.swift */,
 				7682EBCE29C112CF0073142B /* ProfileVIew.swift */,
 			);
@@ -389,6 +392,7 @@
 		76EAFF9B29AB7DE8001799EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				761E10D929E7E78E00219F6B /* SearchView */,
 				766F0EE829E5EE3A006D74DF /* TabView */,
 				766F0ED729E5AB47006D74DF /* HomeScreen */,
 				7678587829C1943600A0A709 /* Profile */,
@@ -397,7 +401,6 @@
 				76EAFFA429ABD70A001799EB /* Home */,
 				76EAFFA129AB85EF001799EB /* Items */,
 				76EAFF9C29AB7DF0001799EB /* CartView */,
-				766F0EE929E5F099006D74DF /* PickerListTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -473,7 +476,6 @@
 			name = ZefirDress92;
 			packageProductDependencies = (
 				7644AE0429DD3B02009B4730 /* Kingfisher */,
-				7654713729E3487400C7BEC0 /* SendGrid */,
 			);
 			productName = ZefirDress92;
 			productReference = 76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */;
@@ -509,7 +511,6 @@
 			mainGroup = 76EAFF7429AB3ACC001799EB;
 			packageReferences = (
 				7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				7654713629E3487400C7BEC0 /* XCRemoteSwiftPackageReference "sendgrid-swift" */,
 			);
 			productRefGroup = 76EAFF7E29AB3ACC001799EB /* Products */;
 			projectDirPath = "";
@@ -574,7 +575,6 @@
 				76EAFFB029ACA369001799EB /* CartView.swift in Sources */,
 				763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */,
 				765F215229BCA8860052A95B /* SkipButton.swift in Sources */,
-				766F0EEA29E5F099006D74DF /* PickerListTests.swift in Sources */,
 				7678587729C1923300A0A709 /* EmptyFavoritesView.swift in Sources */,
 				76A57AE429D8527200F428AB /* TestData.swift in Sources */,
 				76EAFF9629AB7AC2001799EB /* Constant.swift in Sources */,
@@ -590,13 +590,13 @@
 				7682EBC329C0D0710073142B /* ProductData.xcdatamodeld in Sources */,
 				76A57AE829D852DC00F428AB /* TestDownloader.swift in Sources */,
 				766F0EE129E5E1EB006D74DF /* TabItemView.swift in Sources */,
+				761E10DD29E7E82700219F6B /* SearchView.swift in Sources */,
 				766F0EE729E5EB64006D74DF /* MainTabView.swift in Sources */,
 				76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */,
 				76EAFF9029AB7829001799EB /* Product.swift in Sources */,
 				76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */,
 				766F0EDD29E5B2AD006D74DF /* CategoryList.swift in Sources */,
 				765F214829BCA2500052A95B /* Helpers.swift in Sources */,
-				7678587129C1905000A0A709 /* PaymentInformation.swift in Sources */,
 				7682EBC029C0D03A0073142B /* Persistance.swift in Sources */,
 				766F0EE529E5E86D006D74DF /* CustomTabView.swift in Sources */,
 				765F214C29BCA3570052A95B /* UserName.swift in Sources */,
@@ -888,14 +888,6 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		7654713629E3487400C7BEC0 /* XCRemoteSwiftPackageReference "sendgrid-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scottkawai/sendgrid-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -903,11 +895,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		7654713729E3487400C7BEC0 /* SendGrid */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7654713629E3487400C7BEC0 /* XCRemoteSwiftPackageReference "sendgrid-swift" */;
-			productName = SendGrid;
 		};
 /* End XCSwiftPackageProductDependency section */
 

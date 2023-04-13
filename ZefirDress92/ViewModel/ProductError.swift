@@ -19,7 +19,7 @@ extension ProductError: LocalizedError {
         case .missingData:
             return NSLocalizedString("Discarding missing a valid name, image etc.", comment: "")
         case .networkError:
-            return NSLocalizedString("Error fetching quake data over the network.", comment: "")
+            return NSLocalizedString("Error fetching item data over the network.", comment: "")
         case .unexpectedError(let error):
             return NSLocalizedString("Received unexpected error. \(error.localizedDescription)", comment: "")
         }
