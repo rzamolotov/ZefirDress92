@@ -19,11 +19,11 @@ struct Profile: View {
     @Environment(\.managedObjectContext) private var viewContext
     var newProfile: PersonalData
     
-    @State private var name = ""
-    @State private var surname = ""
-    @State private var phoneNumber = ""
-    @State private var email = ""
-    @State private var address = ""
+    @State var name = ""
+    @State var surname = ""
+    @State var phoneNumber = ""
+    @State var email = ""
+    @State var adress = ""
     
     @FocusState private var focusedField: Field?
     
@@ -99,7 +99,7 @@ struct Profile: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Адрес доставки", text: $address)
+                    TextField("Адрес доставки", text: $adress)
                         .focused($focusedField, equals: .adress)
                         .textInputAutocapitalization(.words)
                         .disableAutocorrection(true)
@@ -111,13 +111,22 @@ struct Profile: View {
             .cornerRadius(20)
             
             Button(action: {
-                presentationMode.wrappedValue.dismiss()//go back
-                let newUser = PersonalData(context: viewContext)
-                newUser.adress = newProfile.adress
-                newUser.name = newProfile.name
-                newUser.surname = newProfile.surname
-                newUser.phoneNumber = newProfile.phoneNumber
-                newUser.email = newProfile.email
+                
+                presentationMode.wrappedValue.dismiss() //go back
+                
+                // Update the fields of the single PersonalData object
+                newProfile.name = name
+                newProfile.surname = surname
+                newProfile.phoneNumber = phoneNumber
+                newProfile.email = email
+                newProfile.adress = adress
+                //                presentationMode.wrappedValue.dismiss()//go back
+                //                let newUser = PersonalData(context: viewContext)
+                //                newUser.adress = adress
+                //                newUser.name = name
+                //                newUser.surname = surname
+                //                newUser.phoneNumber = phoneNumber
+                //                newUser.email = email
                 do {
                     try viewContext.save()
                     print("profile saved")
@@ -147,21 +156,22 @@ struct Profile: View {
             case .phoneNumber:
                 focusedField = .adress
             default:
-                let newUser = PersonalData(context: viewContext)
-                newUser.adress = newProfile.adress
-                newUser.name = newProfile.name
-                newUser.surname = newProfile.surname
-                newUser.phoneNumber = newProfile.phoneNumber
-                newUser.email = newProfile.email
-                do {
-                    try viewContext.save()
-                    print("profile saved")
-                } catch {
-                    print("cant`t save profile data \(error)")
-                }
+                print("success")
+                //                let newUser = PersonalData(context: viewContext)
+                //                myProfile.updateValue(newUser, forKey: "newUser")
+                //                newUser.adress = newProfile.adress
+                //                newUser.name = newProfile.name
+                //                newUser.surname = newProfile.surname
+                //                newUser.phoneNumber = newProfile.phoneNumber
+                //                newUser.email = newProfile.email
+                //                do {
+                //                    try viewContext.save()
+                //                    print("profile saved")
+                //                } catch {
+                //                    print("cant`t save profile data \(error)")
+                //                }
             }
         }
-        
     }
 }
 

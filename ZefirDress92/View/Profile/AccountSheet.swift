@@ -18,7 +18,7 @@ struct AccountSheet: View {
     var body: some View {
         NavigationView{
             VStack {
-                Header(user_name: $user_name, user_phone_number: $user_phone_number, user_email: $user_email, user_address: $user_address)
+                HeaderAccountView()
                 
                 Spacer()
                 
@@ -108,32 +108,5 @@ struct Footer: View {
     }
 }
 
-struct Header: View {
-    @Binding var user_name: String
-    @Binding var user_phone_number: String
-    @Binding var user_email: String
-    @Binding var user_address: String
-    
-    var body: some View {
-        VStack(spacing: 5){
-            Text(user_name)
-                .font(.title3)
-                .bold()
-                .kerning(-0.5)
-            Divider()
-                .frame(width: 200)
-            Text(user_email)
-                .font(.subheadline)
-            Text(user_phone_number)
-                .font(.caption)
-            
-            NavigationLink(destination: Profile(newProfile: PersonalData())){
-                Text("Редактировать")
-                    .font(.caption)
-                    .padding(10)
-            }
-        }
-        .padding(.top, 30)
-    }
-}
+
 

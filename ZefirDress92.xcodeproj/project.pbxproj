@@ -57,6 +57,7 @@
 		76A57AE829D852DC00F428AB /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE729D852DC00F428AB /* TestDownloader.swift */; };
 		76DEE5E029EA917700B252D1 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE5DF29EA917700B252D1 /* AboutUsView.swift */; };
 		76DEE5E229EA91BE00B252D1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE5E129EA91BE00B252D1 /* Profile.swift */; };
+		76DEE5E629EAA7D700B252D1 /* HeaderAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE5E529EAA7D700B252D1 /* HeaderAccountView.swift */; };
 		76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */; };
 		76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42829B8B821001BEEBE /* ItemPriceView.swift */; };
 		76EAFF8129AB3ACC001799EB /* ZefirDress92App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFF8029AB3ACC001799EB /* ZefirDress92App.swift */; };
@@ -136,6 +137,7 @@
 		76A57AE729D852DC00F428AB /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = "<group>"; };
 		76DEE5DF29EA917700B252D1 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		76DEE5E129EA91BE00B252D1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		76DEE5E529EAA7D700B252D1 /* HeaderAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAccountView.swift; sourceTree = "<group>"; };
 		76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSizeCheckView.swift; sourceTree = "<group>"; };
 		76EAF42829B8B821001BEEBE /* ItemPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
 		76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZefirDress92.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +295,7 @@
 				7682EBCE29C112CF0073142B /* ProfileVIew.swift */,
 				76DEE5DF29EA917700B252D1 /* AboutUsView.swift */,
 				76DEE5E129EA91BE00B252D1 /* Profile.swift */,
+				76DEE5E529EAA7D700B252D1 /* HeaderAccountView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				765F214C29BCA3570052A95B /* UserName.swift in Sources */,
 				7678587329C190C300A0A709 /* Total.swift in Sources */,
 				7678586D29C18DC200A0A709 /* PlaceOrder.swift in Sources */,
+				76DEE5E629EAA7D700B252D1 /* HeaderAccountView.swift in Sources */,
 				7642E03129D6D3E400A37D01 /* ProductProvider.swift in Sources */,
 				766F0EDA29E5AB74006D74DF /* HeaderViewHomeScreen.swift in Sources */,
 				76DEE5E229EA91BE00B252D1 /* Profile.swift in Sources */,
