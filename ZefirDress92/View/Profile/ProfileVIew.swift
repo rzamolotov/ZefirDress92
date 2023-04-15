@@ -87,6 +87,7 @@ struct UserInfoForm: View {
                     .textInputAutocapitalization(.words)
                     .disableAutocorrection(true)
                     .keyboardType(.default)
+                TextField("Фамилия", text: $name)
                 TextField("Фамилия", text: $surname)
                     .textInputAutocapitalization(.words)
                     .disableAutocorrection(true)
@@ -98,6 +99,7 @@ struct UserInfoForm: View {
                     .disableAutocorrection(true)
                     .keyboardType(.emailAddress)
             }
+            
             Section(header: Text("Введите адрес доставки")){
                 TextField("Адрес", text: $address)
                     .textInputAutocapitalization(.words)
