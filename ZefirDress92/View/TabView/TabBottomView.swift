@@ -13,34 +13,43 @@ struct TabBottomView: View {
     @Binding var selectedIndex: Int
     
     var body: some View {
-        HStack {
-            Spacer()
-            ForEach(tabbarItems.indices, id: \.self) { index in
-                let item = tabbarItems[index]
-                Button {
-                    self.selectedIndex = index
-                } label: {
-                    let isSelected = selectedIndex == index
-                    TabItemView(data: item, isSelected: isSelected)
-                        .foregroundColor(.pink)
-                        .opacity(0.7)
-                }
+        
+        ZStack {
+            Rectangle()
+                .frame(width: screen.width, height: screen.height / 11)
+                .foregroundColor(.white)
+                .cornerRadius(20)
+                .shadow(radius: 5, x: 0, y: 4)
+            Rectangle()
+                .foregroundColor(.white)
+                .frame(width: screen.width, height: screen.height / 10)
+                .offset(y: 50)
+
+            HStack {
                 Spacer()
+                ForEach(tabbarItems.indices, id: \.self) { index in
+                    let item = tabbarItems[index]
+                    Button {
+                        self.selectedIndex = index
+                    } label: {
+                        let isSelected = selectedIndex == index
+                        TabItemView(data: item, isSelected: isSelected)
+                            .foregroundColor(.pink)
+                            .opacity(0.7)
+                    }
+                    Spacer()
+                }
             }
         }
-        .frame(width: screen.width / 1.05, height: screen.height / 11)
-        .background(Color.white)
-        .cornerRadius(20)
-        .shadow(radius: 5, x: 0, y: 4)
     }
 }
 
 struct TabBottomView_Preview: PreviewProvider {
     
     static var tabItemsData = [
-    TabItemData(image: "house", selectedImage: "house.fill", title: "Все платья"),
-    TabItemData(image: "heart", selectedImage: "heart.fill", title: "Избранное"),
-    TabItemData(image: "cart", selectedImage: "cart.fill", title: "Корзина")
+        TabItemData(image: "house", selectedImage: "house.fill", title: "Все платья"),
+        TabItemData(image: "heart", selectedImage: "heart.fill", title: "Избранное"),
+        TabItemData(image: "cart", selectedImage: "cart.fill", title: "Корзина")
     ]
     static var previews: some View {
         TabBottomView(tabbarItems: tabItemsData, selectedIndex: .constant(2))

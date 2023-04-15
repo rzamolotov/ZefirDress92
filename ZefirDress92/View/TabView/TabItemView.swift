@@ -25,7 +25,7 @@ struct TabItemView: View {
                 .font(.custom("", size: 10))
                 
         }
-        .frame(width: 50, height: 40)
+        .frame(width: 50, height: 45)
     }
 }
 

@@ -127,7 +127,7 @@ struct Header: View {
             Text(user_phone_number)
                 .font(.caption)
             
-            NavigationLink(destination: ProfileView(user_name: $user_name, user_phone_number: $user_phone_number, user_email: $user_email, user_address: $user_address)){
+            NavigationLink(destination: Profile(newProfile: PersonalData())){
                 Text("Редактировать")
                     .font(.caption)
                     .padding(10)

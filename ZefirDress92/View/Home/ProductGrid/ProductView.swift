@@ -18,6 +18,7 @@ struct ProductView: View {
             KFImage(URL(string: product.image_link))
                 .placeholder { progress in
                     ProgressView()
+                        .frame(width: screen.width / 2.3, height: screen.height / 2.9)
                 }
                 .resizable()
                 .aspectRatio(contentMode: .fill)
