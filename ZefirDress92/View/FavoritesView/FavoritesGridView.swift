@@ -40,16 +40,6 @@ struct FavoritesGridView: View {
                         .cornerRadius(10)
                     }
                 }
-                .onDelete { indexSet in
-                    for index in indexSet {
-                        viewContext.delete(favorites[index])
-                    }
-                    do {
-                        try viewContext.save()
-                    } catch {
-                        print(error.localizedDescription)
-                    }
-                }
                 if(favorites.count == 0) {
                     EmptyFavoritesView()
                 }

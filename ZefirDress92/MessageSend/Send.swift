@@ -6,62 +6,36 @@
 //
 
 import SwiftUI
+import SwiftSMTP
 
 struct Send: View {
     var body: some View {
         Button(action: {
-            let message = Message(subject: "Hello,_this_is_a_test_message_from_My_App!", body: "New_message_from_My_App", toEmail: "rzamolotov@gmail.com")
-            let apiKey = "64ct6en5ijiipgpbbfwkya9nddf5ucfbh3t1we5a"
-            sendUniSenderMessage(message: message, apiKey: apiKey)
+            let smtp = SMTP(
+                hostname: "smtp.yandex.ru",     // SMTP server address
+                email: "zefirdress@yandex.ru",        // username to login
+                password: "zaxs12CD"            // password to login
+            )
+            let zefirDress92 = Mail.User(name: "Юлия Замолотова", email: "zefirdress@yandex.ru")
+            let rzamolotov = Mail.User(name: "Роман Замолотов", email: "rzamolotov@yandex.ru")
+
+            let mail = Mail(
+                from: zefirDress92,
+                to: [rzamolotov],
+                subject: "Заказ на доставку от клиента \( UserDefaults.standard.string(forKey: "UserSurname") ?? "Клиент не добавил свое имя и фамилию.")",
+                text: "That was my ultimate wish."
+            )
+       
+            smtp.send(mail) { (error) in
+                if let error = error {
+                    print(error)
+                }
+            }
         }) {
             Text("Send message")
         }
     }
-    func sendUniSenderMessage(message: Message, apiKey: String) {
-        
-   
-        let urlString = "https://api.unisender.com/ru/api/sendEmail?format=json&api_key=64ct6en5ijiipgpbbfwkya9nddf5ucfbh3t1we5a"
-        guard let url = URL(string: urlString) else {
-            print("Error: invalid URL")
-            return
-        }
-        var request = URLRequest(url: url)
-//        request.httpMethod = "POST"
-        let parameters: [String: Any] = [
-            "&sender_name=" : "Zefir Dress",
-            "&sender_email=" : message.toEmail,
-            "&subject=": message.subject,
-            "&body=": message.body,
-        ]
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
-            request.httpBody = jsonData
-        } catch {
-            print("Error: failed to serialize parameters")
-            return
-        }
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let error = error {
-                print("Error: \(error.localizedDescription)")
-                return
-            }
-            guard let data = data else {
-                print("Error: no data received")
-                return
-            }
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                print(json)
-                // Добавьте обработку успешной отправки сообщения здесь
-            } catch {
-                print("Error: failed to parse JSON")
-                return
-            }
-        }
-        task.resume()
-    }
 }
-
 
 struct Send_Previews: PreviewProvider {
     static var previews: some View {

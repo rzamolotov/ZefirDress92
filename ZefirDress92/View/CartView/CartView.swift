@@ -50,6 +50,7 @@ struct CartView: View {
                     
                     if(orders.count > 0) {
                         Total(orders: orders)
+                            .padding(.bottom, 50)
                         
                     }
                     

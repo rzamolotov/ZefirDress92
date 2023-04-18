@@ -25,7 +25,8 @@ struct CustomTabView<Content: View>: View {
                 Spacer()
                 TabBottomView(tabbarItems: tabs, selectedIndex: $selectedIndex)
             }
-            .padding(.bottom, -20)
+            
+            .padding(.bottom, -10)
         }
     }
 }

@@ -6,31 +6,32 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CartProductInfo: View {
     var order: DressOrder
     
     var body: some View {
         Group {
-            AsyncImage(url: URL(string: order.image_link ?? "")) { image in
-                image
-                    .resizable()
-                    .frame(width: screen.width / 6, height: screen.height / 10)
-            } placeholder: {
-                ProgressView()
+            KFImage(URL(string: order.image_link ?? ""))
+                .placeholder({ progress in
+                    ProgressView()
+                })
+                .resizable()
+                .frame(width: screen.width / 6, height: screen.height / 10)
+        }
+        VStack(alignment: .leading) {
+            Text(order.title ?? "Красивое платье")
+                .font(.headline)
+            HStack {
+                Text("cтоимость аренды от: \(order.price_photo)руб.")
             }
-            VStack(alignment: .leading) {
-                Text(order.title ?? "Красивое платье")
-                    .font(.headline)
-                HStack {
-                    Text("cтоимость аренды от: \(order.price_photo)руб.")
-                }
-                .font(.caption)
-                .foregroundColor(.secondary)
-            }
+            .font(.caption)
+            .foregroundColor(.secondary)
         }
     }
 }
+
 
 struct CartProductInfo_Previews: PreviewProvider {
     static var order = DressOrder()

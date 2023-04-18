@@ -32,6 +32,7 @@
 		765F581429D466B500042727 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F581329D466B500042727 /* Network.swift */; };
 		765F581829D4790000042727 /* SizesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F581729D4790000042727 /* SizesRow.swift */; };
 		765F581A29D47BD100042727 /* SizeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F581929D47BD100042727 /* SizeList.swift */; };
+		7660964D29EE709B00514C45 /* SwiftSMTP in Frameworks */ = {isa = PBXBuildFile; productRef = 7660964C29EE709B00514C45 /* SwiftSMTP */; };
 		766F0EDA29E5AB74006D74DF /* HeaderViewHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0ED929E5AB74006D74DF /* HeaderViewHomeScreen.swift */; };
 		766F0EDD29E5B2AD006D74DF /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EDC29E5B2AD006D74DF /* CategoryList.swift */; };
 		766F0EDF29E5E17E006D74DF /* TabItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F0EDE29E5E17E006D74DF /* TabItemData.swift */; };
@@ -56,7 +57,6 @@
 		76A57AE429D8527200F428AB /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE029D75D6B00F428AB /* TestData.swift */; };
 		76A57AE829D852DC00F428AB /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE729D852DC00F428AB /* TestDownloader.swift */; };
 		76DEE5E029EA917700B252D1 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE5DF29EA917700B252D1 /* AboutUsView.swift */; };
-		76DEE5E229EA91BE00B252D1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE5E129EA91BE00B252D1 /* Profile.swift */; };
 		76DEE5E629EAA7D700B252D1 /* HeaderAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE5E529EAA7D700B252D1 /* HeaderAccountView.swift */; };
 		76EAF42729B7B917001BEEBE /* ItemSizeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */; };
 		76EAF42929B8B821001BEEBE /* ItemPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAF42829B8B821001BEEBE /* ItemPriceView.swift */; };
@@ -136,7 +136,6 @@
 		76A57AE229D75E5600F428AB /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		76A57AE729D852DC00F428AB /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = "<group>"; };
 		76DEE5DF29EA917700B252D1 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
-		76DEE5E129EA91BE00B252D1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		76DEE5E529EAA7D700B252D1 /* HeaderAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAccountView.swift; sourceTree = "<group>"; };
 		76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSizeCheckView.swift; sourceTree = "<group>"; };
 		76EAF42829B8B821001BEEBE /* ItemPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
@@ -168,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7660964D29EE709B00514C45 /* SwiftSMTP in Frameworks */,
 				7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +294,6 @@
 				7678586E29C18E7A00A0A709 /* OrderInformation.swift */,
 				7682EBCE29C112CF0073142B /* ProfileVIew.swift */,
 				76DEE5DF29EA917700B252D1 /* AboutUsView.swift */,
-				76DEE5E129EA91BE00B252D1 /* Profile.swift */,
 				76DEE5E529EAA7D700B252D1 /* HeaderAccountView.swift */,
 			);
 			path = Profile;
@@ -485,6 +484,7 @@
 			name = ZefirDress92;
 			packageProductDependencies = (
 				7644AE0429DD3B02009B4730 /* Kingfisher */,
+				7660964C29EE709B00514C45 /* SwiftSMTP */,
 			);
 			productName = ZefirDress92;
 			productReference = 76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */;
@@ -520,6 +520,7 @@
 			mainGroup = 76EAFF7429AB3ACC001799EB;
 			packageReferences = (
 				7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7660964B29EE709B00514C45 /* XCRemoteSwiftPackageReference "Swift-SMTP" */,
 			);
 			productRefGroup = 76EAFF7E29AB3ACC001799EB /* Products */;
 			projectDirPath = "";
@@ -615,7 +616,6 @@
 				76DEE5E629EAA7D700B252D1 /* HeaderAccountView.swift in Sources */,
 				7642E03129D6D3E400A37D01 /* ProductProvider.swift in Sources */,
 				766F0EDA29E5AB74006D74DF /* HeaderViewHomeScreen.swift in Sources */,
-				76DEE5E229EA91BE00B252D1 /* Profile.swift in Sources */,
 				7642E02D29D6D14600A37D01 /* ProductError.swift in Sources */,
 				7642E02F29D6D24400A37D01 /* ProductJSON.swift in Sources */,
 				765F214629BCA2250052A95B /* ViewRouter.swift in Sources */,
@@ -900,6 +900,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		7660964B29EE709B00514C45 /* XCRemoteSwiftPackageReference "Swift-SMTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/Swift-SMTP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -907,6 +915,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		7660964C29EE709B00514C45 /* SwiftSMTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7660964B29EE709B00514C45 /* XCRemoteSwiftPackageReference "Swift-SMTP" */;
+			productName = SwiftSMTP;
 		};
 /* End XCSwiftPackageProductDependency section */
 

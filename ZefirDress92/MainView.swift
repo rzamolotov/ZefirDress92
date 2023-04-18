@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var productProvider: ProductProvider
+ 
     
     var body: some View {
         

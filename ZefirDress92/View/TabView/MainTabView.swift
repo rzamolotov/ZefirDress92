@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainTabView: View {
     @State var selectedIndex: Int = 0
+    @State var addToCartAllert: Bool = false
+    @State var addToFavorite: Bool = false
     @EnvironmentObject var productProvider: ProductProvider
     enum TabType: Int, CaseIterable {
         case home = 0
@@ -47,18 +49,18 @@ struct MainTabView: View {
             case .search:
                 SearchView(products: productProvider.products)
             case .favorite:
-                FavoritesGridView(presentAlert: false, isSet: true)
+                FavoritesGridView(presentAlert: addToCartAllert, isSet: addToFavorite)
             case .cart:
                 CartView()
             case .peron:
-                AccountSheet(user_name: .constant("Имя"), user_phone_number: .constant(""), user_email: .constant(""), user_address: .constant(""))
+                AccountSheet(user_name: .constant(""), user_phone_number: .constant(""), user_email: .constant(""), user_address: .constant(""))
             }
         }
     }
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabView()
+        MainTabView(addToCartAllert: false, addToFavorite: false)
             .environmentObject(ProductProvider())
     }
 }
