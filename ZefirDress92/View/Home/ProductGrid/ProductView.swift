@@ -24,12 +24,11 @@ struct ProductView: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: screen.width / 2.5, height: screen.height / 4)
                 .cornerRadius(10)
-                .padding(.bottom)
                 .shadow(radius: 2)
             
             VStack(spacing: 2) {
                 Text(product.title)
-                    .font(.headline)
+                    .font(.custom(regularFont, size: 14))
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                     .opacity(0.9)

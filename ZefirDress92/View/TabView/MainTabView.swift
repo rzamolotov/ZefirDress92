@@ -53,7 +53,7 @@ struct MainTabView: View {
             case .cart:
                 CartView()
             case .peron:
-                AccountSheet(user_name: .constant(""), user_phone_number: .constant(""), user_email: .constant(""), user_address: .constant(""))
+                AccountSheet()
             }
         }
     }

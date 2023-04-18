@@ -16,11 +16,11 @@ struct ProfileView: View {
         case adress
     }
     @Environment(\.presentationMode) private var presentationMode
-    @Binding var userName: String
-    @Binding var userSurname: String
-    @Binding var userPhone: String
-    @Binding var userEmail: String
-    @Binding var userAdress: String
+    @Binding var editUserName: String
+    @Binding var editUserSurname: String
+    @Binding var editUserPhone: String
+    @Binding var editUserEmail: String
+    @Binding var editUserAdress: String
 
     @FocusState private var focusedField: Field?
 
@@ -36,7 +36,7 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Имя", text: $userName)
+                    TextField("Имя", text: $editUserName)
                         .focused($focusedField, equals: .name)
                         .textInputAutocapitalization(.words)
                         .disableAutocorrection(true)
@@ -51,7 +51,7 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Фамилия", text: $userSurname)
+                    TextField("Фамилия", text: $editUserSurname)
                         .focused($focusedField, equals: .surname)
                         .textInputAutocapitalization(.words)
                         .disableAutocorrection(true)
@@ -66,9 +66,8 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Номер телефона", text: $userPhone)
+                    TextField("Номер телефона", text: $editUserPhone)
                         .focused($focusedField, equals: .phoneNumber)
-                      
                         .disableAutocorrection(true)
                         .keyboardType(.phonePad)
                         .padding(.leading)
@@ -81,7 +80,7 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Email", text: $userEmail)
+                    TextField("Email", text: $editUserEmail)
                         .focused($focusedField, equals: .email)
                         .disableAutocorrection(true)
                         .keyboardType(.emailAddress)
@@ -95,7 +94,7 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Адрес", text: $userAdress)
+                    TextField("Адрес", text: $editUserAdress)
                         .focused($focusedField, equals: .adress)
                         .textInputAutocapitalization(.words)
                         .disableAutocorrection(true)
@@ -108,11 +107,11 @@ struct ProfileView: View {
 
             Button(action: {
                 presentationMode.wrappedValue.dismiss() //go back
-                UserDefaults.standard.set(userName, forKey: "UserName")
-                UserDefaults.standard.set(userSurname, forKey: "UseSurname")
-                UserDefaults.standard.set(userPhone, forKey: "UserPhone")
-                UserDefaults.standard.set(userEmail, forKey: "UserName")
-                UserDefaults.standard.set(userAdress, forKey: "UserAdress")
+                UserDefaults.standard.set(editUserName, forKey: userName)
+                UserDefaults.standard.set(editUserSurname, forKey: userSurname)
+                UserDefaults.standard.set(editUserPhone, forKey: userPhone)
+                UserDefaults.standard.set(editUserEmail, forKey: userEmail)
+                UserDefaults.standard.set(editUserAdress, forKey: userSurname)
 
             }) {
                 Text("Сохранить")
@@ -138,17 +137,17 @@ struct ProfileView: View {
             case .phoneNumber:
                 focusedField = .adress
             default:
-                UserDefaults.standard.set(userName, forKey: "UserName")
-                UserDefaults.standard.set(userSurname, forKey: "UseSurname")
-                UserDefaults.standard.set(userPhone, forKey: "UserPhone")
-                UserDefaults.standard.set(userEmail, forKey: "UserName")
-                UserDefaults.standard.set(userAdress, forKey: "UserAdress")
+                UserDefaults.standard.set(editUserName, forKey: userName)
+                UserDefaults.standard.set(editUserSurname, forKey: userSurname)
+                UserDefaults.standard.set(editUserPhone, forKey: userPhone)
+                UserDefaults.standard.set(editUserEmail, forKey: userEmail)
+                UserDefaults.standard.set(editUserAdress, forKey: userSurname)
             }
         }
     }
 }
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(userName: .constant("Юля"), userSurname: .constant("Замолотова"), userPhone: .constant("+79787242551"), userEmail: .constant("ulya_nel@mail.ru"), userAdress: .constant("Севастополь, Спуск Шестакова 1"))
+        ProfileView(editUserName: .constant("Юля"), editUserSurname: .constant("Замолотова"), editUserPhone: .constant("+79787242551"), editUserEmail: .constant("ulya_nel@mail.ru"), editUserAdress: .constant("Севастополь, Спуск Шестакова 1"))
     }
 }

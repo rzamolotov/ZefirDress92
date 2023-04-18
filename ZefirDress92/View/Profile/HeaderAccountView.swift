@@ -9,19 +9,19 @@ import SwiftUI
 
 struct HeaderAccountView: View {
     @State var goToProfile: Bool = false
-    @State private var userName: String = UserDefaults.standard.string(forKey: "UserName") ?? "Введите ваше имя"
-    @State private var userSurname: String = UserDefaults.standard.string(forKey: "UserSurname") ?? "Введите вашу фамилию"
-    @State private var userPhone: String = UserDefaults.standard.string(forKey: "UserPhone") ?? "Введите ваш номер телефона"
-    @State private var userEmail: String = UserDefaults.standard.string(forKey: "UserEmail") ?? "Введите ваш Email"
-    @State private var userAdress: String = UserDefaults.standard.string(forKey: "UserAdress") ?? "Введите ваш адрес"
+    @State private var editUserName: String = UserDefaults.standard.string(forKey: userName) ?? "Введите ваше имя"
+    @State private var editUserSurname: String = UserDefaults.standard.string(forKey: userSurname) ?? "Введите вашу фамилию"
+    @State private var editUserPhone: String = UserDefaults.standard.string(forKey: userPhone) ?? "Введите ваш номер телефона"
+    @State private var editUserEmail: String = UserDefaults.standard.string(forKey: userEmail) ?? "Введите ваш Email"
+    @State private var editUserAdress: String = UserDefaults.standard.string(forKey: userAdress) ?? "Введите ваш адрес"
     
     var body: some View {
         VStack(spacing: 5){
-            Text(userName)
-            Text(userSurname)
-            Text(userPhone)
-            Text(userEmail)
-            Text(userAdress)
+            Text(editUserName)
+            Text(editUserSurname)
+            Text(editUserPhone)
+            Text(editUserEmail)
+            Text(editUserAdress)
             
             Button{
                 goToProfile.toggle()
@@ -31,7 +31,7 @@ struct HeaderAccountView: View {
                     .padding(10)
             }
             .sheet(isPresented: $goToProfile) {
-                ProfileView(userName: $userName, userSurname: $userSurname, userPhone: $userPhone, userEmail: $userEmail, userAdress: $userAdress)
+                ProfileView(editUserName: $editUserName, editUserSurname: $editUserSurname, editUserPhone: $editUserPhone, editUserEmail: $editUserEmail, editUserAdress: $editUserAdress)
             }
         }
     }

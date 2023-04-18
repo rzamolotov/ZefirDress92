@@ -8,13 +8,6 @@
 import SwiftUI
 
 struct AccountSheet: View {
-    @Environment(\.colorScheme) private var colorScheme
-    @Binding var user_name: String
-    @Binding var user_phone_number: String
-    @Binding var user_email: String
-    @Binding var user_address: String
-
-    
     var body: some View {
         NavigationView{
             VStack {
@@ -32,18 +25,13 @@ struct AccountSheet: View {
                 
             }
             .navigationBarHidden(true)
-            .background(colorScheme == .light ? Color("LightGrayBackground") : nil)
         }
     }
 }
 
 struct AccountSheet_Previews: PreviewProvider {
     static var previews: some View {
-        AccountSheet(
-            user_name: Binding.constant("Юлия Замолотова"),
-            user_phone_number: Binding.constant("8 978 827 80 94"),
-            user_email: Binding.constant("example@example.com"),
-            user_address: Binding.constant("123 Apple Way, NY 12345"))
+        AccountSheet()
     }
 }
 
