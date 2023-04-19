@@ -25,9 +25,9 @@ let feedback = UIImpactFeedbackGenerator(style: .medium)
 
 // LAYOUT
 
-let columnSpacing: CGFloat = 10
+let columnSpacing: CGFloat = 5
 let screen = UIScreen.main.bounds
-let rowSpacing: CGFloat = 10
+let rowSpacing: CGFloat = 5
 var gridLayout: [GridItem] {
   return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
 }

@@ -45,7 +45,7 @@ struct MainTabView: View {
         func getTabView(type: TabType) -> some View {
             switch type {
             case .home:
-                ProductGridView(products: productProvider.products)
+               HomeScreenView()
             case .search:
                 SearchView(products: productProvider.products)
             case .favorite:
