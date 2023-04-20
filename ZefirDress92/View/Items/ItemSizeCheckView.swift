@@ -14,14 +14,16 @@ struct ItemSizeCheckView: View {
     var body: some View {
         HStack {
             Text("Доступные размеры")
+                .font(.custom(mediumFont, size: 16))
+                .foregroundColor(.black)
+                .opacity(0.9)
             Spacer()
             ForEach(product.size, id: \.self) { sizes in
                 Button {
                     //TODO: Сделать переходы на размеры по нажатию размера
                 } label: {
                     Text("\(sizes)")
-                        .font(.footnote)
-                        .fontWeight(.heavy)
+                        .font(.custom(boldFont, size: 14))
                         .foregroundColor(.pink)
                         .opacity(0.7)
                         .frame(width: 28, height: 28, alignment: .center)

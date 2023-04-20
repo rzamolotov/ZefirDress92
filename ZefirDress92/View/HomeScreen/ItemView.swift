@@ -25,10 +25,12 @@ struct ItemView: View {
                 .shadow(radius: 1)
             
             VStack(alignment: .leading, spacing: 2) {
-                Text(product.title)
-                    .font(.custom(boldFont, size: 12))
-                    .foregroundColor(.black)
-                    .opacity(0.9)
+                VStack(alignment: .leading){
+                    Text(product.title)
+                        .font(.custom(boldFont, size: 12))
+                        .foregroundColor(.black)
+                        .opacity(0.9)
+                }
                 Text("аренда от \(product.price_photo) руб.")
                     .font(.custom(lightFont, size: 12))
                     .foregroundColor(.black)

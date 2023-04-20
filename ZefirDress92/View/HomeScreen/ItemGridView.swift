@@ -11,19 +11,18 @@ struct ItemGridView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var productProvider: ProductProvider
     var products: [Product]
-    @State var isLoading = false
     @State var selection: Set<String> = []
     @State private var error: ProductError?
     @State private var hasError = false
     
     var body: some View {
         VStack{
-            if isLoading {
+            if productProvider.isLoading {
                 ProgressView()
             }
             ScrollView{
                 LazyVGrid(columns: gridLayout, spacing: columnSpacing) {
-                    ForEach(productProvider.products.shuffled(), id: \.self) { product in
+                    ForEach(productProvider.products, id: \.self) { product in
                         NavigationLink {
                             ItemDetailView(id: product.id,
                                            title: product.title,
@@ -47,7 +46,7 @@ struct ItemGridView: View {
                 }
                 .refreshable {
                     await fetchProducts()
-                    print(isLoading)
+                    print(productProvider.isLoading)
                 }
                 
             }
@@ -60,14 +59,14 @@ struct ItemGridView: View {
 
 extension ItemGridView {
     func fetchProducts() async {
-        isLoading = true
+        productProvider.isLoading = true
         do {
             try await productProvider.fetchProducts()
         } catch {
             self.error = error as? ProductError ?? .unexpectedError(error: error)
             self.hasError = true
         }
-        isLoading = false
+        productProvider.isLoading = false
     }
 }
 

@@ -16,32 +16,30 @@ struct ItemDescriptionView: View {
     @State private var presentAlert = false
     
     var body: some View {
-        VStack {
-            HStack {
-                FavoriteButtonView(isSet: $isSet, product: product)
-                    .padding([.leading, .trailing])
+        VStack(spacing: 20) {
+            VStack(alignment: .leading, spacing: 20) {
+                HStack{
+                    FavoriteButtonView(isSet: $isSet, product: product)
+                    
+                    ItemSizeCheckView(product: product)
+                }
+                Text(product.description)
                 
-                ItemSizeCheckView(product: product)
-                    .padding([.leading, .trailing])
-                    .foregroundColor(.gray)
-            }
-            
-            Text(product.description)
-                .font(.body)
-                .foregroundColor(.secondary)
-                .padding([.leading, .trailing, .top])
-            
-            VStack{
-                Text("Выберете тип аренды и мероприятие")
-                    .font(.subheadline)
+                HStack {
+                    Spacer()
+                    Text("Выберете тип аренды и мероприятие")
+                    Spacer()
+                }
+                
                 ItemPriceView(product: product)
             }
-            .foregroundColor(.secondary)
-            .padding([.leading, .trailing, .top])
+            .font(.custom(regularFont, size: 15))
+            .foregroundColor(.black)
             
             AddToCartButton(product: product, presentAlert: $presentAlert)
-                .padding([.leading, .trailing, .top])
         }
+        .padding(.bottom, 20)
+        .padding([.leading, .trailing])
         .frame(width: screen.width, height: screen.height / 2)
         
     }

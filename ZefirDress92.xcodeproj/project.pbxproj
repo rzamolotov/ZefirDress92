@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		761E10DD29E7E82700219F6B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E10DC29E7E82700219F6B /* SearchView.swift */; };
 		763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */; };
+		763BF69C29F11651008BBA80 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 763BF69B29F11651008BBA80 /* Kingfisher */; };
 		7642E02229D5DACC00A37D01 /* FavoriteAddToCartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */; };
 		7642E02429D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02329D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift */; };
 		7642E02B29D6D11400A37D01 /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02A29D6D11400A37D01 /* HTTPDataDownloader.swift */; };
@@ -16,7 +17,6 @@
 		7642E02F29D6D24400A37D01 /* ProductJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02E29D6D24400A37D01 /* ProductJSON.swift */; };
 		7642E03129D6D3E400A37D01 /* ProductProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E03029D6D3E400A37D01 /* ProductProvider.swift */; };
 		7644A7FA29C04BBC00B1E788 /* FavoritesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644A7F929C04BBC00B1E788 /* FavoritesGridView.swift */; };
-		7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7644AE0429DD3B02009B4730 /* Kingfisher */; };
 		764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */; };
 		764B9C3729D5D7270077B1A4 /* FavoriteTitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */; };
 		7654713F29E4546F00C7BEC0 /* SendOrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654713E29E4546F00C7BEC0 /* SendOrderButton.swift */; };
@@ -189,8 +189,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763BF69C29F11651008BBA80 /* Kingfisher in Frameworks */,
 				7660964D29EE709B00514C45 /* SwiftSMTP in Frameworks */,
-				7644AE0529DD3B02009B4730 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,8 +492,8 @@
 			);
 			name = ZefirDress92;
 			packageProductDependencies = (
-				7644AE0429DD3B02009B4730 /* Kingfisher */,
 				7660964C29EE709B00514C45 /* SwiftSMTP */,
+				763BF69B29F11651008BBA80 /* Kingfisher */,
 			);
 			productName = ZefirDress92;
 			productReference = 76EAFF7D29AB3ACC001799EB /* ZefirDress92.app */;
@@ -528,8 +528,8 @@
 			);
 			mainGroup = 76EAFF7429AB3ACC001799EB;
 			packageReferences = (
-				7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				7660964B29EE709B00514C45 /* XCRemoteSwiftPackageReference "Swift-SMTP" */,
+				763BF69A29F11651008BBA80 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 76EAFF7E29AB3ACC001799EB /* Products */;
 			projectDirPath = "";
@@ -912,7 +912,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		763BF69A29F11651008BBA80 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
@@ -931,9 +931,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7644AE0429DD3B02009B4730 /* Kingfisher */ = {
+		763BF69B29F11651008BBA80 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7644AE0329DD3B02009B4730 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 763BF69A29F11651008BBA80 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 		7660964C29EE709B00514C45 /* SwiftSMTP */ = {

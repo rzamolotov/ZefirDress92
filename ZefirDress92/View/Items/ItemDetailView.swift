@@ -47,14 +47,18 @@ struct ItemDetailView: View {
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .center, spacing: 20) {
+            VStack(alignment: .center, spacing: 10) {
                 
+             
                 KFImage(URL(string: product.image_link))
+                    .placeholder({ progress in
+                        ProgressView()
+                    })
                     .resizable()
-                    .frame(width: screen.width, height: screen.height / 1.8)
-                    .cornerRadius(5)
                     .aspectRatio(contentMode: .fill)
-                    .shadow(radius: 5)
+                    .frame(width: screen.width, height: screen.height / 1.5)
+                    .cornerRadius(5)
+                    .shadow(radius: 2)
                 ItemDescriptionView(product: product, isSet: isAddToFavorite)
             }
         }
@@ -67,7 +71,20 @@ struct ItemDetailView: View {
 struct ItemDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ItemDetailView(id: example.id, title: example.title, size: example.size, price_photo: example.price_photo, price_rent: example.price_rent ?? 0, deposit: example.deposit, description: example.description, link: example.link, image_link: example.image_link, availability: example.availability, price: example.price, condition: example.condition, isAddToFavorite: example.isAddToFavorite, category: example.category)
+            ItemDetailView(id: example.id,
+                           title: example.title,
+                           size: example.size,
+                           price_photo: example.price_photo,
+                           price_rent: example.price_rent ?? 0,
+                           deposit: example.deposit,
+                           description: example.description,
+                           link: example.link,
+                           image_link: example.image_link,
+                           availability: example.availability,
+                           price: example.price,
+                           condition: example.condition,
+                           isAddToFavorite: example.isAddToFavorite,
+                           category: example.category)
         }
     }
 }

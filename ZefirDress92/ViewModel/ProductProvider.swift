@@ -11,6 +11,8 @@ import Foundation
 class ProductProvider: ObservableObject {
     
     @Published var products: [Product] = []
+    @Published var isLoaded = false
+    @Published var isLoading = false
 
     let network: Network
   

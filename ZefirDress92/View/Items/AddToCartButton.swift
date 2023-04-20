@@ -38,30 +38,34 @@ struct AddToCartButton: View {
                     newOrder.title = product.title
                     try viewContext.save()
                     print("order saved")
+                    //TODO: - сделать алерт с уведомлением, что товар добавлен в корзину
                     withAnimation(.linear(duration: 0.5)) {
                         presentAlert = true
                     }
                 } else {
-                    // объект с таким идентификатором уже есть в базе данных, не сохраняем новый объект
+                    // TODO: - сделать алерт с уведомлением, что такой заказ уже есть бъект с таким идентификатором уже есть в базе данных, не сохраняем новый объект
                     print("order already exists")
                 }
             } catch {
+                // TODO: - сделать алерт с уведомлением об ошибке добавление в корщину
                 print(error.localizedDescription)
             }
         }, label: {
             ZStack{
                 Rectangle()
-                HStack{
+                HStack {
                     Image(systemName: "cart")
                         .font(.title)
-                    Text("Добавить в корзину \(product.title)")
+                    Text("Добавить в корзину\n\(product.title)")
+                        .font(.custom(boldFont, size: 16))
                 }
+                .font(.custom(boldFont, size: 16))
                 .foregroundColor(.white)
             }
-            .frame(width: screen.width / 1.1, height: 60)
+            .frame(width: screen.width / 1.1, height: screen.height / 12)
             .foregroundColor(.pink)
             .opacity(0.7)
-            .cornerRadius(15.0)
+            .cornerRadius(10)
         })
     }
 }
