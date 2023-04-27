@@ -27,7 +27,7 @@ struct AddToCartButton: View {
                     newOrder.category = product.category as NSArray
                     newOrder.condition = product.condition
                     newOrder.deposit = Int64(product.deposit)
-                    newOrder.image_link = product.image_link
+                    newOrder.image_link = product.image_link as NSArray
                     newOrder.isAddToFavorite = product.isAddToFavorite
                     newOrder.itemDescription = product.description
                     newOrder.itemLink = product.link

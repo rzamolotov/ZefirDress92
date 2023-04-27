@@ -628,17 +628,16 @@
                 "id": "21584954",
                 "title": "Платье Betty",
                 "size": [
-                    "40",
-                    "42"
+                    "40"
                 ],
-                "price_photo": 1500,
-                "price_rent": 3000,
+                "price_photo": 1300,
+                "price_rent": 2500,
                 "deposit": 1000,
-                "description": "Размер 40 ⠀ Стоимость аренды Фотосессия 1300 ₽ (1 сутки) Мероприятие 2500 ₽ (2-3 суток) ⠀ Залог 1000 ₽ (возвратный) Описание Элегантное черное сияющее платье, облегает фигуру, расшито пайетками. Спинка и горловина украшены камнями.",
+                "description": "Элегантное черное сияющее платье, облегает фигуру, расшито пайетками. Спинка и горловина украшены камнями.",
                 "link": "https://zefirdress.ru/vseplatya/plate-betty",
                 "image_link": [
                     
-                ],-cdn1.vigbo.tech/shops/195624/products/21584954/images/preview-e9b0f4f77e50e086eeb8b9a8a4496a73.JPG",
+                ],
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -714,17 +713,16 @@
                 "id": "21588472",
                 "title": "Платье Candy",
                 "size": [
-                    "40",
-                    "42"
+                    "48"
                 ],
                 "price_photo": 1500,
                 "price_rent": 3000,
                 "deposit": 1000,
-                "description": "Размер 48 ⠀ Стоимость аренды Фотосессия 1500 ₽ (1 сутки) Мероприятие 3000 ₽ (2-3 суток) ⠀ Залог 1000 ₽ (возвратный) Описание Атласное платье длины макси розового цвета с открытой спинкой. Топ расшит бисером, пайетками и кристаллами.",
+                "description": "Атласное платье длины макси розового цвета с открытой спинкой. Топ расшит бисером, пайетками и кристаллами.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Candy",
                 "image_link": [
                     
-                ],-cdn1.vigbo.tech/shops/195624/products/21588472/images/preview-756d5b3d9d56d855cca6b8c299c2f2ff.jpg",
+                ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
                 "condition": "new",
@@ -1018,7 +1016,7 @@
                     "https://i.ibb.co/gj3XhCX/IMG-4065.jpg",
                     "https://i.ibb.co/n0mLXzY/IMG-4070.jpg",
                     "https://i.ibb.co/L0R1jK9/IMG-4072.jpg",
-                   " https://i.ibb.co/VMPzvJt/IMG-4079.jpg",
+                    "https://i.ibb.co/VMPzvJt/IMG-4079.jpg",
                     "https://i.ibb.co/XxPtbgv/IMG-4080.jpg",
                     "https://i.ibb.co/ZMrmCyp/IMG-4082.jpg",
                     "https://i.ibb.co/bBNFb95/IMG-4085.jpg",
@@ -1927,7 +1925,10 @@
                 "description": "Фатиновое платье глубокого синего цвета с мерцающим напылением. Есть легкие воздушны рукава, шнуровка сзади.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Madina",
                 "image_link": [
-                    
+                    "https://i.ibb.co/T1GFTBq/3pn-DYOPEq-M4.jpg",
+                    "https://i.ibb.co/PhPPYqX/co9l-X0vw8u4.jpg",
+                    "https://i.ibb.co/7RrWJQM/g1-D08-CYI99k.jpg",
+                    "https://i.ibb.co/wwTYkFP/k-Xf7-Cd-T7d-IY.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -1952,7 +1953,27 @@
                 "description": "Платье в пол, верх полностью расшит сверкающими камнями. К спинке пришит шифоновый летящий шлейф.",
                 "link": "https://zefirdress.ru/vseplatya/plate-marta",
                 "image_link": [
-                    
+                    "https://i.ibb.co/28nBTGy/IMG-0573.jpg",
+                    "https://i.ibb.co/swQmCj0/IMG-0574.jpg",
+                    "https://i.ibb.co/q0TrjpB/IMG-0575.jpg",
+                    "https://i.ibb.co/4FpJQDR/IMG-0576.jpg",
+                    "https://i.ibb.co/TWjJMFB/IMG-4526.jpg",
+                    "https://i.ibb.co/TR4B14X/IMG-5483.jpg",
+                    "https://i.ibb.co/h9ptsyb/IMG-5484.jpg",
+                    "https://i.ibb.co/m0yCXfB/IMG-5485.jpg",
+                    "https://i.ibb.co/ykbMpc8/IMG-5486.jpg",
+                    "https://i.ibb.co/0DQWhWJ/IMG-5488.jpg",
+                    "https://i.ibb.co/dMJyWhq/IMG-5489.jpg",
+                    "https://i.ibb.co/0GNqghN/IMG-5490.jpg",
+                    "https://i.ibb.co/6XJdyg5/IMG-5491.jpg",
+                    "https://i.ibb.co/jLVLbj8/IMG-5545.jpg",
+                    "https://i.ibb.co/74NfSVh/IMG-5547.jpg",
+                    "https://i.ibb.co/SPBMNPq/IMG-5548.jpg",
+                    "https://i.ibb.co/ZVRBSCT/photo-2019-07-31-10-55-51.jpg",
+                    "https://i.ibb.co/xh1TTRd/photo-2019-07-31-10-55-53.jpg",
+                    "https://i.ibb.co/kcZB4L6/photo-2019-07-31-10-55-54.jpg",
+                    "https://i.ibb.co/Jn2C5ws/photo-2019-07-31-10-55-55.jpg",
+                    "https://i.ibb.co/Y2HC96V/photo-2019-07-31-10-55-57.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1300 RUB",
@@ -1978,7 +1999,9 @@
                 "description": "Изумительно красивое платье с длинным шлейфом и открытой спиной, полностью вышитой бусами.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Melania",
                 "image_link": [
-                    
+                    "https://i.ibb.co/5cNMcBT/IMG-7162.jpg",
+                    "https://i.ibb.co/Jrk0j48/IMG-7163.jpg",
+                    "https://i.ibb.co/ZH0SnL1/IMG-7164.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "2500 RUB",
@@ -2003,7 +2026,18 @@
                 "description": "Платье из крепа, декорированное перьями. Силуэтное, со шлейфом, лиф усилен поддерживающими вставками. Разрез по ножке.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Miya",
                 "image_link": [
-                    
+                    "https://i.ibb.co/ChzfHRg/IMG-3551.jpg",
+                    "https://i.ibb.co/GQSj1vS/IMG-3552.jpg",
+                    "https://i.ibb.co/cDg2zd4/IMG-3553.jpg",
+                    "https://i.ibb.co/GJwLbhr/IMG-4955.jpg",
+                    "https://i.ibb.co/H7csBSn/IMG-4956.jpg",
+                    "https://i.ibb.co/YTcDpyX/IMG-4957.jpg",
+                    "https://i.ibb.co/7QJFMzb/IMG-4958.jpg",
+                    "https://i.ibb.co/mD9WG31/IMG-4959.jpg",
+                    "https://i.ibb.co/H440FpX/IMG-6536.jpg",
+                    "https://i.ibb.co/6gPvpw4/IMG-6537.jpg",
+                    "https://i.ibb.co/xKZmh92/IMG-6539.jpg",
+                    "https://i.ibb.co/YjqK4jg/IMG-6543.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -2027,7 +2061,8 @@
                 "description": "Описание Короткое фатиновое платье с пояском.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Monica",
                 "image_link": [
-                    
+                    "https://i.ibb.co/wyBwfHG/IMG-7167.jpg",
+                    "https://i.ibb.co/rZ9fkWD/IMG-7168.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -2051,7 +2086,19 @@
                 "description": "Полупрозрачное платье из красного фатина в горошек, рукава-фонарики, пышная юбка (подъюбник в тон)",
                 "link": "https://zefirdress.ru/vseplatya/plate-Nancy",
                 "image_link": [
-                    
+                    "https://i.ibb.co/3dsgSfb/IMG-1146.jpg",
+                    "https://i.ibb.co/tsz9CQw/IMG-7434.jpg",
+                    "https://i.ibb.co/Drp3zys/IMG-7435.jpg",
+                    "https://i.ibb.co/T1f4d3b/IMG-7436.jpg",
+                    "https://i.ibb.co/GHC5GkQ/IMG-7479.jpg",
+                    "https://i.ibb.co/9c2j9F0/IMG-7480.jpg",
+                    "https://i.ibb.co/MPGC2ZQ/IMG-7481.jpg",
+                    "https://i.ibb.co/hsXHwT7/IMG-8299.jpg",
+                    "https://i.ibb.co/M85qNXX/IMG-7585.jpg",
+                    "https://i.ibb.co/CQRq43N/IMG-8300.jpg",
+                    "https://i.ibb.co/Vwzbt8H/IMG-8301.jpg",
+                    "https://i.ibb.co/84TyQPP/IMG-8303.jpg",
+                    "https://i.ibb.co/C92rqPg/photo-2020-04-20-17-01-29.jpg",
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -2076,7 +2123,23 @@
                 "description": "Платье, расшитое золотыми пайетками, открытая красивая спинка и небольшой шлейф.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Naomi",
                 "image_link": [
-                    
+                    "https://i.ibb.co/ZVV0T0H/IMG-3445.jpg",
+                    "https://i.ibb.co/nD300vq/IMG-3450.jpg",
+                    "https://i.ibb.co/khHxhKc/IMG-3451.jpg",
+                    "https://i.ibb.co/Rzw3b1W/IMG-3608.jpg",
+                    "https://i.ibb.co/LtjHDQJ/IMG-3609.jpg",
+                    "https://i.ibb.co/4168GTG/IMG-3610.jpg",
+                    "https://i.ibb.co/34bmM8X/IMG-3612.jpg",
+                    "https://i.ibb.co/CbCYTCs/photo-2020-04-28-08-09-57.jpg",
+                    "https://i.ibb.co/nRW4chc/photo-2020-04-28-08-10-00.jpg",
+                    "https://i.ibb.co/vD2ZSq0/photo-2020-04-28-08-10-02.jpg",
+                    "https://i.ibb.co/Zg4596V/photo-2020-04-28-08-10-03.jpg",
+                    "https://i.ibb.co/xLG2Ltj/photo-2020-04-28-08-10-07.jpg",
+                    "https://i.ibb.co/591dWMv/photo-2020-04-28-08-10-16.jpg",
+                    "https://i.ibb.co/qpcGV8m/photo-2020-04-28-12-31-34.jpg",
+                    "https://i.ibb.co/vJpYyG1/photo-2020-04-28-12-31-36.jpg",
+                    "https://i.ibb.co/BnZk7DL/photo-2020-04-28-12-31-38.jpg",
+                    "https://i.ibb.co/6P8skwk/photo-2020-04-28-12-31-40.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1300 RUB",
@@ -2101,7 +2164,42 @@
                 "description": "Блистательное платье, усыпанное свисающими пайетками, на тонких лямках и разрезом по ножке.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Nika",
                 "image_link": [
-                    
+                    "https://i.ibb.co/9WKYVMN/0-Tsp-EMibd-A.jpg",
+                    "https://i.ibb.co/cxv9Ksb/ATcxg-2e4j8.jpg",
+                    "https://i.ibb.co/VBf4vpM/b-BJwac-JIc18.jpg",
+                    "https://i.ibb.co/Dp60vT0/h-Gj-Lz-VGZ6gk.jpg",
+                    "https://i.ibb.co/GFV8MTS/IMG-2761.jpg",
+                    "https://i.ibb.co/G09R74Q/IMG-2762.jpg",
+                    "https://i.ibb.co/YW0kfSC/IMG-2799.jpg",
+                    "https://i.ibb.co/W6jYztm/IMG-2800.jpg",
+                    "https://i.ibb.co/8bcKqtg/IMG-2801.jpg",
+                    "https://i.ibb.co/1JmXy20/IMG-3015.jpg",
+                    "https://i.ibb.co/CJdQrbF/IMG-3016-2.jpg",
+                    "https://i.ibb.co/6ZbgY7J/IMG-3017-2.jpg",
+                    "https://i.ibb.co/M68WcR1/IMG-3018-2.jpg",
+                    "https://i.ibb.co/5WCxmXm/IMG-3019-2.jpg",
+                    "https://i.ibb.co/7QVbQQ9/IMG-3021.png",
+                    "https://i.ibb.co/vhhBPqH/IMG-5267.jpg",
+                    "https://i.ibb.co/cD16sxM/IMG-5268.jpg",
+                    "https://i.ibb.co/hfphF5L/IMG-5270.jpg",
+                    "https://i.ibb.co/wynMd4K/IMG-5271.jpg",
+                    "https://i.ibb.co/SfNhh9g/IMG-5272.jpg",
+                    "https://i.ibb.co/JdLcT5g/IMG-5273.jpg",
+                    "https://i.ibb.co/NtWLHPk/IMG-5274.jpg",
+                    "https://i.ibb.co/jGW1mvC/IMG-5275.jpg",
+                    "https://i.ibb.co/dP5r4yg/IMG-5276.jpg",
+                    "https://i.ibb.co/4FTL4b2/IMG-5277.jpg",
+                    "https://i.ibb.co/N2fhzZQ/IMG-5278.jpg",
+                    "https://i.ibb.co/n1jPDrx/IMG-5280.jpg",
+                    "https://i.ibb.co/7zkVdzH/IMG-5281.jpg",
+                    "https://i.ibb.co/Gv89Mwr/IMG-5283.jpg",
+                    "https://i.ibb.co/tBY1nvs/IMG-8856.jpg",
+                    "https://i.ibb.co/ct6wZQB/IMG-9628.jpg",
+                    "https://i.ibb.co/wrbdh1K/IMG-9629.jpg",
+                    "https://i.ibb.co/JtDcrYv/IMG-9630.jpg",
+                    "https://i.ibb.co/q1BYpq1/L83vka-Dup44.jpg",
+                    "https://i.ibb.co/tKQq3BT/RImgb-Bw-XSjs.jpg",
+                    "https://i.ibb.co/fnY4fPS/SBYyef-XExf8.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
@@ -2125,7 +2223,13 @@
                 "description": "Описание Эффектное фатиновое платье-бандо со шлейфом, расшитым лепестками ткани.",
                 "link": "https://zefirdress.ru/vseplatya/plate-paola",
                 "image_link": [
-                    
+                    "https://i.ibb.co/vLfdsVk/0-BQLut-ZGx0.jpg",
+                    "https://i.ibb.co/Cn8bFmK/d-JXLBkp-R0dc.jpg",
+                    "https://i.ibb.co/kHcwc8W/Fl43jo-SFDs-I.jpg",
+                    "https://i.ibb.co/0QYj2bs/Kps-A-VAASt4.jpg",
+                    "https://i.ibb.co/VCCVYpL/rjib-k-LXBQM.jpg",
+                    "https://i.ibb.co/M1nZTwq/rp-Uo-G-re-FKQ.jpg",
+                    "https://i.ibb.co/7Nx8ZnS/vor1l-SG9c-L4.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -2150,7 +2254,23 @@
                 "description": "Короткое платье бордового оттенка фигурный вырез, открытые плечи, короткий объемный рукав на эластичных вставках сверху и снизу, завышенная отрезная талия, расклешенная юбка с невесомым воланом.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Rachel",
                 "image_link": [
-                    
+                    "https://i.ibb.co/jJdgkgt/IMG-8647.jpg",
+                    "https://i.ibb.co/j426033/IMG-8664.jpg",
+                    "https://i.ibb.co/y6vSYJD/IMG-8665.jpg",
+                    "https://i.ibb.co/f8dp6R3/IMG-8666.jpg",
+                    "https://i.ibb.co/ZVDnh7W/IMG-8667.jpg",
+                    "https://i.ibb.co/hRnJSWZ/IMG-8668.jpg",
+                    "https://i.ibb.co/8xq6H6X/IMG-8669.jpg",
+                    "https://i.ibb.co/n12GKJQ/IMG-8670.jpg",
+                    "https://i.ibb.co/KxbpRPW/IMG-8671.jpg",
+                    "https://i.ibb.co/Qbj9yD5/photo-2020-05-04-21-57-40.jpg",
+                    "https://i.ibb.co/jvg5x1f/photo-2020-05-04-21-57-43.jpg",
+                    "https://i.ibb.co/LQGg1WL/photo-2020-05-04-21-57-45.jpg",
+                    "https://i.ibb.co/MpvvdR6/photo-2020-05-04-21-57-46.jpg",
+                    "https://i.ibb.co/n3xxHfR/photo-2020-05-04-21-57-50.jpg",
+                    "https://i.ibb.co/VYGD2df/photo-2020-05-04-21-57-53.jpg",
+                    "https://i.ibb.co/GRwRGKW/photo-2020-05-04-21-57-56.jpg",
+                    "https://i.ibb.co/3hW1XdQ/photo-2020-05-04-21-57-59.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1200 RUB",
@@ -2175,7 +2295,13 @@
                 "description": "Платье-трансформер бордового цвета, есть небольшой шлейф. Подходит беременным.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Redqueen",
                 "image_link": [
-                    
+                    "https://i.ibb.co/q7pq6G3/IMG-4964.jpg",
+                    "https://i.ibb.co/8Yp7Gkb/IMG-4965.jpg",
+                    "https://i.ibb.co/1dYbGgB/IMG-6464.jpg",
+                    "https://i.ibb.co/5jFT92q/IMG-6465.jpg",
+                    "https://i.ibb.co/xCqjT7s/IMG-6466.jpg",
+                    "https://i.ibb.co/8Mp9cHW/IMG-6467.jpg",
+                    "https://i.ibb.co/936b17y/IMG-6468.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -2201,7 +2327,15 @@
                 "description": "По-настоящему королевское, пышное платье с роскошным красным шлейфом, прикрывающим плечи. Верх расшит кружевом и аппликациями из цветов.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Red",
                 "image_link": [
-                    
+                    "https://i.ibb.co/Kz5srL1/IMG-5421.jpg",
+                    "https://i.ibb.co/QkL3DDV/IMG-5432.jpg",
+                    "https://i.ibb.co/cNHzpbr/photo-2020-04-22-12-02-17.jpg",
+                    "https://i.ibb.co/ryGZKsg/photo-2020-04-22-12-02-18.jpg",
+                    "https://i.ibb.co/HVMgQwh/photo-2020-04-22-12-02-21.jpg",
+                    "https://i.ibb.co/cQTDJrz/photo-2020-04-22-12-02-25.jpg",
+                    "https://i.ibb.co/C2WSxQZ/photo-2020-04-22-12-02-28.jpg",
+                    "https://i.ibb.co/RHt9zMR/photo-2020-04-22-12-02-29.jpg",
+                    "https://i.ibb.co/6F6Pt5f/photo-2020-04-22-12-02-31.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1200 RUB",
@@ -2225,7 +2359,7 @@
                 "description": "Вечернее платье А-силуэта, длиной в пол. Топ с вырезом лодочка, приспущенные плечи, пояс расшит камнями.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Romantic",
                 "image_link": [
-                    
+                    "https://i.ibb.co/3NPbTZk/photo-2019-10-02-17-40-48.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1600 RUB",
@@ -2250,7 +2384,10 @@
                 "description": "Платье-макси, выполненное из легкой струящейся ткани тонкие нерегулируемые бретели, фигурное декольте с невесомым воланом, отрезная талия с эластичной вставкой, однотонным поясом и расклешенная юбка с высокими боковыми разрезами.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Sabrina",
                 "image_link": [
-                    
+                    "https://i.ibb.co/hd8DQR9/photo-2020-05-04-21-28-08.jpg",
+                    "https://i.ibb.co/XWQkHW0/photo-2020-05-04-21-28-10.jpg",
+                    "https://i.ibb.co/8KztWGZ/photo-2020-05-04-21-28-11.jpg",
+                    "https://i.ibb.co/jkv0mBZ/photo-2020-05-04-21-28-14.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
@@ -2275,7 +2412,12 @@
                 "description": "Черное сияющее платье, облегает фигуру, расшито пайетками, верх с приспущенными плечами.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Samantha",
                 "image_link": [
-                    
+                    "https://i.ibb.co/gT5xZr1/IMG-6759.jpg",
+                    "https://i.ibb.co/yVLwCP0/IMG-6760.jpg",
+                    "https://i.ibb.co/Y0s0S6L/IMG-6761.jpg",
+                    "https://i.ibb.co/rfq457q/IMG-6762.jpg",
+                    "https://i.ibb.co/MCGN3rr/IMG-6763.jpg",
+                    "https://i.ibb.co/9r6rqyk/IMG-6764.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1200 RUB",
@@ -2300,7 +2442,9 @@
                 "description": "Короткое шифоновое платье в горошек с воланами на рукавах.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Scarlett",
                 "image_link": [
-                    
+                    "https://i.ibb.co/516cLXf/photo-2020-05-04-21-13-11.jpg",
+                    "https://i.ibb.co/Bz5wH50/photo-2020-05-04-21-13-12.jpg",
+                    "https://i.ibb.co/QHr7dYs/photo-2020-05-04-21-13-14.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "500 RUB",
@@ -2326,7 +2470,13 @@
                 "description": "Платье-боди с расклешенными рукавами и прозрачной юбкой в пол в стиле Boho",
                 "link": "https://zefirdress.ru/vseplatya/plate-Selin",
                 "image_link": [
-                    
+                    "https://i.ibb.co/Jm4s8gg/IMG-3448.jpg",
+                    "https://i.ibb.co/tCWmT00/photo-2020-04-27-17-51-13.jpg",
+                    "https://i.ibb.co/9N1BKL2/photo-2020-04-27-17-51-15.jpg",
+                    "https://i.ibb.co/0QwMpYF/photo-2020-04-27-17-51-17.jpg",
+                    "https://i.ibb.co/mqFwGm1/photo-2020-04-27-17-51-19.jpg",
+                    "https://i.ibb.co/4FH0nsf/photo-2020-04-27-17-51-21.jpg",
+                    "https://i.ibb.co/wzn1KJ2/photo-2020-04-27-17-51-23.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
@@ -2351,7 +2501,9 @@
                 "description": "Платье на подкладе, усыпанное глиттером. Декольте открыто, разрез по ножке. Имитация браслета на предплечье.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Shine",
                 "image_link": [
-                    
+                    "https://i.ibb.co/VgBkNZr/photo-2020-05-06-10-03-07.jpg",
+                    "https://i.ibb.co/mFH9BFC/photo-2020-05-06-10-03-09.jpg",
+                    "https://i.ibb.co/cwSScyM/photo-2020-05-06-10-03-11.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1200 RUB",
@@ -2376,7 +2528,50 @@
                 "description": "Пышное платье-облако с длинным шлейфом, пояс украшен камнями, есть шлейф.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Stefany",
                 "image_link": [
-                    
+                    "https://i.ibb.co/9h5z6Nc/IMG-3998.jpg",
+                    "https://i.ibb.co/Btnqw93/IMG-3999.jpg",
+                    "https://i.ibb.co/StZyJ6V/IMG-4001.jpg",
+                    "https://i.ibb.co/0QFtr9d/IMG-4002.jpg",
+                    "https://i.ibb.co/Rj17VGH/IMG-4003.jpg",
+                    "https://i.ibb.co/j5FMVDz/IMG-4004.jpg",
+                    "https://i.ibb.co/7kX5Nh8/IMG-4005.jpg",
+                    "https://i.ibb.co/drjFqj1/IMG-4006.jpg",
+                    "https://i.ibb.co/sq2J9cD/IMG-4007.jpg",
+                    "https://i.ibb.co/ZWbXjdQ/IMG-4008-2.jpg",
+                    "https://i.ibb.co/FxYBPsX/IMG-4009.jpg",
+                    "https://i.ibb.co/C7VQRbp/IMG-4010.jpg",
+                    "https://i.ibb.co/3dC3HLf/IMG-4011.jpg",
+                    "https://i.ibb.co/Zmqz6Ds/IMG-4012.jpg",
+                    "https://i.ibb.co/47j5spm/IMG-4014.jpg",
+                    "https://i.ibb.co/PgsLr4w/IMG-4015.jpg",
+                    "https://i.ibb.co/jWRhGTb/photo-2020-04-27-16-48-40.jpg",
+                    "https://i.ibb.co/5s36q4X/photo-2020-04-27-16-48-42.jpg",
+                    "https://i.ibb.co/NK2jD9b/photo-2020-04-27-16-48-54.jpg",
+                    "https://i.ibb.co/hH0fjJf/photo-2020-04-27-16-48-56.jpg",
+                    "https://i.ibb.co/59NWLTC/photo-2020-04-27-16-48-58.jpg",
+                    "https://i.ibb.co/9hdzr4H/photo-2020-04-27-16-49-00.jpg",
+                    "https://i.ibb.co/2kW5sTd/photo-2020-04-27-16-49-02.jpg",
+                    "https://i.ibb.co/sQtWMMW/photo-2020-04-27-16-49-07.jpg",
+                    "https://i.ibb.co/8DFLCXN/photo-2020-04-27-16-49-16.jpg",
+                    "https://i.ibb.co/KFp8sLM/photo-2020-04-27-16-49-18.jpg",
+                    "https://i.ibb.co/ch0v1C6/photo-2020-04-27-16-49-20.jpg",
+                    "https://i.ibb.co/1K3vy3M/photo-2020-04-27-16-49-22.jpg",
+                    "https://i.ibb.co/fNNPDpp/photo-2020-08-23-18-25-56.jpg",
+                    "https://i.ibb.co/FhtJ8dC/photo-2020-08-23-18-25-58.jpg",
+                    "https://i.ibb.co/TYGjwBB/photo-2020-08-23-18-26-02.jpg",
+                    "https://i.ibb.co/NVHSSgp/photo-2020-08-23-18-26-04.jpg",
+                    "https://i.ibb.co/z6KwQfC/photo-2020-08-23-18-26-06.jpg",
+                    "https://i.ibb.co/vmzQrdt/photo-2020-08-23-18-26-07.jpg",
+                    "https://i.ibb.co/rtSZ3mD/photo-2020-08-23-18-26-27.jpg",
+                    "https://i.ibb.co/Xpm6mqp/photo-2020-08-23-18-26-28.jpg",
+                    "https://i.ibb.co/JRYYz4G/photo-2020-08-23-18-26-29.jpg",
+                    "https://i.ibb.co/MRz4WwW/photo-2020-08-23-18-26-30.jpg",
+                    "https://i.ibb.co/T12VZp0/photo-2020-08-23-18-26-32.jpg",
+                    "https://i.ibb.co/pxDdGHC/photo-2020-08-23-18-26-36.jpg",
+                    "https://i.ibb.co/bLVGGz2/photo-2020-08-23-18-26-37.jpg",
+                    "https://i.ibb.co/yVzh3T4/photo-2020-08-23-18-26-53.jpg",
+                    "https://i.ibb.co/DMtX4Nk/photo-2020-08-23-18-26-55.jpg",
+                    "https://i.ibb.co/mXZggr2/photo-2020-08-23-18-26-57.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1300 RUB",
@@ -2401,7 +2596,34 @@
                 "description": "Вечернее платье, декорированное фигурной нашивкой с бисером круглый вырез, прозрачный объемный рукав с эластичной вставкой на манжете, отрезная талия со съемным поясом и расклешенная юбка, дополненная ниспадающим фатином.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Stella",
                 "image_link": [
-                    
+                    "https://i.ibb.co/kVLkvP1/photo-2020-04-21-16-33-42.jpg",
+                    "https://i.ibb.co/9hDL7ND/photo-2020-04-21-16-33-43.jpg",
+                    "https://i.ibb.co/sgS85HQ/photo-2020-04-21-16-33-46.jpg",
+                    "https://i.ibb.co/vL5Cb7V/photo-2020-04-21-16-33-55.jpg",
+                    "https://i.ibb.co/bJ3Mjtr/photo-2020-08-23-18-41-37.jpg",
+                    "https://i.ibb.co/W6Fd6kX/photo-2020-08-23-18-41-38.jpg",
+                    "https://i.ibb.co/BcSxv58/photo-2020-08-23-18-41-39.jpg",
+                    "https://i.ibb.co/xGy973N/photo-2020-08-23-18-41-41.jpg",
+                    "https://i.ibb.co/nksQfjj/photo-2020-08-23-18-41-42.jpg",
+                    "https://i.ibb.co/3ByWF76/photo-2020-08-23-18-41-43-2.jpg",
+                    "https://i.ibb.co/3ByWF76/photo-2020-08-23-18-41-43-2.jpg",
+                    "https://i.ibb.co/Ctrjsvz/photo-2020-08-23-18-41-50.jpg",
+                    "https://i.ibb.co/YyqTVzr/photo-2020-08-23-18-41-52.jpg",
+                    "https://i.ibb.co/59vJJsz/photo-2020-08-23-18-41-56.jpg",
+                    "https://i.ibb.co/ydzMNWc/photo-2020-08-23-18-41-58.jpg",
+                    "https://i.ibb.co/JknQs63/photo-2020-08-23-18-41-59.jpg",
+                    "https://i.ibb.co/rw60Nr1/photo-2020-08-23-18-42-00.jpg",
+                    "https://i.ibb.co/cFxRGMR/photo-2020-08-23-18-42-01.jpg",
+                    "https://i.ibb.co/jJDsCSR/photo-2020-08-23-18-42-03.jpg",
+                    "https://i.ibb.co/hL1v1H9/photo-2020-08-23-18-42-04.jpg",
+                    "https://i.ibb.co/Qvtd8d1/photo-2020-08-23-18-42-05.jpg",
+                    "https://i.ibb.co/8N6r0ry/photo-2020-08-23-18-42-07.jpg",
+                    "https://i.ibb.co/Sw9gGN4/photo-2020-08-23-18-42-08.jpg",
+                    "https://i.ibb.co/6BLt59D/photo-2020-08-25-11-30-25.jpg",
+                    "https://i.ibb.co/YjRhMWC/photo-2021-01-11-19-29-34.jpg",
+                    "https://i.ibb.co/fSMCmN4/photo-2021-01-11-19-29-42.jpg",
+                    "https://i.ibb.co/R6NYdsR/photo-2021-01-11-19-29-43.jpg",
+                    "https://i.ibb.co/GdZ4y85/photo-2021-01-11-19-29-49.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1100 RUB",
@@ -2427,7 +2649,9 @@
                 "description": "Сарафан-макси свободного кроя из мягкой хлопковой ткани тонкие бретели, вырез-халтер, расклешенная многоярусная юбка с воланом!",
                 "link": "https://zefirdress.ru/vseplatya/plate-Sun",
                 "image_link": [
-                    
+                    "https://i.ibb.co/8gCJqFC/photo-2020-05-04-21-41-17.jpg",
+                    "https://i.ibb.co/93b2Sf8/photo-2020-05-04-21-41-19.jpg",
+                    "https://i.ibb.co/gj4xwR4/photo-2020-05-04-21-41-20.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "500 RUB",
@@ -2453,7 +2677,44 @@
                 "description": "Утонченное длинное платье-сетка, основа из короткого сарафана с v-образным вырезом и открытой спинкой, воздушное прозрачное платье-макси, украшенное блестящим декором и рукава-клеш с эффектным разрезом по всей длине.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Superstar",
                 "image_link": [
-                    
+                    "https://i.ibb.co/4p7gBWT/IMG-1904.jpg",
+                    "https://i.ibb.co/VVHkNf3/IMG-1974.jpg",
+                    "https://i.ibb.co/5nwcMRr/IMG-4358.jpg",
+                    "https://i.ibb.co/Lz74y8d/IMG-4359.jpg",
+                    "https://i.ibb.co/f2pBQvQ/IMG-4360.jpg",
+                    "https://i.ibb.co/pbrnc27/IMG-4362.jpg",
+                    "https://i.ibb.co/nrVWRXK/IMG-4363.jpg",
+                    "https://i.ibb.co/GcHMSV9/IMG-4364.jpg",
+                    "https://i.ibb.co/W5h9dk4/IMG-4365.jpg",
+                    "https://i.ibb.co/zGXKQs9/IMG-4366.jpg",
+                    "https://i.ibb.co/rsQ5rdz/IMG-4368.jpg",
+                    "https://i.ibb.co/ctRRd09/IMG-4369.jpg",
+                    "https://i.ibb.co/2MW5Tb4/IMG-4370.jpg",
+                    "https://i.ibb.co/QcrQcFy/IMG-4371.jpg",
+                    "https://i.ibb.co/7tBD5gL/IMG-4372.jpg",
+                    "https://i.ibb.co/35K2YF1/IMG-4374.jpg",
+                    "https://i.ibb.co/MGfGN1C/IMG-4375.jpg",
+                    "https://i.ibb.co/16Z3JpM/IMG-4376.jpg",
+                    "https://i.ibb.co/J2kQphM/IMG-4377.jpg",
+                    "https://i.ibb.co/RgbWztK/IMG-4378.jpg",
+                    "https://i.ibb.co/74Hj6GF/IMG-4379.jpg",
+                    "https://i.ibb.co/pWWBGYy/IMG-4380.jpg",
+                    "https://i.ibb.co/dGG61xW/IMG-4381.jpg",
+                    "https://i.ibb.co/BqNB3Cj/IMG-4382.jpg",
+                    "https://i.ibb.co/b6ZNxk5/IMG-4383.jpg",
+                    "https://i.ibb.co/Lr6xyMH/IMG-4384.jpg",
+                    "https://i.ibb.co/pnv8MW6/photo-2020-04-22-16-04-08.jpg",
+                    "https://i.ibb.co/3hd6qf7/photo-2020-04-22-16-04-51.jpg",
+                    "https://i.ibb.co/vVs8PMx/photo-2020-04-22-16-04-53.jpg",
+                    "https://i.ibb.co/LY3TDrK/photo-2020-04-22-16-04-55.jpg",
+                    "https://i.ibb.co/sJmy0sD/photo-2020-04-22-16-04-57.jpg",
+                    "https://i.ibb.co/6bNtCmj/photo-2020-04-22-16-05-01.jpg",
+                    "https://i.ibb.co/bm73F0g/photo-2020-04-22-16-05-03.jpg",
+                    "https://i.ibb.co/T0Dkv3Y/photo-2020-04-22-16-05-05.jpg",
+                    "https://i.ibb.co/nMnSGtk/photo-2020-04-22-16-05-08.jpg",
+                    "https://i.ibb.co/jG3jhNs/photo-2020-04-22-16-05-11.jpg",
+                    "https://i.ibb.co/ByDj79L/photo-2020-04-22-16-05-14.jpg",
+                    "https://i.ibb.co/8cMwTg4/photo-2020-04-22-16-05-17.jpg",
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -2480,7 +2741,10 @@
                 "description": "Будуарное платье голубого цвета, верх декорирован белым кружевом, застегивается спереди на пуговки, юбка из многослойного фатина.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Taffy",
                 "image_link": [
-                    
+                    "https://i.ibb.co/QKsK34T/photo-2020-04-21-09-25-44.jpg",
+                    "https://i.ibb.co/KybwgT5/photo-2020-04-21-09-25-45.jpg",
+                    "https://i.ibb.co/NyJSwTs/photo-2020-04-21-09-25-47.jpg",
+                    "https://i.ibb.co/drjQfWK/photo-2020-04-21-09-25-50.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1700 RUB",
@@ -2505,7 +2769,8 @@
                 "description": "Элегантное черно-красное платье, есть небольшой шлейф.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Tara",
                 "image_link": [
-                    
+                    "https://i.ibb.co/T4TTVF7/photo-2019-09-24-16-45-07.jpg",
+                    "https://i.ibb.co/dP4zq8C/photo-2019-09-24-16-45-09.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
@@ -2530,7 +2795,13 @@
                 "description": "Изысканное платье фасона &amp;quot;рыбка&amp;quot; глубокого синего цвета, пояс украшен бисером, шнуровка на спинке, есть шлейф.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Valerie",
                 "image_link": [
-                    
+                    "https://i.ibb.co/72RrqRJ/Valerie2.jpg",
+                    "https://i.ibb.co/qrsKnqv/Valerie1.webp",
+                    "https://i.ibb.co/C1t1FxR/Valerie3.jpg",
+                    "https://i.ibb.co/nsptJsH/Valerie4.jpg",
+                    "https://i.ibb.co/JvKTxMJ/Valerie6.jpg",
+                    "https://i.ibb.co/tMBgj4q/Valerie5.jpg",
+                    "https://i.ibb.co/y4z3LDv/Valerie7.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
@@ -2554,7 +2825,9 @@
                 "description": "Платье силуэта рыбка, красиво подчеркивающее фигуру. Выполнено из ткани бежевых оттенков. Топ, бедра и подол юбки декорированы узорами из красных пайеток.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Veronica",
                 "image_link": [
-                    
+                    "https://i.ibb.co/TYNXHf7/Veronica1.jpg",
+                    "https://i.ibb.co/r6kpt0y/Veronica2.jpg",
+                    "https://i.ibb.co/9YPDDyt/Veronica3.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1300 RUB",
@@ -2579,7 +2852,16 @@
                 "description": "Платье силуэта рыбка, красиво подчеркивающее фигуру. Выполнено из ткани бежевых оттенков. Топ, бедра и подол юбки декорированы узорами из золотых пайеток.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Vestido",
                 "image_link": [
-                    
+                    "https://i.ibb.co/qr7MkXb/Vestido1.jpg",
+                    "https://i.ibb.co/5WrHcqN/Vestido2.webp",
+                    "https://i.ibb.co/tzsg0V8/Vestido3.jpg",
+                    "https://i.ibb.co/3hc2dWP/Vestido4.jpg",
+                    "https://i.ibb.co/X81YqJd/Vestido5.jpg",
+                    "https://i.ibb.co/4JmDK9S/Vestido6.jpg",
+                    "https://i.ibb.co/ZdT8XZr/Vestido7.jpg",
+                    "https://i.ibb.co/6rtm9JZ/Vestido8.jpg",
+                    "https://i.ibb.co/5rdQjSD/Vestido9.jpg",
+                    "https://i.ibb.co/SsmyXy1/Vestido10.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1300 RUB",
@@ -2604,7 +2886,10 @@
                 "description": "Платье в светло-золотом оттенке с эффектными рукавами и V-образным вырезом. Платье состоит из мелких мерцающих пайеток на хлопковом подкладе.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Vivian",
                 "image_link": [
-                    
+                    "https://i.ibb.co/R3MS4KT/Vivian1.jpg",
+                    "https://i.ibb.co/sF5N2B1/Vivian2.jpg",
+                    "https://i.ibb.co/7r31LGC/Vivian3.jpg",
+                    "https://i.ibb.co/Jvwh77z/Vivian4.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
@@ -2629,7 +2914,9 @@
                 "description": "Атласное платье в пол зеленого цвета. Топ расшит бисером, пайетками и кристаллами.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Wendy",
                 "image_link": [
-                    
+                    "https://i.ibb.co/RgQ487g/Wendy2.jpg",
+                    "https://i.ibb.co/ZVM4d49/Wendy3.jpg",
+                    "https://i.ibb.co/bRKn0ZK/Wendy4.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -2658,7 +2945,21 @@
                 "description": "елое платье в стиле Boho, подходит беременным.",
                 "link": "https://zefirdress.ru/vseplatya/plate-WhiteAngel",
                 "image_link": [
-                    
+                    "https://i.ibb.co/5h2PXR3/Whiteangel1.jpg",
+                    "https://i.ibb.co/r7FqGp8/Whiteangel2.jpg",
+                    "https://i.ibb.co/yW9z4FT/Whiteangel3.jpg",
+                    "https://i.ibb.co/BnskJ81/Whiteangel4.jpg",
+                    "https://i.ibb.co/DkWpgpY/Whiteangel5.jpg",
+                    "https://i.ibb.co/gSPR3FC/Whiteangel6.jpg",
+                    "https://i.ibb.co/KbtR7VG/Whiteangel7.jpg",
+                    "https://i.ibb.co/K50wL24/Whiteangel8.jpg",
+                    "https://i.ibb.co/ZLQtjDw/Whiteangel9.jpg",
+                    "https://i.ibb.co/DDbyjgY/Whiteangel10.jpg",
+                    "https://i.ibb.co/X8Lz26H/Whiteangel11.jpg",
+                    "https://i.ibb.co/yXtmKzY/Whiteangel12.jpg",
+                    "https://i.ibb.co/4S4yDBX/Whiteangel13.jpg",
+                    "https://i.ibb.co/nkQ77rH/Whiteangel14.jpg",
+                    "https://i.ibb.co/7XwyJT7/Whiteangel15.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1100 RUB",
@@ -2682,7 +2983,51 @@
                 "description": "Пышное платье из фатина желтого цвета в горошек. Топ-бюстье с открытыми плечами. Пышные рукава-фонарики, которые можно, как надеть, так и снять. Юбка в пол с небольшим шлейфом.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Yellowlove",
                 "image_link": [
-                    
+                    "https://i.ibb.co/RHf62KZ/Yellowlove1.jpg",
+                    "https://i.ibb.co/9Zf8gCs/Yellowlove2.jpg",
+                    "https://i.ibb.co/1Zj3Wxs/Yellowlove3.jpg",
+                    "https://i.ibb.co/yRmRrmK/Yellowlove4.jpg",
+                    "https://i.ibb.co/ZcFWCVm/Yellowlove5.jpg",
+                    "https://i.ibb.co/NNM2FRM/Yellowlove6.jpg",
+                    "https://i.ibb.co/nfMtzdB/Yellowlove7.jpg",
+                    "https://i.ibb.co/2Y8G6dc/Yellowlove8.jpg",
+                    "https://i.ibb.co/f8L8Q7C/Yellowlove9.jpg",
+                    "https://i.ibb.co/YRD0sQP/Yellowlove10.jpg",
+                    "https://i.ibb.co/qnwcVKf/Yellowlove11.jpg",
+                    "https://i.ibb.co/hx0CY31/Yellowlove12.jpg",
+                    "https://i.ibb.co/fF2nrzS/Yellowlove13.jpg",
+                    "https://i.ibb.co/zXHxLf4/Yellowlove14.webp",
+                    "https://i.ibb.co/hmFv0h9/Yellowlove15.jpg",
+                    "https://i.ibb.co/87k48wj/Yellowlove16.jpg",
+                    "https://i.ibb.co/gzCbpSm/Yellowlove17.jpg",
+                    "https://i.ibb.co/DthWPZx/Yellowlove18.jpg",
+                    "https://i.ibb.co/6D72Gqz/Yellowlove19.jpg",
+                    "https://i.ibb.co/ZgZ5Ld6/Yellowlove20.jpg",
+                    "https://i.ibb.co/8r7fFWz/Yellowlove21.jpg",
+                    "https://i.ibb.co/svKDK18/Yellowlove22.jpg",
+                    "https://i.ibb.co/JzqG94T/Yellowlove23.jpg",
+                    "https://i.ibb.co/1Z8NsKq/Yellowlove24.jpg",
+                    "https://i.ibb.co/rwQ3dnt/Yellowlove25.jpg",
+                    "https://i.ibb.co/VmNbgh6/Yellowlove26.jpg",
+                    "https://i.ibb.co/zR5CLW6/Yellowlove27.jpg",
+                    "https://i.ibb.co/b5zVLtG/Yellowlove28.jpg",
+                    "https://i.ibb.co/wc0zj1S/Yellowlove29.jpg",
+                    "https://i.ibb.co/2WCcDhF/Yellowlove30.jpg",
+                    "https://i.ibb.co/BgfkFym/Yellowlove31.jpg",
+                    "https://i.ibb.co/yghQWgt/Yellowlove32.jpg",
+                    "https://i.ibb.co/DVy0cGw/Yellowlove33.jpg",
+                    "https://i.ibb.co/k81Py8g/Yellowlove34.jpg",
+                    "https://i.ibb.co/djTR4BJ/Yellowlove35.jpg",
+                    "https://i.ibb.co/dbFFHzQ/Yellowlove36.jpg",
+                    "https://i.ibb.co/z6BrrZ1/Yellowlove37.jpg",
+                    "https://i.ibb.co/P9sJ10x/Yellowlove38.jpg",
+                    "https://i.ibb.co/xzCYbxd/Yellowlove39.jpg",
+                    "https://i.ibb.co/Stf734K/Yellowlove40.jpg",
+                    "https://i.ibb.co/WnHHphF/Yellowlove41.jpg",
+                    "https://i.ibb.co/G2PvPtM/Yellowlove42.jpg",
+                    "https://i.ibb.co/YhCFrYj/Yellowlove43.jpg",
+                    "https://i.ibb.co/w4ZG0Wx/Yellowlove44.jpg",
+                    "https://i.ibb.co/dgtyXTW/Yellowlove45.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1600 RUB",
@@ -2731,17 +3076,29 @@
                 "id": "21624191",
                 "title": "Платье Tiffany",
                 "size": [
-                    "40",
-                    "42"
+                    "44",
+                    "46"
                 ],
-                "price_photo": 1500,
+                "price_photo": 1600,
                 "price_rent": 3000,
                 "deposit": 1000,
-                "description": "Размер 44-46 ⠀ Стоимость аренды Фотосессия 1600 ₽ (1 сутки) Мероприятие 3000 ₽ (2-3 суток) ⠀ Залог 1000 ₽ (возвратный) Описание Нежнейшее платье кремово-голубого цвета с тонкими бретелями и изящным разрезом по ножке. У платья нежнейшая подкладка из шелка и мягкий фатин, струящийся по юбке. Верх выполнен с помощью страз, кристаллов и бисера.",
+                "description": "Нежнейшее платье кремово-голубого цвета с тонкими бретелями и изящным разрезом по ножке. У платья нежнейшая подкладка из шелка и мягкий фатин, струящийся по юбке. Верх выполнен с помощью страз, кристаллов и бисера.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Tiffany",
                 "image_link": [
-                    
-                ],-cdn1.vigbo.tech/shops/195624/products/21624191/images/preview-dfbbbea3c93867118054dddec813a688.jpg",
+                    "https://i.ibb.co/9nqTbj4/IMG-0955.jpg",
+                    "https://i.ibb.co/ySz8wj3/IMG-0958.jpg",
+                    "https://i.ibb.co/T4M3QZT/IMG-0959.jpg",
+                    "https://i.ibb.co/nRQvgYf/IMG-0960.jpg",
+                    "https://i.ibb.co/Dt67Vvt/IMG-0961.jpg",
+                    "https://i.ibb.co/HdxmjQL/photo-2020-05-06-09-05-27.jpg",
+                    "https://i.ibb.co/2KRtLzq/photo-2020-05-06-09-05-29.jpg",
+                    "https://i.ibb.co/9ZSp1ff/photo-2020-05-06-09-05-31.jpg",
+                    "https://i.ibb.co/xzLXdg8/photo-2020-05-06-09-05-33.jpg",
+                    "https://i.ibb.co/KLr4FxR/photo-2020-05-06-09-05-35.jpg",
+                    "https://i.ibb.co/Cn4MtqT/photo-2020-05-06-09-05-38.jpg",
+                    "https://i.ibb.co/nm6D8kn/photo-2020-05-06-09-05-40.jpg",
+                    "https://i.ibb.co/0rnC2D4/photo-2020-05-06-09-05-42.jpg"
+                ],
                 "availability": "in_stock",
                 "price": "1600 RUB",
                 "condition": "new",
@@ -2756,17 +3113,17 @@
                 "id": "21624250",
                 "title": "Платье Амелия",
                 "size": [
-                    "40",
-                    "42"
+                    "42",
+                    "44"
                 ],
-                "price_photo": 1500,
-                "price_rent": 3000,
+                "price_photo": 1000,
+                "price_rent": 1600,
                 "deposit": 1000,
-                "description": "Размер 42-44 ⠀ Стоимость аренды Фотосессия 1000 ₽ (1 сутки) Мероприятие 1600 ₽ (2-3 суток) ⠀ Залог 1000 ₽ (возвратный) Описание Платье-макси классического кроя без рукавов круглый вырез, полупрозрачная кокетка, украшенная цветочной аппликацией и мерцающими камнями, отрезная талия и расклешенная фатиновая юбка.",
+                "description": "Платье-макси классического кроя без рукавов круглый вырез, полупрозрачная кокетка, украшенная цветочной аппликацией и мерцающими камнями, отрезная талия и расклешенная фатиновая юбка.",
                 "link": "https://zefirdress.ru/vseplatya/plate-ameliya",
                 "image_link": [
                     
-                ],-cdn1.vigbo.tech/shops/195624/products/21624250/images/preview-f1d3a6b580751e32278d009dd79d11b5.jpg",
+                ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
                 "condition": "new",
@@ -2781,17 +3138,17 @@
                 "id": "21624262",
                 "title": "Платье будуарное",
                 "size": [
-                    "40",
-                    "42"
+                    "42",
+                    "44",
+                    "46"
                 ],
-                "price_photo": 1500,
-                "price_rent": 3000,
+                "price_photo": 500,
                 "deposit": 1000,
-                "description": "Размер 42-46 ⠀ Стоимость аренды Фотосессия 500 ₽ (1 сутки) ⠀ Залог 1000 ₽ (возвратный) Описание Белый кружевной будуарный халат.",
+                "description": "Белый кружевной будуарный халат.",
                 "link": "https://zefirdress.ru/vseplatya/plate-buduar",
                 "image_link": [
                     
-                ],-cdn1.vigbo.tech/shops/195624/products/21624262/images/preview-07517485026a35434b439ae496ef5f28.jpg",
+                ],
                 "availability": "in_stock",
                 "price": "500 RUB",
                 "condition": "new",
