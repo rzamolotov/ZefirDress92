@@ -16,7 +16,7 @@ struct Product: Identifiable {
     var deposit: Int
     var description: String
     var link: String
-    var image_link: String
+    var image_link: [String]
     var availability: String
     var price: String
     var condition: String
@@ -38,7 +38,7 @@ extension Product: Decodable {
         let rawdeposit = try? container.decode(Int.self, forKey: .deposit)
         let rawdescription = try? container.decode(String.self, forKey: .description)
         let rawlink = try? container.decode(String.self, forKey: .link)
-        let rawimage_link = try? container.decode(String.self, forKey: .image_link)
+        let rawimage_link = try? container.decode([String].self, forKey: .image_link)
         let rawavailability = try? container.decode(String.self, forKey: .availability)
         let rawprice = try? container.decode(String.self, forKey: .price)
         let rawcondition = try? container.decode(String.self, forKey: .condition)

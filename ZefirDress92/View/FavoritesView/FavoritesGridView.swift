@@ -23,7 +23,7 @@ struct FavoritesGridView: View {
             ScrollView {
                 ForEach(favorites) { favorite in
                     NavigationLink {
-                        ItemDetailView(id: favorite.id ?? "0", title: favorite.title ?? "Olivia", size: favorite.size as! [String], price_photo: Int(favorite.price_photo), price_rent: Int(favorite.price_rent), deposit: Int(favorite.deposit), description: favorite.itemDescription ?? "", link: favorite.itemLink ?? "", image_link: favorite.image_link ?? "", availability: favorite.availability!, price: favorite.price!, condition: favorite.condition ?? "", isAddToFavorite: favorite.isAddToFavorite, category: favorite.category as! [String])
+                        ItemDetailView(id: favorite.id ?? "0", title: favorite.title ?? "Olivia", size: favorite.size as! [String], price_photo: Int(favorite.price_photo), price_rent: Int(favorite.price_rent), deposit: Int(favorite.deposit), description: favorite.itemDescription ?? "", link: favorite.itemLink ?? "", image_link: favorite.image_link as! [String], availability: favorite.availability!, price: favorite.price!, condition: favorite.condition ?? "", isAddToFavorite: favorite.isAddToFavorite, category: favorite.category as! [String])
                     } label: {
                         ZStack {
                             Rectangle()

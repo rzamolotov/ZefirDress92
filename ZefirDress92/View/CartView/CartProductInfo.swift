@@ -13,7 +13,7 @@ struct CartProductInfo: View {
     
     var body: some View {
         Group {
-            KFImage(URL(string: order.image_link ?? ""))
+            KFImage(URL(string: (order.image_link) as! String))
                 .placeholder({ progress in
                     ProgressView()
                 })

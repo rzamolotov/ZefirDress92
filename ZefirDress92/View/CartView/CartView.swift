@@ -22,7 +22,7 @@ struct CartView: View {
                     List {
                         ForEach(orders) { order in
                             NavigationLink {
-                                ItemDetailView(id: order.id ?? "0", title: order.title ?? "Olivia", size: order.size as! [String], price_photo: Int(order.price_photo), price_rent: Int(order.price_rent), deposit: Int(order.deposit), description: order.itemDescription ?? "", link: order.itemLink ?? "", image_link: order.image_link ?? "", availability: order.availability!, price: order.price!, condition: order.condition ?? "", isAddToFavorite: order.isAddToFavorite, category: order.category as! [String])
+                                ItemDetailView(id: order.id ?? "0", title: order.title ?? "Olivia", size: order.size as! [String], price_photo: Int(order.price_photo), price_rent: Int(order.price_rent), deposit: Int(order.deposit), description: order.itemDescription ?? "", link: order.itemLink ?? "", image_link: order.image_link as! [String], availability: order.availability!, price: order.price!, condition: order.condition ?? "", isAddToFavorite: order.isAddToFavorite, category: order.category as! [String])
                             } label: {
                                 HStack {
                                     CartProductInfo(order: order)

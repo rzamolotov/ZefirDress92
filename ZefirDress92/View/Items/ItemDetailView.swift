@@ -19,14 +19,14 @@ struct ItemDetailView: View {
     var deposit: Int
     var description: String
     var link: String
-    var image_link: String
+    var image_link: [String]
     var availability: String
     var price: String
     var condition: String
     var isAddToFavorite: Bool
     var category: [String]
     
-    init(id: String, title: String, size: [String], price_photo: Int, price_rent: Int, deposit: Int, description: String, link: String, image_link: String, availability: String, price: String, condition: String, isAddToFavorite: Bool, category: [String]) {
+    init(id: String, title: String, size: [String], price_photo: Int, price_rent: Int, deposit: Int, description: String, link: String, image_link: [String], availability: String, price: String, condition: String, isAddToFavorite: Bool, category: [String]) {
         self.id = id
         self.title = title
         self.size = size
@@ -48,19 +48,24 @@ struct ItemDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: 10) {
+                TabView{
+                    ForEach(product.image_link, id: \.self) { image in
+                        KFImage(URL(string: image))
+                            .placeholder({ progress in
+                                ProgressView()
+                            })
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: screen.width, height: screen.height / 1.5)
+                            .cornerRadius(5)
+                    }
+                }
+                .frame(width: screen.width, height: screen.height / 1.5)
+                .tabViewStyle(.page(indexDisplayMode: .always))
                 
-             
-                KFImage(URL(string: product.image_link))
-                    .placeholder({ progress in
-                        ProgressView()
-                    })
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: screen.width, height: screen.height / 1.5)
-                    .cornerRadius(5)
-                    .shadow(radius: 2)
                 ItemDescriptionView(product: product, isSet: isAddToFavorite)
             }
+            
         }
         .navigationBarTitle(
             Text(product.title),
