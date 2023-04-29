@@ -49,7 +49,7 @@ struct ItemDetailView: View {
         ScrollView {
             VStack(alignment: .center, spacing: 10) {
                 TabView{
-                    ForEach(product.image_link, id: \.self) { image in
+                    ForEach(product.image_link ?? ["https://i.ibb.co/wyBwfHG/IMG-7167.jpg"], id: \.self) { image in
                         KFImage(URL(string: image))
                             .placeholder({ progress in
                                 ProgressView()
@@ -84,7 +84,7 @@ struct ItemDetailView_Previews: PreviewProvider {
                            deposit: example.deposit,
                            description: example.description,
                            link: example.link,
-                           image_link: example.image_link,
+                           image_link: example.image_link ?? ["https://i.ibb.co/wyBwfHG/IMG-7167.jpg"],
                            availability: example.availability,
                            price: example.price,
                            condition: example.condition,

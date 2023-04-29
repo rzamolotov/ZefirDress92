@@ -23,7 +23,7 @@ actor Network {
         return aDecoder
     }()
     
-    private let feedURL = URL(string: "https://run.mocky.io/v3/1ac244f4-fce3-4d6f-93d6-494d77bcea27")!
+    private let feedURL = URL(string: "https://run.mocky.io/v3/173b7bcc-f0ff-426c-9420-05ad81c8aa49")!
     
     private let downloader: HTTPDataDownloader
     

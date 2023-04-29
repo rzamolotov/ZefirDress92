@@ -1,6 +1,5 @@
 {
-    "products": [
-        {
+    "products": [{
             "item": {
                 "id": "21551666",
                 "title": "Платье Alexa",
@@ -50,8 +49,7 @@
                 "deposit": 1000,
                 "description": "Будуарное платье для фотосессии беременности и не только. Воздушное, летящее, состоит из прозрачных шлейфов и лифа на резинке.",
                 "link": "https://zefirdress.ru/vseplatya/plate-adele",
-                "image_link":
-                [
+                "image_link": [
                     "https://i.ibb.co/V9VqjMk/Adele1.jpg",
                     "https://i.ibb.co/SnMdq41/Adele2.jpg",
                     "https://i.ibb.co/ZxhxDwt/Adele3.jpg",
@@ -82,7 +80,7 @@
                 "deposit": 1000,
                 "description": "Блестящее платье в пол глубокого зеленого цвета с одним рукавом в пайетках, есть небольшой шлейф.",
                 "link": "https://zefirdress.ru/vseplatya/plate-alexandra",
-                "image_link":[
+                "image_link": [
                     "https://i.ibb.co/LSNgvxr/Alexandra1.webp",
                     "https://i.ibb.co/16Vz2Zt/Alexandra2.jpg",
                     "https://i.ibb.co/bzgwSNb/Alexandra3.jpg",
@@ -111,7 +109,7 @@
                 "deposit": 1000,
                 "description": "Элегантное черное, облегает фигуру, расшито пайетками.",
                 "link": "https://zefirdress.ru/vseplatya/plate-amanda",
-                "image_link":[
+                "image_link": [
                     "https://i.ibb.co/TwZ3rt9/Amanda1.jpg",
                     "https://i.ibb.co/TRvkDpg/Amanda2.jpg",
                     "https://i.ibb.co/KxJRtVW/Amanda3.jpg",
@@ -265,7 +263,7 @@
                     "https://i.ibb.co/KLRqSkG/Anny0.jpg",
                     "https://i.ibb.co/ZfG25xc/Anny1.jpg",
                     "https://i.ibb.co/pwLPVZY/Anny2.jpg"
-                    
+
                 ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
@@ -388,7 +386,7 @@
                 "description": "Размер 12 (грудь 72, талия 74, длина 85 см) Описание Детское платье голубого цвета, верх расшит пайетками, пояс украшен бантом.",
                 "link": "https://zefirdress.ru/vseplatya/plate-BabyGirl_1",
                 "image_link": [
-                    
+                    "https://i.ibb.co/rm9F2cG/IMG-5360.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "500 RUB",
@@ -412,7 +410,7 @@
                 "description": "Размер 12 (грудь 72, талия 74, длина 83 см) Описание Детское розовое фатиновое платье, верх из пайеток, на поясе украшено бантом.",
                 "link": "https://zefirdress.ru/vseplatya/plate-BabyGirl_2",
                 "image_link": [
-                    
+                    "https://i.ibb.co/DrFV72S/IMG-5355.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "500 RUB",
@@ -436,7 +434,12 @@
                 "description": "Размер 8 (грудь 66, талия 64, длина 90 см) Описание Яркое детское фатиновое платье, пояс украшен камнями, верх кружево + пайетки",
                 "link": "https://zefirdress.ru/vseplatya/plate-BabyGirl_3",
                 "image_link": [
-                    
+                    "https://i.ibb.co/Lz3NmB4/IMG-5356.jpg",
+                    "https://i.ibb.co/7Wm1KZp/IMG-5357.jpg",
+                    "https://i.ibb.co/THvDdjw/IMG-5358.jpg",
+                    "https://i.ibb.co/c3CMZWd/IMG-5359.jpg",
+                    "https://i.ibb.co/Cb5bvhB/photo-2021-01-11-19-29-35.jpg",
+                    "https://i.ibb.co/zbyvYdF/photo-2021-01-11-19-29-47.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "500 RUB",
@@ -460,7 +463,9 @@
                 "description": "Описание Детское белое фатиновое платье, пояс красного цвета украшен цветком, сзади бант.",
                 "link": "https://zefirdress.ru/vseplatya/plate-BabyGirl_4",
                 "image_link": [
-                    
+                    "https://i.ibb.co/mC4SHNF/IMG-4331.webp",
+                    "https://i.ibb.co/WF578wC/IMG-5354.jpg",
+                    "https://i.ibb.co/HXsVnnV/photo-2021-01-11-19-29-38-2.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "500 RUB",
@@ -483,7 +488,8 @@
                 "description": "Размер на 3 месяца Джинсовое платье для вашей малышки, розовый тонкий пояс и розовый подъюбник.",
                 "link": "https://zefirdress.ru/vseplatya/plate-BabyGirl_5",
                 "image_link": [
-                    
+                    "https://i.ibb.co/zNsjFSj/photo-2021-03-13-10-39-21.jpg",
+                    "https://i.ibb.co/9gV4KqR/photo-2021-03-13-10-39-22.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "200 RUB",
@@ -506,9 +512,8 @@
                 "deposit": 500,
                 "description": "Размер 9-12 месяцев Детское платье для малышек от 9 до 12 месяцев, пышная юбка из нескольких слоев фатина, верх расшит пайетками.",
                 "link": "https://zefirdress.ru/vseplatya/plate-BabyGirl_6",
-                "image_link": [
-                    
-                ],
+                
+
                 "availability": "in_stock",
                 "price": "300 RUB",
                 "condition": "new",
@@ -530,7 +535,7 @@
                 "description": "Размер 6-9 месяцев Детское платье для малышек от 6 до 9 месяцев, белый кружевной верх и пышная юбка из нескольких слоев фатина.",
                 "link": "https://zefirdress.ru/vseplatya/plate-BabyGirl_7",
                 "image_link": [
-                    
+                    "https://i.ibb.co/74Ft1v6/IMG-6778.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "300 RUB",
@@ -555,9 +560,7 @@
                 "deposit": 300,
                 "description": "Изумительное пышное платье для девочки выполнено из гипюра, атласа и мягкой сеточки. Лиф и юбка полностью на хлопковой подкладке! Пояс дополнен съемным декоративным цветочком-брошкой. Юбка-солнце платья очень пышная, выполнена с многочисленными ярусами сборками и рюшами. Юбка мягкая, не колет и не мнется!",
                 "link": "https://zefirdress.ru/vseplatya/plate-BabyGirl_8",
-                "image_link": [
-                    
-                ],
+             
                 "availability": "in_stock",
                 "price": "500 RUB",
                 "condition": "new",
@@ -581,9 +584,8 @@
                 "deposit": 500,
                 "description": "Размер 74-80 ⠀ Стоимость аренды Фотосессия 300 ₽ (1 сутки) ⠀ Залог 500 ₽ (возвратный) Описание Хлопковое детское боди с юбкой в новогодней тематике.",
                 "link": "https://zefirdress.ru/vseplatya/body-santa",
-                "image_link": [
-                    
-                ],
+
+
                 "availability": "in_stock",
                 "price": "300 RUB",
                 "condition": "new",
@@ -636,7 +638,9 @@
                 "description": "Элегантное черное сияющее платье, облегает фигуру, расшито пайетками. Спинка и горловина украшены камнями.",
                 "link": "https://zefirdress.ru/vseplatya/plate-betty",
                 "image_link": [
-                    
+                    "https://i.ibb.co/R65b37v/IMG-6540.jpg",
+                    "https://i.ibb.co/6BTJV19/IMG-6541.jpg",
+                    "https://i.ibb.co/8bvLPMW/IMG-6542.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1300 RUB",
@@ -721,7 +725,32 @@
                 "description": "Атласное платье длины макси розового цвета с открытой спинкой. Топ расшит бисером, пайетками и кристаллами.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Candy",
                 "image_link": [
-                    
+                    "https://i.ibb.co/nfwVsBm/IMG-2991.jpg",
+                    "https://i.ibb.co/QjSzrh7/IMG-2992.jpg",
+                    "https://i.ibb.co/nwM94vZ/IMG-2993.jpg",
+                    "https://i.ibb.co/Xyrqf9b/IMG-2994.jpg",
+                    "https://i.ibb.co/wyJk0bS/IMG-2995.jpg",
+                    "https://i.ibb.co/tPGNSCD/IMG-2996.jpg",
+                    "https://i.ibb.co/QYPMDmm/IMG-2997-2.jpg",
+                    "https://i.ibb.co/D9ZrcFw/IMG-2998.jpg",
+                    "https://i.ibb.co/8jcdHmZ/IMG-3007.jpg",
+                    "https://i.ibb.co/k083FFk/IMG-3008.jpg",
+                    "https://i.ibb.co/GRwGqgr/IMG-3009.jpg",
+                    "https://i.ibb.co/nkVnv2h/IMG-3011.jpg",
+                    "https://i.ibb.co/gy9JL3n/IMG-3076.jpg",
+                    "https://i.ibb.co/DtdL2WY/IMG-3077.jpg",
+                    "https://i.ibb.co/sVrjW89/IMG-3078.jpg",
+                    "https://i.ibb.co/THmsPxb/IMG-3085.jpg",
+                    "https://i.ibb.co/ww0L6kf/IMG-3087.jpg",
+                    "https://i.ibb.co/fxxdJQC/IMG-3088.jpg",
+                    "https://i.ibb.co/M2xC42j/IMG-3089-2.jpg",
+                    "https://i.ibb.co/7NJLjnt/IMG-3091-2.jpg",
+                    "https://i.ibb.co/VQhPDRS/photo-2019-10-09-15-05-01.jpg",
+                    "https://i.ibb.co/54yB93s/photo-2019-10-09-15-05-14.jpg",
+                    "https://i.ibb.co/w6Mk03f/photo-2020-04-21-14-34-38.jpg",
+                    "https://i.ibb.co/n7b9GMh/photo-2020-04-21-14-34-40.jpg",
+                    "https://i.ibb.co/br2WNDz/photo-2020-04-21-14-34-44.jpg",
+                    "https://i.ibb.co/py5PbDk/photo-2020-04-21-14-34-49.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -802,7 +831,7 @@
                 "id": "21591512",
                 "title": "Платье Cristall",
                 "size": [
-                    "40",
+                    "40"
                 ],
                 "price_photo": 500,
                 "deposit": 1000,
@@ -1143,7 +1172,7 @@
                     "https://i.ibb.co/5KqND4S/Photo0017.jpg",
                     "https://i.ibb.co/Sn2cjnv/Photo0026.jpg",
                     "https://i.ibb.co/s9MFkc8/Photo0027.jpg"
-                    
+
                 ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
@@ -1251,7 +1280,7 @@
                     "https://i.ibb.co/s5nm7ns/photo-2020-08-19-16-19-26.jpg",
                     "https://i.ibb.co/3hK795r/photo-2020-08-19-16-19-27.jpg",
                     "https://i.ibb.co/w40jB02/photo-2020-08-19-16-19-29.jpg",
-                    "https://i.ibb.co/VBRHB6C/photo-2021-01-18-11-24-32.jpg",
+                    "https://i.ibb.co/VBRHB6C/photo-2021-01-18-11-24-32.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1600 RUB",
@@ -1312,7 +1341,7 @@
                     "https://i.ibb.co/12QLPWH/photo-2020-08-20-14-51-40.jpg",
                     "https://i.ibb.co/xG8Kpjz/photo-2020-08-20-14-51-42.jpg",
                     "https://i.ibb.co/QmT3qDg/photo-2020-08-20-14-51-43.jpg",
-                    "https://i.ibb.co/f935ypc/photo-2020-08-20-14-51-45.jpg",
+                    "https://i.ibb.co/f935ypc/photo-2020-08-20-14-51-45.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "2500 RUB",
@@ -1622,7 +1651,7 @@
                     "https://i.ibb.co/qWpjgTT/Photo0001-2.jpg",
                     "https://i.ibb.co/R4nTKkj/Photo0008.jpg",
                     "https://i.ibb.co/xSvC4bX/Photo0009.jpg",
-                    "https://i.ibb.co/NFSrzgC/Photo0017.jpg",
+                    "https://i.ibb.co/NFSrzgC/Photo0017.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1300 RUB",
@@ -1799,7 +1828,7 @@
                     "https://i.ibb.co/r09nL7f/SL67-Ak5vz-Ps.jpg",
                     "https://i.ibb.co/Scx9H9z/UELp-Gck-T6p8.jpg",
                     "https://i.ibb.co/j3mGfsL/Vspb-Pz5zqlc.jpg",
-                    "https://i.ibb.co/9bXzGZH/znkx89-QGGa-U.jpg",
+                    "https://i.ibb.co/9bXzGZH/znkx89-QGGa-U.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1300 RUB",
@@ -1824,9 +1853,8 @@
                 "deposit": 2000,
                 "description": "Белое платье, состоящее из юбки с 3х метровым шлейфом и двумя вариантами топов ('американка' и вариант с рукавами).",
                 "link": "https://zefirdress.ru/vseplatya/plate-Jennifer",
-                "image_link": [
-                    
-                ],
+
+
                 "availability": "in_stock",
                 "price": "3000 RUB",
                 "condition": "new",
@@ -2098,7 +2126,7 @@
                     "https://i.ibb.co/CQRq43N/IMG-8300.jpg",
                     "https://i.ibb.co/Vwzbt8H/IMG-8301.jpg",
                     "https://i.ibb.co/84TyQPP/IMG-8303.jpg",
-                    "https://i.ibb.co/C92rqPg/photo-2020-04-20-17-01-29.jpg",
+                    "https://i.ibb.co/C92rqPg/photo-2020-04-20-17-01-29.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -2714,7 +2742,7 @@
                     "https://i.ibb.co/nMnSGtk/photo-2020-04-22-16-05-08.jpg",
                     "https://i.ibb.co/jG3jhNs/photo-2020-04-22-16-05-11.jpg",
                     "https://i.ibb.co/ByDj79L/photo-2020-04-22-16-05-14.jpg",
-                    "https://i.ibb.co/8cMwTg4/photo-2020-04-22-16-05-17.jpg",
+                    "https://i.ibb.co/8cMwTg4/photo-2020-04-22-16-05-17.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1500 RUB",
@@ -2760,8 +2788,8 @@
                 "id": "21622579",
                 "title": "Платье Tara",
                 "size": [
-                    "48",
-                    
+                    "48"
+
                 ],
                 "price_photo": 1000,
                 "price_rent": 1500,
@@ -3122,7 +3150,10 @@
                 "description": "Платье-макси классического кроя без рукавов круглый вырез, полупрозрачная кокетка, украшенная цветочной аппликацией и мерцающими камнями, отрезная талия и расклешенная фатиновая юбка.",
                 "link": "https://zefirdress.ru/vseplatya/plate-ameliya",
                 "image_link": [
-                    
+                    "https://i.ibb.co/JyBrDRm/photo-2020-04-23-17-23-09.jpg",
+                    "https://i.ibb.co/vJ2qz0v/photo-2020-04-23-17-23-10.jpg",
+                    "https://i.ibb.co/51YvYZT/photo-2020-04-23-17-23-12.jpg",
+                    "https://i.ibb.co/hg2Vxbf/photo-2020-04-23-17-23-41.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "1000 RUB",
@@ -3147,7 +3178,8 @@
                 "description": "Белый кружевной будуарный халат.",
                 "link": "https://zefirdress.ru/vseplatya/plate-buduar",
                 "image_link": [
-                    
+                    "https://i.ibb.co/GMdby8R/photo-2020-04-29-09-58-38.jpg",
+                    "https://i.ibb.co/h7BXQBv/photo-2020-04-29-09-58-41.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "500 RUB",
@@ -3171,7 +3203,7 @@
                 "description": "Атласное красное платье с двумя высокими разрезами, молния по спинке.",
                 "link": "https://zefirdress.ru/vseplatya/plate-viktoriya",
                 "image_link": [
-                   "https://i.ibb.co/KL5bthT/Victoria1.jpg",
+                    "https://i.ibb.co/KL5bthT/Victoria1.jpg",
                     "https://i.ibb.co/HFHDPFp/Victoria2.jpg",
                     "https://i.ibb.co/xzywC5R/Victoria3.jpg",
                     "https://i.ibb.co/drpPZsP/Victoria4.jpg",
@@ -3275,9 +3307,7 @@
                 "deposit": 1000,
                 "description": "Платье-комбинация бежевого цвета, отлично дополняет образ с будуарными платьями (пример на фото)",
                 "link": "https://zefirdress.ru/vseplatya/plate-holli",
-                "image_link": [
-                    
-                ],
+             
                 "availability": "in_stock",
                 "price": "500 RUB",
                 "condition": "new",
@@ -3298,9 +3328,7 @@
                 "deposit": 1000,
                 "description": "Красное платье на тонких лямках с разрезом по ножке",
                 "link": "https://zefirdress.ru/vseplatya/plate-Maria",
-                "image_link": [
-                    
-                ],
+         
                 "availability": "in_stock",
                 "price": "500 RUB",
                 "condition": "new",
@@ -3323,9 +3351,7 @@
                 "deposit": 1000,
                 "description": "Белое платье на телесной основе силуэта рыбка, сотканное из элегантно мерцающих пайеток.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Estel",
-                "image_link": [
-                    
-                ],
+         
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -3348,9 +3374,7 @@
                 "deposit": 1000,
                 "description": "Вечернее платье из блестящей пайеточной ткани. Топ на тонких бретелях. Глубокий V-образный вырез декольте, юбка длиной в пол с небольшим шлейфом.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Sofico",
-                "image_link": [
-                    
-                ],
+        
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -3373,9 +3397,7 @@
                 "deposit": 2000,
                 "description": "Нежное платье из фатина белого цвета в мелкий горошек. Верх декорирован красивыми бантами на плечах. Вырез с сеточкой на груди, сзади красивый бант. Юбка многослойная со шлейфом.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Olivia",
-                "image_link": [
-                    
-                ],
+     
                 "availability": "in_stock",
                 "price": "3500 RUB",
                 "condition": "new",
@@ -3397,9 +3419,7 @@
                 "deposit": 1000,
                 "description": "Черное прозрачное будуарное платье с рукавами, высокий разрез по ножке от талии, есть пояс.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Sintia",
-                "image_link": [
-                    
-                ],
+             
                 "availability": "in_stock",
                 "price": "1200 RUB",
                 "condition": "new",
@@ -3426,9 +3446,7 @@
                 "deposit": 1000,
                 "description": "Черная пышная юбка из многослойного фатина со шлейфом.",
                 "link": "https://zefirdress.ru/vseplatya/ubka-black",
-                "image_link": [
-                    
-                ],
+     
                 "availability": "in_stock",
                 "price": "1200 RUB",
                 "condition": "new",
@@ -3451,9 +3469,7 @@
                 "deposit": 1000,
                 "description": "Бежевый боди. Подойдет беременным",
                 "link": "https://zefirdress.ru/vseplatya/body-alissa",
-                "image_link": [
-                    
-                ],
+            
                 "availability": "in_stock",
                 "price": "500 RUB",
                 "condition": "new",
@@ -3477,9 +3493,7 @@
                 "deposit": 1000,
                 "description": "Белая шифоновая юбка, есть небольшой шлейф",
                 "link": "https://zefirdress.ru/vseplatya/ubka-emma",
-                "image_link": [
-                    
-                ],
+       
                 "availability": "in_stock",
                 "price": "1000 RUB",
                 "condition": "new",
@@ -3502,9 +3516,7 @@
                 "deposit": 1000,
                 "description": "Легкое шифоновое платье голубого цвета с поясом.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Nikki",
-                "image_link": [
-                    
-                ],
+            
                 "availability": "in_stock",
                 "price": "1000 RUB",
                 "condition": "new",
@@ -3527,9 +3539,7 @@
                 "deposit": 1000,
                 "description": "Легкое шифоновое платье красного цвета с поясом.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Molly",
-                "image_link": [
-                    
-                ],
+   
                 "availability": "in_stock",
                 "price": "1000 RUB",
                 "condition": "new",
@@ -3552,9 +3562,7 @@
                 "deposit": 1000,
                 "description": "Бежевое платье, с открытым животиком, подходит беременным.",
                 "link": "https://zefirdress.ru/vseplatya/plate-brianna",
-                "image_link": [
-                    
-                ],
+
                 "availability": "in_stock",
                 "price": "1000 RUB",
                 "condition": "new",
@@ -3576,9 +3584,7 @@
                 "deposit": 1000,
                 "description": "Шикарное короткое черное платье с разрезом, украшенным бахромой со стразами",
                 "link": "https://zefirdress.ru/vseplatya/plate-kayla",
-                "image_link": [
-                    
-                ],
+         
                 "availability": "in_stock",
                 "price": "1000 RUB",
                 "condition": "new",
@@ -3601,9 +3607,7 @@
                 "deposit": 1000,
                 "description": "Нежное пудровое платье прямого кроя из многослойного фатина",
                 "link": "https://zefirdress.ru/vseplatya/plate-Megan",
-                "image_link": [
-                    
-                ],
+    
                 "availability": "in_stock",
                 "price": "1200 RUB",
                 "condition": "new",
@@ -3625,9 +3629,7 @@
                 "deposit": 1000,
                 "description": "Воздушное платье со шлейфом, с плечиков спускаются еще два шлейфа.",
                 "link": "https://zefirdress.ru/vseplatya/plate-lucy",
-                "image_link": [
-                    
-                ],
+
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -3652,9 +3654,7 @@
                 "deposit": 1000,
                 "description": "Платье черного цвета в пол, есть небольшой шлейф и разрез по ножке. Идеально подходит беременным.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Madeline",
-                "image_link": [
-                    
-                ],
+    
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -3677,9 +3677,7 @@
                 "deposit": 1000,
                 "description": "Платье красного цвета в пол, есть небольшой шлейф и разрез по ножке.",
                 "link": "https://zefirdress.ru/vseplatya/plate-RedAngel",
-                "image_link": [
-                    
-                ],
+         
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -3701,9 +3699,7 @@
                 "deposit": 1000,
                 "description": "Легкое шифоновое бежевое платье с небольшими плечиками, завязывается вокруг шеи.",
                 "link": "https://zefirdress.ru/vseplatya/plate-chloe",
-                "image_link": [
-                    
-                ],
+    
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -3725,9 +3721,7 @@
                 "deposit": 1000,
                 "description": "Легкое шифоновое оливковое платье с небольшими плечиками, завязывается вокруг шеи.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Tracey",
-                "image_link": [
-                    
-                ],
+          
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -3750,9 +3744,7 @@
                 "deposit": 1000,
                 "description": "Элегантное платье цвета пыльной розы с разрезом по ножке, верх расшит кружевом.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Sienna",
-                "image_link": [
-                    
-                ],
+     
                 "availability": "in_stock",
                 "price": "1600 RUB",
                 "condition": "new",
@@ -3806,7 +3798,7 @@
                     "https://i.ibb.co/D1hF263/IMG-7971.jpg",
                     "https://i.ibb.co/nQHVv5Y/Kdj-ZNm-Ht-S70.jpg",
                     "https://i.ibb.co/L1N0HD4/r3-DUmw-X4-Wf-M.jpg",
-                    "https://i.ibb.co/fdb8Yns/Screenshot-20.jpg",
+                    "https://i.ibb.co/fdb8Yns/Screenshot-20.jpg"
                 ],
                 "availability": "in_stock",
                 "price": "2000 RUB",
@@ -3829,9 +3821,7 @@
                 "deposit": 1000,
                 "description": "Легкое шифоновое розовое платье, на спинке красивый шлейф, на плечах мини-рукава. Юбка с клиньями в пол.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Rosie",
-                "image_link": [
-                    
-                ],,
+           
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -3854,9 +3844,7 @@
                 "deposit": 1000,
                 "description": "Фатиновое розовое платье, верх украшен золотыми паетками, лямочки на спине крест-накрест.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Lily",
-                "image_link": [
-                    
-                ],
+              
                 "availability": "in_stock",
                 "price": "1300 RUB",
                 "condition": "new",
@@ -3878,9 +3866,7 @@
                 "deposit": 1000,
                 "description": "Описание Шикарный малиновый топ с рукавами и молнией сзади.",
                 "link": "https://zefirdress.ru/vseplatya/topcrazy",
-                "image_link": [
-                    
-                ],
+            
                 "availability": "in_stock",
                 "price": "500 RUB",
                 "condition": "new",
@@ -3902,9 +3888,7 @@
                 "deposit": 1000,
                 "description": "Черная короткая юбка со сборками сбоку.",
                 "link": "https://zefirdress.ru/vseplatya/ubka-MiniBlack",
-                "image_link": [
-                    
-                ],
+          
                 "availability": "in_stock",
                 "price": "500 RUB",
                 "condition": "new",
@@ -3928,9 +3912,7 @@
                 "deposit": 1000,
                 "description": "Черный полупрозрачный кружевной боди. Спинка прозрачная и открытая. Подойдет беременным",
                 "link": "https://zefirdress.ru/vseplatya/body-one",
-                "image_link": [
-                    
-                ],
+             
                 "availability": "in_stock",
                 "price": "500 RUB",
                 "condition": "new",
@@ -3951,9 +3933,7 @@
                 "deposit": 500,
                 "description": "Серая фетровая шляпа",
                 "link": "https://zefirdress.ru/vseplatya/shlyapa-seraya",
-                "image_link": [
-                    
-                ],
+                
                 "availability": "in_stock",
                 "price": "100 RUB",
                 "condition": "new",
@@ -3975,9 +3955,7 @@
                 "deposit": 2000,
                 "description": "Розовое платье, роскошный декор на топе, объемные рукава.",
                 "link": "https://zefirdress.ru/vseplatya/plate-Amabel",
-                "image_link": [
-                    
-                ],
+                
                 "availability": "in_stock",
                 "price": "2500 RUB",
                 "condition": "new",
@@ -3998,9 +3976,7 @@
                 "deposit": 500,
                 "description": "Шляпа с широкими полями и черной длинной лентой",
                 "link": "https://zefirdress.ru/vseplatya/shlyapa-shirokiepolya",
-                "image_link": [
-                    
-                ],
+                
                 "availability": "in_stock",
                 "price": "300 RUB",
                 "condition": "new",
@@ -4025,9 +4001,7 @@
                 "deposit": 500,
                 "description": "Белый топ, расшит жемчугом. Сзади несколько рядов крючков, что позволяет регулировать размер. Лямки съемные.",
                 "link": "https://zefirdress.ru/vseplatya/top-gina",
-                "image_link": [
-                    
-                ],
+                
                 "availability": "in_stock",
                 "price": "500 RUB",
                 "condition": "new",
@@ -4048,9 +4022,7 @@
                 "deposit": 500,
                 "description": "Розовая шляпа с черным бантом",
                 "link": "https://zefirdress.ru/vseplatya/shlyapa-rozovaya",
-                "image_link": [
-                    
-                ],
+                
                 "availability": "in_stock",
                 "price": "100 RUB",
                 "condition": "new",
@@ -4074,9 +4046,7 @@
                 "deposit": 1000,
                 "description": "Изумительное сиреневое пышное платье для девочки выполнено из нежного фатина и атласа. Юбка мягкая, не колет и не мнется!",
                 "link": "https://zefirdress.ru/vseplatya/plate-evamini",
-                "image_link": [
-                    
-                ],
+                
                 "availability": "in_stock",
                 "price": "700 RUB",
                 "condition": "new",
@@ -4097,9 +4067,7 @@
                 "deposit": 1000,
                 "description": "Светлая соломенная сумка с длинной ручкой",
                 "link": "https://zefirdress.ru/vseplatya/sumka",
-                "image_link": [
-                    
-                ],
+              
                 "availability": "in_stock",
                 "price": "300 RUB",
                 "condition": "new",
@@ -4120,9 +4088,7 @@
                 "deposit": 500,
                 "description": " Детские туфельки в пайетках, подходят на возраст 1 годик",
                 "link": "https://zefirdress.ru/vseplatya/dettufel",
-                "image_link": [
-                    
-                ],
+                
                 "availability": "in_stock",
                 "price": "300 RUB",
                 "condition": "new",
@@ -4144,9 +4110,8 @@
                 "deposit": 100,
                 "description": "Все аксессуары в наличии. Если Вы арендуете платье у нас, то они идут бесплатно. При аренде только сережек или колье на фотосессию (100 рублей), на мероприятие (200 рублей) ⠀",
                 "link": "https://zefirdress.ru/vseplatya/accessuars",
-                "image_link": [
-                    
-                ],
+                
+                
                 "availability": "in_stock",
                 "price": "100 RUB",
                 "condition": "new",

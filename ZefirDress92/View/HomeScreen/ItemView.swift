@@ -14,7 +14,7 @@ struct ItemView: View {
     
     var body: some View {
         VStack (alignment: .leading) {
-            KFImage(URL(string: product.image_link[0]))
+            KFImage(URL(string: product.image_link?[0] ?? "https://i.ibb.co/wyBwfHG/IMG-7167.jpg"))
                 .placeholder { progress in
                     ProgressView()
                 }

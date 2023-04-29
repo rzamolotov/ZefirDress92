@@ -16,7 +16,7 @@ struct Product: Identifiable {
     var deposit: Int
     var description: String
     var link: String
-    var image_link: [String]
+    var image_link: [String]?
     var availability: String
     var price: String
     var condition: String

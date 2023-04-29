@@ -32,7 +32,7 @@ struct ItemGridView: View {
                                            deposit: product.deposit,
                                            description: product.description,
                                            link: product.link,
-                                           image_link: product.image_link,
+                                           image_link: product.image_link ?? ["https://i.ibb.co/wyBwfHG/IMG-7167.jpg"],
                                            availability: product.availability,
                                            price: product.price,
                                            condition: product.condition,

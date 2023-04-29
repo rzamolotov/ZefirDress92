@@ -34,7 +34,7 @@ struct FavoriteButtonView: View {
                     newFavorite.category = product.category as NSArray
                     newFavorite.condition = product.condition
                     newFavorite.deposit = Int64(product.deposit)
-                    newFavorite.image_link = product.image_link as NSArray
+                    newFavorite.image_link = product.image_link as? NSArray
                     newFavorite.isAddToFavorite = product.isAddToFavorite
                     newFavorite.itemDescription = product.description
                     newFavorite.itemLink = product.link
