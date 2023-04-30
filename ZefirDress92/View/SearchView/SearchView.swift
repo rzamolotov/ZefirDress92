@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SearchView: View {
-    enum Sizes: String, CaseIterable, Identifiable {
-        case size38, size40, size42, size44, size46, size48, size50
+    enum SizePicker: String, CaseIterable, Identifiable {
+        case size38, size40, size42, size44, size46, size48, size50, sizeKids, sizeAccessorises
         var id: Self {
             self
         }
@@ -29,34 +29,19 @@ struct SearchView: View {
                 return "48"
             case .size50:
                 return "50"
+            case .sizeKids:
+                return "детские платья"
+            case .sizeAccessorises:
+                return "аксессуары"
             }
         }
     } //пикер по размерам
-    enum Categories: String, CaseIterable, Identifiable {
-        case dance, night, kids, photosession
-        var id: Self {
-            self
-        }
-        var title: String {
-            switch self {
-            case .dance:
-                return "Платья для бала"
-            case .night:
-                return "Вечернее платье"
-            case .kids:
-                return "Детские"
-            case .photosession:
-                return "Фотосессия"
-            }
-        }
-    }//пикер по категориям
+    
     var products: [Product]
-    @State private var selectedSize: Sizes = .size42
-    @State private var selectedCategory: Categories = .night
+    @State private var selectedSize: SizePicker = .size42
     
     var filteredProducts: [Product] {
-        let result = products.filter { $0.size.contains(selectedSize.title) && $0.category.contains(selectedCategory.title)}
-        print("filteredProducts: \(result)")
+        let result = products.filter { $0.size.contains(selectedSize.title) }
         return result
     }
     
@@ -64,18 +49,45 @@ struct SearchView: View {
         
         NavigationView {
             VStack {
-                Picker("Выберете размер", selection: $selectedSize) {
-                    ForEach(Sizes.allCases) { size in
-                        Text(size.title).tag(size)
+                VStack {
+                    HStack {
+                        Text("Выберете нужный вам размер платья")
+                            .font(.custom(boldFont, size: 15))
+                            .foregroundColor(colorBlue)
+                        Spacer()
                     }
-                }
-                .pickerStyle(.automatic)
-                Picker("Выберете категорию", selection: $selectedCategory) {
-                    ForEach(Categories.allCases) { category in
-                        Text(category.title).tag(category)
+                    ZStack{
+                        Rectangle()
+                            .cornerRadius(10)
+                            .frame(height: 37)
+                            .foregroundColor(.white)
+                            .border(.gray)
+                        HStack{
+                            Menu {
+                                Picker("Выберете размер", selection: $selectedSize) {
+                                    ForEach(SizePicker.allCases) { size in
+                                        Text(size.title).tag(size)
+                                    }
+                                }
+                            } label: {
+                                HStack{
+                                    Text("\(selectedSize.title)")
+                                        .font(.custom(mediumFont, size: 18))
+                                        .foregroundColor(colorBlue)
+                                    Spacer()
+                                    Image(systemName: "chevron.down")
+                                        .font(.custom(mediumFont, size: 18))
+                                        .foregroundColor(colorBlue)
+                                }
+                                .padding([.leading, .trailing])
+                            }
+                        }
+                        
                     }
+                    
                 }
-                .pickerStyle(.segmented)
+                .padding([.top, .leading, .trailing])
+                // Picker
                 
                 ScrollView {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
@@ -92,6 +104,7 @@ struct SearchView: View {
         }
     }
 }
+
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {

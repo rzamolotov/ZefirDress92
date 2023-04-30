@@ -12,7 +12,7 @@ struct FavoriteImageView: View {
     var favorite: AddToFavorites
     
     var body: some View {
-        KFImage(URL(string: ((favorite.image_link ?? "" as NSObject) as NSObject) as! String))
+        KFImage(URL(string: (favorite.imageLink ?? "" as NSObject) as! String))
             .placeholder({ progress in
                 ProgressView()
             })

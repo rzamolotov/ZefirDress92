@@ -34,7 +34,7 @@ struct FavoriteButtonView: View {
                     newFavorite.category = product.category as NSArray
                     newFavorite.condition = product.condition
                     newFavorite.deposit = Int64(product.deposit)
-                    newFavorite.image_link = product.image_link as? NSArray
+                    newFavorite.imageLink = product.image_link as? NSArray
                     newFavorite.isAddToFavorite = product.isAddToFavorite
                     newFavorite.itemDescription = product.description
                     newFavorite.itemLink = product.link
@@ -54,7 +54,7 @@ struct FavoriteButtonView: View {
             Image(systemName: isSet ? "heart.fill" : "heart")
                 .foregroundColor(.pink)
                 .opacity(0.7)
-                .frame(width: 28, height: 28, alignment: .center)
+                .frame(width: screen.height / 22, height: screen.height / 22, alignment: .center)
                 .background(Color.white.cornerRadius(5))
                 .background(RoundedRectangle(cornerRadius: 5).stroke(.pink, lineWidth:2))
         }

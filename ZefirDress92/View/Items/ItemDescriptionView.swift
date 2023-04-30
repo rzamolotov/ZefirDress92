@@ -24,16 +24,16 @@ struct ItemDescriptionView: View {
                     ItemSizeCheckView(product: product)
                 }
                 Text(product.description)
-                
+                    .font(.custom(regularFont, size: fontSizeMedium))
                 HStack {
                     Spacer()
-                    Text("Выберете тип аренды и мероприятие")
+                    Text("Выберете тип аренды")
+                        .font(.custom(boldFont, size: fontSizeMedium))
                     Spacer()
                 }
                 
                 ItemPriceView(product: product)
             }
-            .font(.custom(regularFont, size: 15))
             .foregroundColor(.black)
             
             AddToCartButton(product: product, presentAlert: $presentAlert)

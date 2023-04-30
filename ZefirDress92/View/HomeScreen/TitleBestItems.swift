@@ -11,7 +11,7 @@ struct TitleBestItems: View {
     var body: some View {
         HStack{
             Text("Наши платья")
-                .font(.custom(boldFont, size: 35))
+                .font(.custom(boldFont, size: fontSizeLarge))
                 .foregroundColor(.black)
                 .opacity(0.9)
             Spacer()

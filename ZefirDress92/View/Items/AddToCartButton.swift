@@ -27,7 +27,7 @@ struct AddToCartButton: View {
                     newOrder.category = product.category as NSArray
                     newOrder.condition = product.condition
                     newOrder.deposit = Int64(product.deposit)
-                    newOrder.image_link = product.image_link as? NSArray
+                    newOrder.imageLink = product.image_link as? NSArray
                     newOrder.isAddToFavorite = product.isAddToFavorite
                     newOrder.itemDescription = product.description
                     newOrder.itemLink = product.link
@@ -57,7 +57,7 @@ struct AddToCartButton: View {
                     Image(systemName: "cart")
                         .font(.title)
                     Text("Добавить в корзину\n\(product.title)")
-                        .font(.custom(boldFont, size: 16))
+                        .font(.custom(boldFont, size: fontSizeMedium))
                 }
                 .font(.custom(boldFont, size: 16))
                 .foregroundColor(.white)

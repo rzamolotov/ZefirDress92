@@ -23,7 +23,7 @@ struct ItemPriceView: View {
         }
         .pickerStyle(.segmented)
         .foregroundColor(.pink)
-        .font(.custom(boldFont, size: 12))
+        .font(.custom(boldFont, size: fontSizeSmall))
         .background(Color.white.cornerRadius(5))
         .opacity(0.7)
         .background(RoundedRectangle(cornerRadius: 5).stroke(.pink, lineWidth:2))

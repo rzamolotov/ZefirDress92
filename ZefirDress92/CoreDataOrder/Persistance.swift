@@ -26,7 +26,7 @@ struct PersistenceController {
             newItem.availability = "in stock"
             newItem.condition = "new"
             newItem.deposit = 1000
-            newItem.image_link = image_linkitem as NSArray
+            newItem.imageLink = image_linkitem as NSArray
             newItem.isAddToFavorite = i % 2 == 0
             newItem.itemDescription = ""
             newItem.itemLink = ""
@@ -43,7 +43,7 @@ struct PersistenceController {
             newFavorite.availability = "in stock"
             newFavorite.condition = "new"
             newFavorite.deposit = 1000
-            newFavorite.image_link = image_linkfavorite as NSArray
+            newFavorite.imageLink = image_linkfavorite as NSArray
             newFavorite.isAddToFavorite = i % 2 == 0
             newFavorite.itemDescription = "замечательное платье"
             newFavorite.itemLink = "https://spbnevesta.ru/upload/dress/475/25032023155011-oliviya.webp"
@@ -55,12 +55,6 @@ struct PersistenceController {
             newFavorite.size = sizeFavorite as NSArray
             newFavorite.category = categoryFavorite as NSArray
             
-            let newPerson = PersonalData(context: viewContext)
-            newPerson.name = "Roman"
-            newPerson.surname = "Zamolotov"
-            newPerson.email = "rzamolotov@gmail.com"
-            newPerson.phoneNumber = "+79788278094"
-            newPerson.adress = "Sevastopol"
         }
         do {
             try viewContext.save()

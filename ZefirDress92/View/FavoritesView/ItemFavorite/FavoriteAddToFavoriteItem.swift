@@ -22,7 +22,7 @@ struct FavoriteAddToFavoriteItem: View {
             newFavorite.category = favorite.category as? NSArray
             newFavorite.condition = favorite.condition
             newFavorite.deposit = Int64(favorite.deposit)
-            newFavorite.image_link = favorite.image_link
+            newFavorite.imageLink = favorite.imageLink
             newFavorite.isAddToFavorite = favorite.isAddToFavorite
             newFavorite.itemDescription = favorite.description
             newFavorite.itemLink = favorite.itemLink

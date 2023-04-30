@@ -13,8 +13,8 @@ struct ItemSizeCheckView: View {
     
     var body: some View {
         HStack {
-            Text("Доступные размеры")
-                .font(.custom(mediumFont, size: 16))
+            Text(product.size.count > 1 ? "Подойдет для размеров" : "Подойдет для размера")
+                .font(.custom(mediumFont, size: fontSizeMedium))
                 .foregroundColor(.black)
                 .opacity(0.9)
             Spacer()
@@ -23,10 +23,10 @@ struct ItemSizeCheckView: View {
                     //TODO: Сделать переходы на размеры по нажатию размера
                 } label: {
                     Text("\(sizes)")
-                        .font(.custom(boldFont, size: 14))
+                        .font(.custom(boldFont, size: fontSizeMedium))
                         .foregroundColor(.pink)
                         .opacity(0.7)
-                        .frame(width: 28, height: 28, alignment: .center)
+                        .frame(width: screen.height / 22, height: screen.height / 22, alignment: .center)
                         .background(Color.white.cornerRadius(5))
                         .background(RoundedRectangle(cornerRadius: 5).stroke(.pink, lineWidth:2))
                 }
