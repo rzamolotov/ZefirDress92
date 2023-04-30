@@ -21,7 +21,7 @@ struct FavoriteAddToCartItem: View {
             newOrder.category = favorite.category as? NSArray
             newOrder.condition = favorite.condition
             newOrder.deposit = Int64(favorite.deposit)
-            newOrder.image_link = favorite.image_link
+            newOrder.imageLink = favorite.imageLink
             newOrder.isAddToFavorite = favorite.isAddToFavorite
             newOrder.itemDescription = favorite.description
             newOrder.itemLink = favorite.itemLink
