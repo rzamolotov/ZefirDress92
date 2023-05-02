@@ -12,8 +12,7 @@ struct TitleBestItems: View {
         HStack{
             Text("Наши платья")
                 .font(.custom(boldFont, size: fontSizeLarge))
-                .foregroundColor(.black)
-                .opacity(0.9)
+                .foregroundColor(colorFont)
             Spacer()
         }
     }

@@ -53,7 +53,7 @@ struct SearchView: View {
                     HStack {
                         Text("Выберете нужный вам размер платья")
                             .font(.custom(boldFont, size: 15))
-                            .foregroundColor(colorBlue)
+                            .foregroundColor(colorFont)
                         Spacer()
                     }
                     ZStack{
@@ -61,23 +61,24 @@ struct SearchView: View {
                             .cornerRadius(10)
                             .frame(height: 37)
                             .foregroundColor(.white)
-                            .border(.gray)
+                            .border(colorFontGray)
                         HStack{
                             Menu {
                                 Picker("Выберете размер", selection: $selectedSize) {
                                     ForEach(SizePicker.allCases) { size in
                                         Text(size.title).tag(size)
+                                            .foregroundColor(colorFont)
                                     }
                                 }
                             } label: {
                                 HStack{
                                     Text("\(selectedSize.title)")
                                         .font(.custom(mediumFont, size: 18))
-                                        .foregroundColor(colorBlue)
+                                        .foregroundColor(colorFont)
                                     Spacer()
                                     Image(systemName: "chevron.down")
                                         .font(.custom(mediumFont, size: 18))
-                                        .foregroundColor(colorBlue)
+                                        .foregroundColor(colorFont)
                                 }
                                 .padding([.leading, .trailing])
                             }

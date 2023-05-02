@@ -13,8 +13,7 @@ struct HeaderViewHomeScreen: View {
     var body: some View {
         HStack {
             Text("-Zefir Dress-")
-                .foregroundColor(.pink)
-                .opacity(0.7)
+                .foregroundColor(colorBrightPink)
                 .font(.custom(boldFont, size: fontSizeLarge))
                 .offset(logoOffset)
                 .onAppear {

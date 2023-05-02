@@ -11,9 +11,9 @@ struct HelloTextView: View {
     var body: some View {
         HStack {
             Text("Привет, Красотка! В этом разделе ты можешь посмотреть все платья, которые мы можем предоставить тебе на доставку, выбери понравившееся, добавь его в корзину и закажи доставку, либо воспользуйся нашим поиском, там ты сможешь осортировать платья по категориям, размерам или цвету и выбрать понравившееся.")
-                .font(.custom(mediumFont, size: fontSizeMedium))
+                .foregroundColor(colorFont)
+                .font(.custom(lightFont, size: fontSizeMedium))
                 .frame(width: screen.width / 1.05)
-                .opacity(0.7)
         }
     }
 }

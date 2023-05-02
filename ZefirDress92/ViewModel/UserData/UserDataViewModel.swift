@@ -47,23 +47,8 @@ class UserDataViewModel: ObservableObject {
         self.editUserEmail = UserDefaults.standard.object(forKey: userEmail) as? String ?? "Введите ваш Email"
         self.editUserAdress = UserDefaults.standard.object(forKey: userAdress) as? String ?? "Введите ваш Email"
         
-        
         print("currently logged save data \(editUserName), \(editUserSurname)") //текущий пользователь
         print("current user contacts \(editUserPhone), \(editUserEmail), \(editUserAdress)") //текущие данные доставки
         
     }
 }
-    
-   
-    
-//    func saveUserData(){
-//        userName = UserDefaults.standard.set(editUserName, forKey: userName)
-//        userSurname = UserDefaults.standard.set(editUserSurname, forKey: userSurname)
-//        userPhone = UserDefaults.standard.set(editUserPhone, forKey: userPhone)
-//        userEmail = UserDefaults.standard.set(editUserEmail, forKey: userEmail)
-//        userAdress = UserDefaults.standard.set(editUserAdress, forKey: userAdress)
-//        
-//    }
-//}
-
-

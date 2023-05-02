@@ -24,6 +24,7 @@ struct HomeScreenView: View {
                 }
                 .padding([.leading, .trailing])
             }
+            .background(colorBackground)
         }
     }
 }

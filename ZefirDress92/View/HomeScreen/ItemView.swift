@@ -28,23 +28,19 @@ struct ItemView: View {
                 VStack(alignment: .leading){
                     Text(product.title)
                         .font(.custom(boldFont, size: fontSizeSmall))
-                        .foregroundColor(.black)
-                        .opacity(0.9)
+                        .foregroundColor(colorFont)
                 }
                 Text("аренда от \(product.price_photo) руб.")
                     .font(.custom(lightFont, size: fontSizeSmall))
-                    .foregroundColor(.black)
-                    .opacity(0.9)
+                    .foregroundColor(colorFont)
                 HStack {
                     Text("Подходит для:")
                         .font(.custom(lightFont, size: fontSizeVerySmall))
-                        .foregroundColor(.black)
-                        .opacity(0.9)
+                        .foregroundColor(colorFont)
                     ForEach(product.size, id: \.self) { sizes in
                         Text("\(sizes)")
                             .font(.custom(boldFont, size: fontSizeVerySmall))
-                            .foregroundColor(.pink)
-                            .opacity(0.7)
+                            .foregroundColor(colorBrightPink)
                     }
                 }
             }

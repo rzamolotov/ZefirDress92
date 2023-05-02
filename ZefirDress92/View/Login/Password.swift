@@ -13,7 +13,7 @@ struct Password: View {
     var body: some View {
         SecureField("Введите пароль", text: $password)
             .padding()
-            .background(colorBackground)
+            .background(colorFontGray)
             .frame(width: screen.width / 1.1, height: 60)
             .cornerRadius(15.0)
     }

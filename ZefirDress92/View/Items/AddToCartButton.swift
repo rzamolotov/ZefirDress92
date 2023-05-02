@@ -57,14 +57,14 @@ struct AddToCartButton: View {
                     Image(systemName: "cart")
                         .font(.title)
                     Text("Добавить в корзину\n\(product.title)")
+                        .foregroundColor(colorBege)
                         .font(.custom(boldFont, size: fontSizeMedium))
                 }
                 .font(.custom(boldFont, size: 16))
                 .foregroundColor(.white)
             }
             .frame(width: screen.width / 1.1, height: screen.height / 12)
-            .foregroundColor(.pink)
-            .opacity(0.7)
+            .foregroundColor(colorBrightPink)
             .cornerRadius(10)
         })
     }

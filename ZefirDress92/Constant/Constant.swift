@@ -12,19 +12,20 @@ import SwiftUI
 
 // COLOR
 
-let colorBackground: Color = Color("gray")
-let colorOrange: Color = Color("orange")
-let colorBlue: Color = Color("blue")
-let buttonGray: Color = Color("buttonGray")
-let counterGray: Color = Color("counter")
-let brownTelephone: Color = Color("brownTelephone")
+let colorBackground: Color = Color("backgroundColor")
+let colorBege: Color = Color("begeColor")
+let colorBrightPink: Color = Color("brightPink")
+let colorFont: Color = Color("fontColor")
+let colorFontGray: Color = Color("fontColorGray")
+let colorPink: Color = Color("pink")
+let colorRed: Color = Color("red")
+
 
 // UX
 
 let feedback = UIImpactFeedbackGenerator(style: .medium)
 
 // LAYOUT
-
 let columnSpacing: CGFloat = 5
 let screen = UIScreen.main.bounds
 let rowSpacing: CGFloat = 5

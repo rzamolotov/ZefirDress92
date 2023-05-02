@@ -15,8 +15,7 @@ struct ItemSizeCheckView: View {
         HStack {
             Text(product.size.count > 1 ? "Подойдет для размеров" : "Подойдет для размера")
                 .font(.custom(mediumFont, size: fontSizeMedium))
-                .foregroundColor(.black)
-                .opacity(0.9)
+                .foregroundColor(colorFont)
             Spacer()
             ForEach(product.size, id: \.self) { sizes in
                 Button {
@@ -24,11 +23,9 @@ struct ItemSizeCheckView: View {
                 } label: {
                     Text("\(sizes)")
                         .font(.custom(boldFont, size: fontSizeMedium))
-                        .foregroundColor(.pink)
-                        .opacity(0.7)
+                        .foregroundColor(colorBrightPink)
                         .frame(width: screen.height / 22, height: screen.height / 22, alignment: .center)
-                        .background(Color.white.cornerRadius(5))
-                        .background(RoundedRectangle(cornerRadius: 5).stroke(.pink, lineWidth:2))
+                        .background(RoundedRectangle(cornerRadius: 5).stroke(colorBrightPink, lineWidth:1))
                 }
             }
         }

@@ -16,12 +16,12 @@ struct TabBottomView: View {
         
         ZStack {
             Rectangle()
+                .foregroundColor(colorBackground)
                 .frame(width: screen.width, height: screen.height / 11)
-                .foregroundColor(.white)
                 .cornerRadius(20)
                 .shadow(radius: 5, x: 0, y: 4)
             Rectangle()
-                .foregroundColor(.white)
+                .foregroundColor(colorBackground)
                 .frame(width: screen.width, height: screen.height / 10)
                 .offset(y: 50)
 
@@ -34,8 +34,7 @@ struct TabBottomView: View {
                     } label: {
                         let isSelected = selectedIndex == index
                         TabItemView(data: item, isSelected: isSelected)
-                            .foregroundColor(.pink)
-                            .opacity(0.7)
+                            .foregroundColor(colorBrightPink)
                     }
                     Spacer()
                 }

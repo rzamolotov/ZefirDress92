@@ -16,7 +16,7 @@ struct TabItemView: View {
             Image(systemName: isSelected ? data.selectedImage : data.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .animation(.default, value: 2)
+                .animation(.default, value: 1)
             
             Spacer().frame(height: 4)
             

@@ -9,24 +9,18 @@ import SwiftUI
 
 struct ItemPriceView: View {
     var product: Product
-    enum Event:  String, CaseIterable, Identifiable {
-        case photo, event
-        var id: Self { self }
-    }
-    
-    @State private var selectedEvent: Event = .photo
     
     var body: some View {
-        Picker("Выебрете тип аренды и стоимость", selection: $selectedEvent) {
-            Text("Фотосессия \(product.price_photo) руб.").tag(Event.photo)
-            Text("Мероприятие \(product.price_rent ?? 0) руб." ).tag(Event.event)
+        VStack(alignment: .leading) {
+            HStack {
+                Text("Фотосессия \(product.price_photo) руб.")
+            }
+            HStack {
+                Text(product.price_rent == 0 ? "Платье не подходит для мероприятий" : "Мероприятие \(product.price_rent ?? 0) руб." )
+            }
         }
-        .pickerStyle(.segmented)
-        .foregroundColor(.pink)
-        .font(.custom(boldFont, size: fontSizeSmall))
-        .background(Color.white.cornerRadius(5))
-        .opacity(0.7)
-        .background(RoundedRectangle(cornerRadius: 5).stroke(.pink, lineWidth:2))
+        .foregroundColor(colorFont)
+        .font(.custom(mediumFont, size: fontSizeSmall))
     }
 }
 

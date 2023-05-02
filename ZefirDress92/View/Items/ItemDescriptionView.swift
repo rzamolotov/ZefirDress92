@@ -19,7 +19,8 @@ struct ItemDescriptionView: View {
         VStack(spacing: 20) {
             VStack(alignment: .leading, spacing: 20) {
                 HStack{
-                    FavoriteButtonView(isSet: $isSet, product: product)
+                    FavoriteButtonView(favoriteButtonVM: FavoriteButtonViewModel())
+                        
                     
                     ItemSizeCheckView(product: product)
                 }
@@ -27,7 +28,7 @@ struct ItemDescriptionView: View {
                     .font(.custom(regularFont, size: fontSizeMedium))
                 HStack {
                     Spacer()
-                    Text("Выберете тип аренды")
+                    Text("Cтоимость аренды платья")
                         .font(.custom(boldFont, size: fontSizeMedium))
                     Spacer()
                 }
@@ -49,5 +50,6 @@ struct ItemDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         ItemDescriptionView(product: example, isSet: false)
             .environmentObject(ProductProvider())
+        
     }
 }

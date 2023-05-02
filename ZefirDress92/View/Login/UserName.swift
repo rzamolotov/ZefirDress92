@@ -13,7 +13,7 @@ struct UserName: View {
     var body: some View {
         TextField("Введите ваше имя", text: $username)
             .padding()
-            .background(colorBackground)
+            .background(colorFontGray)
             .frame(width: screen.width / 1.1, height: 60)
             .cornerRadius(15.0)
     }

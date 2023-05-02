@@ -18,15 +18,15 @@ struct FavoriteTitleTextView: View {
             VStack(alignment: .leading) {
                 HStack{
                     Text(favorite.title ?? "Платье Оливия")
-                        .foregroundColor(buttonGray)
-                        .font(.headline)
+                        .font(Font.custom(mediumFont, size: 10))
+                        .foregroundColor(colorFont)
                 }
                 .padding(.bottom, 30)
                 .padding(.top, 10)
                 .padding(.leading, 10)
                 Text("\(favorite.category ?? "Вечернее платье" as NSObject)")
-                    .font(.callout)
-                    .foregroundColor(buttonGray)
+                    .font(Font.custom(mediumFont, size: 10))
+                    .foregroundColor(colorFont)
                     .fontWeight(.medium)
                     .padding(.top, 10)
                     .padding(.leading, 10)
@@ -34,8 +34,8 @@ struct FavoriteTitleTextView: View {
                 HStack{
                     VStack(alignment: .leading){
                         Text("Доступные размеры:")
-                            .font(.caption)
-                            .foregroundColor(buttonGray)
+                            .font(Font.custom(mediumFont, size: 10))
+                            .foregroundColor(colorFont)
                             .fontWeight(.light)
                         HStack(spacing: 5) {
                             if favorite.size != nil {
@@ -46,13 +46,12 @@ struct FavoriteTitleTextView: View {
                                             .foregroundColor(.white)
                                             .overlay(
                                                 RoundedRectangle(cornerRadius: 10)
-                                                    .stroke(.pink.opacity(0.7), lineWidth: 3)
+                                                    .stroke(colorPink, lineWidth: 3)
                                             )
                                             .cornerRadius(10)
                                         Text(size)
-                                            .font(.footnote)
-                                            .foregroundColor(.pink)
-                                            .opacity(0.7)
+                                            .font(Font.custom(boldFont, size: 10))
+                                            .foregroundColor(colorPink)
                                     }
                                 }
                             }
