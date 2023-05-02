@@ -14,6 +14,8 @@ struct CartView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: DressOrder.entity(), sortDescriptors: [])
     var orders: FetchedResults<DressOrder>
+    @ObservedObject var userDataVM = UserDataViewModel()
+    @StateObject var orderVM: OrderViewModel
     
     var body: some View {
         NavigationView {
@@ -28,7 +30,6 @@ struct CartView: View {
                                     CartProductInfo(order: order)
                                     Spacer()
                                     PriceCartView(order: order)
-                                    
                                 }
                             }
                             .frame(height: 100)
@@ -50,14 +51,21 @@ struct CartView: View {
                     
                     if(orders.count > 0) {
                         Total(orders: orders)
-                        SendOrderButton()
+                        SendOrderButton(orderVM: OrderViewModel(userDataVM: userDataVM))
                             .padding(.bottom, 50)
-                        
                     }
-                    
+                    if(orders.count > 10) {
+                        orderVM.showToManyItemsAllert = true
+                    }
+                        .alert(item: $orderVM.showToManyItemsAllert) { show in
+                                   Alert(
+                                    title: Text("Превышено количество товаров на доставку"),
+                                    message: Text("Пожалуйста оставьте в своей корзине не более 10 товаров"),
+                                    dismissButton: .cancel())
+                               }
                 }
                 if(orders.count == 0) {
-                    EmptyCartView()
+                    EmptyPlaceholder()
                 }
                 
             }
@@ -67,14 +75,14 @@ struct CartView: View {
 }
 
 
-struct CartView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            CartView()
-                .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-                .environmentObject(ProductProvider())
-        }
-    }
-}
+//struct CartView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NavigationView {
+//            CartView()
+//                .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+//                .environmentObject(ProductProvider())
+//        }
+//    }
+//}
 
 

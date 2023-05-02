@@ -11,16 +11,14 @@ struct ItemDescriptionView: View {
     
     @EnvironmentObject var productProvider: ProductProvider
     var product: Product
-    @State var isSet: Bool
-    
     @State private var presentAlert = false
+    @Environment(\.managedObjectContext) private var viewContext
     
     var body: some View {
         VStack(spacing: 20) {
             VStack(alignment: .leading, spacing: 20) {
                 HStack{
-                    FavoriteButtonView(favoriteButtonVM: FavoriteButtonViewModel())
-                        
+                    FavoriteButtonView(favoriteButtonVM: FavoriteButtonViewModel(viewContext: viewContext, product: product))
                     
                     ItemSizeCheckView(product: product)
                 }
@@ -37,7 +35,7 @@ struct ItemDescriptionView: View {
             }
             .foregroundColor(.black)
             
-            AddToCartButton(product: product, presentAlert: $presentAlert)
+            AddToCartButton(product: product, addToCartButtonVM: AddToCartViewModel(viewContext: viewContext, product: product))
         }
         .padding(.bottom, 20)
         .padding([.leading, .trailing])
@@ -48,7 +46,7 @@ struct ItemDescriptionView: View {
 
 struct ItemDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemDescriptionView(product: example, isSet: false)
+        ItemDescriptionView(product: example)
             .environmentObject(ProductProvider())
         
     }

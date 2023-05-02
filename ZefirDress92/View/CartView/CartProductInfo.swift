@@ -12,22 +12,17 @@ struct CartProductInfo: View {
     var order: DressOrder
     
     var body: some View {
-        Group {
-            KFImage(URL(string: (order.imageLink) as? String ?? ""))
-                .placeholder({ progress in
-                    ProgressView()
-                })
-                .resizable()
-                .frame(width: screen.width / 6, height: screen.height / 10)
-        }
-        VStack(alignment: .leading) {
-            Text(order.title ?? "Красивое платье")
-                .font(.headline)
-            HStack {
-                Text("cтоимость аренды от: \(order.price_photo)руб.")
+        HStack{
+            CartImageView(order: order)
+            VStack(alignment: .leading) {
+                Text(order.title ?? "Красивое платье")
+                    .font(.headline)
+                HStack {
+                    Text("cтоимость аренды от: \(order.price_photo)руб.")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
             }
-            .font(.caption)
-            .foregroundColor(.secondary)
         }
     }
 }

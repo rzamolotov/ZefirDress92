@@ -12,6 +12,8 @@ struct MainTabView: View {
     @State var addToCartAllert: Bool = false
     @State var addToFavorite: Bool = false
     @EnvironmentObject var productProvider: ProductProvider
+    @ObservedObject var userDataVM = UserDataViewModel()
+    
     enum TabType: Int, CaseIterable {
         case home = 0
         case favorite
@@ -51,7 +53,7 @@ struct MainTabView: View {
             case .favorite:
                 FavoritesGridView(presentAlert: addToCartAllert, isSet: addToFavorite)
             case .cart:
-                CartView()
+                CartView(orderVM: OrderViewModel(userDataVM: userDataVM))
             case .peron:
                 AccountSheet()
             }

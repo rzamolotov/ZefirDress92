@@ -63,7 +63,7 @@ struct ItemDetailView: View {
                 .frame(width: screen.width, height: screen.height / 1.5)
                 .tabViewStyle(.page(indexDisplayMode: .always))
                 
-                ItemDescriptionView(product: product, isSet: isAddToFavorite)
+                ItemDescriptionView(product: product)
             }
             
         }

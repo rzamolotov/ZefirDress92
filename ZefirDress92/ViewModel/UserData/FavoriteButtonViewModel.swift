@@ -18,6 +18,7 @@ class FavoriteButtonViewModel: ObservableObject {
         self.isAddToFavorite = false
         self.viewContext = viewContext
         self.product = product
+        checkIsAddToFavorite()
     }
     
     func checkIsAddToFavorite() {

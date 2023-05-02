@@ -41,7 +41,7 @@ struct FavoritesGridView: View {
                     }
                 }
                 if(favorites.count == 0) {
-                    EmptyFavoritesView()
+                    EmptyPlaceholder()
                 }
             }
             .navigationTitle("Избранное")

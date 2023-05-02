@@ -81,7 +81,7 @@
             startingLineNumber = "25"
             endingLineNumber = "25"
             landmarkName = "testProductJSONDecoderDecodesProductJSON()"
-            landmarkType = "9">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -96,8 +96,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "ZefirDressTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -113,7 +113,7 @@
             startingLineNumber = "29"
             endingLineNumber = "29"
             landmarkName = "testProductJSONDecoderDecodesProductJSON()"
-            landmarkType = "9">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

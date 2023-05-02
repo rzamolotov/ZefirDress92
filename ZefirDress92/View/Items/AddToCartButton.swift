@@ -9,59 +9,24 @@ import SwiftUI
 import CoreData
 
 struct AddToCartButton: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    
     var product: Product
-    @Binding var presentAlert: Bool
+    @StateObject var addToCartButtonVM: AddToCartViewModel
     
     var body: some View {
         Button(action: {
-            let fetchRequest: NSFetchRequest<DressOrder> = DressOrder.fetchRequest()
-            fetchRequest.predicate = NSPredicate(format: "id == %@", product.id)
-            do {
-                let results = try viewContext.fetch(fetchRequest)
-                if results.isEmpty {
-                    // объекта с таким идентификатором еще нет в базе данных, сохраняем новый объект
-                    let newOrder = DressOrder(context: viewContext)
-                    newOrder.id = product.id
-                    newOrder.availability = product.availability
-                    newOrder.category = product.category as NSArray
-                    newOrder.condition = product.condition
-                    newOrder.deposit = Int64(product.deposit)
-                    newOrder.imageLink = product.image_link as? NSArray
-                    newOrder.isAddToFavorite = product.isAddToFavorite
-                    newOrder.itemDescription = product.description
-                    newOrder.itemLink = product.link
-                    newOrder.price = product.price
-                    newOrder.price_photo = Int64(product.price_photo)
-                    newOrder.price_rent = Int64(product.price_rent ?? 0)
-                    newOrder.size = product.size as NSArray
-                    newOrder.title = product.title
-                    try viewContext.save()
-                    print("order saved")
-                    //TODO: - сделать алерт с уведомлением, что товар добавлен в корзину
-                    withAnimation(.linear(duration: 0.5)) {
-                        presentAlert = true
-                    }
-                } else {
-                    // TODO: - сделать алерт с уведомлением, что такой заказ уже есть бъект с таким идентификатором уже есть в базе данных, не сохраняем новый объект
-                    print("order already exists")
-                }
-            } catch {
-                // TODO: - сделать алерт с уведомлением об ошибке добавление в корщину
-                print(error.localizedDescription)
-            }
+            addToCartButtonVM.toggleIsAddToCart()
         }, label: {
             ZStack{
                 Rectangle()
                 HStack {
                     Image(systemName: "cart")
-                        .font(.title)
+                        .font(.custom(mediumFont, size: fontSizeLarge))
+                        
                     Text("Добавить в корзину\n\(product.title)")
-                        .foregroundColor(colorBege)
                         .font(.custom(boldFont, size: fontSizeMedium))
                 }
-                .font(.custom(boldFont, size: 16))
-                .foregroundColor(.white)
+                .foregroundColor(colorBege)
             }
             .frame(width: screen.width / 1.1, height: screen.height / 12)
             .foregroundColor(colorBrightPink)
@@ -71,9 +36,11 @@ struct AddToCartButton: View {
 }
 
 struct AddToCartButton_Previews: PreviewProvider {
+    
     static var previews: some View {
+        let viewContext = PersistenceController.preview.container.viewContext
         NavigationView {
-            AddToCartButton(product: example, presentAlert: .constant(false))
+            AddToCartButton(product: example, addToCartButtonVM: AddToCartViewModel(viewContext: viewContext, product: example))
         }
     }
 }
