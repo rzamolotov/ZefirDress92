@@ -8,21 +8,17 @@
 import SwiftUI
 
 struct HeaderAccountView: View {
+    @ObservedObject var userDataVM = UserDataViewModel()
     @State var goToProfile: Bool = false
-    @State private var editUserName: String = UserDefaults.standard.string(forKey: userName) ?? "Введите ваше имя"
-    @State private var editUserSurname: String = UserDefaults.standard.string(forKey: userSurname) ?? "Введите вашу фамилию"
-    @State private var editUserPhone: String = UserDefaults.standard.string(forKey: userPhone) ?? "Введите ваш номер телефона"
-    @State private var editUserEmail: String = UserDefaults.standard.string(forKey: userEmail) ?? "Введите ваш Email"
-    @State private var editUserAdress: String = UserDefaults.standard.string(forKey: userAdress) ?? "Введите ваш адрес"
     
     var body: some View {
         VStack(spacing: 5){
-            Text(editUserName)
-            Text(editUserSurname)
-            Text(editUserPhone)
-            Text(editUserEmail)
-            Text(editUserAdress)
-            
+            Text(userDataVM.editUserAdress)
+            Text(userDataVM.editUserSurname)
+            Text(userDataVM.editUserPhone)
+            Text(userDataVM.editUserEmail)
+            Text(userDataVM.editUserAdress)
+    
             Button{
                 goToProfile.toggle()
             } label: {
@@ -31,7 +27,7 @@ struct HeaderAccountView: View {
                     .padding(10)
             }
             .sheet(isPresented: $goToProfile) {
-                ProfileView(editUserName: $editUserName, editUserSurname: $editUserSurname, editUserPhone: $editUserPhone, editUserEmail: $editUserEmail, editUserAdress: $editUserAdress)
+                ProfileView(editUserName: $userDataVM.editUserName, editUserSurname: $userDataVM.editUserSurname, editUserPhone: $userDataVM.editUserPhone, editUserEmail: $userDataVM.editUserEmail, editUserAdress: $userDataVM.editUserAdress)
             }
         }
     }
@@ -42,5 +38,6 @@ struct HeaderAccountView: View {
 struct HeaderAccountView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderAccountView()
+            .environmentObject(UserDataViewModel())
     }
 }

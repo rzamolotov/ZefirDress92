@@ -16,6 +16,7 @@ struct ProfileView: View {
         case adress
     }
     @Environment(\.presentationMode) private var presentationMode
+    @ObservedObject var userDataVM = UserDataViewModel()
     @Binding var editUserName: String
     @Binding var editUserSurname: String
     @Binding var editUserPhone: String
@@ -36,7 +37,7 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Имя", text: $editUserName)
+                    TextField("Имя", text: $userDataVM.editUserName)
                         .focused($focusedField, equals: .name)
                         .textInputAutocapitalization(.words)
                         .disableAutocorrection(true)
@@ -51,7 +52,7 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Фамилия", text: $editUserSurname)
+                    TextField("Фамилия", text: $userDataVM.editUserSurname)
                         .focused($focusedField, equals: .surname)
                         .textInputAutocapitalization(.words)
                         .disableAutocorrection(true)
@@ -66,7 +67,7 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Номер телефона", text: $editUserPhone)
+                    TextField("Номер телефона", text: $userDataVM.editUserPhone)
                         .focused($focusedField, equals: .phoneNumber)
                         .disableAutocorrection(true)
                         .keyboardType(.phonePad)
@@ -80,7 +81,7 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Email", text: $editUserEmail)
+                    TextField("Email", text: $userDataVM.editUserEmail)
                         .focused($focusedField, equals: .email)
                         .disableAutocorrection(true)
                         .keyboardType(.emailAddress)
@@ -94,7 +95,7 @@ struct ProfileView: View {
                     .foregroundColor(.gray)
                     .opacity(0.1)
                 HStack{
-                    TextField("Адрес", text: $editUserAdress)
+                    TextField("Адрес", text: $userDataVM.editUserAdress)
                         .focused($focusedField, equals: .adress)
                         .textInputAutocapitalization(.words)
                         .disableAutocorrection(true)
@@ -107,12 +108,6 @@ struct ProfileView: View {
 
             Button(action: {
                 presentationMode.wrappedValue.dismiss() //go back
-                UserDefaults.standard.set(editUserName, forKey: userName)
-                UserDefaults.standard.set(editUserSurname, forKey: userSurname)
-                UserDefaults.standard.set(editUserPhone, forKey: userPhone)
-                UserDefaults.standard.set(editUserEmail, forKey: userEmail)
-                UserDefaults.standard.set(editUserAdress, forKey: userSurname)
-
             }) {
                 Text("Сохранить")
                     .font(.headline)
@@ -137,11 +132,8 @@ struct ProfileView: View {
             case .phoneNumber:
                 focusedField = .adress
             default:
-                UserDefaults.standard.set(editUserName, forKey: userName)
-                UserDefaults.standard.set(editUserSurname, forKey: userSurname)
-                UserDefaults.standard.set(editUserPhone, forKey: userPhone)
-                UserDefaults.standard.set(editUserEmail, forKey: userEmail)
-                UserDefaults.standard.set(editUserAdress, forKey: userSurname)
+                break
+                
             }
         }
     }
@@ -149,5 +141,6 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView(editUserName: .constant("Юля"), editUserSurname: .constant("Замолотова"), editUserPhone: .constant("+79787242551"), editUserEmail: .constant("ulya_nel@mail.ru"), editUserAdress: .constant("Севастополь, Спуск Шестакова 1"))
+            .environmentObject(UserDataViewModel())
     }
 }

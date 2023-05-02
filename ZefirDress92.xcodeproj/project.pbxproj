@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		761E10DD29E7E82700219F6B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E10DC29E7E82700219F6B /* SearchView.swift */; };
+		76301F0F29FFA0B200A0E7DF /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76301F0E29FFA0B200A0E7DF /* UserDataViewModel.swift */; };
 		763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */; };
 		763BF69C29F11651008BBA80 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 763BF69B29F11651008BBA80 /* Kingfisher */; };
 		7642E02229D5DACC00A37D01 /* FavoriteAddToCartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */; };
@@ -98,6 +99,7 @@
 
 /* Begin PBXFileReference section */
 		761E10DC29E7E82700219F6B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		76301F0E29FFA0B200A0E7DF /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewModel.swift; sourceTree = "<group>"; };
 		763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddToCartItem.swift; sourceTree = "<group>"; };
 		7642E02329D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddToFavoriteItem.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 				7642E02C29D6D14600A37D01 /* ProductError.swift */,
 				7642E02E29D6D24400A37D01 /* ProductJSON.swift */,
 				7642E03029D6D3E400A37D01 /* ProductProvider.swift */,
+				76301F0E29FFA0B200A0E7DF /* UserDataViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				76EAFFB229AD48C1001799EB /* AddToCartButton.swift in Sources */,
 				76EAFFB029ACA369001799EB /* CartView.swift in Sources */,
 				763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */,
+				76301F0F29FFA0B200A0E7DF /* UserDataViewModel.swift in Sources */,
 				765F215229BCA8860052A95B /* SkipButton.swift in Sources */,
 				7678587729C1923300A0A709 /* EmptyFavoritesView.swift in Sources */,
 				76A57AE429D8527200F428AB /* TestData.swift in Sources */,

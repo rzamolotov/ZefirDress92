@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AccountSheet: View {
+    
     var body: some View {
         NavigationView{
             VStack {
@@ -34,16 +35,17 @@ struct AccountSheet_Previews: PreviewProvider {
 
 struct LogOutButton: View {
     @EnvironmentObject var viewRouter: ViewRouter
+    @ObservedObject var userDataVM = UserDataViewModel()
     @State private var showAlert: Bool = false
     
     var body: some View {
         Button(action: {
             showAlert = true
-            UserDefaults.standard.set("", forKey: userName)
-            UserDefaults.standard.set("", forKey: userSurname)
-            UserDefaults.standard.set("", forKey: userPhone)
-            UserDefaults.standard.set("", forKey: userEmail)
-            UserDefaults.standard.set("", forKey: userSurname)
+            userDataVM.editUserName = ""
+            userDataVM.editUserSurname = ""
+            userDataVM.editUserEmail = ""
+            userDataVM.editUserPhone = ""
+            userDataVM.editUserAdress = ""
         }) {
             Text("Выйти")
                 .font(.headline)

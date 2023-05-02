@@ -9,11 +9,7 @@ import SwiftUI
 import SwiftSMTP
 
 struct SendOrderButton: View {
-    @State private var editUserName: String = UserDefaults.standard.string(forKey: userName) ?? "Введите ваше имя"
-    @State private var editUserSurname: String = UserDefaults.standard.string(forKey: userSurname) ?? "Введите вашу фамилию"
-    @State private var editUserPhone: String = UserDefaults.standard.string(forKey: userPhone) ?? "Введите ваш номер телефона"
-    @State private var editUserEmail: String = UserDefaults.standard.string(forKey: userEmail) ?? "Введите ваш Email"
-    @State private var editUserAdress: String = UserDefaults.standard.string(forKey: userAdress) ?? "Введите ваш адрес"
+    @ObservedObject var userDataVM = UserDataViewModel()
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: DressOrder.entity(), sortDescriptors: [])
     var orders: FetchedResults<DressOrder>
@@ -21,7 +17,7 @@ struct SendOrderButton: View {
     
     var body: some View {
         Button(action: {
-            if editUserName == "Введите ваше имя" || editUserPhone == "Введите ваш номер телефона" {
+            if userDataVM.editUserName == "Введите ваше имя" || userDataVM.editUserPhone == "Введите ваш номер телефона" || userDataVM.editUserName == "" || userDataVM.editUserPhone == "" {
                 showProfileView = true
             } else {
                 let smtp = SMTP(
@@ -35,8 +31,8 @@ struct SendOrderButton: View {
                 let mail = Mail(
                     from: zefirDress92,
                     to: [rzamolotov],
-                    subject: "Заказ на доставку от клиента \(editUserName) \(editUserSurname)",
-                    text: "Имя\(editUserName), фамилия \(editUserSurname)\nНомер телефона \(editUserPhone), email \(editUserEmail)\nадрес доставки \(editUserAdress)"
+                    subject: "Заказ на доставку от клиента \(userDataVM.editUserName) \(userDataVM.editUserSurname)",
+                    text: "Имя \(userDataVM.editUserName), фамилия \(userDataVM.editUserSurname)\nНомер телефона \(userDataVM.editUserPhone), email \(userDataVM.editUserEmail)\nадрес доставки \(userDataVM.editUserAdress)"
                 )
                 DispatchQueue.global(qos: .background).async {
                     smtp.send(mail) { (error) in
@@ -57,7 +53,7 @@ struct SendOrderButton: View {
                 .cornerRadius(15.0)
         }
         .sheet(isPresented: $showProfileView, content: {
-            ProfileView(editUserName: $editUserName, editUserSurname: $editUserSurname, editUserPhone: $editUserPhone, editUserEmail: $editUserEmail, editUserAdress: $editUserAdress)
+            ProfileView(editUserName: $userDataVM.editUserName, editUserSurname: $userDataVM.editUserSurname, editUserPhone: $userDataVM.editUserPhone, editUserEmail: $userDataVM.editUserEmail, editUserAdress: $userDataVM.editUserAdress)
         })
         .padding(.leading)
         .padding(.trailing)
