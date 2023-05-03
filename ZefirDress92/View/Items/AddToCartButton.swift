@@ -23,7 +23,7 @@ struct AddToCartButton: View {
                     Image(systemName: "cart")
                         .font(.custom(mediumFont, size: fontSizeLarge))
                         
-                    Text("Добавить в корзину\n\(product.title)")
+                    Text("Забронировать на примерку\n\(product.title)")
                         .font(.custom(boldFont, size: fontSizeMedium))
                 }
                 .foregroundColor(colorBege)

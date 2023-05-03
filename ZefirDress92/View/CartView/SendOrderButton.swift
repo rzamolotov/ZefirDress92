@@ -27,7 +27,7 @@ struct SendOrderButton: View {
                 //TODO: добавить алерт отпавки заказов, что заказ успешно оптавлен
             }
         }) {
-            Text("Оформить заказ")
+            Text("Забронировать платья на примерку")
                 .frame(width: screen.width / 1.1, height: screen.height / 12)
                 .cornerRadius(10)
                 .font(.custom(boldFont, size: fontSizeMediuPlus))

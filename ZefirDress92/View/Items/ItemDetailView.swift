@@ -48,20 +48,23 @@ struct ItemDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: 10) {
-                TabView{
-                    ForEach(product.image_link ?? ["https://i.ibb.co/wyBwfHG/IMG-7167.jpg"], id: \.self) { image in
-                        KFImage(URL(string: image))
-                            .placeholder({ progress in
-                                ProgressView()
-                            })
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: screen.width, height: screen.height / 1.5)
-                            .cornerRadius(5)
+                ZStack{
+                    TabView{
+                        ForEach(product.image_link ?? ["https://i.ibb.co/wyBwfHG/IMG-7167.jpg"], id: \.self) { image in
+                            KFImage(URL(string: image))
+                                .placeholder({ progress in
+                                    ProgressView()
+                                })
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: screen.width, height: screen.height / 1.5)
+                                .cornerRadius(5)
+                        }
                     }
+                    .frame(width: screen.width, height: screen.height / 1.5)
+                    .tabViewStyle(.page(indexDisplayMode: .always))
+                    
                 }
-                .frame(width: screen.width, height: screen.height / 1.5)
-                .tabViewStyle(.page(indexDisplayMode: .always))
                 
                 ItemDescriptionView(product: product)
             }

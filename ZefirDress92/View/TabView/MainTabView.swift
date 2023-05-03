@@ -28,9 +28,9 @@ struct MainTabView: View {
             case .search:
                 return TabItemData(image: "magnifyingglass.circle", selectedImage: "magnifyingglass.circle.fill", title: "Поиск")
             case .favorite:
-                return TabItemData(image: "heart", selectedImage: "heart.fill", title: "Отложить")
+                return TabItemData(image: "heart", selectedImage: "heart.fill", title: "Избранное")
             case .cart:
-                return TabItemData(image: "cart", selectedImage: "cart.fill", title: "Корзина")
+                return TabItemData(image: "cart", selectedImage: "cart.fill", title: "Примерить")
             case .peron:
                 return TabItemData(image: "person", selectedImage: "person.fill", title: "О нас")
             }

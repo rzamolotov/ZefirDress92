@@ -14,7 +14,7 @@ struct ItemSizeCheckView: View {
     var body: some View {
         HStack {
             Text(product.size.count > 1 ? "Подойдет для размеров" : "Подойдет для размера")
-                .font(.custom(mediumFont, size: fontSizeMedium))
+                .font(.custom(mediumFont, size: fontSizeSmall))
                 .foregroundColor(colorFont)
             Spacer()
             ForEach(product.size, id: \.self) { sizes in

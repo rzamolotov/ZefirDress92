@@ -18,10 +18,15 @@ struct ItemDescriptionView: View {
         VStack(spacing: 20) {
             VStack(alignment: .leading, spacing: 20) {
                 HStack{
+                    Spacer()
                     FavoriteButtonView(favoriteButtonVM: FavoriteButtonViewModel(viewContext: viewContext, product: product))
-                    
+                    ItemShareButton(product: product)
+                   
+                }
+                HStack{
                     ItemSizeCheckView(product: product)
                 }
+             
                 Text(product.description)
                     .font(.custom(regularFont, size: fontSizeMedium))
                 HStack {

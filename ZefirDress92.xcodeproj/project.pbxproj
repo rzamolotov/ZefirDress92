@@ -86,6 +86,7 @@
 		76EAFFB029ACA369001799EB /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFFAF29ACA369001799EB /* CartView.swift */; };
 		76EAFFB229AD48C1001799EB /* AddToCartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFFB129AD48C1001799EB /* AddToCartButton.swift */; };
 		76EAFFB429AD4DEB001799EB /* ItemDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAFFB329AD4DEB001799EB /* ItemDescriptionView.swift */; };
+		76ED0C3F2A025EB300864FCD /* ItemShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED0C3E2A025EB300864FCD /* ItemShareButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +180,7 @@
 		76EAFFAF29ACA369001799EB /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		76EAFFB129AD48C1001799EB /* AddToCartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartButton.swift; sourceTree = "<group>"; };
 		76EAFFB329AD4DEB001799EB /* ItemDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDescriptionView.swift; sourceTree = "<group>"; };
+		76ED0C3E2A025EB300864FCD /* ItemShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemShareButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -478,11 +480,12 @@
 			isa = PBXGroup;
 			children = (
 				76EAFFA229AB860C001799EB /* ItemDetailView.swift */,
+				76EAFFB329AD4DEB001799EB /* ItemDescriptionView.swift */,
 				76EAF42629B7B917001BEEBE /* ItemSizeCheckView.swift */,
 				76EAF42829B8B821001BEEBE /* ItemPriceView.swift */,
 				763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */,
 				76EAFFB129AD48C1001799EB /* AddToCartButton.swift */,
-				76EAFFB329AD4DEB001799EB /* ItemDescriptionView.swift */,
+				76ED0C3E2A025EB300864FCD /* ItemShareButton.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				765F581A29D47BD100042727 /* SizeList.swift in Sources */,
 				7682EBCF29C112CF0073142B /* ProfileVIew.swift in Sources */,
 				765F581829D4790000042727 /* SizesRow.swift in Sources */,
+				76ED0C3F2A025EB300864FCD /* ItemShareButton.swift in Sources */,
 				76EAFFB429AD4DEB001799EB /* ItemDescriptionView.swift in Sources */,
 				76EAFFA329AB860C001799EB /* ItemDetailView.swift in Sources */,
 				765F581429D466B500042727 /* Network.swift in Sources */,

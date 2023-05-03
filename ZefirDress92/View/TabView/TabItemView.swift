@@ -24,7 +24,7 @@ struct TabItemView: View {
             
             Text(data.title)
                 .foregroundColor(isSelected ? .black : .gray)
-                .font(.custom("", size: 10))
+                .font(.custom(mediumFont, size: fontSizeVerySmall / 1.5))
             
                 
         }

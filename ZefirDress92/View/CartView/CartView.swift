@@ -51,7 +51,7 @@ struct CartView: View {
                 }//:List
                 
                 .listStyle(.inset)
-                .navigationTitle("Корзина")
+                .navigationTitle("Бронь на примерку")
                 if orders.count > 0 {
                     SendOrderButton(orderVM: orderVM)
                         .padding(.bottom)
