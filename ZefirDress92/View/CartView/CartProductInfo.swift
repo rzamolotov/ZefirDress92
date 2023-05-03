@@ -14,14 +14,11 @@ struct CartProductInfo: View {
     var body: some View {
         HStack{
             CartImageView(order: order)
+            
             VStack(alignment: .leading) {
                 Text(order.title ?? "Красивое платье")
-                    .font(.headline)
-                HStack {
-                    Text("cтоимость аренды от: \(order.price_photo)руб.")
-                }
-                .font(.caption)
-                .foregroundColor(.secondary)
+                    .font(.custom(boldFont, size: fontSizeSmall))
+                    .foregroundColor(colorFont)
             }
         }
     }

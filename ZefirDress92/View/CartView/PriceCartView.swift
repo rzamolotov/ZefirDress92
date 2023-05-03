@@ -12,6 +12,8 @@ struct PriceCartView: View {
     
     var body: some View {
         Text("\(order.price_photo)")
+            .foregroundColor(colorFont)
+            .font(.custom(boldFont, size: fontSizeMedium))
     }
 }
 

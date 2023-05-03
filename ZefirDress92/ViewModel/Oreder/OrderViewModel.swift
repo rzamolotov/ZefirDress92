@@ -7,11 +7,13 @@
 
 import Foundation
 import SwiftSMTP
+import SwiftUI
 
 class OrderViewModel: ObservableObject {
+    
     var userDataVM = UserDataViewModel()
     @Published var showToManyItemsAllert: Bool
-
+    
     init(userDataVM: UserDataViewModel) {
         self.userDataVM = userDataVM
         self.showToManyItemsAllert = false
@@ -39,6 +41,14 @@ class OrderViewModel: ObservableObject {
                     print(error)
                 }
             }
+        }
+    }
+    
+    func updateAlertFlag(orders: FetchedResults<DressOrder>) {
+        if orders.count > 10 {
+            showToManyItemsAllert = true
+        } else {
+            showToManyItemsAllert = false
         }
     }
 }
