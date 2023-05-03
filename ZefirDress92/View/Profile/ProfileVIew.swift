@@ -145,6 +145,8 @@ struct ProfileView: View {
             case .surname:
                 focusedField = .phoneNumber
             case .phoneNumber:
+                focusedField = .email
+            case .email:
                 focusedField = .adress
             case .adress:
                 focusedField = .event
