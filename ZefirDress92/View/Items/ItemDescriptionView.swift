@@ -18,6 +18,9 @@ struct ItemDescriptionView: View {
         VStack(spacing: 20) {
             VStack(alignment: .leading, spacing: 20) {
                 HStack{
+                    Text("Ты можешь отправить ссылку на платье или добавить его в избранное.")
+                        .font(.custom(lightFont, size: fontSizeVerySmall))
+                        .foregroundColor(colorFont)
                     Spacer()
                     FavoriteButtonView(favoriteButtonVM: FavoriteButtonViewModel(viewContext: viewContext, product: product))
                     ItemShareButton(product: product)
@@ -29,10 +32,12 @@ struct ItemDescriptionView: View {
              
                 Text(product.description)
                     .font(.custom(regularFont, size: fontSizeMedium))
+                    .foregroundColor(colorFont)
                 HStack {
                     Spacer()
                     Text("Cтоимость аренды платья")
                         .font(.custom(boldFont, size: fontSizeMedium))
+                        .foregroundColor(colorFont)
                     Spacer()
                 }
                 

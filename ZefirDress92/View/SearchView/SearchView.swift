@@ -57,11 +57,10 @@ struct SearchView: View {
                         Spacer()
                     }
                     ZStack{
-                        Rectangle()
-                            .cornerRadius(10)
+                        RoundedRectangle(cornerRadius: 25, style: .continuous)
+                            .foregroundColor(.clear)
                             .frame(height: 37)
-                            .foregroundColor(.white)
-                            .border(colorFontGray)
+                            .border(colorFontGray, width: 2)
                         HStack{
                             Menu {
                                 Picker("Выберете размер", selection: $selectedSize) {

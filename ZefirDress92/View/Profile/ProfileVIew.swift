@@ -12,35 +12,30 @@ struct ProfileView: View {
         case name
         case surname
         case phoneNumber
-        case email
         case adress
+        case event
+        case delivery
     }
     @Environment(\.presentationMode) private var presentationMode
     @ObservedObject var userDataVM = UserDataViewModel()
-    @Binding var editUserName: String
-    @Binding var editUserSurname: String
-    @Binding var editUserPhone: String
-    @Binding var editUserEmail: String
-    @Binding var editUserAdress: String
-
+    
     @FocusState private var focusedField: Field?
-
+    
     var body: some View {
         VStack{
             Text("Введите ваши даные для доставки")
-                .font(.headline)
+                .font(.custom(boldFont, size: fontSizeMedium))
                 .foregroundColor(.gray)
                 .padding(.bottom, 20)
-
+            
             ZStack{
                 Rectangle()
-                    .foregroundColor(.gray)
-                    .opacity(0.1)
+                    .foregroundColor(colorPink)
+                    .opacity(0.5)
                 HStack{
                     TextField("Имя", text: $userDataVM.editUserName)
                         .focused($focusedField, equals: .name)
                         .textInputAutocapitalization(.words)
-                        .disableAutocorrection(true)
                         .keyboardType(.default)
                         .padding(.leading)
                 }
@@ -49,8 +44,8 @@ struct ProfileView: View {
             .cornerRadius(20)
             ZStack{
                 Rectangle()
-                    .foregroundColor(.gray)
-                    .opacity(0.1)
+                    .foregroundColor(colorPink)
+                    .opacity(0.5)
                 HStack{
                     TextField("Фамилия", text: $userDataVM.editUserSurname)
                         .focused($focusedField, equals: .surname)
@@ -59,41 +54,28 @@ struct ProfileView: View {
                         .keyboardType(.default)
                         .padding(.leading)
                 }
-            } //поле для имени
+            } //поле для фамили
             .frame(width: screen.width / 1.1, height: screen.height / 18)
             .cornerRadius(20)
+            
             ZStack{
                 Rectangle()
-                    .foregroundColor(.gray)
-                    .opacity(0.1)
+                    .foregroundColor(colorPink)
+                    .opacity(0.5)
                 HStack{
                     TextField("Номер телефона", text: $userDataVM.editUserPhone)
                         .focused($focusedField, equals: .phoneNumber)
-                        .disableAutocorrection(true)
                         .keyboardType(.phonePad)
                         .padding(.leading)
                 }
-            } //поле для имени
+            } //поле для номера телефона
             .frame(width: screen.width / 1.1, height: screen.height / 18)
             .cornerRadius(20)
+            
             ZStack{
                 Rectangle()
-                    .foregroundColor(.gray)
-                    .opacity(0.1)
-                HStack{
-                    TextField("Email", text: $userDataVM.editUserEmail)
-                        .focused($focusedField, equals: .email)
-                        .disableAutocorrection(true)
-                        .keyboardType(.emailAddress)
-                        .padding(.leading)
-                }
-            } //поле для имени
-            .frame(width: screen.width / 1.1, height: screen.height / 18)
-            .cornerRadius(20)
-            ZStack{
-                Rectangle()
-                    .foregroundColor(.gray)
-                    .opacity(0.1)
+                    .foregroundColor(colorPink)
+                    .opacity(0.5)
                 HStack{
                     TextField("Адрес", text: $userDataVM.editUserAdress)
                         .focused($focusedField, equals: .adress)
@@ -102,10 +84,45 @@ struct ProfileView: View {
                         .keyboardType(.default)
                         .padding(.leading)
                 }
-            } //поле для имени
+            } //поле для адрес
             .frame(width: screen.width / 1.1, height: screen.height / 18)
             .cornerRadius(20)
-
+            
+            ZStack{
+                Rectangle()
+                    .foregroundColor(colorPink)
+                    .opacity(0.5)
+                HStack{
+                    DatePicker("Дата примерки",
+                               selection: $userDataVM.editDeliveryDate,
+                               in: Date()...(Calendar.current.date(byAdding: .day, value: 50, to: Date()) ?? Date()),
+                               displayedComponents: .date)
+                               .focused($focusedField, equals: .delivery)
+                               .datePickerStyle(.compact)
+                               .padding(.leading)
+                }
+            } //поле дата доставки
+            .frame(width: screen.width / 1.1, height: screen.height / 18)
+            .cornerRadius(20)
+            
+            ZStack{
+                Rectangle()
+                    .foregroundColor(colorPink)
+                    .opacity(0.5)
+                HStack{
+                    DatePicker("Дата аренды",
+                               selection: $userDataVM.editEventDate,
+                               in: userDataVM.editDeliveryDate...(Calendar.current.date(byAdding: .day, value: 100, to: Date()) ?? Date()),
+                               displayedComponents: .date)
+                        .focused($focusedField, equals: .event)
+                        .datePickerStyle(.compact)
+                        .padding(.leading)
+                        
+                }
+            } //поле дата мероприятия
+            .frame(width: screen.width / 1.1, height: screen.height / 18)
+            .cornerRadius(20)
+            
             Button(action: {
                 presentationMode.wrappedValue.dismiss() //go back
             }) {
@@ -118,19 +135,21 @@ struct ProfileView: View {
                     .opacity(0.7)
                     .cornerRadius(15.0)
                     .padding(.top, 20)
-            }
+            } //кнопка сохранить
         }
-
+        
         .onSubmit {
             switch focusedField {
             case .name:
                 focusedField = .surname
             case .surname:
-                focusedField = .email
-            case .email:
                 focusedField = .phoneNumber
             case .phoneNumber:
                 focusedField = .adress
+            case .adress:
+                focusedField = .event
+            case .event:
+                focusedField = .delivery
             default:
                 break
                 
@@ -140,7 +159,7 @@ struct ProfileView: View {
 }
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(editUserName: .constant("Юля"), editUserSurname: .constant("Замолотова"), editUserPhone: .constant("+79787242551"), editUserEmail: .constant("ulya_nel@mail.ru"), editUserAdress: .constant("Севастополь, Спуск Шестакова 1"))
+        ProfileView()
             .environmentObject(UserDataViewModel())
     }
 }

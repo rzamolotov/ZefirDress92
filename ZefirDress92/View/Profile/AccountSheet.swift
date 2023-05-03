@@ -15,7 +15,7 @@ struct AccountSheet: View {
                 HeaderAccountView()
                 Spacer()
                 InfoList()
-                LogOutButton()
+                ProfileLogoutButton()
                 Spacer()
                 Footer()
                 
@@ -33,43 +33,7 @@ struct AccountSheet_Previews: PreviewProvider {
 
 
 
-struct LogOutButton: View {
-    @EnvironmentObject var viewRouter: ViewRouter
-    @ObservedObject var userDataVM = UserDataViewModel()
-    @State private var showAlert: Bool = false
-    
-    var body: some View {
-        Button(action: {
-            showAlert = true
-            userDataVM.editUserName = ""
-            userDataVM.editUserSurname = ""
-            userDataVM.editUserEmail = ""
-            userDataVM.editUserPhone = ""
-            userDataVM.editUserAdress = ""
-        }) {
-            Text("Выйти")
-                .font(.headline)
-                .foregroundColor(.white)
-                .padding()
-                .frame(width: screen.width / 3, height: screen.height / 19)
-                .background(Color.pink)
-                .opacity(0.7)
-                .cornerRadius(15.0)
-        }
-        .alert(isPresented: $showAlert){
-            Alert(
-                title: Text("Вы уверены, что хотите выйти?"),
-                primaryButton: .destructive((Text("Да"))) {
-                    withAnimation(){
-                        viewRouter.currentPage = .login
-                    }
-                },
-                secondaryButton: .cancel()
-            )
-        }
-        
-    }
-}
+
 
 struct InfoList: View {
     var body: some View {

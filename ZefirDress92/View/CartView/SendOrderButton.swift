@@ -42,7 +42,7 @@ struct SendOrderButton: View {
                 dismissButton: .cancel(Text("Хорошо")))
         })
         .sheet(isPresented: $showProfileView, content: {
-            ProfileView(editUserName: $userDataVM.editUserName, editUserSurname: $userDataVM.editUserSurname, editUserPhone: $userDataVM.editUserPhone, editUserEmail: $userDataVM.editUserEmail, editUserAdress: $userDataVM.editUserAdress)
+            ProfileView()
         })
         .padding([.leading, .trailing, .bottom])
     }
