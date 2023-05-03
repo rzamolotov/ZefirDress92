@@ -33,7 +33,7 @@ class OrderViewModel: ObservableObject {
             from: zefirDress92,
             to: [rzamolotov],
             subject: "Заказ на доставку от клиента \(userDataVM.editUserName) \(userDataVM.editUserSurname)",
-            text: "Имя \(userDataVM.editUserName), фамилия \(userDataVM.editUserSurname)\nНомер телефона \(userDataVM.editUserPhone), email \(userDataVM.editUserEmail)\nадрес доставки \(userDataVM.editUserAdress)"
+            text: "Имя \(userDataVM.editUserName), фамилия \(userDataVM.editUserSurname)\nНомер телефона \(userDataVM.editUserPhone), \nадрес доставки \(userDataVM.editUserAdress)"
         )
         DispatchQueue.global(qos: .background).async {
             smtp.send(mail) { (error) in

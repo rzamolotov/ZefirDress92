@@ -39,6 +39,8 @@ let userAdress = "USERADRESS"
 let userName = "USERNAME"
 let userSurname = "USERSURNAME"
 let userPhone = "USERPHONE"
+let deliveryDate = "DELIVERYDATE"
+let eventDate = "EVENTDATE"
 
 //Fonts
 let blackFont = "Montserrat-Black"

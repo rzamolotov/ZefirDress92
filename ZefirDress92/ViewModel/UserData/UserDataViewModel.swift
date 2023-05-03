@@ -22,12 +22,6 @@ class UserDataViewModel: ObservableObject {
         }
     }
     
-    @Published var editUserEmail: String {
-        didSet {
-            UserDefaults.standard.set(editUserEmail, forKey: userEmail)
-        }
-    }
-    
     @Published var editUserPhone: String {
         didSet {
             UserDefaults.standard.set(editUserPhone, forKey: userPhone)
@@ -40,15 +34,34 @@ class UserDataViewModel: ObservableObject {
         }
     }
     
+    @Published var editDeliveryDate: Date {
+        didSet {
+            UserDefaults.standard.set(editDeliveryDate, forKey: deliveryDate)
+        }
+    }
+    
+    @Published var editEventDate: Date {
+        didSet {
+            UserDefaults.standard.set(editEventDate, forKey: eventDate)
+        }
+    }
+    
     init() {
-        self.editUserName = UserDefaults.standard.object(forKey: userName) as? String ?? "Введите ваше имя"
-        self.editUserSurname = UserDefaults.standard.object(forKey: userSurname) as? String ?? "Введите вашу фамилию"
-        self.editUserPhone = UserDefaults.standard.object(forKey: userPhone) as? String ?? "Введите ваш номер телефона"
-        self.editUserEmail = UserDefaults.standard.object(forKey: userEmail) as? String ?? "Введите ваш Email"
-        self.editUserAdress = UserDefaults.standard.object(forKey: userAdress) as? String ?? "Введите ваш Email"
+        self.editUserName = UserDefaults.standard.object(forKey: userName) as? String ?? ""
+        self.editUserSurname = UserDefaults.standard.object(forKey: userSurname) as? String ?? ""
+        self.editUserPhone = UserDefaults.standard.object(forKey: userPhone) as? String ?? ""
+        self.editUserAdress = UserDefaults.standard.object(forKey: userAdress) as? String ?? ""
+        self.editDeliveryDate = UserDefaults.standard.object(forKey: deliveryDate) as? Date ?? Date()
+        self.editEventDate = UserDefaults.standard.object(forKey: eventDate) as? Date ?? Date()
         
         print("currently logged save data \(editUserName), \(editUserSurname)") //текущий пользователь
-        print("current user contacts \(editUserPhone), \(editUserEmail), \(editUserAdress)") //текущие данные доставки
-        
+        print("current user contacts \(editUserPhone), \(editUserAdress)") //текущие данные доставки
+        print("current user delivery date \(editDeliveryDate), event date \(editEventDate)") //текущие данные доставки
+    }
+    
+    func isPhoneNumberValid(_ phoneNumber: String) -> Bool {
+        let phoneRegex = #"^\+7 \d{3} \d{3}-\d{2}-\d{2}$"#
+        let predicate = NSPredicate(format:"SELF MATCHES %@", phoneRegex)
+        return predicate.evaluate(with: phoneNumber)
     }
 }

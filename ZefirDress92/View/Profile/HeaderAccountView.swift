@@ -16,7 +16,6 @@ struct HeaderAccountView: View {
             Text(userDataVM.editUserAdress)
             Text(userDataVM.editUserSurname)
             Text(userDataVM.editUserPhone)
-            Text(userDataVM.editUserEmail)
             Text(userDataVM.editUserAdress)
     
             Button{
@@ -27,7 +26,7 @@ struct HeaderAccountView: View {
                     .padding(10)
             }
             .sheet(isPresented: $goToProfile) {
-                ProfileView(editUserName: $userDataVM.editUserName, editUserSurname: $userDataVM.editUserSurname, editUserPhone: $userDataVM.editUserPhone, editUserEmail: $userDataVM.editUserEmail, editUserAdress: $userDataVM.editUserAdress)
+                ProfileView()
             }
         }
     }
