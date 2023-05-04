@@ -47,16 +47,25 @@ class UserDataViewModel: ObservableObject {
     }
     
     init() {
-        self.editUserName = UserDefaults.standard.object(forKey: userName) as? String ?? ""
-        self.editUserSurname = UserDefaults.standard.object(forKey: userSurname) as? String ?? ""
-        self.editUserPhone = UserDefaults.standard.object(forKey: userPhone) as? String ?? ""
-        self.editUserAdress = UserDefaults.standard.object(forKey: userAdress) as? String ?? ""
+        self.editUserName = UserDefaults.standard.string(forKey: userName) ?? ""
+        self.editUserSurname = UserDefaults.standard.string(forKey: userSurname) ?? ""
+        self.editUserPhone = UserDefaults.standard.string(forKey: userPhone)  ?? ""
+        self.editUserAdress = UserDefaults.standard.string(forKey: userAdress)  ?? ""
         self.editDeliveryDate = UserDefaults.standard.object(forKey: deliveryDate) as? Date ?? Date()
         self.editEventDate = UserDefaults.standard.object(forKey: eventDate) as? Date ?? Date()
         
         print("currently logged save data \(editUserName), \(editUserSurname)") //текущий пользователь
         print("current user contacts \(editUserPhone), \(editUserAdress)") //текущие данные доставки
         print("current user delivery date \(editDeliveryDate), event date \(editEventDate)") //текущие данные доставки
+    }
+    
+    func updateUserData() {
+        editUserName = UserDefaults.standard.string(forKey: userName) ?? ""
+        editUserSurname = UserDefaults.standard.string(forKey: userSurname) ?? ""
+        editUserPhone = UserDefaults.standard.string(forKey: userPhone) ?? ""
+        editUserAdress = UserDefaults.standard.string(forKey: userAdress) ?? ""
+        editDeliveryDate = UserDefaults.standard.object(forKey: deliveryDate) as? Date ?? Date()
+        editEventDate = UserDefaults.standard.object(forKey: eventDate) as? Date ?? Date()
     }
     
     func isPhoneNumberValid(_ phoneNumber: String) -> Bool {
