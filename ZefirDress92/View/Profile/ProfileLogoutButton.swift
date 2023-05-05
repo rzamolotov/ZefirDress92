@@ -21,13 +21,12 @@ struct ProfileLogoutButton: View {
             userDataVM.editUserAdress = ""
         }) {
             Text("Выйти")
-                .font(.headline)
-                .foregroundColor(.white)
+                .font(.custom(mediumFont, size: fontSizeMedium))
+                .foregroundColor(colorBege)
                 .padding()
                 .frame(width: screen.width / 3, height: screen.height / 19)
-                .background(Color.pink)
-                .opacity(0.7)
-                .cornerRadius(15.0)
+                .background(colorBrightPink)
+                .cornerRadius(20)
         }
         .alert(isPresented: $showAlert){
             Alert(

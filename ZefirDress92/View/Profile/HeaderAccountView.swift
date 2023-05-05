@@ -8,21 +8,26 @@
 import SwiftUI
 
 struct HeaderAccountView: View {
-    @ObservedObject var userDataVM = UserDataViewModel()
+    @StateObject var userDataVM = UserDataViewModel()
     @State var goToProfile: Bool = false
     
     var body: some View {
         VStack(spacing: 5){
-            Text(userDataVM.editUserAdress)
-            Text(userDataVM.editUserSurname)
-            Text(userDataVM.editUserPhone)
-            Text(userDataVM.editUserAdress)
+                Text("Данные о пользователе")
+                .font(.custom(mediumFont, size: fontSizeMedium))
+            VStack {
+                Text(userDataVM.editUserName)
+                Text(userDataVM.editUserSurname)
+                Text(userDataVM.editUserPhone)
+                Text(userDataVM.editUserAdress)
+            }
+            .font(.custom(lightFont, size: fontSizeMedium))
     
             Button{
                 goToProfile.toggle()
             } label: {
                 Text("Редактировать")
-                    .font(.caption)
+                    .font(.custom(mediumFont, size: fontSizeMedium))
                     .padding(10)
             }
             .sheet(isPresented: $goToProfile) {
@@ -37,6 +42,5 @@ struct HeaderAccountView: View {
 struct HeaderAccountView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderAccountView()
-            .environmentObject(UserDataViewModel())
     }
 }

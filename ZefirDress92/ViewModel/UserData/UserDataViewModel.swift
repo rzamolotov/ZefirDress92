@@ -13,27 +13,25 @@ class UserDataViewModel: ObservableObject {
     @Published var editUserName: String {
         didSet {
             UserDefaults.standard.set(editUserName, forKey: userName)
+            objectWillChange.send()
+            print("проверка сохранения\(String(describing: UserDefaults.standard.string(forKey: userName)))")
         }
     }
-    
     @Published var editUserSurname: String {
         didSet {
             UserDefaults.standard.set(editUserSurname, forKey: userSurname)
         }
     }
-    
     @Published var editUserPhone: String {
         didSet {
             UserDefaults.standard.set(editUserPhone, forKey: userPhone)
         }
     }
-    
     @Published var editUserAdress: String {
         didSet {
             UserDefaults.standard.set(editUserAdress, forKey: userAdress)
         }
     }
-    
     @Published var editDeliveryDate: Date {
         didSet {
             UserDefaults.standard.set(editDeliveryDate, forKey: deliveryDate)
@@ -57,15 +55,6 @@ class UserDataViewModel: ObservableObject {
         print("currently logged save data \(editUserName), \(editUserSurname)") //текущий пользователь
         print("current user contacts \(editUserPhone), \(editUserAdress)") //текущие данные доставки
         print("current user delivery date \(editDeliveryDate), event date \(editEventDate)") //текущие данные доставки
-    }
-    
-    func updateUserData() {
-        editUserName = UserDefaults.standard.string(forKey: userName) ?? ""
-        editUserSurname = UserDefaults.standard.string(forKey: userSurname) ?? ""
-        editUserPhone = UserDefaults.standard.string(forKey: userPhone) ?? ""
-        editUserAdress = UserDefaults.standard.string(forKey: userAdress) ?? ""
-        editDeliveryDate = UserDefaults.standard.object(forKey: deliveryDate) as? Date ?? Date()
-        editEventDate = UserDefaults.standard.object(forKey: eventDate) as? Date ?? Date()
     }
     
     func isPhoneNumberValid(_ phoneNumber: String) -> Bool {

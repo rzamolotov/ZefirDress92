@@ -67,6 +67,8 @@
 		7682EBCD29C112840073142B /* AccountSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682EBCC29C112840073142B /* AccountSheet.swift */; };
 		7682EBCF29C112CF0073142B /* ProfileVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682EBCE29C112CF0073142B /* ProfileVIew.swift */; };
 		769DD15D2A02EE2E00921E04 /* ProfileLogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769DD15C2A02EE2E00921E04 /* ProfileLogoutButton.swift */; };
+		769DD15F2A04EAA100921E04 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769DD15E2A04EAA100921E04 /* ContactsView.swift */; };
+		769DD1612A04EAC900921E04 /* WorkConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769DD1602A04EAC900921E04 /* WorkConditionsView.swift */; };
 		76A57ADA29D75D3000F428AB /* ZefirDress92Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AD929D75D3000F428AB /* ZefirDress92Tests.swift */; };
 		76A57AE329D75E5600F428AB /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE229D75E5600F428AB /* ProductTests.swift */; };
 		76A57AE429D8527200F428AB /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A57AE029D75D6B00F428AB /* TestData.swift */; };
@@ -159,6 +161,8 @@
 		7682EBCC29C112840073142B /* AccountSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSheet.swift; sourceTree = "<group>"; };
 		7682EBCE29C112CF0073142B /* ProfileVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVIew.swift; sourceTree = "<group>"; };
 		769DD15C2A02EE2E00921E04 /* ProfileLogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLogoutButton.swift; sourceTree = "<group>"; };
+		769DD15E2A04EAA100921E04 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		769DD1602A04EAC900921E04 /* WorkConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkConditionsView.swift; sourceTree = "<group>"; };
 		76A57AD729D75D3000F428AB /* ZefirDress92Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZefirDress92Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A57AD929D75D3000F428AB /* ZefirDress92Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZefirDress92Tests.swift; sourceTree = "<group>"; };
 		76A57AE029D75D6B00F428AB /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
@@ -349,6 +353,8 @@
 				76DEE5DF29EA917700B252D1 /* AboutUsView.swift */,
 				76DEE5E529EAA7D700B252D1 /* HeaderAccountView.swift */,
 				769DD15C2A02EE2E00921E04 /* ProfileLogoutButton.swift */,
+				769DD15E2A04EAA100921E04 /* ContactsView.swift */,
+				769DD1602A04EAC900921E04 /* WorkConditionsView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -633,10 +639,12 @@
 				7682EBCF29C112CF0073142B /* ProfileVIew.swift in Sources */,
 				765F581829D4790000042727 /* SizesRow.swift in Sources */,
 				76ED0C3F2A025EB300864FCD /* ItemShareButton.swift in Sources */,
+				769DD15F2A04EAA100921E04 /* ContactsView.swift in Sources */,
 				76EAFFB429AD4DEB001799EB /* ItemDescriptionView.swift in Sources */,
 				76EAFFA329AB860C001799EB /* ItemDetailView.swift in Sources */,
 				765F581429D466B500042727 /* Network.swift in Sources */,
 				764B9C3729D5D7270077B1A4 /* FavoriteTitleTextView.swift in Sources */,
+				769DD1612A04EAC900921E04 /* WorkConditionsView.swift in Sources */,
 				7654713F29E4546F00C7BEC0 /* SendOrderButton.swift in Sources */,
 				76EAFF8329AB3ACC001799EB /* MainView.swift in Sources */,
 				766F0EE329E5E501006D74DF /* TabBottomView.swift in Sources */,

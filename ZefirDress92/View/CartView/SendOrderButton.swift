@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftSMTP
 
 struct SendOrderButton: View {
-    @ObservedObject var userDataVM = UserDataViewModel()
+    @StateObject var userDataVM = UserDataViewModel()
     @ObservedObject var orderVM: OrderViewModel
     
     @Environment(\.managedObjectContext) private var viewContext
