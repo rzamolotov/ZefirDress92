@@ -9,16 +9,22 @@ import SwiftUI
 import Kingfisher
 
 struct FavoriteImageView: View {
+    
     var favorite: AddToFavorites
     
     var body: some View {
-        KFImage(URL(string: (favorite.imageLink as? String ?? "https://i.ibb.co/236Vysn/2022-02-05-12-07-19.jpg")))
+        
+        let imageLinkArray = favorite.imageLink as? Array<String> ?? []
+        KFImage(URL(string: imageLinkArray[0]))
             .placeholder({ progress in
                 ProgressView()
             })
             .resizable()
-            .frame(width: screen.width / 1.1 / 3, height: screen.height / 5)
-            .aspectRatio(contentMode: .fit)
+            .aspectRatio(contentMode: .fill)
+            .frame(width: screen.width / 2.5, height: screen.height / 4)
+            .cornerRadius(10)
+            .shadow(radius: 1)
+            
     }
 }
 

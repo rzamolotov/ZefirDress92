@@ -17,8 +17,14 @@ struct CartProductInfo: View {
             
             VStack(alignment: .leading) {
                 Text(order.title ?? "Красивое платье")
-                    .font(.custom(boldFont, size: fontSizeSmall))
+                    .font(.custom(boldFont, size: fontSizeMedium))
                     .foregroundColor(colorFont)
+                    .padding(.top)
+                Spacer()
+                Text("аренда от **\(order.price_photo)** руб.")
+                    .foregroundColor(colorFont)
+                    .font(.custom(lightFont, size: fontSizeMedium))
+                    .padding(.bottom)
             }
         }
     }

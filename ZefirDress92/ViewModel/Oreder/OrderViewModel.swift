@@ -11,7 +11,7 @@ import SwiftUI
 
 class OrderViewModel: ObservableObject {
     
-    var userDataVM = UserDataViewModel()
+    @ObservedObject var userDataVM: UserDataViewModel
     @Published var showToManyItemsAllert: Bool
     
     init(userDataVM: UserDataViewModel) {
@@ -23,7 +23,7 @@ class OrderViewModel: ObservableObject {
         let smtp = SMTP(
             hostname: "smtp.yandex.com",             // SMTP server address
             email: "zefirdress@yandex.ru",           // username to login
-            password: "zaxs12CD"                     // password to login
+            password: "09125757makren"                     // password to login
         )
         
         let zefirDress92 = Mail.User(name: "Юлия Замолотова", email: "zefirdress@yandex.ru")
@@ -39,6 +39,7 @@ class OrderViewModel: ObservableObject {
             smtp.send(mail) { (error) in
                 if let error = error {
                     print(error)
+                    //TODO: Сделать Алерт в котором будет говориться, что произошла ошибка отправки заказа, пожуйста свяжитесь с нами по телефону
                 }
             }
         }

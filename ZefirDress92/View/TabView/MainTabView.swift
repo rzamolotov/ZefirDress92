@@ -51,7 +51,7 @@ struct MainTabView: View {
             case .search:
                 SearchView(products: productProvider.products)
             case .favorite:
-                FavoritesGridView(presentAlert: addToCartAllert, isSet: addToFavorite)
+                FavoritesGridView()
             case .cart:
                 CartView(orderVM: OrderViewModel(userDataVM: userDataVM))
             case .peron:

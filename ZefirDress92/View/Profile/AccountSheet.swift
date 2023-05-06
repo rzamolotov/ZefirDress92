@@ -18,29 +18,29 @@ struct AccountSheet: View {
                     NavigationLink("Данные для доставки") {
                         ProfileView()
                     }
-                    .foregroundColor(colorBrightPink)
-                    .font(.custom(boldFont, size: fontSizeLarge))
+                    .foregroundColor(colorFont)
+                    .font(.custom(mediumFont, size: fontSizeLarge))
                     .padding(.bottom)
                     
                     NavigationLink("О нас") {
                         AboutUsView()
                     }
-                    .foregroundColor(colorBrightPink)
-                    .font(.custom(boldFont, size: fontSizeLarge))
+                    .foregroundColor(colorFont)
+                    .font(.custom(mediumFont, size: fontSizeLarge))
                     .padding(.bottom)
                     
                     NavigationLink("Условия работы") {
                         WorkConditionsView()
                     }
-                    .foregroundColor(colorBrightPink)
-                    .font(.custom(boldFont, size: fontSizeLarge))
+                    .foregroundColor(colorFont)
+                    .font(.custom(mediumFont, size: fontSizeLarge))
                     .padding(.bottom)
                     
                     NavigationLink("Контакты") {
                         ContactsView()
                     }
-                    .foregroundColor(colorBrightPink)
-                    .font(.custom(boldFont, size: fontSizeLarge))
+                    .foregroundColor(colorFont)
+                    .font(.custom(mediumFont, size: fontSizeLarge))
                 }
                 .multilineTextAlignment(.leading)
                 

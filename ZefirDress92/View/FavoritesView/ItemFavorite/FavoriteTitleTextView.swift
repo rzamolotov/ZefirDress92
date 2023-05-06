@@ -7,10 +7,9 @@
 
 import SwiftUI
 
+
 struct FavoriteTitleTextView: View {
     
-    @Binding var isSet: Bool
-    @Binding var presentAlert: Bool
     var favorite: AddToFavorites
     
     var body: some View {
@@ -18,60 +17,33 @@ struct FavoriteTitleTextView: View {
             VStack(alignment: .leading) {
                 HStack{
                     Text(favorite.title ?? "Платье Оливия")
-                        .font(Font.custom(mediumFont, size: 10))
+                        .font(.custom(boldFont, size: fontSizeMedium))
                         .foregroundColor(colorFont)
                 }
-                .padding(.bottom, 30)
-                .padding(.top, 10)
-                .padding(.leading, 10)
-                Text("\(favorite.category ?? "Вечернее платье" as NSObject)")
-                    .font(Font.custom(mediumFont, size: 10))
-                    .foregroundColor(colorFont)
-                    .fontWeight(.medium)
-                    .padding(.top, 10)
-                    .padding(.leading, 10)
+                .padding(.top)
+                
                 Spacer()
                 HStack{
                     VStack(alignment: .leading){
                         Text("Доступные размеры:")
-                            .font(Font.custom(mediumFont, size: 10))
+                            .font(.custom(boldFont, size: fontSizeMedium))
                             .foregroundColor(colorFont)
                             .fontWeight(.light)
                         HStack(spacing: 5) {
                             if favorite.size != nil {
                                 ForEach(Array(favorite.size as? [String] ?? ["без размера"]), id: \.self) { size in
-                                    ZStack{
-                                        Rectangle()
-                                            .frame(width: screen.width / 17, height: screen.width / 17, alignment: .center)
-                                            .foregroundColor(.white)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 10)
-                                                    .stroke(colorPink, lineWidth: 3)
-                                            )
-                                            .cornerRadius(10)
-                                        Text(size)
-                                            .font(Font.custom(boldFont, size: 10))
-                                            .foregroundColor(colorPink)
-                                    }
+                                    Text(size)
+                                        .font(.custom(boldFont, size: fontSizeMedium))
+                                        .foregroundColor(colorBrightPink)
+                                        .frame(width: screen.height / 22, height: screen.height / 22, alignment: .center)
+                                        .background(RoundedRectangle(cornerRadius: 5).stroke(colorBrightPink, lineWidth:1))
                                 }
                             }
                         }
                     }//: Size
-                    .padding(.bottom, 10)
-                    .padding(.leading, 10)
+                    .padding(.bottom)
                 }
             } //:Vstack name/sizes
-            Spacer()
-            VStack(alignment: .trailing) {
-                FavoriteAddToCartItem(favorite: favorite, presentAlert: $isSet)
-                    .padding(.top, 10)
-                    .padding(.bottom, 30)
-                    .padding(.trailing, 20)
-                Spacer()
-                FavoriteAddToFavoriteItem(isSet: $isSet, favorite: favorite)
-                    .padding(.bottom, 10)
-                    .padding(.trailing, 20)
-            } //: VStach favorite button/cart button
         }
         .frame(width: screen.width / 1.1 / 3 * 2, height: screen.height / 5)
     }
@@ -81,6 +53,6 @@ struct FavoriteTitleTextView: View {
 struct FavoriteTitleTextView_Previews: PreviewProvider {
     static var favorite = AddToFavorites()
     static var previews: some View {
-        FavoriteTitleTextView(isSet: .constant(false), presentAlert: .constant(false), favorite: favorite)
+        FavoriteTitleTextView(favorite: favorite)
     }
 }

@@ -20,17 +20,17 @@ struct ProfileLogoutButton: View {
             userDataVM.editUserPhone = ""
             userDataVM.editUserAdress = ""
         }) {
-            Text("Выйти")
-                .font(.custom(mediumFont, size: fontSizeMedium))
+            Text("Удалить персональные данные")
+                .font(.custom(mediumFont, size: fontSizeSmall))
                 .foregroundColor(colorBege)
                 .padding()
-                .frame(width: screen.width / 3, height: screen.height / 19)
+                .frame(width: screen.width / 1.4, height: screen.height / 19)
                 .background(colorBrightPink)
                 .cornerRadius(20)
         }
         .alert(isPresented: $showAlert){
             Alert(
-                title: Text("Вы уверены, что хотите выйти?"),
+                title: Text("Вы уверены, что хотите удалить персональные данные?"),
                 primaryButton: .destructive((Text("Да"))) {
                     withAnimation(){
                         viewRouter.currentPage = .login

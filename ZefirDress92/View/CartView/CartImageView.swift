@@ -18,9 +18,10 @@ struct CartImageView: View {
                     ProgressView()
                 })
                 .resizable()
-                .scaledToFill()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: screen.width / 3, height: screen.height / 6)
                 .cornerRadius(10)
-                .frame(width: screen.width / 5, height: screen.height / 12)
+                .shadow(radius: 1)
     }
 }
 

@@ -22,7 +22,7 @@ struct EmptyPlaceholder: View {
                 .foregroundColor(colorBrightPink)
                 .padding(.bottom)
                 .font(.custom(boldFont, size: fontSizeLarge))
-            Text("Тут пока ничего нет, но скоро будут платья понравившиеся тебе платья")
+            Text("Тут пока ничего нет")
                 .foregroundColor(colorBrightPink)
                 .font(.custom(mediumFont, size: fontSizeMedium))
                 .padding([.leading, .trailing])
