@@ -52,7 +52,6 @@ struct ItemDescriptionView: View {
         }
         .padding(.bottom, 20)
         .padding([.leading, .trailing])
-        .frame(width: screen.width, height: screen.height / 2)
     }
     
 }

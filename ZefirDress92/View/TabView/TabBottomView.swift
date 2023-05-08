@@ -46,9 +46,9 @@ struct TabBottomView: View {
 struct TabBottomView_Preview: PreviewProvider {
     
     static var tabItemsData = [
-        TabItemData(image: "house", selectedImage: "house.fill", title: "Все платья"),
-        TabItemData(image: "heart", selectedImage: "heart.fill", title: "Избранное"),
-        TabItemData(image: "cart", selectedImage: "cart.fill", title: "Корзина")
+        TabItemData(image: "house", selectedImage: "house.fill", title: "Все платья", isCart: false),
+        TabItemData(image: "heart", selectedImage: "heart.fill", title: "Избранное", isCart: false),
+        TabItemData(image: "cart", selectedImage: "cart.fill", title: "Корзина", isCart: true)
     ]
     static var previews: some View {
         TabBottomView(tabbarItems: tabItemsData, selectedIndex: .constant(2))

@@ -11,4 +11,5 @@ struct TabItemData {
     let image: String
     let selectedImage: String
     let title: String
+    let isCart: Bool 
 }
