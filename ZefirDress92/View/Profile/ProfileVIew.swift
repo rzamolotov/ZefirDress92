@@ -159,6 +159,14 @@ struct ProfileView: View {
                     
                 }
             }
+            .gesture(
+                DragGesture()
+                    .onEnded { value in
+                        if value.translation.width > 0 {
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                    }
+            )
         .navigationBarHidden(true)
             Spacer()
         }

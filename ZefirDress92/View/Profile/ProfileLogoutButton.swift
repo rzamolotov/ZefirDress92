@@ -11,6 +11,7 @@ struct ProfileLogoutButton: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @ObservedObject var userDataVM = UserDataViewModel()
     @State private var showAlert: Bool = false
+    @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
         Button(action: {
@@ -39,6 +40,14 @@ struct ProfileLogoutButton: View {
                 secondaryButton: .cancel(Text("Нет"))
             )
         }
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    if value.translation.width > 0 {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
+        )
         .navigationBarHidden(true)
     }
 }

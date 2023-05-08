@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct WorkConditionsView: View {
+    @Environment(\.presentationMode) private var presentationMode
+    
     var body: some View {
         VStack() {
            ItemBackButton()
@@ -53,6 +55,14 @@ struct WorkConditionsView: View {
             }
             .padding([.leading, .trailing])
         }
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    if value.translation.width > 0 {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
+        )
         .navigationBarHidden(true)
     }
 }

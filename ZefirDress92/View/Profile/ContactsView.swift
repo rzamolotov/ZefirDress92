@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContactsView: View {
+    @Environment(\.presentationMode) private var presentationMode
+    
     var body: some View {
         VStack{
             ItemBackButton()
@@ -72,7 +74,16 @@ struct ContactsView: View {
                 .padding(.bottom)
             }
             Spacer()
+             
         }
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    if value.translation.width > 0 {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
+        )
         .navigationBarHidden(true)
     }
 }
