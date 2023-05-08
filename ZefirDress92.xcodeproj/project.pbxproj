@@ -14,6 +14,7 @@
 		76301F182A0160EE00A0E7DF /* CartImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76301F172A0160EE00A0E7DF /* CartImageView.swift */; };
 		76301F1A2A01630900A0E7DF /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76301F192A01630900A0E7DF /* OrderViewModel.swift */; };
 		76301F1D2A01950D00A0E7DF /* EmptyPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76301F1C2A01950D00A0E7DF /* EmptyPlaceholder.swift */; };
+		763ABA6B2A08F26700DD0C4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763ABA6A2A08F26700DD0C4E /* LaunchScreen.storyboard */; };
 		763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */; };
 		763BF69C29F11651008BBA80 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 763BF69B29F11651008BBA80 /* Kingfisher */; };
 		7642E02229D5DACC00A37D01 /* FavoriteAddToCartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */; };
@@ -107,6 +108,7 @@
 		76301F172A0160EE00A0E7DF /* CartImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartImageView.swift; sourceTree = "<group>"; };
 		76301F192A01630900A0E7DF /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		76301F1C2A01950D00A0E7DF /* EmptyPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPlaceholder.swift; sourceTree = "<group>"; };
+		763ABA6A2A08F26700DD0C4E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		763B1FA429BDF7C80027C3E3 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		7642E02129D5DACC00A37D01 /* FavoriteAddToCartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddToCartItem.swift; sourceTree = "<group>"; };
 		7642E02329D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddToFavoriteItem.swift; sourceTree = "<group>"; };
@@ -443,6 +445,7 @@
 				7644A7F829C0319700B1E788 /* FavoritesView */,
 				765F214129BCA17E0052A95B /* Login */,
 				76301F1C2A01950D00A0E7DF /* EmptyPlaceholder.swift */,
+				763ABA6A2A08F26700DD0C4E /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				7660967C29EEE24600514C45 /* Montserrat-ExtraBold.ttf in Resources */,
 				7660968329EEE24600514C45 /* Montserrat-ExtraLight.ttf in Resources */,
 				7660968529EEE24600514C45 /* Montserrat-MediumItalic.ttf in Resources */,
+				763ABA6B2A08F26700DD0C4E /* LaunchScreen.storyboard in Resources */,
 				7660968229EEE24600514C45 /* Montserrat-Regular.ttf in Resources */,
 				7660968029EEE24600514C45 /* Montserrat-Thin.ttf in Resources */,
 				76EAFF8829AB3ACE001799EB /* Preview Assets.xcassets in Resources */,
@@ -845,6 +849,7 @@
 				INFOPLIST_FILE = ZefirDress92/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -878,6 +883,7 @@
 				INFOPLIST_FILE = ZefirDress92/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
