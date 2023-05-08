@@ -39,7 +39,7 @@ struct ProfileLogoutButton: View {
                 secondaryButton: .cancel(Text("Нет"))
             )
         }
-        
+        .navigationBarHidden(true)
     }
 }
 

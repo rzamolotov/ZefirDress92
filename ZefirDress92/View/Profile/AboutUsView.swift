@@ -10,7 +10,8 @@ import SwiftUI
 struct AboutUsView: View {
     var body: some View {
         VStack{
-        HeaderViewHomeScreen()
+            ItemBackButton()
+                .padding([.top, .leading, .trailing])
         ScrollView {
             Image("Olivia")
                 .resizable()
@@ -94,6 +95,7 @@ struct AboutUsView: View {
 
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

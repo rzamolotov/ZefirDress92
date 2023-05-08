@@ -19,6 +19,15 @@ struct FavoritesGridView: View {
     var body: some View {
         NavigationView{
             VStack {
+                HeaderViewHomeScreen()
+                    .padding([.leading, .trailing, .top])
+                HStack{
+                    Text("Избранные платья")
+                        .font(.custom(boldFont, size: fontSizeMedium))
+                }
+                if favorites.count == 0 {
+                    EmptyPlaceholder()
+                }
                 ScrollView {
                     ForEach(favorites) { favorite in
                         NavigationLink {
@@ -41,10 +50,7 @@ struct FavoritesGridView: View {
                     }
                    
                 }
-                .navigationTitle("Избранное")
-                if favorites.count == 0 {
-                    EmptyPlaceholder()
-                }
+               
             }
         }
     }

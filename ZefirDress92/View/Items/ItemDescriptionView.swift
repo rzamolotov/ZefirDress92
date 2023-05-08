@@ -16,6 +16,9 @@ struct ItemDescriptionView: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text(product.title)
+                .font(.custom(mediumFont, size: fontSizeSmall))
+                .foregroundColor(colorFont)
             VStack(alignment: .leading, spacing: 20) {
                 HStack{
                     Text("Ты можешь отправить ссылку на платье или добавить его в избранное.")
@@ -24,12 +27,12 @@ struct ItemDescriptionView: View {
                     Spacer()
                     FavoriteButtonView(favoriteButtonVM: FavoriteButtonViewModel(viewContext: viewContext, product: product))
                     ItemShareButton(product: product)
-                   
+                    
                 }
                 HStack{
                     ItemSizeCheckView(product: product)
                 }
-             
+                
                 Text(product.description)
                     .font(.custom(regularFont, size: fontSizeMedium))
                     .foregroundColor(colorFont)
@@ -50,9 +53,10 @@ struct ItemDescriptionView: View {
         .padding(.bottom, 20)
         .padding([.leading, .trailing])
         .frame(width: screen.width, height: screen.height / 2)
-        
     }
+    
 }
+
 
 struct ItemDescriptionView_Previews: PreviewProvider {
     static var previews: some View {

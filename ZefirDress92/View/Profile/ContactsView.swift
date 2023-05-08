@@ -10,7 +10,8 @@ import SwiftUI
 struct ContactsView: View {
     var body: some View {
         VStack{
-            HeaderViewHomeScreen()
+            ItemBackButton()
+                .padding([.top, .leading, .trailing])
             Text("Наши контакты")
                 .padding(.top, 20)
                 .font(.custom(boldFont, size: fontSizeLarge))
@@ -72,6 +73,7 @@ struct ContactsView: View {
             }
             Spacer()
         }
+        .navigationBarHidden(true)
     }
 }
 

@@ -20,6 +20,14 @@ struct CartView: View {
     var body: some View {
         NavigationView {
             VStack {
+                HeaderViewHomeScreen()
+                    .padding([.leading, .trailing, .top])
+                HStack{
+                    Text("Забронировать платья на примерку")
+                        .foregroundColor(colorFont)
+                        .font(.custom(boldFont, size: fontSizeMedium))
+                }
+                
                 if orders.count == 0 {
                         EmptyPlaceholder()
                 }
@@ -49,7 +57,7 @@ struct CartView: View {
                 }//:List
                 
                 .listStyle(.inset)
-                .navigationTitle("Бронь на примерку")
+                .navigationBarHidden(true)
                 if orders.count > 0 {
                     SendOrderButton(orderVM: orderVM)
                         .padding(.bottom)
@@ -57,6 +65,7 @@ struct CartView: View {
                 
                 
             } //: VStack
+            
         }
     }
 }

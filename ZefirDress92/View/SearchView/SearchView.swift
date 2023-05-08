@@ -46,9 +46,10 @@ struct SearchView: View {
     }
     
     var body: some View {
-        
         NavigationView {
             VStack {
+                HeaderViewHomeScreen()
+                    .padding([.leading, .trailing, .top])
                 VStack {
                     HStack {
                         Text("Выберете нужный вам размер платья")

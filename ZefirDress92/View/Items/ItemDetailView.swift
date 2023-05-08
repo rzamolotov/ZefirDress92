@@ -10,6 +10,8 @@ import Kingfisher
 
 struct ItemDetailView: View {
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var product: Product
     var id: String
     var title: String
@@ -46,6 +48,10 @@ struct ItemDetailView: View {
     }
     
     var body: some View {
+        HStack{
+            ItemBackButton()
+                .padding([.leading, .trailing, .top])
+        }
         ScrollView {
             VStack(alignment: .center, spacing: 10) {
                 ZStack{
@@ -63,18 +69,24 @@ struct ItemDetailView: View {
                     }
                     .frame(width: screen.width, height: screen.height / 1.5)
                     .tabViewStyle(.page(indexDisplayMode: .always))
-                    
                 }
                 
                 ItemDescriptionView(product: product)
             }
-            
         }
-        .navigationBarTitle(
-            Text(product.title),
-            displayMode: .automatic)
+        .navigationBarBackButtonHidden(true)
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    if value.translation.width > 0 {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
+        )
+        
     }
 }
+
 
 struct ItemDetailView_Previews: PreviewProvider {
     static var previews: some View {

@@ -13,6 +13,7 @@ struct AccountSheet: View {
         NavigationView{
             VStack {
                 HeaderViewHomeScreen()
+                    .padding([.top, .leading, .trailing])
                 Spacer()
                 VStack(alignment: .leading) {
                     NavigationLink("Данные для доставки") {

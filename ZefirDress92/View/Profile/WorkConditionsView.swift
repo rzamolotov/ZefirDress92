@@ -10,7 +10,8 @@ import SwiftUI
 struct WorkConditionsView: View {
     var body: some View {
         VStack() {
-            HeaderViewHomeScreen()
+           ItemBackButton()
+                .padding([.top, .leading, .trailing])
             ScrollView {
                     Text("Условия доставки")
                         .font(.custom(boldFont, size: fontSizeLarge))
@@ -52,6 +53,7 @@ struct WorkConditionsView: View {
             }
             .padding([.leading, .trailing])
         }
+        .navigationBarHidden(true)
     }
 }
 
