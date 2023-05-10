@@ -43,7 +43,7 @@ struct SendOrderButton: View {
                 .background(colorBrightPink)
                 .cornerRadius(10)
         }
-        .alert(isPresented: $orderVM.showToManyItemsAllert, content: {
+        .alert(isPresented: $orderVM.showToManyItemsAlert, content: {
             Alert(
                 title: Text("Превышено количество товаров на доставку"),
                 message: Text("Пожалуйста оставьте в своей корзине не более 10 товаров"),

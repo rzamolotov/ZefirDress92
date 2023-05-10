@@ -17,7 +17,7 @@ struct ProfileView: View {
         case delivery
     }
     @Environment(\.presentationMode) private var presentationMode
-    @ObservedObject var userDataVM = UserDataViewModel()
+    @ObservedObject var userDataVM = UserDataViewModel.shared
     
     @FocusState private var focusedField: Field?
     
@@ -26,7 +26,7 @@ struct ProfileView: View {
             ItemBackButton()
                 .padding([.top, .leading, .trailing])
             Spacer()
-            VStack{
+            ScrollView {
                 Text("Введите ваши даные для доставки")
                     .font(.custom(boldFont, size: fontSizeMedium))
                     .foregroundColor(.gray)
@@ -116,7 +116,7 @@ struct ProfileView: View {
                     HStack{
                         DatePicker("Дата аренды",
                                    selection: $userDataVM.editEventDate,
-                                   in: userDataVM.editDeliveryDate...(Calendar.current.date(byAdding: .day, value: 100, to: Date()) ?? Date()),
+                                   in: Date()...(Calendar.current.date(byAdding: .day, value: 120, to: Date()) ?? Date()),
                                    displayedComponents: .date)
                             .focused($focusedField, equals: .event)
                             .datePickerStyle(.compact)

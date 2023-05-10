@@ -14,6 +14,7 @@ class AddToCartViewModel: ObservableObject {
     private var viewContext: NSManagedObjectContext
     var product: Product
     
+    
     init(viewContext: NSManagedObjectContext, product: Product) {
         self.isAddToCart = false
         self.viewContext = viewContext
@@ -65,5 +66,9 @@ class AddToCartViewModel: ObservableObject {
             // TODO: - сделать алерт с уведомлением об ошибке добавление в корщину
             print(error.localizedDescription)
         }
+    }
+    
+    func addToCartAllertFlag() {
+        
     }
 }

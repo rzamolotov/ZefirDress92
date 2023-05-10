@@ -9,49 +9,43 @@ import Foundation
 import SwiftUI
 
 class UserDataViewModel: ObservableObject {
+    static let shared = UserDataViewModel()
     
-    @Published var editUserName: String {
-        didSet {
-            UserDefaults.standard.set(editUserName, forKey: userName)
-            objectWillChange.send()
-            print("проверка сохранения\(String(describing: UserDefaults.standard.string(forKey: userName)))")
+    @AppStorage(userName) var editUserName: String = ""
+    @AppStorage(userSurname) var editUserSurname: String = ""
+    @AppStorage(userPhone) var editUserPhone: String = ""
+    @AppStorage(userAdress) var editUserAdress: String = ""
+    @AppStorage(deliveryDate) var deliveryDateString: String = ""
+    @AppStorage(eventDate) var eventDateString: String = ""
+    
+    var editDeliveryDate: Date {
+        get {
+            if let date = DateFormatter().date(from: deliveryDateString) {
+                return date
+            } else {
+                return Date()
+            }
         }
-    }
-    @Published var editUserSurname: String {
-        didSet {
-            UserDefaults.standard.set(editUserSurname, forKey: userSurname)
-        }
-    }
-    @Published var editUserPhone: String {
-        didSet {
-            UserDefaults.standard.set(editUserPhone, forKey: userPhone)
-        }
-    }
-    @Published var editUserAdress: String {
-        didSet {
-            UserDefaults.standard.set(editUserAdress, forKey: userAdress)
-        }
-    }
-    @Published var editDeliveryDate: Date {
-        didSet {
-            UserDefaults.standard.set(editDeliveryDate, forKey: deliveryDate)
+        set {
+            deliveryDateString = DateFormatter().string(from: newValue)
         }
     }
     
-    @Published var editEventDate: Date {
-        didSet {
-            UserDefaults.standard.set(editEventDate, forKey: eventDate)
+    var editEventDate: Date {
+        get {
+            if let date = DateFormatter().date(from: eventDateString) {
+                return date
+            } else {
+                return Date()
+            }
+        }
+        set {
+            eventDateString = DateFormatter().string(from: newValue)
         }
     }
+    
     
     init() {
-        self.editUserName = UserDefaults.standard.string(forKey: userName) ?? ""
-        self.editUserSurname = UserDefaults.standard.string(forKey: userSurname) ?? ""
-        self.editUserPhone = UserDefaults.standard.string(forKey: userPhone)  ?? ""
-        self.editUserAdress = UserDefaults.standard.string(forKey: userAdress)  ?? ""
-        self.editDeliveryDate = UserDefaults.standard.object(forKey: deliveryDate) as? Date ?? Date()
-        self.editEventDate = UserDefaults.standard.object(forKey: eventDate) as? Date ?? Date()
-        
         print("currently logged save data \(editUserName), \(editUserSurname)") //текущий пользователь
         print("current user contacts \(editUserPhone), \(editUserAdress)") //текущие данные доставки
         print("current user delivery date \(editDeliveryDate), event date \(editEventDate)") //текущие данные доставки
@@ -63,3 +57,4 @@ class UserDataViewModel: ObservableObject {
         return predicate.evaluate(with: phoneNumber)
     }
 }
+
