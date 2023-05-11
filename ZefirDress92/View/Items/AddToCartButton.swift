@@ -31,6 +31,11 @@ struct AddToCartButton: View {
             .frame(width: screen.width / 1.1, height: screen.height / 12)
             .foregroundColor(colorBrightPink)
             .cornerRadius(10)
+            .alert(isPresented: $addToCartButtonVM.isAddToCart) {
+                Alert(title: Text("Это платье уже добавлено на доставку"),
+                      dismissButton: .cancel(Text("OK"))
+                )
+            }
         })
     }
 }

@@ -60,6 +60,7 @@ class AddToCartViewModel: ObservableObject {
                 print("order saved")
             } else {
                 // TODO: - сделать алерт с уведомлением, что такой заказ уже есть бъект с таким идентификатором уже есть в базе данных, не сохраняем новый объект
+                isAddToCart = true
                 print("order already exists")
             }
         } catch {
