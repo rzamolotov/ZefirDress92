@@ -20,12 +20,14 @@ struct SendOrderButton: View {
     @State var showIncorrectPhoneAllert: Bool = false
     @State var incorrectName: Bool = false
     @State var sendMail: Bool = false
+    @State var failToSendOrder: Bool = false
     
     var body: some View {
         Button(action: {
                 if userDataVM.editUserName == "" {
                     showProfileView = true
-                } else  if userDataVM.editUserPhone == "" { //TODO: сделать проверку валидности номера телефона
+                } else  if userDataVM.editUserPhone == "" {
+                    //TODO: сделать проверку валидности номера телефона
                     showIncorrectPhoneAllert = true
                 } else if orders.count > 10 {
                     orderVM.updateAlertFlag(orders: orders)
@@ -71,6 +73,12 @@ struct SendOrderButton: View {
                 message: Text("Скоро мы с вами свяжемся и уточним детали"),
                 dismissButton: .cancel(Text("Хорошо")))
         }) //Заказ успешно отправлен
+        .alert(isPresented: $orderVM.failToSendOrder, content: {
+            Alert(
+                title: Text("Ошибка отправки заказа"),
+                message: Text("Пожалуйста, попробуйте отправить заказ еще раз или свяжитесь с нами по телефону"),
+                dismissButton: .cancel(Text("Хорошо")))
+        })
         .sheet(isPresented: $showProfileView, content: {
             ProfileView()
         })

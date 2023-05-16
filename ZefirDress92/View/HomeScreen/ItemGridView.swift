@@ -14,6 +14,7 @@ struct ItemGridView: View {
     @State var selection: Set<String> = []
     @State private var error: ProductError?
     @State private var hasError = false
+    @Environment(\.refresh) private var refresh
     
     var body: some View {
         VStack{
@@ -44,16 +45,24 @@ struct ItemGridView: View {
                         
                     }
                 }
-                .refreshable {
-                    await fetchProducts()
-                    print(productProvider.isLoading)
-                }
+                
                 
             }
         }
+        .alert(isPresented: $hasError, content: {
+            Alert(title: Text("Ошибка сети"),
+                  message: Text("Пожалуйста проверьте сетевое подключение и повторите снова"),
+                  primaryButton: .default(Text("Обновить")) {
+                Task {
+                  await fetchProducts()
+                }
+            },
+                  secondaryButton: .destructive(Text("Выйти")))
+        })
         .task {
             await fetchProducts()
         }
+        
     }
 }
 

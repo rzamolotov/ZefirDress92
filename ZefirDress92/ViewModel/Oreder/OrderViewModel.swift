@@ -14,11 +14,13 @@ class OrderViewModel: ObservableObject {
     
     @ObservedObject var userDataVM: UserDataViewModel
     @Published var showToManyItemsAlert: Bool
+    @Published var failToSendOrder: Bool
     let context = PersistenceController.shared.container.viewContext
     
     init(userDataVM: UserDataViewModel) {
         self.userDataVM = userDataVM
         self.showToManyItemsAlert = false
+        self.failToSendOrder = false
     }
     
     func fetchItems(context: NSManagedObjectContext) -> [String] {
@@ -56,6 +58,8 @@ class OrderViewModel: ObservableObject {
             smtp.send(mail) { (error) in
                 if let error = error {
                     print(error)
+                    
+                    self.failToSendOrder = true
                 }
             }
         }

@@ -15,12 +15,6 @@ struct HeaderViewHomeScreen: View {
             Text("-Zefir Dress-")
                 .foregroundColor(colorBrightPink)
                 .font(.custom(boldFont, size: fontSizeLarge))
-//                .offset(logoOffset)
-//                .onAppear {
-//                    withAnimation(.easeInOut(duration: 1)) {
-//                        logoOffset = CGSize(width: 0, height: 0)
-//                    }
-//                }
         }
         .frame(height: 25)
     }

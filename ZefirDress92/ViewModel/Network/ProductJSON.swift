@@ -12,6 +12,7 @@ struct ProductJSON: Decodable {
     private enum ProductsCodingKeys: String, CodingKey {
         case products
     }
+    
     private enum ItemCodingKeys: String, CodingKey {
         case item
     }
