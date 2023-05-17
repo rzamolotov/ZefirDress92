@@ -34,7 +34,7 @@ var gridLayout: [GridItem] {
 }
 
 //User Deafaults
-let userEmail = "USEREMAIL"
+let eventType = "EVENTTYPE"
 let userAdress = "USERADRESS"
 let userName = "USERNAME"
 let userSurname = "USERSURNAME"

@@ -10,18 +10,15 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var productProvider: ProductProvider
- 
+    
     
     var body: some View {
         
-        switch viewRouter.currentPage {
-        case .login:
-            LoginView()
-        case .landing:
-            MainTabView()
-                .transition(.move(edge: .trailing))
-        }
+        
+        MainTabView()
+            .transition(.move(edge: .trailing))
     }
+    
 }
 
 struct MainView_Previews: PreviewProvider {

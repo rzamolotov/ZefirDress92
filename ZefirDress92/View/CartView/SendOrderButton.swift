@@ -15,6 +15,12 @@ struct SendOrderButton: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: DressOrder.entity(), sortDescriptors: [])
     var orders: FetchedResults<DressOrder>
+    @State private var alertType: AlertType = .sendMail
+    
+    enum AlertType {
+        case sendMail, showIncorrectPhoneAllert, incorrectName,  failToSendOrder, toManyItems
+    }
+    @State private var showAlert: Bool = false
     
     @State var showProfileView: Bool = false
     @State var showIncorrectPhoneAllert: Bool = false
@@ -24,17 +30,22 @@ struct SendOrderButton: View {
     
     var body: some View {
         Button(action: {
-                if userDataVM.editUserName == "" {
-                    showProfileView = true
-                } else  if userDataVM.editUserPhone == "" {
-                    //TODO: сделать проверку валидности номера телефона
-                    showIncorrectPhoneAllert = true
-                } else if orders.count > 10 {
-                    orderVM.updateAlertFlag(orders: orders)
-                } else {
-                    orderVM.sendMail()
-                    sendMail = true
-                }
+            if userDataVM.editUserName == "" {
+                alertType = .incorrectName
+                showAlert = true
+            } else if userDataVM.editUserPhone == "" {
+                alertType = .showIncorrectPhoneAllert
+                showAlert = true
+            } else if orders.count > 10 {
+                alertType = .toManyItems
+            } else if orderVM.failToSendOrder == true {
+                alertType = .failToSendOrder
+                showAlert = true
+            } else {
+                orderVM.sendMail()
+                showAlert = true
+                alertType = .sendMail
+            }
             
         }) {
             Text("Забронировать платья на примерку")
@@ -45,39 +56,40 @@ struct SendOrderButton: View {
                 .background(colorBrightPink)
                 .cornerRadius(10)
         }
-        .alert(isPresented: $orderVM.showToManyItemsAlert, content: {
-            Alert(
-                title: Text("Превышено количество товаров на доставку"),
-                message: Text("Пожалуйста оставьте в своей корзине не более 10 товаров"),
-                dismissButton: .cancel(Text("Хорошо")))
-        }) //алерт слишком много товара на доставку
-        .alert(isPresented: $showIncorrectPhoneAllert, content: {
-            Alert(
-                title: Text("Неверный формат номера телефона"),
-                message: Text("Пожалуйста введите корректный номер телефона"),
-                dismissButton: .cancel(Text("Хорошо"), action: {
-                    showProfileView = true
-                }))
-        }) //неправильный формат номера телефона
-        .alert(isPresented: $incorrectName, content: {
-            Alert(
-                title: Text("Нет имени"),
-                message: Text("Пожалуйста введите ваше имя"),
-                dismissButton: .cancel(Text("Хорошо"), action: {
-                    showProfileView = true
-                }))
-        }) // Алерт неправильное имя
-        .alert(isPresented: $sendMail, content: {
-            Alert(
-                title: Text("Заказ успешно отправлен"),
-                message: Text("Скоро мы с вами свяжемся и уточним детали"),
-                dismissButton: .cancel(Text("Хорошо")))
-        }) //Заказ успешно отправлен
-        .alert(isPresented: $orderVM.failToSendOrder, content: {
-            Alert(
-                title: Text("Ошибка отправки заказа"),
-                message: Text("Пожалуйста, попробуйте отправить заказ еще раз или свяжитесь с нами по телефону"),
-                dismissButton: .cancel(Text("Хорошо")))
+        .alert(isPresented: $showAlert, content: {
+            switch alertType {
+            case .sendMail:
+                return Alert(
+                    title: Text("Заказ успешно отправлен"),
+                    message: Text("Скоро мы с вами свяжемся и уточним детали"),
+                    dismissButton: .cancel(Text("Хорошо")))
+            case .toManyItems:
+                return Alert(
+                    title: Text("Превышено количество товаров на доставку"),
+                    message: Text("Пожалуйста оставьте в своей корзине не более 10 товаров"),
+                    dismissButton: .cancel(Text("Хорошо")))
+            case .showIncorrectPhoneAllert:
+                return Alert(
+                    title: Text("Неверный формат номера телефона"),
+                    message: Text("Пожалуйста введите корректный номер телефона"),
+                    dismissButton: .cancel(Text("Хорошо"), action: {
+                        showProfileView = true
+                    }))
+            case .incorrectName:
+                return Alert(
+                    title: Text("Нет имени"),
+                    message: Text("Пожалуйста введите ваше имя"),
+                    dismissButton: .cancel(Text("Хорошо"), action: {
+                        showProfileView = true
+                    }))
+                
+            case .failToSendOrder:
+                return Alert(
+                    title: Text("Ошибка отправки заказа"),
+                    message: Text("Пожалуйста, попробуйте отправить заказ еще раз или свяжитесь с нами по телефону"),
+                    dismissButton: .cancel(Text("Хорошо")))
+                
+            }
         })
         .sheet(isPresented: $showProfileView, content: {
             ProfileView()

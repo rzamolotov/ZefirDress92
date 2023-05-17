@@ -23,17 +23,19 @@ class OrderViewModel: ObservableObject {
         self.failToSendOrder = false
     }
     
-    func fetchItems(context: NSManagedObjectContext) -> [String] {
+    func fetchItems(context: NSManagedObjectContext) -> ([String], [Int64]) {
         let request: NSFetchRequest<DressOrder> = DressOrder.fetchRequest()
         
         do {
             let items = try context.fetch(request)
             let title = items.compactMap { $0.title ?? "название неизвестно" }
-            return title
+            let price = items.compactMap { $0.price_rent }
+            return (title, price)
         } catch {
             print("Error fetching items: \(error.localizedDescription)")
-            return []
+            return ([], [])
         }
+        
     }
     
     func sendMail() {
@@ -51,7 +53,7 @@ class OrderViewModel: ObservableObject {
             from: zefirDress92,
             to: [rzamolotov],
             subject: "Заказ на доставку от клиента \(userDataVM.editUserName) \(userDataVM.editUserSurname)",
-            text: "Имя \(userDataVM.editUserName) \(userDataVM.editUserSurname)\nНомер телефона \(userDataVM.editUserPhone), \nАдрес доставки \(userDataVM.editUserAdress), \nДата примерки \(userDataVM.editDeliveryDate)\nДата мерроприятия \(userDataVM.editEventDate) \n\nСписок платьев на примерку:\n\(orderName)"
+            text: "Имя \(userDataVM.editUserName) \(userDataVM.editUserSurname)\nНомер телефона \(userDataVM.editUserPhone), \nАдрес доставки \(userDataVM.editUserAdress), \nТип мероприятия \(userDataVM.editEventType), \nДата примерки \(userDataVM.editDeliveryDate)\nДата мерроприятия \(userDataVM.editEventDate) \n\nСписок платьев на примерку:\n\(orderName)"
         )
         
         DispatchQueue.global(qos: .background).async {
@@ -64,7 +66,7 @@ class OrderViewModel: ObservableObject {
             }
         }
     }
-
+    
     func updateAlertFlag(orders: FetchedResults<DressOrder>) {
         if orders.count > 10 {
             showToManyItemsAlert = true
@@ -73,4 +75,4 @@ class OrderViewModel: ObservableObject {
         }
     }
 }
-    
+

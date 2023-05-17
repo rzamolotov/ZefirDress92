@@ -27,14 +27,8 @@
 		764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */; };
 		764B9C3729D5D7270077B1A4 /* FavoriteTitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */; };
 		7654713F29E4546F00C7BEC0 /* SendOrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654713E29E4546F00C7BEC0 /* SendOrderButton.swift */; };
-		765F214329BCA19D0052A95B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214229BCA19D0052A95B /* LoginView.swift */; };
 		765F214629BCA2250052A95B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214529BCA2250052A95B /* ViewRouter.swift */; };
 		765F214829BCA2500052A95B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214729BCA2500052A95B /* Helpers.swift */; };
-		765F214A29BCA2CD0052A95B /* BrandLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214929BCA2CD0052A95B /* BrandLogo.swift */; };
-		765F214C29BCA3570052A95B /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214B29BCA3570052A95B /* UserName.swift */; };
-		765F214E29BCA4DB0052A95B /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214D29BCA4DB0052A95B /* Password.swift */; };
-		765F215029BCA5420052A95B /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F214F29BCA5420052A95B /* LoginButton.swift */; };
-		765F215229BCA8860052A95B /* SkipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F215129BCA8860052A95B /* SkipButton.swift */; };
 		765F581429D466B500042727 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F581329D466B500042727 /* Network.swift */; };
 		7660964D29EE709B00514C45 /* SwiftSMTP in Frameworks */ = {isa = PBXBuildFile; productRef = 7660964C29EE709B00514C45 /* SwiftSMTP */; };
 		7660967B29EEE24200514C45 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7660967929EEE14D00514C45 /* Montserrat-Black.ttf */; };
@@ -120,14 +114,8 @@
 		764B9C3429D5D6660077B1A4 /* FavoriteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImageView.swift; sourceTree = "<group>"; };
 		764B9C3629D5D7270077B1A4 /* FavoriteTitleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTitleTextView.swift; sourceTree = "<group>"; };
 		7654713E29E4546F00C7BEC0 /* SendOrderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendOrderButton.swift; sourceTree = "<group>"; };
-		765F214229BCA19D0052A95B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		765F214529BCA2250052A95B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		765F214729BCA2500052A95B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		765F214929BCA2CD0052A95B /* BrandLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandLogo.swift; sourceTree = "<group>"; };
-		765F214B29BCA3570052A95B /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
-		765F214D29BCA4DB0052A95B /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
-		765F214F29BCA5420052A95B /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
-		765F215129BCA8860052A95B /* SkipButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipButton.swift; sourceTree = "<group>"; };
 		765F581329D466B500042727 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		765F581529D4687400042727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7660967029EEE14D00514C45 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
@@ -277,19 +265,6 @@
 				7642E02329D5DAF500A37D01 /* FavoriteAddToFavoriteItem.swift */,
 			);
 			path = ItemFavorite;
-			sourceTree = "<group>";
-		};
-		765F214129BCA17E0052A95B /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				765F214229BCA19D0052A95B /* LoginView.swift */,
-				765F214929BCA2CD0052A95B /* BrandLogo.swift */,
-				765F214B29BCA3570052A95B /* UserName.swift */,
-				765F214D29BCA4DB0052A95B /* Password.swift */,
-				765F214F29BCA5420052A95B /* LoginButton.swift */,
-				765F215129BCA8860052A95B /* SkipButton.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		7660964E29EEDEE400514C45 /* Font */ = {
@@ -443,7 +418,6 @@
 				76EAFF9C29AB7DF0001799EB /* CartView */,
 				7678587829C1943600A0A709 /* Profile */,
 				7644A7F829C0319700B1E788 /* FavoritesView */,
-				765F214129BCA17E0052A95B /* Login */,
 				76301F1C2A01950D00A0E7DF /* EmptyPlaceholder.swift */,
 				763ABA6A2A08F26700DD0C4E /* LaunchScreen.storyboard */,
 			);
@@ -620,18 +594,15 @@
 				7654713F29E4546F00C7BEC0 /* SendOrderButton.swift in Sources */,
 				76EAFF8329AB3ACC001799EB /* MainView.swift in Sources */,
 				766F0EE329E5E501006D74DF /* TabBottomView.swift in Sources */,
-				765F214E29BCA4DB0052A95B /* Password.swift in Sources */,
 				76EAFFB229AD48C1001799EB /* AddToCartButton.swift in Sources */,
 				76EAFFB029ACA369001799EB /* CartView.swift in Sources */,
 				763B1FA529BDF7C80027C3E3 /* FavoriteButtonView.swift in Sources */,
 				76301F0F29FFA0B200A0E7DF /* UserDataViewModel.swift in Sources */,
 				76301F162A013C9F00A0E7DF /* AddToCartViewModel.swift in Sources */,
-				765F215229BCA8860052A95B /* SkipButton.swift in Sources */,
 				76A57AE429D8527200F428AB /* TestData.swift in Sources */,
 				76964F6C2A08B6A000B9C959 /* ItemBackButton.swift in Sources */,
 				76EAFF9629AB7AC2001799EB /* Constant.swift in Sources */,
 				764B9C3529D5D6660077B1A4 /* FavoriteImageView.swift in Sources */,
-				765F214A29BCA2CD0052A95B /* BrandLogo.swift in Sources */,
 				76301F182A0160EE00A0E7DF /* CartImageView.swift in Sources */,
 				76DEE5E029EA917700B252D1 /* AboutUsView.swift in Sources */,
 				7642E02B29D6D11400A37D01 /* HTTPDataDownloader.swift in Sources */,
@@ -656,7 +627,6 @@
 				766F0EE529E5E86D006D74DF /* CustomTabView.swift in Sources */,
 				7660969129EFCC4C00514C45 /* TitleBestItems.swift in Sources */,
 				7660968929EFC41400514C45 /* ItemView.swift in Sources */,
-				765F214C29BCA3570052A95B /* UserName.swift in Sources */,
 				7642E03129D6D3E400A37D01 /* ProductProvider.swift in Sources */,
 				766F0EDA29E5AB74006D74DF /* HeaderViewHomeScreen.swift in Sources */,
 				7642E02D29D6D14600A37D01 /* ProductError.swift in Sources */,
@@ -664,8 +634,6 @@
 				7642E02F29D6D24400A37D01 /* ProductJSON.swift in Sources */,
 				765F214629BCA2250052A95B /* ViewRouter.swift in Sources */,
 				7682EBCB29C10F6E0073142B /* PriceCartView.swift in Sources */,
-				765F214329BCA19D0052A95B /* LoginView.swift in Sources */,
-				765F215029BCA5420052A95B /* LoginButton.swift in Sources */,
 				7682EBC929C10D2B0073142B /* CartProductInfo.swift in Sources */,
 				76301F112A00FECB00A0E7DF /* FavoriteButtonViewModel.swift in Sources */,
 				7682EBCD29C112840073142B /* AccountSheet.swift in Sources */,
