@@ -9,13 +9,12 @@ import SwiftUI
 
 struct ProfileView: View {
     enum Field {
-        case name
-        case surname
-        case phoneNumber
-        case adress
-        case event
-        case delivery
+        case name, surname, phoneNumber, adress, eventType, event, delivery
     }
+    enum EventType: String {
+        case photosession, event
+    }
+
     @Environment(\.presentationMode) private var presentationMode
     @ObservedObject var userDataVM = UserDataViewModel.shared
     
@@ -61,7 +60,6 @@ struct ProfileView: View {
                 } //поле для фамили
                 .frame(width: screen.width / 1.1, height: screen.height / 18)
                 .cornerRadius(20)
-                
                 ZStack{
                     Rectangle()
                         .foregroundColor(colorPink)
@@ -75,7 +73,6 @@ struct ProfileView: View {
                 } //поле для номера телефона
                 .frame(width: screen.width / 1.1, height: screen.height / 18)
                 .cornerRadius(20)
-                
                 ZStack{
                     Rectangle()
                         .foregroundColor(colorPink)
@@ -91,6 +88,22 @@ struct ProfileView: View {
                 } //поле для адрес
                 .frame(width: screen.width / 1.1, height: screen.height / 18)
                 .cornerRadius(20)
+                ZStack{
+                    Rectangle()
+                        .foregroundColor(colorPink)
+                        .opacity(0.5)
+                    HStack{
+                        Picker("Выберете тип аренды", selection: $userDataVM.editEventType, content: {
+                            Text("Фотосессия").tag(EventType.photosession)
+                            Text("Мероприятие").tag(EventType.event)
+                        })
+                        .pickerStyle(.inline)
+                        .focused($focusedField, equals: .eventType)
+                        .padding(.leading)
+                    }
+                } //поле тип примерки
+                .frame(width: screen.width / 1.1, height: screen.height / 18)
+                .cornerRadius(20)
                 
                 ZStack{
                     Rectangle()
@@ -101,9 +114,9 @@ struct ProfileView: View {
                                    selection: $userDataVM.editDeliveryDate,
                                    in: Date()...(Calendar.current.date(byAdding: .day, value: 50, to: Date()) ?? Date()),
                                    displayedComponents: .date)
-                                   .focused($focusedField, equals: .delivery)
-                                   .datePickerStyle(.compact)
-                                   .padding(.leading)
+                        .focused($focusedField, equals: .delivery)
+                        .datePickerStyle(.compact)
+                        .padding(.leading)
                     }
                 } //поле дата доставки
                 .frame(width: screen.width / 1.1, height: screen.height / 18)
@@ -115,13 +128,13 @@ struct ProfileView: View {
                         .opacity(0.5)
                     HStack{
                         DatePicker("Дата аренды",
-                                   selection: $userDataVM.editEventDate,
+                                   selection: $userDataVM.editDeliveryDate,
                                    in: Date()...(Calendar.current.date(byAdding: .day, value: 120, to: Date()) ?? Date()),
                                    displayedComponents: .date)
-                            .focused($focusedField, equals: .event)
-                            .datePickerStyle(.compact)
-                            .padding(.leading)
-                            
+                        .focused($focusedField, equals: .event)
+                        .datePickerStyle(.compact)
+                        .padding(.leading)
+                        
                     }
                 } //поле дата мероприятия
                 .frame(width: screen.width / 1.1, height: screen.height / 18)
@@ -151,9 +164,7 @@ struct ProfileView: View {
                 case .phoneNumber:
                     focusedField = .adress
                 case .adress:
-                    focusedField = .event
-                case .event:
-                    focusedField = .delivery
+                    focusedField = .eventType
                 default:
                     break
                     
@@ -167,7 +178,7 @@ struct ProfileView: View {
                         }
                     }
             )
-        .navigationBarHidden(true)
+            .navigationBarHidden(true)
             Spacer()
         }
     }

@@ -51,7 +51,7 @@ class OrderViewModel: ObservableObject {
             from: zefirDress92,
             to: [rzamolotov],
             subject: "Заказ на доставку от клиента \(userDataVM.editUserName) \(userDataVM.editUserSurname)",
-            text: "Имя \(userDataVM.editUserName) \(userDataVM.editUserSurname)\nНомер телефона \(userDataVM.editUserPhone), \nАдрес доставки \(userDataVM.editUserAdress), \nДата примерки \(userDataVM.editDeliveryDate)\nДата мерроприятия \(userDataVM.editEventDate) \n\nСписок платьев на примерку:\n\(orderName)"
+            text: "Имя \(userDataVM.editUserName) \(userDataVM.editUserSurname)\nНомер телефона \(userDataVM.editUserPhone), \nАдрес доставки \(userDataVM.editUserAdress), \nТип мероприятия \(userDataVM.editEventType), \nДата примерки \(userDataVM.editDeliveryDate)\nДата мерроприятия \n\nСписок платьев на примерку:\n\(orderName)"
         )
         
         DispatchQueue.global(qos: .background).async {

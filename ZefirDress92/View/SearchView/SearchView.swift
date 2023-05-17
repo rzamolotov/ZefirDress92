@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchView: View {
     enum SizePicker: String, CaseIterable, Identifiable {
-        case size38, size40, size42, size44, size46, size48, size50, sizeKids, sizeAccessorises
+        case size38, size40, size42, size44, size46, size48, size50
         var id: Self {
             self
         }
@@ -29,10 +29,10 @@ struct SearchView: View {
                 return "48"
             case .size50:
                 return "50"
-            case .sizeKids:
-                return "детские платья"
-            case .sizeAccessorises:
-                return "аксессуары"
+//            case .sizeKids:
+//                return "детские платья"
+//            case .sizeAccessorises:
+//                return "аксессуары"
             }
         }
     } //пикер по размерам
@@ -58,10 +58,11 @@ struct SearchView: View {
                         Spacer()
                     }
                     ZStack{
-                        RoundedRectangle(cornerRadius: 25, style: .continuous)
-                            .foregroundColor(.clear)
-                            .frame(height: 37)
-                            .border(colorFontGray, width: 2)
+                        Rectangle()
+                            .foregroundColor(colorPink)
+                            .opacity(0.5)
+                            .frame(height: screen.height / 18)
+                            .cornerRadius(20)
                         HStack{
                             Menu {
                                 Picker("Выберете размер", selection: $selectedSize) {
