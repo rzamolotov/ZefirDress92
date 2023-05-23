@@ -14,6 +14,7 @@ struct ItemGridView: View {
     @State var selection: Set<String> = []
     @State private var error: ProductError?
     @State private var hasError = false
+    @State private var currentPage = 1
     @Environment(\.refresh) private var refresh
     
     var body: some View {
@@ -54,7 +55,7 @@ struct ItemGridView: View {
                   message: Text("Пожалуйста проверьте сетевое подключение и повторите снова"),
                   primaryButton: .default(Text("Обновить")) {
                 Task {
-                  await fetchProducts()
+                    await fetchProducts()
                 }
             },
                   secondaryButton: .destructive(Text("Выйти")))
@@ -64,6 +65,7 @@ struct ItemGridView: View {
         }
         
     }
+   
 }
 
 extension ItemGridView {

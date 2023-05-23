@@ -11,7 +11,7 @@ struct ContactsView: View {
     @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
-        VStack{
+        ScrollView{
             ItemBackButton()
                 .padding([.top, .leading, .trailing])
             Text("Наши контакты")
@@ -35,26 +35,26 @@ struct ContactsView: View {
                 .padding(.bottom)
                 
                 Button(action: {
-                    if let instagramURL = URL(string: "https://www.instagram.com/zefirdress/") {
+                    if let instagramURL = URL(string: "https://www.instagram.com/zefirdress_sev/") {
                         if UIApplication.shared.canOpenURL(instagramURL) {
                             UIApplication.shared.open(instagramURL, options: [:], completionHandler: nil)
                         }
                     }
                 }) {
-                    Text("Instagram @zefirdress")
+                    Text("Instagram @zefirdress_sev")
                 }
                 .foregroundColor(colorFont)
                 .font(.custom(lightFont, size: fontSizeMedium))
                 .padding(.bottom)
                 
                 Button(action: {
-                    if let vkURL = URL(string: "https://vk.com/zefirdress") {
+                    if let vkURL = URL(string: "https://vk.com/zefirdresssev") {
                         if UIApplication.shared.canOpenURL(vkURL) {
                             UIApplication.shared.open(vkURL, options: [:], completionHandler: nil)
                         }
                     }
                 }) {
-                    Text("www.vk.com/zefirdress")
+                    Text("vk.com/zefirdresssev")
                 }
                 .foregroundColor(colorFont)
                 .font(.custom(lightFont, size: fontSizeMedium))
