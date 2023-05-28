@@ -13,11 +13,8 @@ struct CartImageView: View {
     var body: some View {
         
         let imageLinkArray = order.imageLink as? Array<String> ?? []
-        KFImage(URL(string: imageLinkArray[0]))
-                .placeholder({ progress in
-                    ProgressView()
-                })
-                .resizable()
+        AsyncImage(url: URL(string: imageLinkArray[0])!, placeholder:{ ProgressView()}, image:  { Image(uiImage: $0) .resizable() } )
+
                 .aspectRatio(contentMode: .fill)
                 .frame(width: screen.width / 3, height: screen.height / 6)
                 .cornerRadius(10)

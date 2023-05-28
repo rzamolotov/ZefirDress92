@@ -15,11 +15,14 @@ struct FavoriteImageView: View {
     var body: some View {
         
         let imageLinkArray = favorite.imageLink as? Array<String> ?? []
-        KFImage(URL(string: imageLinkArray[0]))
-            .placeholder({ progress in
-                ProgressView()
-            })
-            .resizable()
+//        KFImage(URL(string: imageLinkArray[0]))
+//            .placeholder({ progress in
+//                ProgressView()
+//            })
+//            .resizable()
+        AsyncImage(url: URL(string: imageLinkArray[0])!, placeholder: { ProgressView()}, image:  { Image(uiImage: $0)
+            .resizable() }
+             )
             .aspectRatio(contentMode: .fill)
             .frame(width: screen.width / 2.5, height: screen.height / 4)
             .cornerRadius(10)

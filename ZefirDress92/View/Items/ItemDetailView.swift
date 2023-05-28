@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct ItemDetailView: View {
     
@@ -57,11 +56,7 @@ struct ItemDetailView: View {
                 ZStack{
                     TabView{
                         ForEach(product.image_link ?? ["https://i.ibb.co/wyBwfHG/IMG-7167.jpg"], id: \.self) { image in
-                            KFImage(URL(string: image))
-                                .placeholder({ progress in
-                                    ProgressView()
-                                })
-                                .resizable()
+                            AsyncImage(url: URL(string: image) ?? URL(string: "https://i.ibb.co/wyBwfHG/IMG-7167.jpg")!, placeholder: { ProgressView() }, image: { Image(uiImage: $0) .resizable() } )
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: screen.width, height: screen.height / 1.5)
                                 .cornerRadius(5)

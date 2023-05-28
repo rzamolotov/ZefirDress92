@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct ItemView: View {
     @EnvironmentObject var productProvider: ProductProvider
@@ -14,11 +13,12 @@ struct ItemView: View {
     
     var body: some View {
         VStack (alignment: .leading) {
-            KFImage(URL(string: product.image_link?[0] ?? "https://i.ibb.co/wyBwfHG/IMG-7167.jpg"))
-                .placeholder { progress in
-                    ProgressView()
-                }
-                .resizable()
+            AsyncImage(
+                url: URL(string: product.image_link?[0] ?? "https://i.ibb.co/wyBwfHG/IMG-7167.jpg")!,
+                placeholder: { ProgressView() },
+                image: { Image(uiImage: $0)
+                    .resizable() }
+                    )
                 .aspectRatio(contentMode: .fill)
                 .frame(width: screen.width / 2.5, height: screen.height / 4)
                 .cornerRadius(10)

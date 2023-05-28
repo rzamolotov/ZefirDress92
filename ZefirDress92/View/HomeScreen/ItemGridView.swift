@@ -60,8 +60,10 @@ struct ItemGridView: View {
             },
                   secondaryButton: .destructive(Text("Выйти")))
         })
-        .task {
-            await fetchProducts()
+        .onAppear {
+            Task {
+                await fetchProducts()
+            }
         }
         
     }
