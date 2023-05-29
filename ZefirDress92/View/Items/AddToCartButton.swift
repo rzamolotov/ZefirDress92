@@ -32,7 +32,7 @@ struct AddToCartButton: View {
             .foregroundColor(colorBrightPink)
             .cornerRadius(10)
             .alert(isPresented: $addToCartButtonVM.isAddToCart) {
-                Alert(title: Text("Это платье уже добавлено на доставку"),
+                Alert(title: Text("\(product.title) добавлено на доставку"),
                       dismissButton: .cancel(Text("OK"))
                 )
             }

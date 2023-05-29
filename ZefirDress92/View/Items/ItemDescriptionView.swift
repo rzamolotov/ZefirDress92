@@ -50,7 +50,7 @@ struct ItemDescriptionView: View {
             
             AddToCartButton(product: product, addToCartButtonVM: AddToCartViewModel(viewContext: viewContext, product: product))
         }
-        .padding(.bottom, 20)
+        .padding(.bottom, 50)
         .padding([.leading, .trailing])
     }
     

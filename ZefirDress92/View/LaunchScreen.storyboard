@@ -8,6 +8,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -17,29 +25,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="gNf-ur-wVN">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="-Zefir Dress-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaI-iZ-ZYj">
+                                <rect key="frame" x="76.333333333333329" y="570" width="240.33333333333337" height="45.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="37"/>
+                                <color key="textColor" name="brightPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="прокат платьев" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcJ-u4-dfw">
+                                <rect key="frame" x="110.66666666666669" y="620.33333333333337" width="172" height="25.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="21"/>
+                                <color key="textColor" name="brightPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="gNf-ur-wVN">
+                                <rect key="frame" x="16" y="156" width="361" height="336"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="gNf-ur-wVN" secondAttribute="bottom" id="C8P-dR-e3Q"/>
-                            <constraint firstItem="gNf-ur-wVN" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="b7L-KP-Ewr"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="gNf-ur-wVN" secondAttribute="trailing" id="jEb-Zp-Nv6"/>
-                            <constraint firstItem="gNf-ur-wVN" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="y3T-FT-63G"/>
+                            <constraint firstItem="gNf-ur-wVN" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="97" id="6zX-Xh-ESx"/>
+                            <constraint firstItem="gNf-ur-wVN" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="16" id="80p-dw-gQ1"/>
+                            <constraint firstItem="VaI-iZ-ZYj" firstAttribute="top" secondItem="gNf-ur-wVN" secondAttribute="bottom" constant="78" id="Ghz-FU-Ba8"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="gNf-ur-wVN" secondAttribute="trailing" constant="16" id="R2M-6e-nUp"/>
+                            <constraint firstItem="kcJ-u4-dfw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cL0-6a-nQF"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="kcJ-u4-dfw" secondAttribute="bottom" constant="172" id="pD9-Pz-G7V"/>
+                            <constraint firstItem="VaI-iZ-ZYj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="suc-C8-eCK"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="VaI-iZ-ZYj" secondAttribute="bottom" constant="202.66999999999999" id="whH-et-sLZ"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="856" height="1852"/>
+        <image name="launchScreen" width="800" height="800"/>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="brightPink">
+            <color red="0.7369999885559082" green="0.45100000500679016" blue="0.51800000667572021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
