@@ -74,7 +74,7 @@ extension ItemGridView {
     func fetchProducts() async {
         productProvider.isLoading = true
         do {
-            try await productProvider.fetchProducts()
+            try await  productProvider.fetchProducts()
         } catch {
             self.error = error as? ProductError ?? .unexpectedError(error: error)
             self.hasError = true

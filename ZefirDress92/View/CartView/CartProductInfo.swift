@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct CartProductInfo: View {
     var order: DressOrder

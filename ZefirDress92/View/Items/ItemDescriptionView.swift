@@ -21,7 +21,7 @@ struct ItemDescriptionView: View {
                 .foregroundColor(colorFont)
             VStack(alignment: .leading, spacing: 20) {
                 HStack{
-                    Text("Ты можешь отправить ссылку на платье или добавить его в избранное.")
+                    Text("Ты можешь отправить ссылку на \(product.title) или добавить его в избранное.")
                         .font(.custom(lightFont, size: fontSizeVerySmall))
                         .foregroundColor(colorFont)
                     Spacer()
@@ -38,7 +38,7 @@ struct ItemDescriptionView: View {
                     .foregroundColor(colorFont)
                 HStack {
                     Spacer()
-                    Text("Cтоимость аренды платья")
+                    Text("Cтоимость аренды")
                         .font(.custom(boldFont, size: fontSizeMedium))
                         .foregroundColor(colorFont)
                     Spacer()

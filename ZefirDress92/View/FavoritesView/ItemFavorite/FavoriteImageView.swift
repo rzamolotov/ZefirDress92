@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct FavoriteImageView: View {
     
@@ -15,11 +14,6 @@ struct FavoriteImageView: View {
     var body: some View {
         
         let imageLinkArray = favorite.imageLink as? Array<String> ?? []
-//        KFImage(URL(string: imageLinkArray[0]))
-//            .placeholder({ progress in
-//                ProgressView()
-//            })
-//            .resizable()
         AsyncImage(url: URL(string: imageLinkArray[0])!, placeholder: { ProgressView()}, image:  { Image(uiImage: $0)
             .resizable() }
              )
