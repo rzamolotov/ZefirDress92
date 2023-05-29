@@ -49,8 +49,9 @@ struct ItemDescriptionView: View {
             .foregroundColor(.black)
             
             AddToCartButton(product: product, addToCartButtonVM: AddToCartViewModel(viewContext: viewContext, product: product))
+                .padding(.bottom)
         }
-        .padding(.bottom, 50)
+        .padding(.bottom)
         .padding([.leading, .trailing])
     }
     
