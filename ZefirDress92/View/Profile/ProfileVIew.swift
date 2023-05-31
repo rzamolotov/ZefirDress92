@@ -14,9 +14,11 @@ struct ProfileView: View {
     enum EventType: String {
         case photosession, event
     }
-
+    
     @Environment(\.presentationMode) private var presentationMode
     @ObservedObject var userDataVM = UserDataViewModel.shared
+    @State private var isDiliveryPickerVisible = false
+    @State private var isEventPickerVisible = false
     
     @FocusState private var focusedField: Field?
     
@@ -113,9 +115,12 @@ struct ProfileView: View {
                                    selection: $userDataVM.editDeliveryDate,
                                    in: Date()...(Calendar.current.date(byAdding: .day, value: 50, to: Date()) ?? Date()),
                                    displayedComponents: .date)
-                        .focused($focusedField, equals: .delivery)
                         .datePickerStyle(.compact)
                         .padding(.leading)
+                        .onChange(of: userDataVM.editDeliveryDate) { _ in
+                            isDiliveryPickerVisible = false
+                            
+                        }
                     }
                 } //поле дата доставки
                 .frame(width: screen.width / 1.1, height: screen.height / 18)
@@ -130,7 +135,6 @@ struct ProfileView: View {
                                    selection: $userDataVM.editEventDate,
                                    in: Date()...(Calendar.current.date(byAdding: .day, value: 120, to: Date()) ?? Date()),
                                    displayedComponents: .date)
-                        .focused($focusedField, equals: .event)
                         .datePickerStyle(.compact)
                         .padding(.leading)
                         
@@ -143,12 +147,11 @@ struct ProfileView: View {
                     presentationMode.wrappedValue.dismiss() //go back
                 }) {
                     Text("Сохранить")
-                        .font(.headline)
-                        .foregroundColor(.white)
+                        .font(.custom(mediumFont, size: fontSizeMedium))
+                        .foregroundColor(colorBege)
                         .padding()
                         .frame(width: screen.width / 3, height: screen.height / 18)
-                        .background(Color.pink)
-                        .opacity(0.7)
+                        .background(colorBrightPink)
                         .cornerRadius(15.0)
                         .padding(.top, 20)
                 } //кнопка сохранить

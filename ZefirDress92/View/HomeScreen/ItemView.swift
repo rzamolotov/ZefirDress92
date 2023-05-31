@@ -19,7 +19,7 @@ struct ItemView: View {
                 image: { Image(uiImage: $0)
                     .resizable() }
                     )
-                .aspectRatio(contentMode: .fill)
+            .aspectRatio(contentMode: .fill)
                 .frame(width: screen.width / 2.5, height: screen.height / 4)
                 .cornerRadius(10)
                 .shadow(radius: 1)

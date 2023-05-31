@@ -10,6 +10,7 @@ import SwiftUI
 struct ItemDetailView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var selectedTabIndex = 0
     
     var product: Product
     var id: String
@@ -54,16 +55,21 @@ struct ItemDetailView: View {
         ScrollView {
             VStack(alignment: .center, spacing: 10) {
                 ZStack{
-                    TabView{
-                        ForEach(product.image_link ?? ["https://i.ibb.co/wyBwfHG/IMG-7167.jpg"], id: \.self) { image in
-                            AsyncImage(url: URL(string: image) ?? URL(string: "https://i.ibb.co/wyBwfHG/IMG-7167.jpg")!, placeholder: { ProgressView() }, image: { Image(uiImage: $0) .resizable() } )
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: screen.width, height: screen.height / 1.5)
-                                .cornerRadius(5)
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 0) {
+                            ForEach(product.image_link  ?? ["https://i.ibb.co/wyBwfHG/IMG-7167.jpg"], id: \.self) { image in
+                                AsyncImage(url: URL(string: image) ?? URL(string: "https://i.ibb.co/wyBwfHG/IMG-7167.jpg")!, placeholder: { ProgressView() }, image: { Image(uiImage: $0) .resizable() })
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: screen.width / 1.02, height: screen.height / 1.5)
+                                    .cornerRadius(10)
+                                    .onTapGesture {
+                                        
+                                    }
+                            }
                         }
                     }
                     .frame(width: screen.width, height: screen.height / 1.5)
-                    .tabViewStyle(.page(indexDisplayMode: .always))
+                    
                 }
                 
                 ItemDescriptionView(product: product)
@@ -78,10 +84,8 @@ struct ItemDetailView: View {
                     }
                 }
         )
-        
     }
 }
-
 
 struct ItemDetailView_Previews: PreviewProvider {
     static var previews: some View {
