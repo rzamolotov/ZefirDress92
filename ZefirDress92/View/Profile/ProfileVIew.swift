@@ -115,6 +115,7 @@ struct ProfileView: View {
                                    selection: $userDataVM.editDeliveryDate,
                                    in: Date()...(Calendar.current.date(byAdding: .day, value: 50, to: Date()) ?? Date()),
                                    displayedComponents: .date)
+                        .focused($focusedField, equals: .delivery)
                         .datePickerStyle(.compact)
                         .padding(.leading)
                         .onChange(of: userDataVM.editDeliveryDate) { _ in
@@ -132,9 +133,10 @@ struct ProfileView: View {
                         .opacity(0.5)
                     HStack{
                         DatePicker("Дата аренды",
-                                   selection: $userDataVM.editEventDate,
+                                   selection: $userDataVM.editDeliveryDate,
                                    in: Date()...(Calendar.current.date(byAdding: .day, value: 120, to: Date()) ?? Date()),
                                    displayedComponents: .date)
+                        .focused($focusedField, equals: .event)
                         .datePickerStyle(.compact)
                         .padding(.leading)
                         
