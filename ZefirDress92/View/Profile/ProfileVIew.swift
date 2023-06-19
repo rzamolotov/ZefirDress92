@@ -27,7 +27,7 @@ struct ProfileView: View {
             ItemBackButton()
                 .padding([.top, .leading, .trailing])
             Spacer()
-            ScrollView {
+            VStack {
                 Text("Введите ваши даные для доставки")
                     .font(.custom(boldFont, size: fontSizeMedium))
                     .foregroundColor(.gray)
@@ -133,12 +133,13 @@ struct ProfileView: View {
                         .opacity(0.5)
                     HStack{
                         DatePicker("Дата аренды",
-                                   selection: $userDataVM.editDeliveryDate,
-                                   in: Date()...(Calendar.current.date(byAdding: .day, value: 120, to: Date()) ?? Date()),
-                                   displayedComponents: .date)
+                                   selection: $userDataVM.editEventDate, displayedComponents: .date)
                         .focused($focusedField, equals: .event)
                         .datePickerStyle(.compact)
                         .padding(.leading)
+                        .onChange(of: userDataVM.editDeliveryDate) { _ in
+                            isDiliveryPickerVisible = false
+                        }
                         
                     }
                 } //поле дата мероприятия
@@ -158,7 +159,6 @@ struct ProfileView: View {
                         .padding(.top, 20)
                 } //кнопка сохранить
             }
-            
             .onSubmit {
                 switch focusedField {
                 case .name:

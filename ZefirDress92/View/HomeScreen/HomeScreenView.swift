@@ -15,10 +15,9 @@ struct HomeScreenView: View {
         NavigationView {
             VStack{
                 HeaderViewHomeScreen()
-                    .padding(.top)
                 ScrollView{
                     HelloTextView()
-                        .padding([.top, .bottom])
+                        .padding([.bottom])
                     TitleBestItems()
                     ItemGridView(products: productProvider.products)
                 }

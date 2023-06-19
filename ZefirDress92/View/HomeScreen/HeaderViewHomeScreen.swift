@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct HeaderViewHomeScreen: View {
-    @State var logoOffset = CGSize(width: 0, height: -50)
     
     var body: some View {
         HStack {
             Text("-Zefir Dress-")
                 .foregroundColor(colorBrightPink)
                 .font(.custom(boldFont, size: fontSizeLarge))
+                
         }
         .frame(height: 25)
     }
